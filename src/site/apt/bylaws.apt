@@ -1,0 +1,342 @@
+~~ ====================================================================
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~ 
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~ 
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~ ====================================================================
+~~ 
+~~ This software consists of voluntary contributions made by many
+~~ individuals on behalf of the Apache Software Foundation.  For more
+~~ information on the Apache Software Foundation, please see
+~~ <http://www.apache.org/>.
+
+    ----------
+    Apache HttpComponents Bylaws
+    ----------
+
+Apache HttpComponents Bylaws (Draft $Revision$)
+
+ This page defines the Bylaws for the Apache HttpComponents project.
+ These Bylaws are established by the Apache HttpComponents PMC and apply
+ for operation of this project only.
+ The Apache Software Foundation has its own set of
+ {{{http://www.apache.org/foundation/bylaws.html}ASF Bylaws}},
+ which define PMCs in section 6.4.
+ Since we are an Apache project, it will be useful for you to understand
+ {{{http://www.apache.org/foundation/how-it-works.html}How the ASF Works}}.
+
+ We have a {{{./charter.html}Charter}} that states what we do.
+ These Bylaws explain how we do it.
+
+
+
+Project Management Committee
+
+  The Project Management Committee (PMC) was established by the
+  ASF Board in November 2007 and is responsible to the ASF Board
+  for oversight of the HttpComponents project.
+  One PMC member is chosen to serve as the PMC chair.
+  The PMC chair is the primary contact to the Apache Board and
+  responsible for submitting the HttpComponents
+  {{{http://wiki.apache.org/HttpComponents/BoardReports}board reports}}.
+
+  The authoritative list of PMC members is maintained in
+  {{{https://svn.apache.org/repos/private/committers/board/committee-info.txt}committee-info.txt}}
+  and accessible to all Apache committers.
+  The public list of members on our website is informal and
+  may temporarily run out of sync when PMC members fluctuate.
+
+  The PMC can vote in new PMC members. Candidates are typically found
+  among the committers of the project and must be nominated by
+  a current PMC member. Candidates are not strictly required to be
+  committers of the project, but only Apache committers can be nominated.
+  A candidate voted in has to accept the role of PMC member in order
+  to join the PMC. If the role is not accepted immediately, the vote result
+  remains effectual for one year after the candidate has been notified.
+  During this time, the candidate can accept the role and join the PMC
+  without a new voting.
+
+  PMC members may retire from the PMC and change to the status of
+  emeritus PMC by request. An emeritus PMC can request to be reinstated
+  as a PMC member. This does not require a vote.
+  PMC members, including the PMC chair, may be removed from the PMC
+  by a majority vote of the PMC. Removed PMC members can subsequently
+  be nominated as candidates and voted in to the PMC like any other
+  Apache committer.
+
+  The PMC chair may retire from the role of PMC chair without
+  retiring from the PMC. When the PMC chair retires from that role,
+  the PMC choses a new chair.
+
+  Changes to the PMC require due
+  {{{http://www.apache.org/foundation/records/minutes/2002/board_minutes_2002_12_18.txt}notice}}
+  to the Apache Board.
+  The PMC chair informs the board of the change via mail.
+  Acknowledgement of the mail by a director starts a 72 hour period,
+  after which the change becomes effective and committee-info.txt is updated.
+  Thus, retirement and reinstatement are subject to 72 hour delays.
+  Changes to the role of PMC chair are typically handled by a resolution
+  that is approved at the next board meeting.
+
+
+PMC Decision Making
+
+  Decisions by the Project Management Committee (PMC) are made
+  on behalf of the ASF and must satisfy formal requirements.
+  PMC decisions are established by Binary Voting. Discussions for finding
+  a consensus on the decision are expected to take place prior to the voting.
+  The voting is necessary to formally record the decision.
+  Discussions and voting should take place on the public project mailing
+  lists. Where public discussion of a topic is not appropriate, the
+  private mailing list is used instead.
+
+  PMC decisions include, but are not limited to:
+
+   * changing the Project Charter and Bylaws
+
+   * voting in new PMC members and project committers
+
+   * approving release artifacts
+
+   * establishing new subprojects
+
+   * requesting Apache resources (mailing lists, issue tracking,...)
+
+   * ...
+
+  Binary Voting allows only for the votes +1 (approval) and -1 (objection).
+  An objection must include the reason, otherwise it is counted as invalid.
+  There are consensus decisions and majority decisions.
+  A consensus decision passes if there is a minimum of three binding +1 votes
+  and no binding -1 vote. A majority decision passes if there is a minimum of
+  three binding +1 votes and at least 75% of the binding votes are +1.
+  For PMC decisions, only the votes of the PMC members are binding.
+  <<All>> community members are encouraged to vote on public PMC decisions,
+  to display the community support for or concern about the decision.
+  All votes, binding and non-binding, will be recorded in the result mail.
+
+  All PMC decisions are consensus decisions, with the following exceptions.
+  Removing a PMC member from the PMC is a majority decision.
+  If it is deemed necessary to break a stalemate, the PMC can decide
+  by majority that one specific decision shall be voted on as a
+  majority rather than a consensus decision.
+  Necessity to fall back to either of these majority decision rules
+  would indicate a serious community problem within the PMC.
+
+  A week is deemed a fair length for voting on a PMC decision.
+  For technical decisions such as approving release artifacts,
+  the voting period can be reduced to no less than 72 hours.
+  The length of the voting period for PMC decisions must be
+  indicated in the mail that starts the voting.
+
+
+
+Community Decision Making
+
+  Community decisions are consensus driven. The preferred way to establish
+  consensus is through discussion on the public mailing lists. To gather
+  additional input from community members, polls can be run on the same or
+  other mailing lists.
+  Voting on community decisions should be restricted to cases where it is
+  necessary or desirable to formally record the consensus, for example when
+  a long-term project plan is approved.
+  Discussions and voting must take place on the public project mailing lists.
+
+  Community Voting is non-binary, typical vote values are:
+
+   * +1:
+   active support, the voter intends to spend time on the subject
+
+   * +0:
+   passive support, the voter will not spend time on the subject
+
+   * -0:
+   disfavor, the voter doesn't like the idea but can live with it
+
+   * -1:
+   objection, the voter is strongly opposing the idea
+   (requires a reason or an alternative)
+
+  There are consensus decisions and majority decisions.
+  A consensus decision passes if there is a minimum of three binding +1 votes
+  and no binding -1 vote. A majority decision passes if there is a minimum of
+  three binding +1 votes and more than 50% of the binding votes are +1.
+  For community decisions, only the votes of the project committers are
+  binding.
+  <<All>> community members are encouraged to vote on community decisions,
+  to display the community support for or concern about the decision.
+  All votes, binding and non-binding, will be recorded in the result mail.
+  If there is strong opposition from non-binding voters, a decision will
+  be reconsidered even if it formally passes.
+
+  As a rule of thumb, "If" questions are consensus decisions while "How"
+  and "When" questions are majority decisions. For example,
+  it is a consensus decision <if> a new feature should be implemented.
+  It is a majority decision <how> an issue in the code should be solved,
+  or <when> the next release of a deliverable will be cut.
+  If it is not clear and cannot be established by discussion whether a
+  decision should be by consensus or majority, the PMC chooses the kind
+  of decision to make. The preference is for consensus decisions.
+
+  Community Voting is of an informal nature. Depending on the subject
+  of the voting, some of the vote values may be omitted. There may also
+  be multiple options with the same value to choose from, or additional
+  room for comments, or other modifications. For example, a vote on creating
+  a new mailing list may include a field for the preferred mailing list name,
+  or multiple +1 options for the name candidates discussed prior to the vote.
+  The occasional fractional vote, like -0.9 or +10, is rounded towards 0.
+
+  Even if only vote values +1 and -1 are offered, Community Voting
+  differs from PMC Binary Voting in the required vote result for
+  majority decisions (50% vs. 75%) and in the group of binding voters
+  (committers vs. PMC members). All mails to start a voting must therefore
+  point out which votes will be binding.
+
+  A week is deemed a fair length for voting on community decisions.
+  Depending on the subject and community involvement during the discussion,
+  the voting period may be reduced to no less than 72 hours, extended beyond
+  one week, extended while the vote is running, or left open.
+  Remember that community voting is informal. We prefer common sense
+  over formalities.
+
+
+
+Vetos
+
+  A binding vote of -1 on a consensus decision is also called a veto.
+  Additional discussions and actions to address the reason for the veto are
+  expected. When this is achieved, the veto will be withdrawn or changed to
+  an approval. If concerns cannot be addressed within the voting period, the
+  voting should be repeated after the issues have been resolved.
+
+  A non-binding vote of -1 is not a veto. However, it is evaluated
+  based on the merits of the reason given in the vote. If possible, the
+  reason will be addressed within the voting period or afterwards.
+
+  Note that committers and PMC members typically have an in-depth knowledge
+  of the project and long experience in running projects at Apache.
+  They may be aware of facts or requirements that are unknown to the
+  community at large. This is the reason why vetos are given more weight
+  than non-binding -1 votes.
+
+
+
+Release Labels
+
+  We use version numbers with two or three digits and labels
+  <alpha>, <beta>, <RC>. The version numbers are used as follows:
+
+   * 4.0 - a major version.
+     Major versions include significant API changes and enhancements.
+     They should be expected to be incompatible with previous versions.
+
+   * 4.1 - a minor version.
+     Minor versions include compatible enhancements, but can also include
+     minor API changes. While we try to maintain API compatibility for
+     minor versions, there may be cases where we prefer to fix a problem
+     in the API by implementing an incompatible change.
+
+   * 4.0.1 - a bugfix release.
+     Bugfix releases are compatible with the respective major or minor version.
+
+  Development of major and minor versions typically passes through the
+  following phases:
+
+   * <alpha> - API is instable, functionality untested
+
+   * <beta>  - API is stable, test coverage improving
+
+   * <RC>    - API is stable, test coverage good
+
+   * <final> - no significant bugs uncovered since last RC
+
+  In the alpha phase, functionality is implemented and the API drafted.
+  When the API has stabilized and covers the intended functionality for
+  the next major or minor version, the API is frozen and development
+  moves to the beta phase.
+
+  In the beta phase, the implementation is stabilized by improving the
+  test coverage and refining the API specification. Compatible API changes
+  are still expected. If significant problems with the API are uncovered,
+  incompatible changes can be introduced with a deprecation cycle. That
+  means that there is at least one compatible beta release in which parts
+  of the API are marked as deprecated. The deprecated parts of the API can
+  then be removed in a subsequent release.
+
+  The RC (release candidate) phase starts when the developers consider the
+  codebase stable and mature. The API is kept stable, even compatible
+  enhancements will be minimized. Activity during the RC phase is focused
+  on improving the documentation and test coverage. If some major or
+  many minor bugs are detected, these are fixed in a new RC release.
+
+  The final release of a major or minor version is published if bug reports
+  for the RC releases are ebbing away. While the previous releases include
+  the alpha, beta, or RC label in their name, a final release is published
+  with the two digit version number without a suffix.
+  The final release is moved to a branch in the source repository for
+  maintenance. Bugs are fixed for that version in compatible bugfix releases
+  off the branch. Issues that require an API change can only be addressed
+  in the next minor or major version, which is developed on the trunk.
+
+
+
+Code Review
+
+  The two styles for code review at Apache are review-then-commit (RTC)
+  and commit-then-review (CTR). Not only the program code is reviewed,
+  but also the contents of the website and the Wiki. 
+
+  With RTC, a patch is published in the issue tracker, then reviewed by
+  the developers, and committed to the source repository only afterwards.
+  Lazy consensus is sufficient, there is no need for formal voting or
+  three opinions in favor.
+
+  With CTR, a change is committed to the source repository directly.
+  Developers receive the change notification on the commits mailing list
+  and review the repository contents.
+  If there is a major problem with the change, any committer can veto the
+  change by sending a -1 reply to the commit message. After a veto, the
+  change is reverted as soon as possible in the source repository and the
+  reason for the veto will be discussed.
+  Minor problems are not handled with a veto and revert, but by discussion
+  on the mailing list and followup patches.
+  
+  We use both RTC and CTR, and common sense to decide between the two.
+  Some simple rules are:
+
+   * changes to Charter and Bylaws are RTC and require formal PMC approval
+
+   * updates to the Wiki are CTR
+
+   * code contributions by non-committers are RTC
+
+   * simple bug fixes are CTR
+
+   * documentation improvements are CTR
+
+   * updates to the website are CTR
+
+   * code changes in an unstable development phase are CTR.
+     Unstable phases are <alpha> for all changes and
+     <beta> if the API remains compatible.
+
+   * major code changes in a stable development phase are RTC.
+     Stable phases are <beta> for the API, <RC> for all the code,
+     and maintenance in the branch of a final release.
+
+   * committers looking for feedback on an idea use RTC
+
+   * changes to an experimental branch or sandbox are CTR
+

@@ -1,0 +1,76 @@
+~~ ====================================================================
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~ 
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~ 
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~ ====================================================================
+~~ 
+~~ This software consists of voluntary contributions made by many
+~~ individuals on behalf of the Apache Software Foundation.  For more
+~~ information on the Apache Software Foundation, please see
+~~ <http://www.apache.org/>.
+
+   ----------
+    Lessons Learned - Jakarta Commons HttpClient
+    ----------
+    ----------
+    ----------
+
+Lessons Learned
+
+    The HttpComponents project was undertaken following our experience in developing and 
+    supporting Jakarta Commons HttpClient. The shortcomings and inefficiencies 
+    listed below emerged during our work with HttpClient and prompted our action. HttpComponents 
+    is an attempt to address these issues.
+
+* {Monolithic design of Commons HttpClient}
+
+    * The use patterns of Commons HttpClient have evolved much since its first release. We 
+    have found HttpClient used in applications it was never specifically designed 
+    for: in spiders, in server side services such as HTTP proxies or light-weight HTTP 
+    connectors. Essentially we saw HttpClient users trying to use it as a toolkit of generic 
+    HTTP components. In some areas the original monolithic design of Commons HttpClient 
+    proved quite lacking.
+
+    * HttpClient has a rich set of features. Some of them, however, are used infrequently in 
+    a limited number of specific cases, and represent unnecessary code bloat for a sizable 
+    percentage of HttpClient users. Moreover, some of those infrequently used features in 
+    Commons HttpClient were introduced at the expense of the API clarity. There are some 
+    core HTTP components that are required by all HTTP services whether they be on the client or on the 
+    server side. More application specific aspects of HTTP, however, cannot be adequately 
+    represented by one monolithic library. 
+
+* {Inherent API deficiencies of Commons HttpClient}
+
+    * HttpMethod interface, one of the most fundamental interfaces in Commons HttpClient, 
+    is inherently flawed. It tightly couples the HTTP request and HTTP response and implies one 
+    to one relationship between the two, which is not always the case.
+
+    * Abuse of inheritance. HttpMethodBase class contains the greatest chunk of processing 
+    logic in HttpClient. It inseparably couples the logic of generating HTTP requests and 
+    processing HTTP responses. This makes it virtually impossible to create a custom 
+    implementation of an HttpMethod interface, essentially rendering it useless. In practice all 
+    HTTP methods must be derived from HttpMethodBase class.
+
+    * The fact that all HTTP methods in practical terms must be derived from one common 
+    base (HttpMethodBase) has a number of side effects. For instance, if one needs to
+    introduce a common behavior across all standard HTTP methods, one would have to 
+    subclass all the existing subclasses of the HttpMethodBase: GetMethod, PostMethod, etc.
+
+* {External dependencies}
+
+    * One of the most frequently cited complaints is its dependency on Commons Logging and 
+    Commons Codec. We would like to give the users an option to use core HTTP components 
+    without any external libraries and a minimal footprint.

@@ -1,0 +1,93 @@
+~~ ====================================================================
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~ 
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~ 
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~ ====================================================================
+~~ 
+~~ This software consists of voluntary contributions made by many
+~~ individuals on behalf of the Apache Software Foundation.  For more
+~~ information on the Apache Software Foundation, please see
+~~ <http://www.apache.org/>.
+
+   -----------
+   Powered by HttpComponents
+
+Powered by HttpComponents
+
+* Limewire
+
+    {{{http://www.limewire.com/}LimeWire}} uses HttpCore & HttpCore NIO 
+    extensions to power all of its uploads (and hopefully soon, all of its 
+    downloads). Sam Berlin, Senior Software Developer with LimeWire said: 
+    "HttpComponents has been a breeze to work with, and integrates 
+    seamlessly with LimeWire's custom NIO layer".
+
+* Apache Synapse
+    
+    {{{http://ws.apache.org/synapse/}Apache Synapse}} uses HttpComponents 
+    HttpCore to provide completely non-blocking HTTP support as an ESB and 
+    XML Gateway. The Synapse development team has done a number of 
+    performance tests including loading up more than 2000 concurrent clients, 
+    resulting in 4000 concurrent HTTP connections in and out of Synapse - 
+    all with a fixed small thread pool and no loss of data. Paul Fremantle, 
+    chair of the Apache Synapse PMC said: "HttpCore is a key part of Apache 
+    Synapse - and absolutely essential to our high-performance HTTP support. 
+    The HttpComponents team have always been extremely helpful and the 
+    quality of the code speaks for itself". 
+
+* Google Android
+
+    {{{http://code.google.com/android/} Google Android}} ships with HttpCore
+    and HttpClient 4.0 bundled.
+    
+* jfireeagle
+ 
+    {{{http://code.google.com/p/jfireeagle} jfireeagle}} is a Java client library for Yahoo {{{http://fireeagle.yahoo.net} Fire Eagle}}
+    
+* jtrimet
+ 
+    {{{http://code.google.com/p/jtrimet} jtrimet}} is a Java client library for {{{http://developer.trimet.org/ws_docs}TriMet's web service}}
+    
+* jpoco
+ 
+    {{{http://code.google.com/p/jpoco} jpoco}} is a Java client library for {{{http://portablecontacts.net} PortableContacts}}
+    
+* JClouds
+ 
+    {{{http://code.google.com/p/jclouds/}JClouds}} provides concurrent apis to 
+    popular cloud services. HttpCore NIO powers JClouds' server-grade  
+    {{{http://aws.amazon.com/s3/}S3}} connector, allowing non-blocking uploads of 
+    String, InputStream, File, and byte [] data without expensive conversions.
+
+* AdroitLogic UltraESB
+
+    The {{{http://adroitlogic.org/}AdroitLogic UltraESB}} uses HttpCore & HttpCore NIO 
+    extensions as well as the HttpClient to build a high performance, feature rich, easy 
+    to use and lightweight ESB. UltraESB is the first open source ESB to offer Zero-Copy 
+    proxying coupled with NIO and Memory Mapped files, to offer extreme levels of 
+    {{{http://esbperformance.org} ESB performance}}. Apache HttpComponents is a key 
+    component of the UltraESB and its SOA ToolBox, and utilizes the excellent Zero-Copy 
+    and NIO support features of HttpComponents NIO
+
+* Apache ManifoldCF
+
+    The {{{http://manifoldcf.apache.org}Apache ManifoldCF}} project uses HttpCore
+    and HttpClient for many of its repository and output connectors. These are connectors
+    to repositories like Microsoft SharePoint and OpenText LiveLink, as well as output
+    connectors for Elastic Search and Open Search Server.  ManifoldCF also uses HttpComponents
+    libraries for crawling the open web.
+
+

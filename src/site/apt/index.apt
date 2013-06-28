@@ -1,0 +1,99 @@
+~~ ====================================================================
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~ 
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~ 
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~ ====================================================================
+~~ 
+~~ This software consists of voluntary contributions made by many
+~~ individuals on behalf of the Apache Software Foundation.  For more
+~~ information on the Apache Software Foundation, please see
+~~ <http://www.apache.org/>.
+
+    ----------
+    Apache HttpComponents
+    ----------
+    ----------
+    ----------
+
+Apache HttpComponents
+
+    The Apache HttpComponents\u2122 project is responsible for creating and maintaining a toolset of 
+low level Java components focused on HTTP and associated protocols.
+
+    This project functions under the Apache Software Foundation (http://www.apache.org), and is part 
+of a larger community of developers and users.
+
+HttpComponents Overview
+
+    The Hyper-Text Transfer Protocol (HTTP) is perhaps the most significant protocol used on the 
+    Internet today. Web services, network-enabled appliances and the growth of network computing 
+    continue to expand the role of the HTTP protocol beyond user-driven web browsers, while 
+    increasing the number of applications that require HTTP support.
+
+    Designed for extension while providing robust support for the base HTTP protocol, the 
+    HttpComponents may be of interest to anyone building HTTP-aware client and server 
+    applications such as web browsers, web spiders, HTTP proxies, web service transport 
+    libraries, or systems that leverage or extend the HTTP protocol for distributed communication. 
+    
+{HttpComponents Structure}
+
+* {HttpComponents Core}
+
+    {{{./httpcomponents-core-ga/index.html}HttpCore}} is a set of low level HTTP transport components 
+    that can be used to build custom client and server side HTTP services with a minimal footprint. 
+    HttpCore supports two I/O models: blocking I/O model based on the classic Java I/O and 
+    non-blocking, event driven I/O model based on Java NIO. 
+    
+    The blocking I/O model may be more appropriate for data intensive, low latency scenarios,
+    whereas the non-blocking model may be more appropriate for high latency scenarios where raw data
+    throughput is less important than the ability to handle thousands of simultaneous HTTP 
+    connections in a resource efficient manner.
+
+    * HttpCore Tutorial ( {{{./httpcomponents-core-ga/tutorial/html}HTML}} 
+      / {{{./httpcomponents-core-ga/tutorial/pdf/httpcore-tutorial.pdf}PDF}} 
+      / {{{http://svn.apache.org/repos/asf/httpcomponents/httpcore/trunk/httpcore-contrib/docs/translated-tutorial/httpcore-tutorial-simplified-chinese.pdf}PDF - Chinese translation}} 
+      kindly contributed by Nanlei; last updated Dec 10th, 2010)
+    
+    * HttpCore {{{./httpcomponents-core-ga/examples.html}Samples}}
+    
+* {HttpComponents Client}
+
+    {{{./httpcomponents-client-ga/index.html}HttpClient}} is a HTTP/1.1 compliant HTTP agent 
+    implementation based on HttpCore. It also provides reusable components for client-side 
+    authentication, HTTP state management, and HTTP connection management. HttpComponents Client 
+    is a successor of and replacement for {{{http://hc.apache.org/httpclient-legacy/index.html} 
+    Commons HttpClient 3.x}}. Users of Commons HttpClient are strongly encouraged to upgrade.
+
+    * HttpClient Tutorial ( {{{./httpcomponents-client-ga/tutorial/html}HTML}} 
+      / {{{./httpcomponents-client-ga/tutorial/pdf/httpclient-tutorial.pdf}PDF}}
+      / {{{http://svn.apache.org/repos/asf/httpcomponents/httpclient/trunk/httpclient-contrib/docs/translated-tutorial/httpclient-tutorial-simplified-chinese.pdf} PDF - Chinese translation}} 
+      kindly contributed by Nanlei; last updated Dec 1st, 2010)
+    
+    * HttpClient {{{./httpcomponents-client-ga/examples.html}Samples}}
+    
+* {HttpComponents AsyncClient}
+
+    {{{./httpcomponents-asyncclient-dev/index.html}Asynch HttpClient}} is a HTTP/1.1 compliant HTTP agent 
+    implementation based on HttpCore NIO and HttpClient components. It is a complementary module 
+    to Apache HttpClient intended for special cases where ability to handle a great number of
+    concurrent connections is more important than performance in terms of a raw data throughput.
+
+    * HttpAsyncClient {{{./httpcomponents-asyncclient-dev/examples.html}Samples}}
+    
+* {Commons HttpClient (legacy)}
+
+    Commons HttpClient 3.x codeline is at the end of life. All users of Commons HttpClient 3.x 
+    are strongly encouraged to upgrade to HttpClient 4.1. 

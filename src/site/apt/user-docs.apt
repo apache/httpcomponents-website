@@ -1,0 +1,131 @@
+~~ ====================================================================
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~ 
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~ 
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~ ====================================================================
+~~ 
+~~ This software consists of voluntary contributions made by many
+~~ individuals on behalf of the Apache Software Foundation.  For more
+~~ information on the Apache Software Foundation, please see
+~~ <http://www.apache.org/>.
+
+   -----------
+   User Documentation Index
+
+{User Documentation}
+
+   You are a user of HttpComponents if you are developing an application
+   that makes use of our libraries. The documentation linked here is meant
+   to help you understand how to use these libraries.
+
+   The <<General Information>> section points to documentation that is
+   mostly API agnostic.
+   Here you will find information that is useful, no matter whether you are
+   using the new HttpComponents, or the Commons HttpClient 3.1, or even the
+   standard Java HttpUrlConnection.
+   Of course we put no emphasis on the latter.
+
+   The <<API Specific Information>> section points to documentation for
+   specific APIs, either the new HttpComponents, or the Commons HttpClient 3.1.
+   Using the information there with other APIs will be tricky,
+   if not impossible.
+
+
+{General Information}
+
+   If you are just getting started, you'll probably start by retrieving
+   some pages from a web server. The <<Primer>> will give you valuable
+   information for that.
+   Once you are tackling more specific use cases, such as sending parameters
+   to a servlet, or configuring a proxy within an applet, some of the FAQs
+   may prove helpful.
+
+   * {{{./httpcomponents-client-ga/primer.html} Client HTTP Programming Primer}} - 
+   The Primer describes how to submit an HTML form to a web server and
+   retrieve the results. HTML forms are often used as login forms, so the
+   Primer also tells you how to perform form-based login in your application.
+
+   * {{{http://wiki.apache.org/HttpComponents/FrequentlyAskedApplicationDesignQuestions}
+        Application Design FAQ}} -
+   This FAQ addresses problems such as uploading files and configuring proxies
+   based on JVM settings. It also explains the different ways in which a client
+   may authenticate against a server.
+
+   * {{{http://wiki.apache.org/HttpComponents/FrequentlyAskedConnectionManagementQuestions}
+        Connection Management FAQ}} -
+   This FAQ addresses questions related to connection management, for example
+   where sockets in state TIME_WAIT come from. Although the API is different,
+   connection management in the new HttpClient works similar to that in the
+   Commons HttpClient 3.1. The standard Java HttpUrlConnection also manages
+   connections, though we're not really concerned about that.
+
+{API Specific Information}
+
+* {Official tutorials and guides}
+
+    * {{{./httpcomponents-core-ga/tutorial/html/}HttpCore tutorial (GA)}} - 
+    Detailed HttpCore API tutorial.
+
+    * {{{./httpcomponents-client-ga/tutorial/html/}HttpClient tutorial (GA)}} - 
+    Detailed HttpClient API tutorial.
+
+    * {{{./httpcomponents-client-ga/logging.html}Logging guide}} -
+    How to enable internal context / wire logging in HttpClient.
+
+* {JavaDocs}
+
+    * {{{./httpcomponents-core-ga/httpcore/apidocs/index.html}HttpCore API (GA)}}
+    
+    * {{{./httpcomponents-core-ga/httpcore-nio/apidocs/index.html}HttpCore NIO API (GA)}}
+    
+    * {{{./httpcomponents-client-ga/httpclient/apidocs/index.html}HttpClient API (GA)}}
+    
+    * {{{./httpcomponents-client-ga/httpmime/apidocs/index.html}HttpMime API (GA)}}
+
+    * {{{./httpcomponents-client-ga/httpclient-cache/apidocs/index.html}HttpClient Cache API (GA)}}
+
+* {Example Code}
+
+    * {{{./httpcomponents-core-ga/examples.html}HttpCore (GA)}}
+       
+    * {{{./httpcomponents-client-ga/examples.html}HttpClient (GA)}}
+       
+    Example code is meant to help you understand the API. It is also shipped with releases.
+  
+* {Code contributions}
+
+    * {{{http://svn.apache.org/repos/asf/httpcomponents/httpcore/trunk/httpcore-contrib/src/main/java/org/apache/http/contrib/}
+       HttpCore}}
+
+    * {{{http://svn.apache.org/repos/asf/httpcomponents/httpclient/trunk/httpclient-contrib/src/main/java/org/apache/http/contrib/}
+       HttpClient}}
+
+    Contribution code can provide useful additional functionality or examples.
+    It is <not supported>, and not shipped with binary release packages.
+
+* {Commons HttpClient 3.1 (legacy)}
+
+  * {{{./httpclient-legacy/tutorial.html}Tutorial}} -
+    Explains how to use HttpClient 3.1 in simple scenarios.
+    The concepts still apply to the new HttpClient 4.0,
+    but the API has changed completely.
+
+  * {{{./httpclient-legacy/troubleshooting.html}Troubleshooting}} -
+    Explains how to avoid common errors, and how to report the uncommon ones.
+
+  * {{{./httpclient-legacy/userguide.html}User Guide}} -
+    The HttpClient 3.1 User Guide is a selection of guides for specific topics
+    such as Authentication, Multi-Threaded Applications, SSL, and others.

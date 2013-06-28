@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<document>
+
+  <properties>
+    <title>HttpComponents Downloads</title>
+    <revision>$Id$</revision>
+  </properties>
+
+  <body>
+
+  <section name="HttpComponents Downloads">
+  <p>We recommend you use a mirror to download our release builds, but you <strong>must</strong> 
+   verify the integrity of the downloaded files using signatures downloaded from our main 
+   distribution directories. Recent releases (48 hours) may not yet be available from the mirrors.
+  </p>
+
+  <p>You are currently using <b>[preferred]</b>.  If you encounter a problem with this mirror, 
+   please select another mirror.  If all mirrors are failing, there are <i>backup</i> mirrors (at 
+   the end of the mirrors list) that should be available.
+  <br/>
+  [if-any logo]<a href="[link]">
+  <img align="right" src="[logo]" border="0"/>
+  </a>
+  [end]
+  </p>
+
+  <form action="[location]" method="get" id="SelectMirror">
+    Other mirrors: 
+    <select name="Preferred">
+    [if-any http]
+      [for http]<option value="[http]">[http]</option>[end]
+    [end]
+    [if-any ftp]
+      [for ftp]<option value="[ftp]">[ftp]</option>[end]
+    [end]
+    [if-any backup]
+      [for backup]<option value="[backup]">[backup] (backup)</option>[end]
+    [end]
+    </select>
+    <input type="submit" value="Change"/>
+  </form>
+
+  <p>The <code>KEYS</code> link links to the code signing keys used to sign the product. The 
+   <code>PGP</code> link downloads the OpenPGP compatible signature from our main site. The 
+   <code>MD5</code> link downloads the checksum from the main site.
+  </p>
+
+  <subsection name="HttpClient 4.2.5 (GA)">
+    <a href="http://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
+    <a href="http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.2.x.txt">Release Notes</a>
+    <br/>
+    <p>Binary</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-bin.tar.gz">4.2.5.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-bin.zip">4.2.5.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-bin.zip.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-osgi-bin.tar.gz">4.2.5.tar.gz (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-osgi-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-osgi-bin.zip">4.2.5.zip (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-osgi-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.2.5-osgi-bin.zip.asc">pgp</a>]
+     </li>
+    </ul>
+    <p>Source</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.2.5-src.tar.gz">4.2.5.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.2.5-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.2.5-src.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.2.5-src.zip">4.2.5.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.2.5-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.2.5-src.zip.asc">pgp</a>]
+     </li>
+    </ul>
+  </subsection>
+  
+  <subsection name="HttpClient 4.3-beta2">
+    <a href="http://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
+    <a href="http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES.txt">Release Notes</a>
+    <br/>
+    <p>Binary</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-bin.tar.gz">4.3-beta2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-bin.zip">4.3-beta2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-bin.zip.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-osgi-bin.tar.gz">4.3-beta2.tar.gz (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-osgi-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-osgi-bin.zip">4.3-beta2.zip (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-osgi-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3-beta2-osgi-bin.zip.asc">pgp</a>]
+     </li>
+    </ul>
+    <p>Source</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.3-beta2-src.tar.gz">4.3-beta2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3-beta2-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3-beta2-src.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.3-beta2-src.zip">4.3-beta2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3-beta2-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3-beta2-src.zip.asc">pgp</a>]
+     </li>
+    </ul>
+  </subsection>
+
+  <subsection name="HttpCore 4.2.4 (GA)">
+    <a href="http://www.apache.org/dist/httpcomponents/httpcore/KEYS">KEYS</a>
+    <a href="http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-4.2.x.txt">Release Notes</a>
+    <br/>
+    <p>Binary</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-bin.tar.gz">4.2.4.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-bin.zip">4.2.4.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-bin.zip.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-osgi-bin.tar.gz">4.2.4.tar.gz (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-osgi-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-osgi-bin.zip">4.2.4.zip (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-osgi-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.2.4-osgi-bin.zip.asc">pgp</a>]
+     </li>
+    </ul>
+    <p>Source</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.2.4-src.tar.gz">4.2.4.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.2.4-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.2.4-src.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.2.4-src.zip">4.2.4.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.2.4-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.2.4-src.zip.asc">pgp</a>]
+     </li>
+    </ul>
+  </subsection>
+
+  <subsection name="HttpCore 4.3-beta2">
+    <a href="http://www.apache.org/dist/httpcomponents/httpcore/KEYS">KEYS</a>
+    <a href="http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES.txt">Release Notes</a>
+    <br/>
+    <p>Binary</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-bin.tar.gz">4.3-beta2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-bin.zip">4.3-beta2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-bin.zip.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-osgi-bin.tar.gz">4.3-beta2.tar.gz (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-osgi-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-osgi-bin.zip">4.3-beta2.zip (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-osgi-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.3-beta2-osgi-bin.zip.asc">pgp</a>]
+     </li>
+    </ul>
+    <p>Source</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.3-beta2-src.tar.gz">4.3-beta2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.3-beta2-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.3-beta2-src.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.3-beta2-src.zip">4.3-beta2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.3-beta2-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.3-beta2-src.zip.asc">pgp</a>]
+     </li>
+    </ul>
+  </subsection>
+  
+  <subsection name="HttpAsyncClient 4.0-beta4">
+    <a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/KEYS">KEYS</a>
+    <a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES.txt">Release Notes</a>
+    <br/>
+    <p>Binary</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-beta4-bin.tar.gz">4.0-beta4.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-beta4-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-beta4-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-beta4-bin.zip">4.0-beta4.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-beta4-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-beta4-bin.zip.asc">pgp</a>]
+     </li>
+    </ul>
+    <p>Source</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-beta4-src.tar.gz">4.0-beta4.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-beta4-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-beta4-src.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-beta4-src.zip">4.0-beta4.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-beta4-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-beta4-src.zip.asc">pgp</a>]
+     </li>
+    </ul>
+  </subsection>
+
+  <subsection name="Older releases">
+    <p>
+    Older releases are available from the 
+    <a href="http://archive.apache.org/dist/httpcomponents/">archives</a>. 
+    </p>
+  </subsection>
+
+  </section>
+
+  </body>
+
+</document>
+

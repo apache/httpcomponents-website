@@ -1,0 +1,62 @@
+~~ ====================================================================
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~ 
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~ 
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~ ====================================================================
+~~ 
+~~ This software consists of voluntary contributions made by many
+~~ individuals on behalf of the Apache Software Foundation.  For more
+~~ information on the Apache Software Foundation, please see
+~~ <http://www.apache.org/>.
+
+    ----------
+    HttpComponents Project Goals
+    ----------
+    ----------
+    ----------
+
+Project goals
+
+    The key source of inspiration for Apache HttpComponents is the experience gained in
+    developing and supporting Jakarta Commons HttpClient. The following set of goals are
+    derived from our experience with HttpClient and serve as the philosophical foundation 
+    to HttpComponents.
+    
+    {{{./commons-httpclient-lessons.html}Lessons Learned - Jakarta Commons HttpClient}}
+
+* {Componentized design}
+
+    * People use HTTP in varied and unexpected ways such as spiders, HTTP proxies, web servers, 
+    web clients, and many more. It is not feasible that one monolithic library could cater to
+    all possible use scenarios. Instead HttpComponents provides a toolkit of loosely coupled,
+    generic components that can be assembled for any task, large or small.
+
+    * HTTP functionality is broken into a set of key components that focus on making the
+    most commonly used code the simplest.  Specialized code has been separated to
+    enhance API clarity while still providing the features needed for complex applications.
+
+    * HttpComponents is assembled from groups of cooperating classes rather than through inheritance.
+    This makes it quite simple for someone to completely customize a single aspect of the HTTP
+    process without affecting other unrelated tasks.  It also makes it simple to make changes
+    that cut across different kinds of requests (GETs, POSTs, etc).  Again this design remedies
+    one of the {{{./commons-httpclient-lessons.html}major deficiencies}} discovered in the HttpClient 
+    model.
+
+* {Minimal external dependencies}
+
+    * HttpComponents strives to minimize the use of external dependencies in the low level
+    components to make them easier to integrate with complex systems that may depend on a
+    significant number of external libraries. 
