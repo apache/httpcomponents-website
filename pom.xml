@@ -31,7 +31,7 @@
     <version>6</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>httpcomponents-core</artifactId>
+  <artifactId>website</artifactId>
   <name>HttpComponents WebSite</name>
   <version>1-SNAPSHOT</version>
   <description>HttpComponents WebSite</description>
