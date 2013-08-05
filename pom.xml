@@ -66,4 +66,26 @@
     </site>
   </distributionManagement>
 
+  <reporting>
+    <plugins>
+        <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-project-info-reports-plugin</artifactId>
+           <version>${hc.project-info.version}</version><!-- needed for mvn site -->
+           <!-- in particular, we don't want mailing-list to be inherited -->
+           <inherited>false</inherited>
+           <reportSets>
+             <reportSet>
+               <reports>
+                 <report>mailing-list</report>
+                 <report>issue-tracking</report>
+                 <report>license</report>
+                 <report>project-team</report>
+               </reports>
+             </reportSet>
+           </reportSets>
+         </plugin>
+    </plugins>
+  </reporting>
+
 </project>
