@@ -30,6 +30,33 @@
 
 HttpComponents Project News
 
+*  5 August 2013 - HttpComponents HttpCore 4.3 released
+
+   This is the first stable (GA) release of HttpCore 4.3. The most notable features in the 4.3
+   branch are:
+
+   * Deprecation of preference and configuration API based on HttpParams interface in favor of
+     constructor injection and plain configuration objects.
+
+   * Reliance on object immutability instead of access synchronization for thread safety.
+     Several old classes whose instances can be shared by multiple request exchanges have
+     been replaced by immutable equivalents.
+ 
+   []
+
+   The 4.3 branch also contains performance optimizations such as reduced TCP packet 
+   fragmentation and more efficient lease / release operations for pools of persistent 
+   connections on the client side.
+
+   This release also includes all fixes from the 4.2.x release branch.
+
+*  5 August 2013 - HttpComponents HttpCore 4.2.5 released
+
+    This is a maintenance release that fixes a number of bugs found in NIO components since 4.2.4.
+    Users of earlier versions of HttpCore 4.2 are advised to upgrade.
+
+    This is likely to be the last release in the 4.2.x branch.
+  
 *  12 June 2013 - HttpComponents HttpClient 4.3-beta2 released
 
     This is the second BETA release of HttpClient 4.3. The 4.3 branch enhances HttpClient in 
