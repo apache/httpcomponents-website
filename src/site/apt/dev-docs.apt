@@ -41,9 +41,6 @@ Release Process
    * {{{http://wiki.apache.org/HttpComponents/HttpComponentsCoreReleaseProcess}
         HttpComponents Core Release Process}}
 
-   * {{{http://wiki.apache.org/HttpComponents/CommonsHttpClientReleaseProcess}
-        Commons HttpClient 3.1 Process}}
-
 Web Site Updates
 
    Instructions for updating the various sections of our website are

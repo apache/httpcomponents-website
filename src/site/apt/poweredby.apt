@@ -27,14 +27,6 @@
 
 Powered by HttpComponents
 
-* Limewire
-
-    {{{http://www.limewire.com/}LimeWire}} uses HttpCore & HttpCore NIO 
-    extensions to power all of its uploads (and hopefully soon, all of its 
-    downloads). Sam Berlin, Senior Software Developer with LimeWire said: 
-    "HttpComponents has been a breeze to work with, and integrates 
-    seamlessly with LimeWire's custom NIO layer".
-
 * Apache Synapse
     
     {{{http://ws.apache.org/synapse/}Apache Synapse}} uses HttpComponents 
@@ -48,11 +40,6 @@ Powered by HttpComponents
     The HttpComponents team have always been extremely helpful and the 
     quality of the code speaks for itself". 
 
-* Google Android
-
-    {{{http://code.google.com/android/} Google Android}} ships with HttpCore
-    and HttpClient 4.0 bundled.
-    
 * jfireeagle
  
     {{{http://code.google.com/p/jfireeagle} jfireeagle}} is a Java client library for Yahoo {{{http://fireeagle.yahoo.net} Fire Eagle}}

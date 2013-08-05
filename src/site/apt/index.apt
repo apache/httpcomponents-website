@@ -64,10 +64,8 @@ HttpComponents Overview
 
     * HttpCore Tutorial ( {{{./httpcomponents-core-ga/tutorial/html}HTML}} 
       / {{{./httpcomponents-core-ga/tutorial/pdf/httpcore-tutorial.pdf}PDF}} 
-      / {{{http://svn.apache.org/repos/asf/httpcomponents/httpcore/trunk/httpcore-contrib/docs/translated-tutorial/httpcore-tutorial-simplified-chinese.pdf}PDF - Chinese translation}} 
-      kindly contributed by Nanlei; last updated Dec 10th, 2010)
     
-    * HttpCore {{{./httpcomponents-core-ga/examples.html}Samples}}
+    * HttpCore {{{./httpcomponents-core-ga/examples.html}Examples}}
     
 * {HttpComponents Client}
 

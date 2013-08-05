@@ -78,11 +78,11 @@
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
-      <item name="HttpClient (GA)" href="httpcomponents-client-ga/index.html"/>
-      <item name="HttpClient (DEV)" href="httpcomponents-client-dev/index.html"/>
-      <item name="HttpCore (GA)" href="httpcomponents-core-ga/index.html"/>
-      <item name="HttpCore (DEV)" href="httpcomponents-core-dev/index.html"/>
-      <item name="HttpAsyncClient (DEV)" href="httpcomponents-asyncclient-dev/index.html"/>
+      <item name="HttpClient 4.2 (GA)" href="httpcomponents-client-ga/index.html"/>
+      <item name="HttpClient 4.3 (DEV)" href="httpcomponents-client-dev/index.html"/>
+      <item name="HttpCore 4.3 (GA)" href="httpcomponents-core-4.3.x/index.html"/>
+      <item name="HttpCore 4.2 (GA)" href="httpcomponents-core-4.2.x/index.html"/>
+      <item name="HttpAsyncClient 4.0 (DEV)" href="httpcomponents-asyncclient-dev/index.html"/>
     </menu>
     <menu name="Legacy">
       <item name="Commons HttpClient" href="httpclient-legacy/index.html"/>
@@ -90,8 +90,6 @@
     <menu name="Project">
       <item name="Status" href="status.html"/>
       <item name="Charter" href="charter.html"/>
-      <item name="Bylaws" href="bylaws.html"/>
-      <item name="Goals" href="goals.html"/>
     </menu>
 
     <!-- inherited -->
