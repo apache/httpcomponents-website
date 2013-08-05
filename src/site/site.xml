@@ -80,8 +80,18 @@
     <menu name="Components">
       <item name="HttpClient 4.2 (GA)" href="httpcomponents-client-ga/index.html"/>
       <item name="HttpClient 4.3 (DEV)" href="httpcomponents-client-dev/index.html"/>
-      <item name="HttpCore 4.3 (GA)" href="httpcomponents-core-4.3.x/index.html"/>
-      <item name="HttpCore 4.2 (GA)" href="httpcomponents-core-4.2.x/index.html"/>
+      <item name="HttpCore 4.3 (GA)" collapse="true" href="httpcomponents-core-4.3.x/index.html">
+        <item name="Tutorial" href="httpcomponents-core-4.3.x/tutorial/html/index.html"/>
+        <item name="Examples" href="httpcomponents-core-4.3.x/examples.html"/>
+        <item name="Download" href="httpcomponents-core-4.3.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-core-4.3.x/project-info.html"/>
+      </item>
+      <item name="HttpCore 4.2 (GA)" collapse="true" href="httpcomponents-core-4.2.x/index.html">
+        <item name="Tutorial" href="httpcomponents-core-4.2.x/tutorial/html/index.html"/>
+        <item name="Examples" href="httpcomponents-core-4.2.x/examples.html"/>
+        <item name="Download" href="httpcomponents-core-4.2.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-core-4.2.x/project-info.html"/>
+      </item>
       <item name="HttpAsyncClient 4.0 (DEV)" href="httpcomponents-asyncclient-dev/index.html"/>
     </menu>
     <menu name="Legacy">
