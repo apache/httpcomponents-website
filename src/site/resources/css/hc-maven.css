@@ -89,6 +89,12 @@ h4 {
  font-size: 13px;
 }
 
+tr {
+ margin-left: 4px;
+ margin-top: 8px;
+ margin-bottom: 4px;
+}
+
 div#bodyColumn {
  margin-top: 0px;
  margin-left: 158px;
