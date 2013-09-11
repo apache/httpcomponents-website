@@ -64,7 +64,6 @@
       <item name="License" href="http://www.apache.org/licenses/"/>
       <item name="Download" href="downloads.cgi"/>
       <item name="Mailing Lists" href="mail.html"/>
-      <item name="User documents" href="user-docs.html"/>
       <item name="Developer documents" href="dev-docs.html"/>
       <item name="Wiki (external)" href="http://wiki.apache.org/HttpComponents/"/>
       <item name="Security" href="http://www.apache.org/security/"/>
@@ -78,8 +77,26 @@
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
-      <item name="HttpClient 4.2 (GA)" href="httpcomponents-client-ga/index.html"/>
-      <item name="HttpClient 4.3 (DEV)" href="httpcomponents-client-dev/index.html"/>
+      <item name="HttpClient 4.3 (DEV)" collapse="true" href="httpcomponents-client-4.3.x/index.html">
+        <item name="Quick Start" href="httpcomponents-client-4.3.x/quickstart.html"/>
+        <item name="Tutorial" href="httpcomponents-client-4.3.x/tutorial/html/index.html"/>
+        <item name="Examples" href="httpcomponents-client-4.3.x/examples.html"/>
+        <item name="Programming Primer" href="httpcomponents-client-4.3.x/primer.html"/>
+        <item name="NTLM Guide" href="httpcomponents-client-4.3.x/ntlm.html"/>
+        <item name="Logging Guide" href="httpcomponents-client-4.3.x/logging.html"/>
+        <item name="Download" href="httpcomponents-client-4.3.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-client-4.3.x/project-info.html"/>
+      </item>
+      <item name="HttpClient 4.2 (GA)" collapse="true" href="httpcomponents-client-4.2.x/index.html">
+        <item name="Quick Start" href="httpcomponents-client-4.2.x/quickstart.html"/>
+        <item name="Tutorial" href="httpcomponents-client-4.2.x/tutorial/html/index.html"/>
+        <item name="Examples" href="httpcomponents-client-4.2.x/examples.html"/>
+        <item name="Programming Primer" href="httpcomponents-client-4.2.x/primer.html"/>
+        <item name="NTLM Guide" href="httpcomponents-client-4.2.x/ntlm.html"/>
+        <item name="Logging Guide" href="httpcomponents-client-4.2.x/logging.html"/>
+        <item name="Download" href="httpcomponents-client-4.2.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-client-4.2.x/project-info.html"/>
+      </item>
       <item name="HttpCore 4.3 (GA)" collapse="true" href="httpcomponents-core-4.3.x/index.html">
         <item name="Tutorial" href="httpcomponents-core-4.3.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-core-4.3.x/examples.html"/>

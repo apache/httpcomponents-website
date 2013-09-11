@@ -95,6 +95,11 @@ tr {
  font-size: 13px;
 }
 
+pre {
+ background-color: #eee;
+ padding: 10px 10px 10px 10px;
+}
+
 div#bodyColumn {
  margin-top: 0px;
  margin-left: 158px;

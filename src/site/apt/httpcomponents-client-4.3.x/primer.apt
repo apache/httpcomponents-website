@@ -109,64 +109,33 @@ Client HTTP Programming Primer
 
 * {Not a Browser}
 
-    HttpClient is not a browser. Here's the difference.
-
-    {<<Browser>>}
-
-[images/browser.png] Browser components
-
-    The figure shows some of the components you will find in a browser.
-    To the left, there is the user interface. The browser needs a rendering
+    HttpClient is not a browser. It is an HTTP communication library 
+    and as such it provides only a subset of functions expected from 
+    a common browser application. The most fundamental difference is 
+    absence of user interface in HttpClient. The browser needs a rendering
     engine to display pages, and to interpret user input such as mouse clicks
     somewhere on the displayed page. There is a layout engine which computes
     how an HTML page should be displayed, including cascading style sheets
     and images. A JavaScript interpreter runs JavaScript code embedded in
     or referenced from HTML pages. Events from the user interface are passed
-    to the JavaScript interpreter for processing.
-    On the top, there are interfaces for plugins that can handle Applets,
-    embedded media objects like PDF files, Quicktime movies and Flash animations,
-    or ActiveX controls that can do anything.
+    to the JavaScript interpreter for processing. On top of that, there are 
+    interfaces for plugins that can handle Applets, embedded media objects 
+    like PDF files, Quicktime movies and Flash animations, or ActiveX 
+    controls that can do anything. HttpClient can only be used 
+    programmatically through its APIs to transmit and receive HTTP messages. 
+    HttpClient is also completely content agnostic. It can transfer message 
+    content but it is unable to render or process it in any fashion.
 
-    In the center of the figure you can find internal components. Browsers
-    have a cache of recently accessed documents and image files. They need
-    to remember cookies and passwords entered by the user. Such information
-    can be kept in memory or stored persistently in the file system at the
-    bottom of the figure, to be available again when the browser is restarted.
-    Certificates for secure communication are almost always stored persistently.
-    To the right of the figure is the network. Browsers support many protocols
-    on different levels of abstraction. There are application protocols
-    such as FTP and HTTP to retrieve documents from servers, and transport
-    layer protocols such as TLS/SSL and Socks to establish connections for
-    the application protocols.
-
-    One characteristic of browsers that is not shown in the figure is tolerance
-    for bad input. There needs to be tolerance for invalid user input to make
+    Another major difference is tolerance for bad input or HTTP standard
+    violations. There needs to be tolerance for invalid user input to make
     the browser user friendly. There also needs to be tolerance for malformed
     documents retrieved from servers, and for flaws in server behavior when
     executing protocols, to make as many websites as possible accessible to
-    the user.
-
-    {<<HTTP Client>>}
-
-[images/httpclient.png] HTTP Client components
-
-    The figure shows some of the components you will find in a browser,
-    and highlights the scope of HttpClient. The primary responsibility
-    of HttpClient is the HTTP protocol, executed directly or through an
-    HTTP proxy. It provides interfaces and default implementations for
-    cookie and password management, but not for persisting such data.
-    User interfacing, HTML parsing, plugins or non-HTTP application level
-    protocols are not in the scope of HttpClient. It does provide interfaces
-    to plug in transport layer protocols, but it does not implement such
-    protocols.
-
-    All the rest of a browser's functionality you require needs to be
-    provided by your application. HttpClient executes HTTP requests, but it
-    will not and can not assemble them. Since HttpClient does not interface
-    with the user, nor interpret content such as HTML files, there is
-    little or no tolerance for bad data passed to the API. There is some
-    tolerance for flaws in server behavior, but there are limits to the
-    deviations HttpClient can handle.
+    the user. HttpClient is however strives to adhere to the HTTP standard
+    specification and related standards as close and as possible by default.
+    It also provides means to relaxing some of the restrictions imposed
+    by the specification where permissible or required for compatibility
+    with non-compliant HTTP origin or proxy servers.  
 
 * {Terminology}
 
