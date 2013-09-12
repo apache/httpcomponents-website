@@ -46,7 +46,7 @@
    <code>MD5</code> link downloads the checksum from the main site.
   </p>
 
-  <subsection name="HttpClient 4.3">
+  <subsection name="HttpClient 4.3 (GA)">
     <a href="http://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
     <a href="http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.3.x.txt">Release Notes</a>
     <br/>
