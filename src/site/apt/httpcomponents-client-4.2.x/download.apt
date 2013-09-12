@@ -36,53 +36,19 @@ HttpClient Downloads
     {{{http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.2.x.txt}Release Notes}} -
     {{{http://www.apache.org/licenses/LICENSE-2.0.html}License}}
 
-{Dependency management with Maven}
+{Dependency management}
 
-    If you are using {{{http://maven.apache.org}Maven}} for your project, you can create a dependency 
-    in your {{{http://maven.apache.org/guides/introduction/introduction-to-the-pom.html}pom.xml}} 
-    by adding the following block to the dependency descriptor:
+    If you are using a dependency manager for your project such as 
+    {{{http://maven.apache.org}Apache Maven}} or 
+    {{{http://ant.apache.org/projects/ivy.html}Apache Ivy}}, 
+    you can create a dependency on HttpClient modules by using this information:
 
-* {HttpComponents Client 4.2.5}
+    {{{./httpclient/dependency-info.html}HttpClient}}
 
--------------------------
-  <dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>httpclient</artifactId>
-    <version>4.2.5</version>
-    <scope>compile</scope>
-  </dependency>
--------------------------
+    {{{./httpclient-cache/dependency-info.html}HttpClient Cache}}
 
-* {HttpComponents HttpMime 4.2.5}
+    {{{./httpmime/dependency-info.html}HttpMime}}
 
--------------------------
-  <dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>httpmime</artifactId>
-    <version>4.2.5</version>
-    <scope>compile</scope>
-  </dependency>
--------------------------
+    {{{./fluent-hc/dependency-info.html}Fluent HC}}
 
-* {HttpComponents HttpClient Cache 4.2.5}
-
--------------------------
-  <dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>httpclient-cache</artifactId>
-    <version>4.2.5</version>
-    <scope>compile</scope>
-  </dependency>
--------------------------
-
-* {HttpComponents HttpClient Fluent 4.2.5}
-
--------------------------
-  <dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>fluent-hc</artifactId>
-    <version>4.2.5</version>
-    <scope>compile</scope>
-  </dependency>
--------------------------
 

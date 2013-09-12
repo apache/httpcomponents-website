@@ -42,9 +42,17 @@ HttpComponents Project Status
     actively developed. No new releases are planned with exception of emergency fixes for severe 
     bugs and security issues.
 
+* {HttpComponents HttpClient 4.3.x}
+
+    HttpClient 4.3.x branch is considered stable and production ready. It is being actively 
+    maintained and supported. Users of all versions of HttpClient are advised to upgrade to the 
+    latest release of the 4.3 series. 
+
 * {HttpComponents HttpClient 4.2.x}
 
-    HttpClient 4.2.x branch is considered stable and production ready.
+    HttpClient 4.2.x branch is considered stable and production ready. It is no longer being 
+    actively developed. No new releases are planned with exception of emergency fixes for severe 
+    bugs and security issues.
 
 * {HttpComponents HttpAsyncClient}
 

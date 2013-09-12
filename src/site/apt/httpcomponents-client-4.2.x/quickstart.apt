@@ -30,29 +30,15 @@
 
 HttpClient Quick Start
 
-    [[1]] Download 'Binary' package of the latest official release from 
-    the {{{http://hc.apache.org/downloads.cgi} project download page}}. 
-  
-    There should be 7 jars in total (components marked with (*) include additional features and 
-    are optional) on the classpath.
-  
-    * commons-logging-<x.x.x>.jar
-  
-    * commons-codec-<x.x.x>.jar
-  
-    * httpcore-<x.x.x>.jar
-  
-    * httpclient-<x.x.x>.jar
-  
-    * httpmime-<x.x.x>.jar (*)
-    
-    * httpclient-cache-<x.x.x>.jar (*)
+    [[1]] Download 'Binary' package of the latest HttpClient 4.2 release or configure
+    dependency on {{{./httpclient/dependency-info.html}HttpClient}} and 
+    {{{./fluent-hc/dependency-info.html}Fluent HC}} modules using a dependency manager of your 
+    choice as described {{{./download.html}here}}. 
 
-    * fluent-hc-<x.x.x>.jar (*)
+    [[1]] HttpClient 4.2 requires Java 1.5 or newer. 
 
-    []
-
-    [[2]] The below code fragment illustrates the execution of HTTP GET and POST requests using the HttpClient native API.
+    [[1]] The below code fragment illustrates the execution of HTTP GET and POST requests using 
+    the HttpClient native API.
 
 -------------    
 
@@ -99,7 +85,7 @@ try {
     Source can be downloaded 
     {{{./httpclient/examples/org/apache/http/examples/client/QuickStart.java}here}}
 
-    [[3]] The same requests can be executed using a simpler, albeit less flexible, fluent API.
+    [[1]] The same requests can be executed using a simpler, albeit less flexible, fluent API.
 
 -------------    
 
@@ -117,14 +103,14 @@ Request.Post("http://targethost/login")
     Source can be downloaded 
     {{{./httpclient/examples/org/apache/http/examples/client/fuent/FluentQuickStart.java}here}}
     
-    [[4]] {{{./examples.html}HttpClient Examples}} - a set of examples demonstrating some of 
+    [[1]] {{{./examples.html}HttpClient Examples}} - a set of examples demonstrating some of 
     the more complex behavior. 
 
-    [[5]] {{{./tutorial/html/index.html}HttpClient Tutorial}} - gives a detailed examination of the 
+    [[1]] {{{./tutorial/html/index.html}HttpClient Tutorial}} - gives a detailed examination of the 
     HttpClient API, which was written in close accordance with the (sometimes not very intuitive) 
     HTTP specification/standard. A copy is also shipped with the release.  
     {{{./tutorial/pdf/httpclient-tutorial.pdf}A PDF version}} is also available
 
-    [[6]] {{{./primer.html}HttpClient Primer}} - explains the scope of HttpClient.
+    [[1]] {{{./primer.html}HttpClient Primer}} - explains the scope of HttpClient.
     Note that HttpClient is not a browser.  It lacks the UI, HTML renderer and a JavaScript engine
     that a browser will possess.   
