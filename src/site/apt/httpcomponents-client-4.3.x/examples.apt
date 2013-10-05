@@ -87,18 +87,6 @@ HttpClient Examples
     
     This example demonstrates how to create secure connections with a custom SSL context.
 
-    * {{{./httpclient/examples/org/apache/http/examples/client/ClientGZipContentCompression.java}Custom protocol interceptors}}
-
-    This example shows the use of protocol interceptors to transparently modify properties of HTTP 
-    messages sent / received by the HTTP client.
- 
-    In this particular case HTTP client is made capable of transparent content GZIP compression by 
-    adding two protocol interceptors: a request interceptor that adds 'Accept-Encoding: gzip' header
-    to all outgoing requests and a response interceptor that automatically expands compressed 
-    response entities by wrapping them with a uncompressing decorator class. The use of protocol 
-    interceptors makes content compression completely transparent to the consumer of the HttpClient
-    interface.
-    
     * {{{./httpclient/examples/org/apache/http/examples/client/ClientPreemptiveBasicAuthentication.java}Preemptive BASIC authentication}}
     
     This example shows how HttpClient can be customized to authenticate preemptively using BASIC 
