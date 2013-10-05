@@ -109,7 +109,10 @@
         <item name="Download" href="httpcomponents-core-4.2.x/download.html"/>
         <item name="Project Info" href="httpcomponents-core-4.2.x/project-info.html"/>
       </item>
-      <item name="HttpAsyncClient 4.0 (DEV)" href="httpcomponents-asyncclient-dev/index.html"/>
+      <item name="HttpAsyncClient 4.0" collapse="true" href="httpcomponents-asyncclient-4.0.x/index.html">
+        <item name="Examples" href="httpcomponents-asyncclient-4.0.x/examples.html"/>
+        <item name="Download" href="httpcomponents-asyncclient-4.0.x/download.html"/>
+      </item>
     </menu>
     <menu name="Legacy">
       <item name="Commons HttpClient" href="httpclient-legacy/index.html"/>
