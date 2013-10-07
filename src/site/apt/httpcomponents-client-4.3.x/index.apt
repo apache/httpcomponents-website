@@ -61,6 +61,18 @@ HttpClient Overview
     [[1]] {{{./primer.html}HttpClient Primer}} - explains the scope of HttpClient.
     Note that HttpClient is not a browser.  It lacks the UI, HTML renderer and a JavaScript engine
     that a browser will possess. 
+
+    [[1]] Project reports
+
+    * {{{./httpclient/project-reports.html}HttpClient}}
+
+    * {{{./fluent-hc/project-reports.html}HC Fluent}}
+
+    * {{{./httpmime/project-reports.html}HttpMime}}
+
+    * {{{./httpclient-cache/project-reports.html}HttpClient Cache}}
+   
+    * {{{./httpclient-osgi/project-reports.html}HttpClient OSGi}}
    
 {Features}
 

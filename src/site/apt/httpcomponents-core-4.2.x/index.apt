@@ -42,13 +42,15 @@ HttpCore Overview
 
 {Documentation}
 
-    * HttpCore Tutorial ( {{{./tutorial/html/index.html}HTML}} / {{{./tutorial/pdf/httpcore-tutorial.pdf}PDF}} )
+    [[1]] HttpCore Tutorial ( {{{./tutorial/html/index.html}HTML}} / {{{./tutorial/pdf/httpcore-tutorial.pdf}PDF}} )
     
-    * Some examples of HttpCore components in action can be found {{{./examples.html}here}}
+    [[1]] Some examples of HttpCore components in action can be found {{{./examples.html}here}}
 
-    * HttpCore {{{./httpcore/apidocs/index.html}Javadocs}}
+    [[1]] Project reports
 
-    * HttpCore NIO {{{./httpcore-nio/apidocs/index.html}Javadocs}}
+    * {{{./httpcore/project-reports.html}HttpCore}}
+
+    * {{{./httpcore-nio/project-reports.html}HttpCore NIO}}
 
 {Standards Compliance}
 
