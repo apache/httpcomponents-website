@@ -30,7 +30,12 @@
 
 HttpComponents Project News
 
-*  12 June 2013 - HttpComponents HttpClient 4.3 (GA) released
+*  7 October 2013 - HttpComponents HttpClient 4.3.1 (GA) released
+
+    This is a maintenance release that addresses a number of issues reported since release 4.3,
+    including one major security issue. Users of HttpClient 4.3 are strongly advised to upgrade.
+
+*  12 September 2013 - HttpComponents HttpClient 4.3 (GA) released
 
     This is the first stable (GA) release of HttpClient 4.3. The 4.3 branch enhances HttpClient 
     in several key areas and includes several notable features and improvements: 
