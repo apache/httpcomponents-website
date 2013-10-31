@@ -30,7 +30,7 @@
 
 HttpComponents Project News
 
-*  31 October - HttpComponents HttpAsyncClient 4.0 (GA) released
+*  31 October 2013 - HttpComponents HttpAsyncClient 4.0 (GA) released
 
     This is the first stable (GA) release of Apache HttpAsyncClient 4.0. HttpAsyncClient is 
     a library for asynchronous client-side HTTP communication built on top of HttpCore NIO 
