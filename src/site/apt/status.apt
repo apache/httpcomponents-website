@@ -36,27 +36,16 @@ HttpComponents Project Status
     maintained and supported. Users of all versions of HttpCore are advised to upgrade to the 
     latest release of the 4.3 series. 
 
-* {HttpComponents HttpCore 4.2.x}
-
-    HttpCore 4.2.x branch is considered stable and production ready. It is no longer being 
-    actively developed. No new releases are planned with exception of emergency fixes for severe 
-    bugs and security issues.
-
 * {HttpComponents HttpClient 4.3.x}
 
     HttpClient 4.3.x branch is considered stable and production ready. It is being actively 
     maintained and supported. Users of all versions of HttpClient are advised to upgrade to the 
     latest release of the 4.3 series. 
 
-* {HttpComponents HttpClient 4.2.x}
+* {HttpComponents HttpAsyncClient 4.0.x}
 
-    HttpClient 4.2.x branch is considered stable and production ready. It is no longer being 
-    actively developed. No new releases are planned with exception of emergency fixes for severe 
-    bugs and security issues.
-
-* {HttpComponents HttpAsyncClient}
-
-    HttpAsyncClient trunk is considered stable enough but minor API changes can be expected.
+    HttpAsyncClient 4.0.x branch is considered stable and production ready. It is being actively 
+    maintained and supported. 
 
 * {Commons HttpClient 3.1.x}
 

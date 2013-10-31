@@ -77,7 +77,7 @@
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
-      <item name="HttpClient 4.3 (GA)" collapse="true" href="httpcomponents-client-4.3.x/index.html">
+      <item name="HttpClient 4.3" collapse="true" href="httpcomponents-client-4.3.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-4.3.x/quickstart.html"/>
         <item name="Tutorial" href="httpcomponents-client-4.3.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-client-4.3.x/examples.html"/>
@@ -87,7 +87,7 @@
         <item name="Download" href="httpcomponents-client-4.3.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-4.3.x/project-info.html"/>
       </item>
-      <item name="HttpClient 4.2 (GA)" collapse="true" href="httpcomponents-client-4.2.x/index.html">
+      <item name="HttpClient 4.2" collapse="true" href="httpcomponents-client-4.2.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-4.2.x/quickstart.html"/>
         <item name="Tutorial" href="httpcomponents-client-4.2.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-client-4.2.x/examples.html"/>
@@ -97,21 +97,23 @@
         <item name="Download" href="httpcomponents-client-4.2.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-4.2.x/project-info.html"/>
       </item>
-      <item name="HttpCore 4.3 (GA)" collapse="true" href="httpcomponents-core-4.3.x/index.html">
+      <item name="HttpCore 4.3" collapse="true" href="httpcomponents-core-4.3.x/index.html">
         <item name="Tutorial" href="httpcomponents-core-4.3.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-core-4.3.x/examples.html"/>
         <item name="Download" href="httpcomponents-core-4.3.x/download.html"/>
         <item name="Project Info" href="httpcomponents-core-4.3.x/project-info.html"/>
       </item>
-      <item name="HttpCore 4.2 (GA)" collapse="true" href="httpcomponents-core-4.2.x/index.html">
+      <item name="HttpCore 4.2" collapse="true" href="httpcomponents-core-4.2.x/index.html">
         <item name="Tutorial" href="httpcomponents-core-4.2.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-core-4.2.x/examples.html"/>
         <item name="Download" href="httpcomponents-core-4.2.x/download.html"/>
         <item name="Project Info" href="httpcomponents-core-4.2.x/project-info.html"/>
       </item>
       <item name="HttpAsyncClient 4.0" collapse="true" href="httpcomponents-asyncclient-4.0.x/index.html">
+        <item name="Quick Start" href="httpcomponents-asyncclient-4.0.x/quickstart.html"/>
         <item name="Examples" href="httpcomponents-asyncclient-4.0.x/examples.html"/>
         <item name="Download" href="httpcomponents-asyncclient-4.0.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-asyncclient-4.0.x/project-info.html"/>
       </item>
     </menu>
     <menu name="Legacy">

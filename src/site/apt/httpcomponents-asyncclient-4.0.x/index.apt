@@ -46,8 +46,20 @@ HttpAsyncClient Overview
 
 {Documentation}
 
-    * Some examples of HttpAsyncClient in action can be found {{{./examples.html}here}}
+    [[1]] {{{./quickstart.html}Quick Start}} - contains a simple, complete example of asynchronous
+    request execution.
+
+    [[1]] {{{./examples.html}HttpAsyncClient Examples}} - a set of examples demonstrating some of 
+    the more complex behavior. 
     
+    [[1]] Project reports
+
+    * {{{./httpasyncclient/project-reports.html}HttpAsyncClient}}
+
+    * {{{./httpasyncclient-cache/project-reports.html}HttpAsyncClient Cache}}
+   
+    * {{{./httpasyncclient-osgi/project-reports.html}HttpAsyncClient OSGi}}
+   
 {Features}
 
     * Standards based, pure Java, implementation of HTTP versions 1.0 and 1.1

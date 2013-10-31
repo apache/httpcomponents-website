@@ -62,7 +62,7 @@ HttpComponents Overview
     throughput is less important than the ability to handle thousands of simultaneous HTTP 
     connections in a resource efficient manner.
 
-    * HttpCore Tutorial ( {{{./httpcomponents-core-ga/tutorial/html}HTML}} 
+    * HttpCore Tutorial {{{./httpcomponents-core-ga/tutorial/html}HTML}} 
       / {{{./httpcomponents-core-ga/tutorial/pdf/httpcore-tutorial.pdf}PDF}} 
     
     * HttpCore {{{./httpcomponents-core-ga/examples.html}Examples}}
@@ -75,10 +75,8 @@ HttpComponents Overview
     is a successor of and replacement for {{{http://hc.apache.org/httpclient-legacy/index.html} 
     Commons HttpClient 3.x}}. Users of Commons HttpClient are strongly encouraged to upgrade.
 
-    * HttpClient Tutorial ( {{{./httpcomponents-client-ga/tutorial/html}HTML}} 
+    * HttpClient Tutorial {{{./httpcomponents-client-ga/tutorial/html}HTML}} 
       / {{{./httpcomponents-client-ga/tutorial/pdf/httpclient-tutorial.pdf}PDF}}
-      / {{{http://svn.apache.org/repos/asf/httpcomponents/httpclient/trunk/httpclient-contrib/docs/translated-tutorial/httpclient-tutorial-simplified-chinese.pdf} PDF - Chinese translation}} 
-      kindly contributed by Nanlei; last updated Dec 1st, 2010)
     
     * HttpClient {{{./httpcomponents-client-ga/examples.html}Samples}}
     

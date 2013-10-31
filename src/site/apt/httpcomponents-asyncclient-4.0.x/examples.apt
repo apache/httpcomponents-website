@@ -30,26 +30,65 @@
 
 HttpAsyncClient Examples
 
-    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchange.java}Asynchronous 
-      HTTP exchange}}
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchange.java}
+    Asynchronous HTTP exchange}}
 
     This example demonstrates a basic asynchronous HTTP request / response exchange. 
     Response content is buffered in memory for simplicity.
 
-    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchangeStreaming.java}Event based 
-      content streaming}}
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchangeStreaming.java}
+    Event based content streaming}}
     
     This example demonstrates an asynchronous HTTP request / response exchange with a full content 
     streaming.
 
-    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchangeFutureCallback.java}Concurrent 
-      asynchronous HTTP exchanges}}
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchangeFutureCallback.java}
+    Concurrent asynchronous HTTP exchanges}}
     
     This example demonstrates a fully asynchronous execution of multiple HTTP exchanges where the 
     result of an individual operation is reported using a callback interface.
 
-    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/ZeroCopyHttpExchange.java}Zero copy 
-      file upload / download}}
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientExecuteProxy.java}
+    Asynchronous request via a proxy}}
+    
+    This example demonstrates how to send an HTTP request via a proxy.
+
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientConfiguration.java}
+    HttpAsyncClient configuration}}
+    
+    This example demonstrates how to customize and configure the most common aspects of HTTP request execution 
+    and connection management.
+    
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientCustomContext.java}
+    Custom execution context}}
+    
+    This example demonstrates the use of a local execution context with custom context settings.
+
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientAuthentication.java}
+    Client authentication}}
+
+    This example demonstrates execution of an HTTP request against a target site that requires user
+    authentication.  
+
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientProxyAuthentication.java}
+    Proxy authentication}}
+    
+    This example shows execution of an HTTP request over a secure connection tunneled through 
+    an authenticating proxy.  
+
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientCustomSSL.java}
+    Custom SSL context}}
+    
+    This example demonstrates how to create secure connections with a custom SSL context.
+
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/ZeroCopyHttpExchange.java}
+    Zero copy file upload / download}}
     
     This example demonstrates how HttpAsyncClient can be used to upload or download files without 
     creating an intermediate content buffer in memory (zero copy file transfer).
+
+    * {{{./httpasyncclient/examples/org/apache/http/examples/nio/client/AsyncClientEvictExpiredConnections.java}
+    Connection eviction}}
+    
+    This example demonstrates how to evict expired and idle connections from the connection pool.
+
