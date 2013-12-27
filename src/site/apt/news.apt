@@ -30,6 +30,11 @@
 
 HttpComponents Project News
 
+*  27 December 2013 - HttpComponents HttpCore 4.3.1 released
+
+    This maintenance release fixes a number of bugs and regressions found since 4.3, mostly in the 
+    NIO transport components. All users of HttpCore 4.3 are advised to upgrade.
+
 *  31 October 2013 - HttpComponents HttpAsyncClient 4.0 (GA) released
 
     This is the first stable (GA) release of Apache HttpAsyncClient 4.0. HttpAsyncClient is 

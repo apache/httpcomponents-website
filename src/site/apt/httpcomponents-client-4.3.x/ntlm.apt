@@ -59,8 +59,12 @@ NTLM support in HttpClient
     at least the following systems:
     
     * Windows Server 2000 and Server 2003 systems, configured to use LM and NTLMv1 authentication
+
     * Windows Server 2003 systems, configured to use NTLMv2 authentication
+
     * Windows Server 2008 R2 systems, configured to use NTLM2SessionResponse authentication
+
+    []
     
     If the current HttpClient NTLM implementation should prove problematic in your environment,
     we'd definitely like to hear about it.  You are also welcome to try an alternative NTLM
