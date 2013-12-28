@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+ -->
 
 <document>
 
@@ -53,22 +71,22 @@
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.tar.gz">4.3.tar.gz</a>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.tar.gz">4.3.1.tar.gz</a>
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.tar.gz.md5">md5</a>]
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.zip">4.3.zip</a>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.zip">4.3.1.zip</a>
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.zip.md5">md5</a>]
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-bin.zip.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.tar.gz">4.3.tar.gz (OSGi bundle)</a>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.tar.gz">4.3.1.tar.gz (OSGi bundle)</a>
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.tar.gz.md5">md5</a>]
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.zip">4.3.zip (OSGi bundle)</a>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.zip">4.3.1.zip (OSGi bundle)</a>
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.zip.md5">md5</a>]
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.3.1-osgi-bin.zip.asc">pgp</a>]
      </li>
@@ -76,12 +94,12 @@
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.tar.gz">4.3.tar.gz</a>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.tar.gz">4.3.1.tar.gz</a>
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.tar.gz.md5">md5</a>]
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.zip">4.3.zip</a>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.zip">4.3.1.zip</a>
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.zip.md5">md5</a>]
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3.1-src.zip.asc">pgp</a>]
      </li>
