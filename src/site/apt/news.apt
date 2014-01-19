@@ -35,6 +35,7 @@ HttpComponents Project News
     HttpClient 4.3.2 (GA) is a maintenance release that delivers a number of improvements 
     as well as bug fixes for issues reported since 4.3.1 release. SNI support for 
     Oracle JRE 1.7+ is being among the most notable improvements. 
+    
     Users of HttpClient 4.3 are encouraged to upgrade.
 
 *  27 December 2013 - HttpComponents HttpCore 4.3.1 released
