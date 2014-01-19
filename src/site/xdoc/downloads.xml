@@ -104,7 +104,7 @@
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3.2-src.zip.asc">pgp</a>]
      </li>
     </ul>
-    <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpclient">here</a></p>
+    <p>Recent releases of HttpClient can be found <a href="[preferred]/httpcomponents/httpclient">here</a></p>
   </subsection>
 
   <subsection name="HttpCore 4.3.1 (GA)">
