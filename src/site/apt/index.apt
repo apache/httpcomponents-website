@@ -80,6 +80,8 @@ HttpComponents Overview
     
     * HttpClient {{{./httpcomponents-client-ga/examples.html}Samples}}
     
+    * HttpClient {{{./httpcomponents-client-4.3.x/android-port.html}port for Android}}
+    
 * {HttpComponents AsyncClient}
 
     {{{./httpcomponents-asyncclient-dev/index.html}Asynch HttpClient}} is a HTTP/1.1 compliant HTTP agent 
