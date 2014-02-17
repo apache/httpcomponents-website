@@ -30,6 +30,11 @@
 
 HttpComponents Project News
 
+*  17 February 2014 - HttpComponents HttpCore 4.3.2 (GA) released
+
+    This maintenance release fixes a number of bugs and regressions found since 4.3, mostly in the 
+    NIO transport components. All users of HttpCore 4.3 are advised to upgrade.
+
 *  19 January 2014 - HttpComponents HttpClient 4.3.2 (GA) released
 
     HttpClient 4.3.2 (GA) is a maintenance release that delivers a number of improvements 
