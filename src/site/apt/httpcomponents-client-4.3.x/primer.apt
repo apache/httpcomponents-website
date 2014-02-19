@@ -43,7 +43,7 @@ Client HTTP Programming Primer
 
     This document has evolved from discussions on the HttpClient mailing lists.
     Although it refers to HttpClient, the concepts described here apply equally
-    to HttpComponents or SUN's {{{http://java.sun.com/j2se/1.4.2/docs/api/java/net/HttpURLConnection.html}HttpURLConnection}} 
+    to HttpComponents or Java's {{{http://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html}HttpURLConnection}} 
     or any other HTTP communication library for any programming language. So you 
     might find it useful even if you're not using Java and HttpClient.
 

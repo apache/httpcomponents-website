@@ -42,7 +42,7 @@ Logging Practices
 
     * {{{http://logging.apache.org/log4j/docs/index.html}Log4J}}
 
-    * {{{http://java.sun.com/j2se/1.4.2/docs/api/java/util/logging/package-summary.html}
+    * {{{http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html}
       java.util.logging}}
 
     * {{{http://commons.apache.org/logging/commons-logging-1.0.4/docs/apidocs/org/apache/commons/logging/impl/SimpleLog.html}
@@ -197,7 +197,7 @@ log4j.logger.org.apache.http.client=DEBUG
 ** {java.util.logging Examples}
 
     Since JDK 1.4 there has been a package 
-    {{{http://java.sun.com/j2se/1.4.2/docs/api/java/util/logging/package-summary.html}
+    {{{http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html}
     java.util.logging}} that provides a logging framework similar to <<<Log4J>>>. By default it 
     reads a config file from <<<$JAVA_HOME/jre/lib/logging.properties>>> which looks like this
     (comments stripped):
@@ -223,7 +223,7 @@ $JAVA_HOME/java -Djava.util.logging.config.file=$HOME/myapp/logging.properties
 -classpath $HOME/myapp/target/classes com.myapp.Main
 --------------------------------------
 
-    Alternatively {{{http://java.sun.com/j2se/1.4.2/docs/api/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream)"}
+    Alternatively {{{http://docs.oracle.com/javase/7/docs/api/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream)"}
     LogManager#readConfiguration(InputStream)}} can be used to pass it the desired configuration.
 
     * Enable header wire + context logging - <<Best for Debugging>>
@@ -280,5 +280,5 @@ org.apache.http.client.level = FINEST
     []
     
     More detailed information is available from the
-    {{{http://java.sun.com/j2se/1.4.2/docs/guide/util/logging/overview.html}
+    {{{http://docs.oracle.com/javase/7/docs/technotes/guides/logging/overview.html}
     Java Logging documentation}}.
