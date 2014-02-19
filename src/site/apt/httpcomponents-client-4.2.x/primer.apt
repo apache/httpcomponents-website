@@ -622,6 +622,7 @@ Client HTTP Programming Primer
     Explains how to define HTML forms and what is submitted to the server.
     Probably easier to digest than the HTML 4.01 Specification.
 
+~~ TODO this URL is broken; so far have not found a replacement
     * {{{http://java.sun.com/developer/technicalArticles/InnerWorkings/BackstageSession/index.html} 
     JDC and Session Management}}: Details of a real site using session tracking, 
     login forms and redirects.
