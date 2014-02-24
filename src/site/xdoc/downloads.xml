@@ -152,7 +152,7 @@
   
   <subsection name="HttpAsyncClient 4.0.1 (GA)">
     <a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/KEYS">KEYS</a>
-    <a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES.txt">Release Notes</a>
+    <a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES-4.0.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
