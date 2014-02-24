@@ -30,6 +30,14 @@
 
 HttpComponents Project News
 
+*  24 February 2014 - HttpComponents HttpAsyncCleint 4.0.1 (GA) released
+
+    This maintenance release fixes a number of bugs including incorrect OSGi bundle metadata
+    found since release 4.0. This release also upgrades HttpCore and HttpClient dependencies to 
+    the latest stable versions. 
+
+    Users of HttpAsyncClient 4.0 are advised to upgrade.
+
 *  17 February 2014 - HttpComponents HttpCore 4.3.2 (GA) released
 
     This maintenance release fixes a number of bugs and regressions found since 4.3.1, mostly 

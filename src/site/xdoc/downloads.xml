@@ -150,34 +150,34 @@
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
   </subsection>
   
-  <subsection name="HttpAsyncClient 4.0 (GA)">
+  <subsection name="HttpAsyncClient 4.0.1 (GA)">
     <a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/KEYS">KEYS</a>
     <a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-bin.tar.gz">4.0.tar.gz</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-bin.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0.1-bin.tar.gz">4.0.1.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0.1-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0.1-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-bin.zip">4.0.zip</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-bin.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0.1-bin.zip">4.0.1.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0.1-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.0.1-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-src.tar.gz">4.0.tar.gz</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-src.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0.1-src.tar.gz">4.0.1.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0.1-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0.1-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-src.zip">4.0.zip</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-src.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0.1-src.zip">4.0.1.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0.1-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.0.1-src.zip.asc">pgp</a>]
      </li>
     </ul>
   </subsection>
