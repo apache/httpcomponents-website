@@ -30,7 +30,7 @@
 
 HttpComponents Project News
 
-*  26 February 2014 - HttpComponents HttpCore 4.3.3 (GA) released
+*  26 February 2014 - HttpComponents HttpClient 4.3.3 (GA) released
 
     HttpClient 4.3.3 (GA) is a bug fix release that fixes a regression introduced by the previous
     release causing a significant performance degradation in compressed content processing.
