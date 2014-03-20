@@ -182,6 +182,24 @@
     </ul>
   </subsection>
 
+  <subsection name="HttpClient for Android 4.3.3 (GA)">
+    <a href="http://www.apache.org/dist/httpcomponents/httpclient-android/KEYS">KEYS</a>
+    <br/>
+    <p>Source</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.3-src.tar.gz">4.3.3.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.3-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.3-src.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.3-src.zip">4.3.3.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.3-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.3-src.zip.asc">pgp</a>]
+     </li>
+    </ul>
+  </subsection>
+
   <subsection name="Older releases">
     <p>
     Old releases are available from the 

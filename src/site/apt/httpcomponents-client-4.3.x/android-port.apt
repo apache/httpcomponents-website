@@ -50,6 +50,17 @@ HttpClient for Android
     Apache HttpClient 4.3 port for Android is intended to remedy the situation by providing 
     official releases compatible with Google Android.  
 
+* {Differences with the stock version of Apache HttpClient} 
+
+    [[1]] Compiled against HttpClient 4.0 APIs.
+
+    [[1]] Commons Logging replaced with Android Logging.
+
+    [[1]] Base64 implementation from Commons Codec replaced with Android Base64.
+
+    [[1]] Android SSLCertificateSocketFactory used by default for SSL/TLS connections.
+
+
 * {Compatibility notes} 
 
     [[1]] HttpClient port for Android is compiled against the official Android SDK and is expected
@@ -64,22 +75,11 @@ HttpClient for Android
 
 * {Download}
 
-    HttpClient 4.3 for Android is still in an early development phase and is only available as 
-    a snapshot release from the ASF snapshot repository. In order to be able to use HttpClient for 
-    Android in your project please add the following repository and compile time dependency to
-    gradle.build of your project.
-
-    Please note that this is not an official release, and is not fully tested.
-    Use at your own risk!
+    HttpClient 4.3 for Android is available from the Maven central and can be added to Gradle
+    builds as the following dependency: 
     
 ----
-repositories {
-    maven {
-        url 'https://repository.apache.org/content/repositories/snapshots'
-    }
-}
-
 dependencies {
-    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.1-SNAPSHOT'
+    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.3'
 }
 ----
