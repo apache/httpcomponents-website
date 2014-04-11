@@ -36,7 +36,7 @@ HttpClient for Android
 
 * {Background}
 
-    Google Android 1.0 was released with a pre-BETA spapshot of Apache HttpClient. To coincide with 
+    Google Android 1.0 was released with a pre-BETA snapshot of Apache HttpClient. To coincide with 
     the first Android release Apache HttpClient 4.0 APIs had to be frozen prematurely, while many 
     of interfaces and internal structures were still not fully worked out. As Apache HttpClient 4.0 
     was maturing the project was expecting Google to incorporate the latest code improvements into 
