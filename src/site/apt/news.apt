@@ -30,6 +30,13 @@
 
 HttpComponents Project News
 
+*  6 June 2014 - HttpComponents HttpClient 4.3.4 (GA) released
+
+    HttpClient 4.3.4 (GA) is a maintenance release that improves performance in high concurrency 
+    scenarios. This version replaces dynamic proxies with custom proxy classes and eliminates 
+    thread contention in java.reflect.Proxy.newInstance() when leasing connections from 
+    the connection pool and processing response messages
+
 *  26 February 2014 - HttpComponents HttpClient 4.3.3 (GA) released
 
     HttpClient 4.3.3 (GA) is a bug fix release that fixes a regression introduced by the previous
