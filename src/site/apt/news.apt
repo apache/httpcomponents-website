@@ -30,6 +30,17 @@
 
 HttpComponents Project News
 
+*  18 June 2014 - HttpComponents HttpCore 4.4-alpha1 released
+
+    This is the first release from the 4.4.x development branch. The most notable features included 
+    in this release are:
+
+    * Support for pipelined request processing on the server side
+
+    * Support for pipelined request execution on the client side
+
+    * Simplified bootstrapping of blocking and non-blocking (NIO) HTTP server implementations   
+
 *  6 June 2014 - HttpComponents HttpClient 4.3.4 (GA) released
 
     HttpClient 4.3.4 (GA) is a maintenance release that improves performance in high concurrency 
