@@ -33,7 +33,7 @@ HttpClient Downloads
     The latest release available for download:
 
     {{{http://hc.apache.org/downloads.cgi}Release packages}} - 
-    {{{http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.2.x.txt}Release Notes}} -
+    {{{http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.3.x.txt}Release Notes}} -
     {{{http://www.apache.org/licenses/LICENSE-2.0.html}License}}
 
 {Dependency management}

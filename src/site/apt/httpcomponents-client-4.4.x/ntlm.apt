@@ -130,20 +130,14 @@ public final class JCIFSEngine implements NTLMEngine {
 }
 ----------------------------------------
 
-    * Implement AuthSchemeFactory interface
+    * Implement AuthSchemeProvider interface
 
 ----------------------------------------
-import org.apache.http.auth.AuthScheme;
-import org.apache.http.auth.AuthSchemeFactory;
-import org.apache.http.impl.auth.NTLMScheme;
-import org.apache.http.params.HttpParams;
+public class JCIFSNTLMSchemeFactory implements AuthSchemeProvider {
 
-public class NTLMSchemeFactory implements AuthSchemeFactory {
-
-    public AuthScheme newInstance(final HttpParams params) {
+    public AuthScheme create(final HttpContext context) {
         return new NTLMScheme(new JCIFSEngine());
     }
-
 }
 ----------------------------------------
 
@@ -151,8 +145,18 @@ public class NTLMSchemeFactory implements AuthSchemeFactory {
     enable.
 
 ----------------------------------------
-httpclient.getAuthSchemes().register("ntlm", new NTLMSchemeFactory());
+Registry<AuthSchemeProvider> authSchemeRegistry = RegistryBuilder.<AuthSchemeProvider>create()
+        .register(AuthSchemes.NTLM, new JCIFSNTLMSchemeFactory())
+        .register(AuthSchemes.BASIC, new BasicSchemeFactory())
+        .register(AuthSchemes.DIGEST, new DigestSchemeFactory())
+        .register(AuthSchemes.SPNEGO, new SPNegoSchemeFactory())
+        .register(AuthSchemes.KERBEROS, new KerberosSchemeFactory())
+        .build();
+CloseableHttpClient httpClient = HttpClients.custom()
+        .setDefaultAuthSchemeRegistry(authSchemeRegistry)
+        .build();
 ----------------------------------------
 
     * Set NTCredentials for the web server you are going to access.
+
 

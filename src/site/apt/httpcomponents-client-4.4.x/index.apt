@@ -71,7 +71,9 @@ HttpClient Overview
     * {{{./httpmime/project-reports.html}HttpMime}}
 
     * {{{./httpclient-cache/project-reports.html}HttpClient Cache}}
-      
+   
+    * {{{./httpclient-osgi/project-reports.html}HttpClient OSGi}}
+   
 {Features}
 
     * Standards based, pure Java, implementation of HTTP versions 1.0 and 1.1

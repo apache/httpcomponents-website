@@ -48,6 +48,12 @@ HttpComponents Project Status
     maintained and supported. Users of all versions of HttpClient are advised to upgrade to the 
     latest release of the 4.3 series. 
 
+* {HttpComponents HttpClient 4.4.x}
+
+    HttpClient 4.4.x branch is the current unstable development branch. Noteworthy features 
+    being developed in 4.4 are support for native Windows Negotiate/NTLM via JNA, thread safe
+    authentication scheme caching and more efficient stale connection checking.  
+
 * {HttpComponents HttpAsyncClient 4.0.x}
 
     HttpAsyncClient 4.0.x branch is considered stable and production ready. It is being actively 

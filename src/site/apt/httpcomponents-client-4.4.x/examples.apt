@@ -44,6 +44,11 @@ HttpClient Examples
     This example demonstrates how to ensure the release of the underlying HTTP connection back to 
     the connection manager in case of a manual processing of HTTP responses.
 
+    * {{{./httpclient/examples/org/apache/http/examples/client/ClientConfiguration.java}HttpClient configuration}}
+    
+    This example demonstrates how to customize and configure the most common aspects of HTTP request execution 
+    and connection management.
+
     * {{{./httpclient/examples/org/apache/http/examples/client/ClientAbortMethod.java}Abort method}}
     
     This example demonstrates how to abort an HTTP request before its normal completion.
@@ -82,18 +87,6 @@ HttpClient Examples
     
     This example demonstrates how to create secure connections with a custom SSL context.
 
-    * {{{./httpclient/examples/org/apache/http/examples/client/ClientGZipContentCompression.java}Custom protocol interceptors}}
-
-    This example shows the use of protocol interceptors to transparently modify properties of HTTP 
-    messages sent / received by the HTTP client.
- 
-    In this particular case HTTP client is made capable of transparent content GZIP compression by 
-    adding two protocol interceptors: a request interceptor that adds 'Accept-Encoding: gzip' header
-    to all outgoing requests and a response interceptor that automatically expands compressed 
-    response entities by wrapping them with a uncompressing decorator class. The use of protocol 
-    interceptors makes content compression completely transparent to the consumer of the HttpClient
-    interface.
-    
     * {{{./httpclient/examples/org/apache/http/examples/client/ClientPreemptiveBasicAuthentication.java}Preemptive BASIC authentication}}
     
     This example shows how HttpClient can be customized to authenticate preemptively using BASIC 
@@ -106,6 +99,17 @@ HttpClient Examples
     scheme. Generally, preemptive authentication can be considered less secure than a response to 
     an authentication challenge and therefore discouraged.
     
+    * {{{./httpclient/examples/org/apache/http/examples/client/ProxyTunnelDemo.java}Proxy tunnel}}
+    
+    This example shows how to use ProxyClient in order to establish a tunnel through an HTTP proxy 
+    for an arbitrary protocol.
+    
     * {{{./httpmime/examples/org/apache/http/examples/entity/mime/ClientMultipartFormPost.java}Multipart encoded request entity}}
     
     This example shows how to execute requests enclosing a multipart encoded entity. 
+
+    * {{{./httpclient-win/examples/org/apache/http/examples/client/win/ClientWinAuth.java}Native Windows Negotiate/NTLM}}
+    
+    This example shows how to make use of Native Windows Negotiate/NTLM authentication when 
+    running on Windows OS. 
+

@@ -30,6 +30,24 @@
 
 HttpComponents Project News
 
+*  30 June 2014 - HttpComponents HttpClient 4.4-alpha1 released
+
+    This is the first ALPHA release from the 4.4.x development branch. Notable features and 
+    enhancements included this release are:
+
+    * More efficient stale connection checking: indiscriminate connection checking which results
+    in approximately 20 to 50 ms overhead per request has been deprecated in favor of conditional
+    connection state validation (persistent connections are to be re-validated only if a specified
+    period inactivity has elapsed)
+
+    * Native windows Negotiate/NTLM via JNA: when running on Windows OS HttpClient configured to 
+    use native NTLM or SPNEGO authentication schemes can make use of platform specific 
+    functionality via JNA and current user system credentials
+
+    * Authentication cache thread-safety: authentication caches used by HttpClient is now 
+    thread-safe and can be shared by multiple threads in order to re-use authentication state for 
+    subsequent requests
+
 *  18 June 2014 - HttpComponents HttpCore 4.4-alpha1 released
 
     This is the first release from the 4.4.x development branch. The most notable features included 
