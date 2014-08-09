@@ -30,6 +30,16 @@
 
 HttpComponents Project News
 
+*  10 Aug 2014 - HttpComponents HttpAsyncClient 4.0.2 (GA) released
+
+    HttpAsyncClient 4.0.2 (GA) is a bug fix release that addresses several issues reported since 
+    release 4.0.1.
+
+*  10 Aug 2014 - HttpComponents HttpClient 4.3.5 (GA) released
+
+    HttpClient 4.3.5 (GA) is a bug fix release that addresses several issues reported since 
+    release 4.3.4.
+
 *  30 June 2014 - HttpComponents HttpClient 4.4-alpha1 released
 
     This is the first ALPHA release from the 4.4.x development branch. Notable features and 
