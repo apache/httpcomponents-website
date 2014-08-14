@@ -80,6 +80,6 @@ HttpClient for Android
     
 ----
 dependencies {
-    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.3'
+    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5'
 }
 ----
