@@ -32,9 +32,9 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>website</artifactId>
-  <name>HttpComponents WebSite</name>
+  <name>Apache HttpComponents WebSite</name>
   <version>1-SNAPSHOT</version>
-  <description>HttpComponents WebSite</description>
+  <description>Apache HttpComponents WebSite</description>
   <url>http://hc.apache.org/</url>
   <inceptionYear>2005</inceptionYear>
   <packaging>pom</packaging>
