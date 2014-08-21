@@ -59,9 +59,9 @@
     <input type="submit" value="Change"/>
   </form>
 
-  <p>The {@code KEYS} link links to the code signing keys used to sign the product. The 
-   {@code PGP} link downloads the OpenPGP compatible signature from our main site. The 
-   {@code MD5} link downloads the checksum from the main site.
+  <p>The <code>KEYS</code> link links to the code signing keys used to sign the product. The 
+   <code>PGP</code> link downloads the OpenPGP compatible signature from our main site. The 
+   <code>MD5</code> link downloads the checksum from the main site.
   </p>
 
   <subsection name="HttpClient 4.3.5 (GA)">
