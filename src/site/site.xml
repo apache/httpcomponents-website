@@ -98,7 +98,7 @@
         <item name="Download" href="httpcomponents-client-4.3.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-4.3.x/project-info.html"/>
       </item>
-      <item name="HttpCore 4.4 (alpha)" collapse="true" href="httpcomponents-core-4.4.x/index.html">
+      <item name="HttpCore 4.4 (beta)" collapse="true" href="httpcomponents-core-4.4.x/index.html">
         <item name="Tutorial" href="httpcomponents-core-4.4.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-core-4.4.x/examples.html"/>
         <item name="Download" href="httpcomponents-core-4.4.x/download.html"/>
