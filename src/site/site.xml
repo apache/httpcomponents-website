@@ -77,7 +77,7 @@
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
-      <item name="HttpClient 4.4 (alpha)" collapse="true" href="httpcomponents-client-4.4.x/index.html">
+      <item name="HttpClient 4.4 (beta)" collapse="true" href="httpcomponents-client-4.4.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-4.4.x/quickstart.html"/>
         <item name="Tutorial" href="httpcomponents-client-4.4.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-client-4.4.x/examples.html"/>
