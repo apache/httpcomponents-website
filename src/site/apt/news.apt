@@ -30,6 +30,29 @@
 
 HttpComponents Project News
 
+*  22 October 2014 - HttpComponents HttpCore 4.3.3 (GA) released
+
+    This maintenance release fixes a number of bugs found since 4.3.2, mostly in the NIO transport 
+    components. All users of HttpCore 4.3 are advised to upgrade.
+
+*  17 October 2014 - HttpComponents HttpAsyncClient 4.4-beta1 released
+
+    This is the first BETA release of HttpAsyncClient 4.1. Notable features and enhancements 
+    included in 4.1 series are:
+
+    * Support for pipelined request execution 
+
+    * Enhanced redesigned and rewritten default SSL hostname verifier with improved RFC 2818
+    compliance
+
+    * Default SSL hostname verifier and default cookie policy now validate certificate identity 
+    and cookie domain of origin against the public suffix list maintained by Mozilla.org
+    <https://publicsuffix.org/list>
+
+    * Authentication cache thread-safety: authentication caches used by HttpAsyncClient is now 
+    thread-safe and can be shared by multiple contexts in order to re-use authentication state for 
+    subsequent requests
+
 *  28 September 2014 - HttpComponents HttpClient 4.4-beta1 released
 
     This is the first BETA release of HttpClient 4.4. Notable features and enhancements included
