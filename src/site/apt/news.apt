@@ -30,6 +30,15 @@
 
 HttpComponents Project News
 
+*  6 November 2014 - HttpComponents HttpClient 4.3.6 (GA) released
+
+    This is a maintenance release that fixes several problems with HttpClient OSGi bundle as well 
+    as some other issues reported since release 4.3.5.
+
+    Please note that as of this release HttpClient disables all versions of SSL (including SSLv3)
+    in favor of the TLS protocol by default. Those users who wish to continue using SSLv3 need 
+    to explicitly enable support for it. 
+
 *  22 October 2014 - HttpComponents HttpCore 4.3.3 (GA) released
 
     This maintenance release fixes a number of bugs found since 4.3.2, mostly in the NIO transport 
