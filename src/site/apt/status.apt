@@ -30,17 +30,17 @@
 
 HttpComponents Project Status
 
-* {HttpComponents HttpCore 4.3.x}
-
-    HttpCore 4.3.x branch is considered stable and production ready. It is being actively 
-    maintained and supported. Users of all versions of HttpCore are advised to upgrade to the 
-    latest release of the 4.3 series. 
-
 * {HttpComponents HttpCore 4.4.x}
 
-    HttpCore 4.4.x branch is the current unstable development branch. Noteworthy features 
-    being developed in 4.4 are support for pipelined request execution and processing 
-    and simplified bootstrapping of HTTP servers.  
+    HttpCore 4.4.x branch is considered stable and production ready. It is being actively 
+    maintained and supported. Users of all versions of HttpCore are advised to upgrade to the 
+    latest release of the 4.4 series. 
+
+* {HttpComponents HttpCore 5.x}
+
+    HttpCore 5.x branch is the current unstable development branch. The main focus of the 5.0
+    series is ensuring full compliance with RFC 7230, 7231, laying a foundation for transition to 
+    HTTP/2.0 and incremental API improvements.  
 
 * {HttpComponents HttpClient 4.3.x}
 

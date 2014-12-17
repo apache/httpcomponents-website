@@ -30,6 +30,19 @@
 
 HttpComponents Project News
 
+*  17 December 2014 - HttpComponents HttpCore 4.4 released
+
+    This is the first stable (GA) release of HttpCore 4.4. The most notable features included in 
+    4.4 series are:
+
+    * Support for pipelined request processing on the server side
+
+    * Support for pipelined request execution on the client side
+
+    * Simplified bootstrapping of blocking and non-blocking (NIO) HTTP server implementations   
+
+    * Inclusion of SSL context initialization utilities from HttpClient
+
 *  6 November 2014 - HttpComponents HttpClient 4.3.6 (GA) released
 
     This is a maintenance release that fixes several problems with HttpClient OSGi bundle as well 
@@ -90,13 +103,9 @@ HttpComponents Project News
 *  22 September 2014 - HttpComponents HttpCore 4.4-beta1 released
 
     This is the first BETA release from the 4.4.x development branch. The most notable features 
-    included in 4.4 series are:
-
-    * Support for pipelined request processing on the server side
-
-    * Support for pipelined request execution on the client side
-
-    * Simplified bootstrapping of blocking and non-blocking (NIO) HTTP server implementations   
+    included in 4.4 series are: support for pipelined request processing on the server side;
+    support for pipelined request execution on the client side; simplified bootstrapping of 
+    blocking and non-blocking (NIO) HTTP server implementations.   
 
 *  10 Aug 2014 - HttpComponents HttpAsyncClient 4.0.2 (GA) released
 
