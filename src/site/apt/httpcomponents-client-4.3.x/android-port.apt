@@ -58,7 +58,7 @@ HttpClient for Android
 
     [[1]] Base64 implementation from Commons Codec replaced with Android Base64.
 
-    [[1]] Android SSLCertificateSocketFactory used by default for SSL/TLS connections.
+    [[1]] Android default SSLSocketFactory used by for SSL/TLS connections.
 
 
 * {Compatibility notes} 
@@ -80,6 +80,6 @@ HttpClient for Android
     
 ----
 dependencies {
-    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5'
+    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
 }
 ----
