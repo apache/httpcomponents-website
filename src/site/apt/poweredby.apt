@@ -77,4 +77,12 @@ Powered by HttpComponents
     connectors for Elastic Search and Open Search Server.  ManifoldCF also uses HttpComponents
     libraries for crawling the open web.
 
+* ESIGate
+
+    {{{http://www.esigate.org/}ESIGate}} is a reverse-proxy that fully implements the
+    {{{http://www.w3.org/TR/esi-lang}ESI Language Specification}} allowing to build a website
+    as a mashup of several websites, applications or tools like content management systems.
+    Thanks to HttpClient's caching system, ESIGate also acts as a powerfull web accelerator
+    and powers major websites. ESIGate can be deployed standalone or as a web application in
+    any java Servlet container.
 
