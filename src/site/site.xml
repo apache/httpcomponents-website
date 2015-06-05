@@ -77,24 +77,22 @@
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
+      <item name="HttpClient 4.5" collapse="true" href="httpcomponents-client-4.5.x/index.html">
+        <item name="Quick Start" href="httpcomponents-client-4.5.x/quickstart.html"/>
+        <item name="Tutorial" href="httpcomponents-client-4.5.x/tutorial/html/index.html"/>
+        <item name="Examples" href="httpcomponents-client-4.5.x/examples.html"/>
+        <item name="Programming Primer" href="httpcomponents-client-4.5.x/primer.html"/>
+        <item name="NTLM Guide" href="httpcomponents-client-4.5.x/ntlm.html"/>
+        <item name="Logging Guide" href="httpcomponents-client-4.5.x/logging.html"/>
+        <item name="Download" href="httpcomponents-client-4.5.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-client-4.5.x/project-info.html"/>
+      </item>
       <item name="HttpClient 4.4" collapse="true" href="httpcomponents-client-4.4.x/index.html">
-        <item name="Quick Start" href="httpcomponents-client-4.4.x/quickstart.html"/>
-        <item name="Tutorial" href="httpcomponents-client-4.4.x/tutorial/html/index.html"/>
-        <item name="Examples" href="httpcomponents-client-4.4.x/examples.html"/>
-        <item name="Programming Primer" href="httpcomponents-client-4.4.x/primer.html"/>
-        <item name="NTLM Guide" href="httpcomponents-client-4.4.x/ntlm.html"/>
-        <item name="Logging Guide" href="httpcomponents-client-4.4.x/logging.html"/>
         <item name="Download" href="httpcomponents-client-4.4.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-4.4.x/project-info.html"/>
       </item>
       <item name="HttpClient 4.3" collapse="true" href="httpcomponents-client-4.3.x/index.html">
-        <item name="Quick Start" href="httpcomponents-client-4.3.x/quickstart.html"/>
-        <item name="Tutorial" href="httpcomponents-client-4.3.x/tutorial/html/index.html"/>
-        <item name="Examples" href="httpcomponents-client-4.3.x/examples.html"/>
         <item name="Android Port" href="httpcomponents-client-4.3.x/android-port.html"/>
-        <item name="Programming Primer" href="httpcomponents-client-4.3.x/primer.html"/>
-        <item name="NTLM Guide" href="httpcomponents-client-4.3.x/ntlm.html"/>
-        <item name="Logging Guide" href="httpcomponents-client-4.3.x/logging.html"/>
         <item name="Download" href="httpcomponents-client-4.3.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-4.3.x/project-info.html"/>
       </item>

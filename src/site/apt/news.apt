@@ -30,6 +30,12 @@
 
 HttpComponents Project News
 
+*  5 June - HttpClient 4.5 (GA) released 
+
+    HttpClient 4.5 (GA) is a minor feature release that includes several incremental enhancements 
+    to the exisitng functionality such as support for private domains in the Mozilla Public Suffix 
+    List.
+
 *  23 April - HttpAsyncClient 4.1 (GA) released 
 
     This is the first stable (GA) release of HttpAsyncClient 4.1. Notable features and enhancements 
