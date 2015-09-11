@@ -30,6 +30,11 @@
 
 HttpComponents Project News
 
+*  11 September 2014 - HttpComponents HttpCore 4.4.3 (GA) released
+
+    This maintenance release fixes a bug in non-blocking HTTP request pipelining code discovered 
+    since 4.3.1.
+
 *  5 June - HttpClient 4.5 (GA) released 
 
     HttpClient 4.5 (GA) is a minor feature release that includes several incremental enhancements 
