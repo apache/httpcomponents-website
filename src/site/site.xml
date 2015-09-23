@@ -81,20 +81,12 @@
         <item name="Quick Start" href="httpcomponents-client-4.5.x/quickstart.html"/>
         <item name="Tutorial" href="httpcomponents-client-4.5.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-client-4.5.x/examples.html"/>
+        <item name="Android Port" href="httpcomponents-client-4.5.x/android-port.html"/>
         <item name="Programming Primer" href="httpcomponents-client-4.5.x/primer.html"/>
         <item name="NTLM Guide" href="httpcomponents-client-4.5.x/ntlm.html"/>
         <item name="Logging Guide" href="httpcomponents-client-4.5.x/logging.html"/>
         <item name="Download" href="httpcomponents-client-4.5.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-4.5.x/project-info.html"/>
-      </item>
-      <item name="HttpClient 4.4" collapse="true" href="httpcomponents-client-4.4.x/index.html">
-        <item name="Download" href="httpcomponents-client-4.4.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-client-4.4.x/project-info.html"/>
-      </item>
-      <item name="HttpClient 4.3" collapse="true" href="httpcomponents-client-4.3.x/index.html">
-        <item name="Android Port" href="httpcomponents-client-4.3.x/android-port.html"/>
-        <item name="Download" href="httpcomponents-client-4.3.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-client-4.3.x/project-info.html"/>
       </item>
       <item name="HttpCore 4.4" collapse="true" href="httpcomponents-core-4.4.x/index.html">
         <item name="Tutorial" href="httpcomponents-core-4.4.x/tutorial/html/index.html"/>
