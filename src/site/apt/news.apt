@@ -30,22 +30,31 @@
 
 HttpComponents Project News
 
-*  16 September 2014 - HttpComponents HttpClient 4.5.1 (GA) released
+*  9 November 2015 - HttpComponents HttpAsyncClient 4.1.1 (GA) released
+
+    This is a maintenance release that fixes a number of issues discovered since release 4.1 and 
+    upgrades HttpCore and HttpClient dependencies.
+
+*  4 November 2015 - HttpComponents HttpCore 4.4.4 (GA) released
+
+    This is a maintenance release that fixes a number of issues discovered since release 4.4.3.
+
+*  16 September 2015  - HttpComponents HttpClient 4.5.1 (GA) released
 
     This is a maintenance release that fixes a number of minor bugs reported since 4.5.
 
-*  11 September 2014 - HttpComponents HttpCore 4.4.3 (GA) released
+*  11 September 2015  - HttpComponents HttpCore 4.4.3 (GA) released
 
     This maintenance release fixes a bug in non-blocking HTTP request pipelining code discovered 
     since 4.3.1.
 
-*  5 June - HttpClient 4.5 (GA) released 
+*  5 June 2015 - HttpClient 4.5 (GA) released 
 
     HttpClient 4.5 (GA) is a minor feature release that includes several incremental enhancements 
     to the exisitng functionality such as support for private domains in the Mozilla Public Suffix 
     List.
 
-*  23 April - HttpAsyncClient 4.1 (GA) released 
+*  23 April 2015 - HttpAsyncClient 4.1 (GA) released 
 
     This is the first stable (GA) release of HttpAsyncClient 4.1. Notable features and enhancements 
     included in 4.1 series are:
@@ -71,11 +80,11 @@ HttpComponents Project News
     thread-safe and can be shared by multiple threads in order to re-use authentication state for 
     subsequent requests
 
-*  31 March 2014 - HttpComponents HttpClient 4.4.1 (GA) released
+*  31 March 2015 - HttpComponents HttpClient 4.4.1 (GA) released
 
     This is a maintenance release that fixes a number of bugs reported since 4.4.
 
-*  20 March 2014 - HttpComponents HttpCore 4.4.1 (GA) released
+*  20 March 2015 - HttpComponents HttpCore 4.4.1 (GA) released
 
     This is a maintenance release that fixes a number of minor bugs found since 4.4.
 
