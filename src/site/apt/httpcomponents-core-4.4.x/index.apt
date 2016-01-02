@@ -35,11 +35,6 @@ HttpCore Overview
     blocking I/O model based on the classic Java I/O and non-blocking, event driven I/O model based 
     on Java NIO. 
     
-    The blocking I/O model may be more appropriate for data intensive, low latency scenarios,
-    whereas the non-blocking model may be more appropriate for high latency scenarios where raw data
-    throughput is less important than the ability to handle thousands of simultaneous HTTP 
-    connections in a resource efficient manner.
-
 {Documentation}
 
     [[1]] HttpCore Tutorial ( {{{./tutorial/html/index.html}HTML}} / {{{./tutorial/pdf/httpcore-tutorial.pdf}PDF}} )

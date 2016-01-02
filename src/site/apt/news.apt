@@ -30,6 +30,24 @@
 
 HttpComponents Project News
 
+*  3 January 2016 - HttpComponents HttpCore 5.0-alpa1 released
+
+    This is a major release that renders HttpCore API incompatible with the stable 4.x branch
+    and upgrades HTTP/1.1 protocol conformance to the requirements and recommendations of the 
+    latest protocol specification. This release lays the foundation for transition to HTTP/2 as 
+    the primary transport protocol in the future releases.
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol 
+      specification (RFC 7230, RFC 7231)
+
+    * Blocking I/O and NIO HTTP transport implementation has been folded into one module
+
+    * Package name space changed to 'org.apache.hc.core5' 
+
+    * Maven group id changed to 'org.apache.httpcomponents.core5' 
+
 *  9 November 2015 - HttpComponents HttpAsyncClient 4.1.1 (GA) released
 
     This is a maintenance release that fixes a number of issues discovered since release 4.1 and 

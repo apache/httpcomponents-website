@@ -33,7 +33,7 @@ HttpCore Downloads
     The latest release available for download:
 
     {{{http://hc.apache.org/downloads.cgi}Release packages}} - 
-    {{{http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-4.3.x.txt}Release Notes}} -
+    {{{http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.0.x.txt}Release Notes}} -
     {{{http://www.apache.org/licenses/LICENSE-2.0.html}License}}
 
 {Dependency management}
@@ -44,7 +44,4 @@ HttpCore Downloads
     you can create a dependency on HttpClient modules by using this information:
 
     {{{./httpcore/dependency-info.html}HttpCore}}
-
-    {{{./httpcore-nio/dependency-info.html}HttpCore NIO}}
-
 

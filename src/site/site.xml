@@ -88,6 +88,11 @@
         <item name="Download" href="httpcomponents-client-4.5.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-4.5.x/project-info.html"/>
       </item>
+      <item name="HttpCore 5.0 alpha" collapse="true" href="httpcomponents-core-5.0.x/index.html">
+        <item name="Examples" href="httpcomponents-core-5.0.x/examples.html"/>
+        <item name="Download" href="httpcomponents-core-5.0.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-core-5.0.x/project-info.html"/>
+      </item>
       <item name="HttpCore 4.4" collapse="true" href="httpcomponents-core-4.4.x/index.html">
         <item name="Tutorial" href="httpcomponents-core-4.4.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-core-4.4.x/examples.html"/>

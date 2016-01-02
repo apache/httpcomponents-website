@@ -35,29 +35,24 @@ HttpCore Overview
     blocking I/O model based on the classic Java I/O and non-blocking, event driven I/O model based 
     on Java NIO. 
     
-    The blocking I/O model may be more appropriate for data intensive, low latency scenarios,
-    whereas the non-blocking model may be more appropriate for high latency scenarios where raw data
-    throughput is less important than the ability to handle thousands of simultaneous HTTP 
-    connections in a resource efficient manner.
-
 {Documentation}
 
-    [[1]] HttpCore Tutorial ( {{{./tutorial/html/index.html}HTML}} / {{{./tutorial/pdf/httpcore-tutorial.pdf}PDF}} )
-    
     [[1]] Some examples of HttpCore components in action can be found {{{./examples.html}here}}
 
     [[1]] Project reports
 
     * {{{./httpcore/project-reports.html}HttpCore}}
 
-    * {{{./httpcore-nio/project-reports.html}HttpCore NIO}}
-
 {Standards Compliance}
 
     HttpCore components strive to conform to the following specifications endorsed by the Internet 
     Engineering Task Force (IETF) and the internet at large:
 
-    * {{{http://www.ietf.org/rfc/rfc1945.txt}RFC 1945}} - Hypertext Transfer Protocol -- HTTP/1.0
+    * {{{http://tools.ietf.org/html/rfc7230}RFC 7230}} - Hypertext Transfer Protocol (HTTP/1.1): 
+    Message Syntax and Routing
 
-    * {{{http://www.ietf.org/rfc/rfc2616.txt}RFC 2616}} - Hypertext Transfer Protocol -- HTTP/1.1
-    
+    * {{{http://tools.ietf.org/html/rfc7231}RFC 7231}} - Hypertext Transfer Protocol (HTTP/1.1): 
+    Semantics and Content
+
+    * {{{http://tools.ietf.org/html/rfc1945}RFC 1945}} - Hypertext Transfer Protocol -- HTTP/1.0
+
