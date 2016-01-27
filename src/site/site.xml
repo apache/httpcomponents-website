@@ -77,6 +77,12 @@
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
+      <item name="HttpClient 5.0 alpha" collapse="true" href="httpcomponents-client-5.0.x/index.html">
+        <item name="Examples" href="httpcomponents-client-5.0.x/examples.html"/>
+        <item name="Logging Guide" href="httpcomponents-client-5.0.x/logging.html"/>
+        <item name="Download" href="httpcomponents-client-5.0.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-client-5.0.x/project-info.html"/>
+      </item>
       <item name="HttpClient 4.5" collapse="true" href="httpcomponents-client-4.5.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-4.5.x/quickstart.html"/>
         <item name="Tutorial" href="httpcomponents-client-4.5.x/tutorial/html/index.html"/>

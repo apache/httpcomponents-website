@@ -33,7 +33,7 @@ HttpClient Downloads
     The latest release available for download:
 
     {{{http://hc.apache.org/downloads.cgi}Release packages}} - 
-    {{{http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.5.x.txt}Release Notes}} -
+    {{{http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-5.0.x.txt}Release Notes}} -
     {{{http://www.apache.org/licenses/LICENSE-2.0.html}License}}
 
 {Dependency management}
@@ -45,10 +45,12 @@ HttpClient Downloads
 
     {{{./httpclient/dependency-info.html}HttpClient}}
 
+    {{{./httpclient-fluent/dependency-info.html}Fluent HC}}
+
     {{{./httpclient-cache/dependency-info.html}HttpClient Cache}}
 
-    {{{./httpmime/dependency-info.html}HttpMime}}
+    {{{./httpclient-win/dependency-info.html}HttpClient Windows extensions}}
 
-    {{{./fluent-hc/dependency-info.html}Fluent HC}}
+    {{{./httpclient-osgi/dependency-info.html}HttpClient OSGi}}
 
 
