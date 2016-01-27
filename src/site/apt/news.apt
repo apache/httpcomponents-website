@@ -30,7 +30,27 @@
 
 HttpComponents Project News
 
-*  3 January 2016 - HttpComponents HttpCore 5.0-alpa1 released
+*  28 January 2016 - HttpComponents HttpClient 5.0-alpha1 released
+
+    This is a major release that renders HttpClient API incompatible with the stable 4.x branch
+    and upgrades HTTP/1.1 protocol conformance to the requirements and recommendations of 
+    the latest protocol specification. This release lays the foundation for transition to HTTP/2 
+    as the primary transport protocol in the future releases.
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification (RFC 7230, RFC 7231, RFC 7235)
+
+    * Package name space changed to 'org.apache.hc.client5'
+
+    * Maven group id changed to 'org.apache.httpcomponents.client5'
+
+    * By default the maximum connections per route limit is set to 5
+
+    * By default connection request timeout and connect timeout are set to 3 minutes.
+
+*  3 January 2016 - HttpComponents HttpCore 5.0-alpha1 released
 
     This is a major release that renders HttpCore API incompatible with the stable 4.x branch
     and upgrades HTTP/1.1 protocol conformance to the requirements and recommendations of the 

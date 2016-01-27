@@ -48,6 +48,12 @@ HttpComponents Project Status
     maintained and supported. Users of all versions of HttpClient are advised to upgrade to the 
     latest release of the 4.5 series. 
 
+* {HttpComponents HttpClient 5.x}
+
+    HttpClient 5.x branch is the current unstable development branch. The main focus of the 5.0
+    series is ensuring full compliance with RFC 7230, 7231, laying a foundation for transition to 
+    HTTP/2.0 and incremental API improvements.  
+
 * {HttpComponents HttpAsyncClient 4.1.x}
 
     HttpAsyncClient 4.1.x branch is considered stable and production ready. It is being actively 
