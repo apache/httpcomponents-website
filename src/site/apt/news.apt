@@ -30,6 +30,10 @@
 
 HttpComponents Project News
 
+*  1 March 2016  - HttpComponents HttpClient 4.5.2 (GA) released
+
+    This is a maintenance release that fixes a number of minor bugs reported since 4.5.1.
+
 *  28 January 2016 - HttpComponents HttpClient 5.0-alpha1 released
 
     This is a major release that renders HttpClient API incompatible with the stable 4.x branch
