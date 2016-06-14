@@ -30,6 +30,10 @@
 
 HttpComponents Project News
 
+*  14 June 2016 - HttpComponents HttpCore 4.4.5 (GA) released 
+
+    This is a maintenance release that fixes a number of issues discovered since release 4.4.4.
+
 *  1 March 2016  - HttpComponents HttpClient 4.5.2 (GA) released
 
     This is a maintenance release that fixes a number of minor bugs reported since 4.5.1.
