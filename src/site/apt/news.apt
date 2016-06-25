@@ -30,6 +30,10 @@
 
 HttpComponents Project News
 
+*  27 June 2016 - HttpComponents HttpAsyncClient 4.1.2 (GA) released 
+
+    This is a maintenance release that fixes a number of issues discovered since release 4.1.1.
+
 *  14 June 2016 - HttpComponents HttpCore 4.4.5 (GA) released 
 
     This is a maintenance release that fixes a number of issues discovered since release 4.4.4.
