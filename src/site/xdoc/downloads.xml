@@ -149,44 +149,44 @@
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
   </subsection>
 
-  <subsection name="HttpCore 5.0-alpha1">
+  <subsection name="HttpCore 5.0-alpha2">
     <a href="http://www.apache.org/dist/httpcomponents/httpcore/KEYS">KEYS</a>
     <a href="http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.0.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-bin.tar.gz">5.0-alpha1.tar.gz</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-bin.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-bin.tar.gz">5.0-alpha2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-bin.zip">5.0-alpha1.zip</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-bin.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-bin.zip">5.0-alpha2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-bin.zip.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-osgi-bin.tar.gz">5.0-alpha1.tar.gz (OSGi bundle)</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-osgi-bin.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-osgi-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-osgi-bin.tar.gz">5.0-alpha2.tar.gz (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-osgi-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-osgi-bin.zip">5.0-alpha1.zip (OSGi bundle)</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-osgi-bin.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha1-osgi-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-osgi-bin.zip">5.0-alpha2.zip (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-osgi-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-alpha2-osgi-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha1-src.tar.gz">5.0-alpha1.tar.gz</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha1-src.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha1-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha2-src.tar.gz">5.0-alpha2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha2-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha2-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha1-src.zip">5.0-alpha1.zip</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha1-src.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha1-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha2-src.zip">5.0-alpha2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha2-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha2-src.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>

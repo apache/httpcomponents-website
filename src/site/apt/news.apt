@@ -30,6 +30,65 @@
 
 HttpComponents Project News
 
+*  27 December 2016 - HttpComponents HttpCore 5.0-alpha1 released
+
+
+    This is a major release that renders HttpCore API incompatible with the stable 4.x branch
+    and upgrades HTTP/1.1 and HTTP/2 protocol conformance to the requirements and recommendations
+    of the latest protocol specification.
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Partial support for HTTP/2 protocol and partial conformance to requirements and
+      recommendations of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+      Supported features:
+
+        * HPACK header compression
+        
+        * stream multiplexing (client and server)
+
+        * flow control
+
+        * response push (client and server)
+
+        * message trailers
+
+        * expect-continue handshake
+
+        * connection validation (ping)
+
+        * TLS 1.2 features
+
+    Unsupported features:
+
+        * application-layer protocol negotiation (ALPN)
+
+        * padding of outgoing frames
+
+        * stream priority
+
+        * plain connection HTTP/1.1 upgrade
+
+        * CONNECT method
+
+        * TLS renegotiation and compression cannot be disabled with Java 1.7 JSSE APIs
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification (RFC 7230, RFC 7231)
+
+    * New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transports.
+
+    * Improved HTTP/1.1 and HTTP/2 requester and server implementations.
+
+    * Redesigned connection pool implementation with reduced pool lock contention.
+
+    * Support for HTTP/1.1 protocol switch / upgrade.
+
+    * Package name space changed to 'org.apache.hc.core5'
+
+    * Maven group id changed to 'org.apache.httpcomponents.core5' 
+
 *  27 June 2016 - HttpComponents HttpAsyncClient 4.1.2 (GA) released 
 
     This is a maintenance release that fixes a number of issues discovered since release 4.1.1.
