@@ -43,5 +43,6 @@ HttpCore Downloads
     {{{http://ant.apache.org/projects/ivy.html}Apache Ivy}}, 
     you can create a dependency on HttpClient modules by using this information:
 
-    {{{./httpcore/dependency-info.html}HttpCore}}
+    {{{./httpcore5/dependency-info.html}HttpCore HTTP/1.1}}
+    {{{./httpcore5-h2/dependency-info.html}HttpCore HTTP/2}}
 
