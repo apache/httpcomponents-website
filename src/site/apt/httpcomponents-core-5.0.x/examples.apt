@@ -30,58 +30,58 @@
 
 HttpCore Examples
 
-    * {{{./examples/org/apache/hc/core5/http/examples/ClassicGetExecutionExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/ClassicGetExecutionExample.java} 
     Classic (blocking) HTTP/1.1 GET requests}}
     
     This example demonstrates synchronous execution of multiple HTTP/1.1 GET requests.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/ClassicPostExecutionExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/ClassicPostExecutionExample.java} 
     Classic (blocking) HTTP/1.1 POST requests}}
     
     This example demonstrates synchronous execution of multiple HTTP/1.1 POST requests with enclosed 
     content of various types.  
 
-    * {{{./examples/org/apache/hc/core5/http/examples/AsyncRequestExecutionExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncRequestExecutionExample.java} 
     Asynchronous HTTP/1.1 GET requests}}
     
     This example demonstrates asynchronous execution of multiple HTTP/1.1 requests.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/Http2RequestExecutionExample.java} 
+    * {{{./httpcore5-h2/examples/org/apache/hc/core5/http/examples/Http2RequestExecutionExample.java} 
     Asynchronous HTTP/2 GET requests}}
     
     This example demonstrates asynchronous execution of multiple HTTP/2 requests.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/AsyncPipelinedRequestExecutionExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncPipelinedRequestExecutionExample.java} 
     Asynchronous HTTP/1.1 GET requests with message pipelining}}
     
     This example demonstrates asynchronous, pipelined execution multiple HTTP/1.1 requests.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/Http2MultiStreamExecutionExample.java} 
+    * {{{./httpcore5-h2/examples/org/apache/hc/core5/http/examples/Http2MultiStreamExecutionExample.java} 
     Asynchronous HTTP/2 GET requests with multiple concurrent streams}}
     
     This example demonstrates asynchronous, multistream execution of multiple HTTP/2 requests.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/ClassicFileServerExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/ClassicFileServerExample.java} 
     Classic (blocking) HTTP/1.1 file server}}
     
     This is an example of an embedded HTTP/1.1 file server with a classic (blocking) message transport.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/AsyncFileServerExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncFileServerExample.java} 
     Asynchronous HTTP/1.1 file server}}
     
     This is an example of an embedded HTTP/1.1 file server with an event driven, non-blocking message transport.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/Http2FileServerExample.java} 
+    * {{{./httpcore5-h2/examples/org/apache/hc/core5/http/examples/Http2FileServerExample.java} 
     Asynchronous HTTP/2 file server}}
     
     This is an example of an embedded HTTP/2 file server with an event driven, non-blocking message transport.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/ClassicReverseProxyExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/ClassicReverseProxyExample.java} 
     Classic (blocking) HTTP reverse proxy}}
 
     This is an example of an embedded HTTP/1.1 reverse proxy with a classic (blocking) message transport.
 
-    * {{{./examples/org/apache/hc/core5/http/examples/AsyncReverseProxyExample.java} 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncReverseProxyExample.java} 
     Asynchronous HTTP reverse proxy}}
     
     This is an example of an embedded HTTP/1.1 reverse proxy with an event driven, non-blocking message transport.
