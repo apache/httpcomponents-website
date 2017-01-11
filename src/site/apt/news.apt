@@ -30,6 +30,10 @@
 
 HttpComponents Project News
 
+*  12 January 2017 - HttpComponents HttpCore 4.4.6 (GA) released 
+
+    This is a maintenance release that fixes a number of issues discovered since release 4.4.5.
+
 *  27 December 2016 - HttpComponents HttpCore 5.0-alpha1 released
 
 
