@@ -30,7 +30,7 @@
 
 HttpComponents Project News
 
-*  11 May 2017 - HttpComponents HttpCore 5.0-alpha3 released
+*  11 May 2017 - HttpComponents HttpClient 5.0-alpha2 released
 
     This is a major release that introduces support for HTTP/2 protocol and event driven
     messaging APIs consistent for all supported HTTP protocol versions.
