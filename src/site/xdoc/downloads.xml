@@ -104,6 +104,7 @@
        [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.3-src.zip.asc">pgp</a>]
      </li>
     </ul>
+    <p>Recent releases of HttpClient can be found <a href="[preferred]/httpcomponents/httpclient">here</a></p>
   </subsection>
 
   <subsection name="HttpCore 4.4.6 (GA)">
@@ -149,6 +150,48 @@
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
   </subsection>
 
+  <subsection name="HttpClient 5.0-alpha2">
+    <a href="http://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
+    <a href="http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-5.0.x.txt">Release Notes</a>
+    <br/>
+    <p>Binary</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-bin.tar.gz">5.0-alpha2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-bin.zip">5.0-alpha2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-bin.zip.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-osgi-bin.tar.gz">5.0-alpha2.tar.gz (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-osgi-bin.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-osgi-bin.zip">5.0-alpha2.zip (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-osgi-bin.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-alpha2-osgi-bin.zip.asc">pgp</a>]
+     </li>
+    </ul>
+    <p>Source</p>
+    <ul>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-alpha2-src.tar.gz">5.0-alpha2.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-alpha2-src.tar.gz.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-alpha2-src.tar.gz.asc">pgp</a>]
+     </li>
+     <li>
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-alpha2-src.zip">5.0-alpha2.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-alpha2-src.zip.md5">md5</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-alpha2-src.zip.asc">pgp</a>]
+     </li>
+    </ul>
+  </subsection>
+
   <subsection name="HttpCore 5.0-alpha3">
     <a href="http://www.apache.org/dist/httpcomponents/httpcore/KEYS">KEYS</a>
     <a href="http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.0.x.txt">Release Notes</a>
@@ -189,7 +232,6 @@
        [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-alpha3-src.zip.asc">pgp</a>]
      </li>
     </ul>
-    <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
   </subsection>
 
   <subsection name="HttpAsyncClient 4.1.3 (GA)">
@@ -220,24 +262,6 @@
        <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip">4.1.3.zip</a>
        [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip.md5">md5</a>]
        [<a href="http://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip.asc">pgp</a>]
-     </li>
-    </ul>
-  </subsection>
-
-  <subsection name="HttpClient for Android 4.3.5 (GA)">
-    <a href="http://www.apache.org/dist/httpcomponents/httpclient-android/KEYS">KEYS</a>
-    <br/>
-    <p>Source</p>
-    <ul>
-     <li>
-       <a href="[preferred]/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.5-src.tar.gz">4.3.5.tar.gz</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.5-src.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.5-src.tar.gz.asc">pgp</a>]
-     </li>
-     <li>
-       <a href="[preferred]/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.5-src.zip">4.3.5.zip</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.5-src.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpclient-android/source/httpcomponents-client-android-4.3.5-src.zip.asc">pgp</a>]
      </li>
     </ul>
   </subsection>

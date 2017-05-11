@@ -43,14 +43,14 @@ HttpClient Downloads
     {{{http://ant.apache.org/projects/ivy.html}Apache Ivy}}, 
     you can create a dependency on HttpClient modules by using this information:
 
-    {{{./httpclient/dependency-info.html}HttpClient}}
+    {{{./httpclient5/dependency-info.html}HttpClient}}
 
-    {{{./httpclient-fluent/dependency-info.html}Fluent HC}}
+    {{{./httpclient5-fluent/dependency-info.html}Fluent HC}}
 
-    {{{./httpclient-cache/dependency-info.html}HttpClient Cache}}
+    {{{./httpclient5-cache/dependency-info.html}HttpClient Cache}}
 
-    {{{./httpclient-win/dependency-info.html}HttpClient Windows extensions}}
+    {{{./httpclient5-win/dependency-info.html}HttpClient Windows extensions}}
 
-    {{{./httpclient-osgi/dependency-info.html}HttpClient OSGi}}
+    {{{./httpclient5-osgi/dependency-info.html}HttpClient OSGi}}
 
 

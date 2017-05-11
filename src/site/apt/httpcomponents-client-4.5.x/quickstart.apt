@@ -30,7 +30,7 @@
 
 HttpClient Quick Start
 
-    [[1]] Download 'Binary' package of the latest HttpClient 4.3 release or configure
+    [[1]] Download 'Binary' package of the latest HttpClient 4.5 release or configure
     dependency on {{{./httpclient/dependency-info.html}HttpClient}} and 
     {{{./fluent-hc/dependency-info.html}Fluent HC}} modules using a dependency manager of your 
     choice as described {{{./download.html}here}}. 

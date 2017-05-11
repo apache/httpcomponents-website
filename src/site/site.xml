@@ -78,7 +78,9 @@
     </menu>
     <menu name="Components">
       <item name="HttpClient 5.0 alpha" collapse="true" href="httpcomponents-client-5.0.x/index.html">
-        <item name="Examples" href="httpcomponents-client-5.0.x/examples.html"/>
+        <item name="Quick Start" href="httpcomponents-client-5.0.x/quickstart.html"/>
+        <item name="Examples (Classic)" href="httpcomponents-client-5.0.x/examples.html"/>
+        <item name="Examples (Async)" href="httpcomponents-client-5.0.x/examples-async.html"/>
         <item name="Logging Guide" href="httpcomponents-client-5.0.x/logging.html"/>
         <item name="Download" href="httpcomponents-client-5.0.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-5.0.x/project-info.html"/>

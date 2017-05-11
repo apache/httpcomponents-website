@@ -30,6 +30,67 @@
 
 HttpComponents Project News
 
+*  11 May 2017 - HttpComponents HttpCore 5.0-alpha3 released
+
+    This is a major release that introduces support for HTTP/2 protocol and event driven
+    messaging APIs consistent for all supported HTTP protocol versions.
+
+    HttpClient ships with two client implementations:
+
+    * Classic: it is based on the classic (blocking) I/O model; largely compatible
+      with the 4.x APIs; supports HTTP/1.1 only.
+
+    * Async: based on NIO model; new event driven APIs consistent for all supported
+      HTTP protocol versions; supports both HTTP/1.1 and HTTP/2.
+
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Partial support for HTTP/2 protocol and conformance to requirements and
+      recommendations of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+      Supported features:
+
+        * HPACK header compression
+
+        * stream multiplexing (client and server)
+
+        * flow control
+
+        * response push
+
+        * message trailers
+
+        * expect-continue handshake
+
+        * connection validation (ping)
+
+        * application-layer protocol negotiation (ALPN) on Java 1.9+
+
+        * TLS 1.2 security features
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification (RFC 7230, RFC 7231)
+
+    * Redesigned connection pool implementation with reduced pool lock contention.
+
+    * Package name space changed to 'org.apache.hc.client5'
+
+    * Maven group id changed to 'org.apache.httpcomponents.client5'
+
+    * Apache Log4j2 logging APIs used for internal logging instead of Commons Logging APIs
+
+
+    Fetures presently that are presently NOT supported:
+
+    * HTTP/2 transport (classic)
+
+    * HTTP tunneling (async)
+
+    * Automatic response content decompression (async)
+
+    * Caching (async)
+
 *  2 May 2017 - HttpComponents HttpCore 5.0-alpha3 released
 
     This is a major release that renders HttpCore API incompatible with the stable 4.x branch
