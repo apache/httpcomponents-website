@@ -66,10 +66,20 @@ HttpCore Examples
     
     This is an example of an embedded HTTP/1.1 file server with a classic (blocking) message transport.
 
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/ClassicServerFilterExample.java}
+    Request filters with classic (blocking) HTTP/1.1 server}}
+    
+    This is an example of using synchronous request filters with an embedded HTTP/1.1 server.
+
     * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncFileServerExample.java} 
     Asynchronous HTTP/1.1 file server}}
     
     This is an example of an embedded HTTP/1.1 file server with an event driven, non-blocking message transport.
+
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncServerFilterExample.java} 
+    Request filters with asynchronous HTTP/1.1 server}}
+
+    This is an example of using asynchronous request filters with an embedded HTTP/1.1 server.
 
     * {{{./httpcore5-h2/examples/org/apache/hc/core5/http/examples/Http2FileServerExample.java} 
     Asynchronous HTTP/2 file server}}
