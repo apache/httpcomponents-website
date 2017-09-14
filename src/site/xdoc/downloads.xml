@@ -107,44 +107,44 @@
     <p>Recent releases of HttpClient can be found <a href="[preferred]/httpcomponents/httpclient">here</a></p>
   </subsection>
 
-  <subsection name="HttpCore 4.4.6 (GA)">
+  <subsection name="HttpCore 4.4.7 (GA)">
     <a href="http://www.apache.org/dist/httpcomponents/httpcore/KEYS">KEYS</a>
     <a href="http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-4.4.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-bin.tar.gz">4.4.6.tar.gz</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-bin.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-bin.tar.gz">4.4.7.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-bin.tar.gz.sha512">sha512</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-bin.zip">4.4.6.zip</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-bin.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-bin.zip">4.4.7.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-bin.zip.sha512">sha512</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-bin.zip.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-osgi-bin.tar.gz">4.4.6.tar.gz (OSGi bundle)</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-osgi-bin.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-osgi-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-osgi-bin.tar.gz">4.4.7.tar.gz (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-osgi-bin.tar.gz.sha512">sha512</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-osgi-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-osgi-bin.zip">4.4.6.zip (OSGi bundle)</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-osgi-bin.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.6-osgi-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-osgi-bin.zip">4.4.7.zip (OSGi bundle)</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-osgi-bin.zip.sha512">sha512</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.7-osgi-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.6-src.tar.gz">4.4.6.tar.gz</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.6-src.tar.gz.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.6-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.7-src.tar.gz">4.4.7.tar.gz</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.7-src.tar.gz.sha512">sha512</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.7-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.6-src.zip">4.4.6.zip</a>
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.6-src.zip.md5">md5</a>]
-       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.6-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.7-src.zip">4.4.7.zip</a>
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.7-src.zip.sha512">sha512</a>]
+       [<a href="http://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.7-src.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>

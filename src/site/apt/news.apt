@@ -30,6 +30,10 @@
 
 HttpComponents Project News
 
+*  14 September 2017 - HttpComponents HttpCore 4.4.7 (GA) released
+
+    This is a maintenance release that fixes a number of issues discovered since release 4.4.6.
+
 *  4 September 2017 - HttpComponents HttpCore 5.0-alpha4 released
 
     This is a major release that renders HttpCore API incompatible with the stable 4.x branch
