@@ -26,9 +26,9 @@
  -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <artifactId>project</artifactId>
+    <artifactId>httpcomponents-parent</artifactId>
     <groupId>org.apache.httpcomponents</groupId>
-    <version>8</version>
+    <version>10</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>website</artifactId>
@@ -71,7 +71,6 @@
         <plugin>
            <groupId>org.apache.maven.plugins</groupId>
            <artifactId>maven-project-info-reports-plugin</artifactId>
-           <version>${hc.project-info.version}</version><!-- needed for mvn site -->
            <!-- in particular, we don't want mailing-list to be inherited -->
            <inherited>false</inherited>
            <reportSets>
