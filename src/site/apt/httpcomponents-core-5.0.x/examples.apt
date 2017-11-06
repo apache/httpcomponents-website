@@ -51,7 +51,14 @@ HttpCore Examples
     
     This example demonstrates asynchronous execution of multiple HTTP/2 requests.
 
-    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncPipelinedRequestExecutionExample.java} 
+    * {{{./httpcore5-h2/examples/org/apache/hc/core5/http/examples/Http2TlsAlpnRequestExecutionExample.java}
+    HTTP/2 requests over TLS connections with ALPN support}}
+
+    This example demonstrates how to execute HTTP/2 requests over TLS connections with ALPN support.
+    It also explains how to avoid the illegal reflective access operation warning when running
+    Java 9 or older.
+
+    * {{{./httpcore5/examples/org/apache/hc/core5/http/examples/AsyncPipelinedRequestExecutionExample.java}
     Asynchronous HTTP/1.1 GET requests with message pipelining}}
     
     This example demonstrates asynchronous, pipelined execution multiple HTTP/1.1 requests.

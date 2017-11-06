@@ -40,7 +40,9 @@ HttpComponents Project Status
 
     HttpCore 5.x branch is the current unstable development branch. The main focus of the 5.0
     series is providing full-featured support for HTTP/1.1 and HTTP/2 and ensuring full compliance 
-    with RFC 7230, RFC 7231, RFC 7540 and RFC 7541.  
+    with RFC 7230, RFC 7231, RFC 7540 and RFC 7541. While 5.0 APIs are likely to change somewhat
+    in the course of BETA development phase the branch is considered feature complete. No major
+    API changes are expected.
 
 * {HttpComponents HttpClient 4.5.x}
 
