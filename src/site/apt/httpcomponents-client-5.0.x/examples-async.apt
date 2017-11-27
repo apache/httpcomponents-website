@@ -42,6 +42,12 @@ HttpClient Examples (Async)
     This example demonstrates an asynchronous HTTP request / response exchange with a full content 
     streaming.
 
+    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientTlsAlpn.java}
+    HTTP/2 ALPN support}}
+
+    This example demonstrates how to avoid the illegal reflective access operation warning when running
+    with Oracle JRE 9 or newer.
+
     * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientHttp1Pipelining.java}
     Pipelined HTTP/1.1 exchanges}}
 
