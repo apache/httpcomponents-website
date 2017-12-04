@@ -30,6 +30,10 @@
 
 HttpComponents Project News
 
+*  4 December 2017 - HttpComponents HttpClient 4.5.4 (GA) released
+
+    This is a maintenance release that fixes a number of issues discovered since release 4.5.3.
+
 *  27 November 2017 - HttpComponents HttpClient 5.0-alpha3 released
 
     This is a major release that introduces support for the HTTP/2 protocol and event driven
