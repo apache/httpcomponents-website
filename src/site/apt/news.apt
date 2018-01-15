@@ -30,6 +30,70 @@
 
 HttpComponents Project News
 
+* 15 January 2018 - HttpComponents HttpCore 5.0-beta2 released
+
+    This BETA release fixes a number of defects found since the previous release and
+    adds several incremental improvements.
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Support for HTTP/2 protocol and conformance to requirements and recommendations
+      of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+    Supported features:
+
+        * HPACK header compression
+
+        * stream multiplexing (client and server)
+
+        * flow control
+
+        * response push (client and server)
+
+        * message trailers
+
+        * expect-continue handshake
+
+        * connection validation (ping)
+
+        * application-layer protocol negotiation (ALPN) on Java 1.9+
+
+        * TLS 1.2 security features
+
+    Features out of scope for 5.0 release:
+
+        * padding of outgoing frames
+
+        * stream priority
+
+        * plain connection HTTP/1.1 upgrade
+
+        * CONNECT method
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification (RFC 7230, RFC 7231)
+
+    * New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
+
+    * Redesigned I/O reactor APIs and improved NIO based reactor implementation for a greater
+      performance and scalability.
+
+    * Support for server side request filters for classic and asynchronous server implementations.
+      Request filters could be used to implement cross-cutting protocol aspects such
+      as the 'expect-continue' handshaking and user authentication / authorization.
+
+    * Redesigned connection pool implementation with strict connection limit guarantees.
+      The connection pool is expected to have a better performance under higher concurrency
+      due to reduced global pool lock contention.
+
+    * New connection pool implementation with lax connection limit guarantees and better
+      performance under higher concurrency due to absence of a global pool lock.
+
+    * Package name space changed to 'org.apache.hc.core5'
+
+    * Maven group id changed to 'org.apache.httpcomponents.core5'
+
+
 *  4 December 2017 - HttpComponents HttpClient 4.5.4 (GA) released
 
     This is a maintenance release that fixes a number of issues discovered since release 4.5.3.
@@ -103,65 +167,6 @@ HttpComponents Project News
 
     * New HTTP/2 requester optimized for multiplexed execution of requests.
 
-    Notable changes and features included in the 5.0 series are:
-
-    * Support for HTTP/2 protocol and conformance to requirements and recommendations
-      of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
-
-    Supported features:
-
-        * HPACK header compression
-
-        * stream multiplexing (client and server)
-
-        * flow control
-
-        * response push (client and server)
-
-        * message trailers
-
-        * expect-continue handshake
-
-        * connection validation (ping)
-
-        * application-layer protocol negotiation (ALPN) on Java 1.9+
-
-        * TLS 1.2 security features
-
-    Features out of scope for 5.0 release:
-
-        * padding of outgoing frames
-
-        * stream priority
-
-        * plain connection HTTP/1.1 upgrade
-
-        * CONNECT method
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification (RFC 7230, RFC 7231)
-
-    * New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
-
-    * Redesigned I/O reactor APIs and improved NIO based reactor implementation for a greater
-      performance and scalability.
-
-    * Support for server side request filters for classic and asynchronous server implementations.
-      Request filters could be used to implement cross-cutting protocol aspects such
-      as the 'expect-continue' handshaking and user authentication / authorization.
-
-    * Redesigned connection pool implementation with strict connection limit guarantees.
-      The connection pool is expected to have a better performance under higher concurrency
-      due to reduced global pool lock contention.
-
-    * New connection pool implementation with lax connection limit guarantees and better
-      performance under higher concurrency due to absence of a global pool lock.
-
-    * Package name space changed to 'org.apache.hc.core5'
-
-    * Maven group id changed to 'org.apache.httpcomponents.core5'
-
-
 *  7 October 2017 - HttpComponents HttpCore 4.4.8 (GA) released
 
     This is a maintenance release that fixes a number of issues discovered since release 4.4.7.
@@ -176,125 +181,10 @@ HttpComponents Project News
     and upgrades HTTP/1.1 and HTTP/2 protocol conformance to the requirements and recommendations
     of the latest protocol specification.
 
-    Notable changes and features included in the 5.0 series are:
-
-    * Support for HTTP/2 protocol and conformance to requirements and recommendations
-      of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
-
-    Supported features:
-
-        * HPACK header compression
-
-        * stream multiplexing (client and server)
-
-        * flow control
-
-        * response push (client and server)
-
-        * message trailers
-
-        * expect-continue handshake
-
-        * connection validation (ping)
-
-        * application-layer protocol negotiation (ALPN) on Java 1.9+
-
-        * TLS 1.2 security features
-
-    Features out of scope for 5.0 release:
-
-        * padding of outgoing frames
-
-        * stream priority
-
-        * plain connection HTTP/1.1 upgrade
-
-        * CONNECT method
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification (RFC 7230, RFC 7231)
-
-    * New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
-
-    * Redesigned I/O reactor APIs and improved NIO based reactor implementation for a greater
-      performance and scalability.
-
-    * Support for server side request filters for classic and asynchronous server implementations.
-      Request filters could be used to implement cross-cutting protocol aspects such
-      as the 'expect-continue' handshaking and user authentication / authorization.
-
-    * Redesigned connection pool implementation with strict connection limit guarantees.
-      The connection pool is expected to have a better performance under higher concurrency
-      due to reduced global pool lock contention.
-
-    * New connection pool implementation with lax connection limit guarantees and better
-      performance under higher concurrency due to absence of a global pool lock.
-
-    * Package name space changed to 'org.apache.hc.core5'
-
-    * Maven group id changed to 'org.apache.httpcomponents.core5'
-
-
 *  11 May 2017 - HttpComponents HttpClient 5.0-alpha2 released
 
     This is a major release that introduces support for HTTP/2 protocol and event driven
     messaging APIs consistent for all supported HTTP protocol versions.
-
-    HttpClient ships with two client implementations:
-
-    * Classic: it is based on the classic (blocking) I/O model; largely compatible
-      with the 4.x APIs; supports HTTP/1.1 only.
-
-    * Async: based on NIO model; new event driven APIs consistent for all supported
-      HTTP protocol versions; supports both HTTP/1.1 and HTTP/2.
-
-
-    Notable changes and features included in the 5.0 series are:
-
-    * Partial support for HTTP/2 protocol and conformance to requirements and
-      recommendations of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
-
-      Supported features:
-
-        * HPACK header compression
-
-        * stream multiplexing (client and server)
-
-        * flow control
-
-        * response push
-
-        * message trailers
-
-        * expect-continue handshake
-
-        * connection validation (ping)
-
-        * application-layer protocol negotiation (ALPN) on Java 1.9+
-
-        * TLS 1.2 security features
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification (RFC 7230, RFC 7231)
-
-    * Redesigned connection pool implementation with reduced pool lock contention.
-
-    * Package name space changed to 'org.apache.hc.client5'
-
-    * Maven group id changed to 'org.apache.httpcomponents.client5'
-
-    * Apache Log4j2 logging APIs used for internal logging instead of Commons Logging APIs
-
-
-    Fetures presently that are presently NOT supported:
-
-    * HTTP/2 transport (classic)
-
-    * HTTP tunneling (async)
-
-    * Automatic response content decompression (async)
-
-    * Caching (async)
 
 *  2 May 2017 - HttpComponents HttpCore 5.0-alpha3 released
 
@@ -339,36 +229,12 @@ HttpComponents Project News
     the latest protocol specification. This release lays the foundation for transition to HTTP/2 
     as the primary transport protocol in the future releases.
 
-    Notable changes and features included in the 5.0 series are:
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification (RFC 7230, RFC 7231, RFC 7235)
-
-    * Package name space changed to 'org.apache.hc.client5'
-
-    * Maven group id changed to 'org.apache.httpcomponents.client5'
-
-    * By default the maximum connections per route limit is set to 5
-
-    * By default connection request timeout and connect timeout are set to 3 minutes.
-
 *  3 January 2016 - HttpComponents HttpCore 5.0-alpha1 released
 
     This is a major release that renders HttpCore API incompatible with the stable 4.x branch
     and upgrades HTTP/1.1 protocol conformance to the requirements and recommendations of the 
     latest protocol specification. This release lays the foundation for transition to HTTP/2 as 
     the primary transport protocol in the future releases.
-
-    Notable changes and features included in the 5.0 series are:
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol 
-      specification (RFC 7230, RFC 7231)
-
-    * Blocking I/O and NIO HTTP transport implementation has been folded into one module
-
-    * Package name space changed to 'org.apache.hc.core5' 
-
-    * Maven group id changed to 'org.apache.httpcomponents.core5' 
 
 *  9 November 2015 - HttpComponents HttpAsyncClient 4.1.1 (GA) released
 
