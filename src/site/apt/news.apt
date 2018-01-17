@@ -94,6 +94,10 @@ HttpComponents Project News
     * Maven group id changed to 'org.apache.httpcomponents.core5'
 
 
+*  11 January 2018 - HttpComponents HttpCore 4.4.9 (GA) released
+
+    This is a maintenance release that fixes a number of issues discovered since 4.4.8 and adds a few low-level methods.
+
 *  4 December 2017 - HttpComponents HttpClient 4.5.4 (GA) released
 
     This is a maintenance release that fixes a number of issues discovered since release 4.5.3.
