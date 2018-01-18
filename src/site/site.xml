@@ -77,7 +77,7 @@
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
-      <item name="HttpClient 5.0 alpha" collapse="true" href="httpcomponents-client-5.0.x/index.html">
+      <item name="HttpClient 5.0 beta" collapse="true" href="httpcomponents-client-5.0.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-5.0.x/quickstart.html"/>
         <item name="Examples (Classic)" href="httpcomponents-client-5.0.x/examples.html"/>
         <item name="Examples (Async)" href="httpcomponents-client-5.0.x/examples-async.html"/>

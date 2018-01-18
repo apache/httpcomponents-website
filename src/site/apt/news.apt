@@ -30,6 +30,69 @@
 
 HttpComponents Project News
 
+* 18 January 2018 - HttpComponents HttpClient 5.0-beta1 released
+
+    This is the first BETA release of HttpClient 5.0. The 5.0 release serices introduces
+    support for the HTTP/2 protocol and event driven messaging APIs consistent for all
+    supported HTTP protocol versions.
+
+    HttpClient ships with two client implementations:
+
+    * HttpClient Classic is based on the classic (blocking) I/O model; largely compatible
+      with the 4.x APIs; supports HTTP/1.1 only.
+
+    * HttpClient Async is based on NIO model; new event driven APIs consistent for all supported
+      HTTP protocol versions; supports both HTTP/1.1 and HTTP/2.
+
+    []
+
+    Notable new features in this release:
+
+    * New asynchronous HTTP cache backend APIs
+
+    * Fully asynchronous HTTP cache backend based on Memcached
+
+    * Support for bulk cache retrieval
+
+    []
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Support for the HTTP/2 protocol and conformance to requirements and
+      recommendations of the latest HTTP/2 protocol specification documents
+      (RFC 7540, RFC 7541.)
+
+      Supported features:
+
+        * HPACK header compression
+
+        * Stream multiplexing (client and server)
+
+        * Flow control
+
+        * Response push
+
+        * Message trailers
+
+        * Expect-continue handshake
+
+        * Connection validation (ping)
+
+        * Application-layer protocol negotiation (ALPN) on Java 9.0.1+
+
+        * TLS 1.2 security features
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification documents (RFC 7230, RFC 7231.)
+
+    * New connection pool implementation with lax connection limit guarantees and better
+      performance under higher concurrency due to absence of a global pool lock.
+
+    * Package name space changed to 'org.apache.hc.client5'.
+
+    * Maven group id changed to 'org.apache.httpcomponents.client5'.
+
+
 * 15 January 2018 - HttpComponents HttpCore 5.0-beta2 released
 
     This BETA release fixes a number of defects found since the previous release and
@@ -107,59 +170,12 @@ HttpComponents Project News
     This is a major release that introduces support for the HTTP/2 protocol and event driven
     messaging APIs consistent for all supported HTTP protocol versions.
 
-    HttpClient ships with two client implementations:
-
-    * HttpClient Classic is based on the classic (blocking) I/O model; largely compatible
-    with the 4.x APIs; supports HTTP/1.1 only.
-
-    * HttpClient Async is based on NIO model; new event driven APIs consistent for all supported
-    HTTP protocol versions; supports both HTTP/1.1 and HTTP/2.
-
     Notable new features in this release:
 
     * Asynchronous HttpClient implementations optimized for HTTP/2 multiplexed request execution.
 
     * Full support for HTTP caching by asynchronous HttpClient implementations including
       streaming message exchanages.
-
-
-    Notable changes and features included in the 5.0 series are:
-
-    * Support for the HTTP/2 protocol and conformance to requirements and
-      recommendations of the latest HTTP/2 protocol specification documents
-      (RFC 7540, RFC 7541.)
-
-      Supported features:
-
-        ** HPACK header compression
-
-        ** Stream multiplexing (client and server)
-
-        ** Flow control
-
-        ** Response push
-
-        ** Message trailers
-
-        ** Expect-continue handshake
-
-        ** Connection validation (ping)
-
-        ** Application-layer protocol negotiation (ALPN) on Java 9.0.1+
-
-        ** TLS 1.2 security features
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification documents (RFC 7230, RFC 7231.)
-
-    * Redesigned connection pool implementation with reduced pool lock contention.
-
-    * Package name space changed to 'org.apache.hc.client5'.
-
-    * Maven group id changed to 'org.apache.httpcomponents.client5'.
-
-    * Apache Log4j2 logging APIs used for internal logging instead of Commons Logging APIs.
-
 
 *  6 November 2017 - HttpComponents HttpCore 5.0-beta1 released
 
