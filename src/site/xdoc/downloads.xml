@@ -61,7 +61,7 @@
 
   <p>The <code>KEYS</code> link links to the code signing keys used to sign the product. The 
    <code>PGP</code> link downloads the OpenPGP compatible signature from our main site. The 
-   <code>MD5</code> link downloads the checksum from the main site.
+   <code>sha512</code> link downloads the SHA 512 checksum from the main site.
   </p>
 
   <subsection name="HttpClient 4.5.6 (GA)">
@@ -72,22 +72,22 @@
     <ul>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz">4.5.6.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.zip">4.5.6.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.zip.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.tar.gz">4.5.6.tar.gz (OSGi bundle)</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.zip">4.5.6.zip (OSGi bundle)</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.zip.asc">pgp</a>]
      </li>
     </ul>
@@ -95,12 +95,12 @@
     <ul>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.tar.gz">4.5.6.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.zip">4.5.6.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.zip.asc">pgp</a>]
      </li>
     </ul>
@@ -117,25 +117,25 @@
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.tar.gz">4.4.10.tar.gz</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.zip">4.4.10.zip</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-bin.zip.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.tar.gz">4.4.10.tar.gz (OSGi bundle)</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.zip">4.4.10.zip (OSGi bundle)</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.10-osgi-bin.zip.sha512">sha512</a>]
      </li>
     </ul>
     <p>Source</p>
@@ -144,13 +144,13 @@
        <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.tar.gz">4.4.10.tar.gz</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.zip">4.4.10.zip</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.10-src.zip.sha512">sha512</a>]
      </li>
     </ul>
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
@@ -164,22 +164,22 @@
     <ul>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.tar.gz">5.0-beta1.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.zip">5.0-beta1.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-bin.zip.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.tar.gz">5.0-beta1.tar.gz (OSGi bundle)</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.zip">5.0-beta1.zip (OSGi bundle)</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta1-osgi-bin.zip.asc">pgp</a>]
      </li>
     </ul>
@@ -187,12 +187,12 @@
     <ul>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.tar.gz">5.0-beta1.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.zip">5.0-beta1.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta1-src.zip.asc">pgp</a>]
      </li>
     </ul>
@@ -208,25 +208,25 @@
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.tar.gz">5.0-beta2.tar.gz</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.zip">5.0-beta2.zip</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-bin.zip.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.tar.gz">5.0-beta2.tar.gz (OSGi bundle)</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.zip">5.0-beta2.zip (OSGi bundle)</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta2-osgi-bin.zip.sha512">sha512</a>]
      </li>
     </ul>
     <p>Source</p>
@@ -235,13 +235,13 @@
        <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.tar.gz">5.0-beta2.tar.gz</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.zip">5.0-beta2.zip</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta2-src.zip.sha512">sha512</a>]
      </li>
     </ul>
   </subsection>
@@ -254,12 +254,12 @@
     <ul>
      <li>
        <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.tar.gz">4.1.3.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.zip">4.1.3.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.zip.asc">pgp</a>]
      </li>
     </ul>
@@ -267,12 +267,12 @@
     <ul>
      <li>
        <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.tar.gz">4.1.3.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip">4.1.3.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip.asc">pgp</a>]
      </li>
     </ul>
