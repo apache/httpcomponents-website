@@ -64,44 +64,44 @@
    <code>MD5</code> link downloads the checksum from the main site.
   </p>
 
-  <subsection name="HttpClient 4.5.5 (GA)">
+  <subsection name="HttpClient 4.5.6 (GA)">
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.5.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-bin.tar.gz">4.5.5.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-bin.tar.gz.md5">md5</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz">4.5.6.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-bin.zip">4.5.5.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-bin.zip.md5">md5</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.zip">4.5.6.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.zip.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-osgi-bin.tar.gz">4.5.5.tar.gz (OSGi bundle)</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-osgi-bin.tar.gz.md5">md5</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-osgi-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.tar.gz">4.5.6.tar.gz (OSGi bundle)</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-osgi-bin.zip">4.5.5.zip (OSGi bundle)</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-osgi-bin.zip.md5">md5</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.5-osgi-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.zip">4.5.6.zip (OSGi bundle)</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-osgi-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.5-src.tar.gz">4.5.5.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.5-src.tar.gz.md5">md5</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.5-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.tar.gz">4.5.6.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.tar.gz.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.5-src.zip">4.5.5.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.5-src.zip.md5">md5</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.5-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.zip">4.5.6.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.zip.md5">md5</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.6-src.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Recent releases of HttpClient can be found <a href="[preferred]/httpcomponents/httpclient">here</a></p>

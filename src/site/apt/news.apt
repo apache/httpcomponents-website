@@ -30,6 +30,12 @@
 
 HttpComponents Project News
 
+*  9 July 2018 - HttpComponents HttpClient 4.5.6 (GA) released
+
+    This is a maintenance release that adds Automatic-Module-Name to the manifest 
+    for compatibility with Java 9 Platform Module System and fixes a number of issues 
+    discovered since 4.5.5.
+
 *  3 July 2018 - HttpComponents HttpCore 4.4.10 (GA) released
 
     This is a maintenance release that adds Automatic-Module-Name to the manifest 
