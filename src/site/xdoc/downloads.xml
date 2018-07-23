@@ -246,34 +246,34 @@
     </ul>
   </subsection>
 
-  <subsection name="HttpAsyncClient 4.1.3 (GA)">
+  <subsection name="HttpAsyncClient 4.1.4 (GA)">
     <a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/KEYS">KEYS</a>
     <a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES-4.1.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.tar.gz">4.1.3.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.4-bin.tar.gz">4.1.4.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.4-bin.tar.gz.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.4-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.zip">4.1.3.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.3-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.4-bin.zip">4.1.4.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.4-bin.zip.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/binary/httpcomponents-asyncclient-4.1.4-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.tar.gz">4.1.3.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.4-src.tar.gz">4.1.4.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.4-src.tar.gz.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.4-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip">4.1.3.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.3-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.4-src.zip">4.1.4.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.4-src.zip.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpasyncclient/source/httpcomponents-asyncclient-4.1.4-src.zip.asc">pgp</a>]
      </li>
     </ul>
   </subsection>
