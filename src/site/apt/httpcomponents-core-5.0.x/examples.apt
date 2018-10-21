@@ -103,3 +103,14 @@ HttpCore Examples
     
     This is an example of an embedded HTTP/1.1 reverse proxy with an event driven, non-blocking message transport.
 
+HttpCore Reactive Streams Examples
+
+    * {{{./httpcore5-reactive/examples/org/apache/hc/core5/reactive/examples/ReactiveFullDuplexClientExample.java}
+    Client Reactive Streams}}
+
+    This is an example of full-duplex HTTP/1.1 client side message exchanges using reactive streaming.
+
+    * {{{./httpcore5-reactive/examples/org/apache/hc/core5/reactive/examples/ReactiveFullDuplexServerExample.java}
+    Server Reactive Streams}}
+
+    This is an example of full-duplex HTTP/1.1 server side message exchanges using reactive streaming.

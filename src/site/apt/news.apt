@@ -30,10 +30,14 @@
 
 HttpComponents Project News
 
-* 29 August 2018 - HttpComponents HttpCore 5.0-beta2 released
+* 22 October 2018 - HttpComponents HttpCore 5.0-beta5 released
 
-    This BETA release fixes a number of defects found since the previous release, adds several
-    incremental improvements and improves javadoc documentation.
+    This BETA release adds support for Reactive Streams API [http://www.reactive-streams.org/]
+    and fixes compatibility issues with Java 11 new TLS engine as well as a number of defects
+    found since the previous release.
+
+    This release also includes a redesigned HTTP stress test tool loosely based on
+    Apache Benchmark (AB) command interface with support for HTTP/2.
 
     Notable changes and features included in the 5.0 series are:
 
@@ -93,6 +97,10 @@ HttpComponents Project News
 
     * Maven group id changed to 'org.apache.httpcomponents.core5'
 
+* 29 August 2018 - HttpComponents HttpCore 5.0-beta3 released
+
+    This BETA release fixes a number of defects found since the previous release, adds several
+    incremental improvements and improves javadoc documentation.
 
 *  23 July 2018 - HttpComponents HttpAsyncClient 4.1.4 (GA) released
 

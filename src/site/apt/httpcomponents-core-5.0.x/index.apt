@@ -45,6 +45,10 @@ HttpCore Overview
 
     * {{{./httpcore5-h2/project-reports.html}HttpCore HTTP/2}}
 
+    * {{{./httpcore5-reactive/project-reports.html}HttpCore Reactive Streams}}
+
+    * {{{./httpcore5-testing/project-reports.html}HttpCore testing support}}
+
 {Standards Compliance}
 
     HttpCore components strive to conform to the following specifications endorsed by the Internet 
