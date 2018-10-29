@@ -81,6 +81,7 @@
         <item name="Quick Start" href="httpcomponents-client-5.0.x/quickstart.html"/>
         <item name="Examples (Classic)" href="httpcomponents-client-5.0.x/examples.html"/>
         <item name="Examples (Async)" href="httpcomponents-client-5.0.x/examples-async.html"/>
+        <item name="Examples (Reactive)" href="httpcomponents-client-5.0.x/examples-reactive.html"/>
         <item name="Logging Guide" href="httpcomponents-client-5.0.x/logging.html"/>
         <item name="Download" href="httpcomponents-client-5.0.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-5.0.x/project-info.html"/>

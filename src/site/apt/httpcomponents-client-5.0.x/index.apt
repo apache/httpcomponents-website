@@ -52,15 +52,15 @@ HttpClient Overview
     
     [[1]] Project reports
 
-    * {{{./httpclient/project-reports.html}HttpClient}}
+    * {{{./httpclient5/project-reports.html}HttpClient}}
 
-    * {{{./httpclient-fluent/project-reports.html}HC Fluent}}
+    * {{{./httpclient5-fluent/project-reports.html}HC Fluent}}
 
-    * {{{./httpclient-cache/project-reports.html}HttpClient Cache}}
+    * {{{./httpclient5-cache/project-reports.html}HttpClient Cache}}
    
-    * {{{./httpclient-win/project-reports.html}HttpClient Windows extensions}}
+    * {{{./httpclient5-win/project-reports.html}HttpClient Windows extensions}}
    
-    * {{{./httpclient-osgi/project-reports.html}HttpClient OSGi}}
+    * {{{./httpclient5-osgi/project-reports.html}HttpClient OSGi}}
    
 {Features}
 
