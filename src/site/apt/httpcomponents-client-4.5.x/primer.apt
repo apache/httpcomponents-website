@@ -618,14 +618,9 @@ Client HTTP Programming Primer
     Section on Forms}}: Includes how browsers have to generate the data to submit 
     to the server.
 
-    * {{{http://www.webreference.com/html/tutorial13/} Giving Form to Forms}}:
+    * {{{https://digital.com/tools/html-cheatsheet/} Giving Form to Forms}}:
     Explains how to define HTML forms and what is submitted to the server.
     Probably easier to digest than the HTML 4.01 Specification.
-
-~~ TODO this URL is broken; so far have not found a replacement
-    * {{{http://java.sun.com/developer/technicalArticles/InnerWorkings/BackstageSession/index.html} 
-    JDC and Session Management}}: Details of a real site using session tracking, 
-    login forms and redirects.
 
     * {{{http://jakarta.apache.org/commons/fileupload/} Commons File Upload}}:
     Server-side library for parsing multipart requests.
