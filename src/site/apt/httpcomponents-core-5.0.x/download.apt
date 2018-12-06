@@ -46,5 +46,5 @@ HttpCore Downloads
     {{{./httpcore5/dependency-info.html}HttpCore HTTP/1.1}}
     {{{./httpcore5-h2/dependency-info.html}HttpCore HTTP/2}}
     {{{./httpcore5-reactive/dependency-info.html}HttpCore Reactive Streams}}
-    {{{./httpcore5-testing/dependency-info.html}HttpCore resting support}}
+    {{{./httpcore5-testing/dependency-info.html}HttpCore testing support}}
 
