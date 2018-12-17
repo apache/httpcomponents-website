@@ -59,9 +59,7 @@ HttpClient Overview
     * {{{./httpclient5-cache/project-reports.html}HttpClient Cache}}
    
     * {{{./httpclient5-win/project-reports.html}HttpClient Windows extensions}}
-   
-    * {{{./httpclient5-osgi/project-reports.html}HttpClient OSGi}}
-   
+
 {Features}
 
     * Standards based, pure Java, implementation of HTTP versions 1.0 and 1.1

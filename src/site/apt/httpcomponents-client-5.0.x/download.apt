@@ -51,6 +51,4 @@ HttpClient Downloads
 
     {{{./httpclient5-win/dependency-info.html}HttpClient Windows extensions}}
 
-    {{{./httpclient5-osgi/dependency-info.html}HttpClient OSGi}}
-
 

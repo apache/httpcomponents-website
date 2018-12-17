@@ -111,7 +111,7 @@ CloseableHttpAsyncClient httpclient = HttpAsyncClients.createDefault();
 httpclient.start();
 
 // Execute request
-final SimpleHttpRequest request1 = SimpleHttpRequest.get("http://httpbin.org/get");
+final SimpleHttpRequest request1 = SimpleHttpRequests.GET.create("http://httpbin.org/get");
 Future<SimpleHttpResponse> future = httpclient.execute(request1, null);
 // and wait until response is received
 final SimpleHttpResponse response1 = future.get();
@@ -119,7 +119,7 @@ System.out.println(request1.getRequestUri() + "->" + response1.getCode());
 
 // One most likely would want to use a callback for operation result
 final CountDownLatch latch1 = new CountDownLatch(1);
-final SimpleHttpRequest request2 = SimpleHttpRequest.get("http://httpbin.org/get");
+final SimpleHttpRequest request2 = SimpleHttpRequests.GET.create("http://httpbin.org/get");
 httpclient.execute(request2, new FutureCallback<SimpleHttpResponse>() {
 
     @Override
@@ -154,11 +154,6 @@ AbstractCharResponseConsumer<HttpResponse> consumer3 = new AbstractCharResponseC
     @Override
     protected void start(final HttpResponse response, final ContentType contentType) throws HttpException, IOException {
         this.response = response;
-    }
-
-    @Override
-    protected int remainingCapacity() {
-        return Integer.MAX_VALUE;
     }
 
     @Override
