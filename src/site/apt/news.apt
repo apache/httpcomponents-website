@@ -30,6 +30,12 @@
 
 HttpComponents Project News
 
+*  21 January 2019 - HttpComponents HttpCore 4.4.11 (GA) released
+
+    This is a maintenance release that corrects a number of defects in non-blocking SSL
+    session code that caused compatibility issues with TLSv1.3 protocol implementation
+    shipped with Java 11.
+
 * 17 December 2018 - HttpComponents HttpClient 5.0-beta3 released
 
     This BETA release adds support for advanced TLS functions (such as ALPN protocol negotiation)
