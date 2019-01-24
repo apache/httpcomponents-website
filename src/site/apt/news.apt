@@ -30,6 +30,11 @@
 
 HttpComponents Project News
 
+*  24 January 2019 - HttpComponents HttpClient 4.5.7 (GA) released
+
+    This is a maintenance release that corrects Automatic-Module-Name definitions added in
+    the previous release and fixes a number of minor defects discovered since 4.5.6.
+
 *  21 January 2019 - HttpComponents HttpCore 4.4.11 (GA) released
 
     This is a maintenance release that corrects a number of defects in non-blocking SSL
