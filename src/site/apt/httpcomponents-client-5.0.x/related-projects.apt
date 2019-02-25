@@ -30,6 +30,12 @@
 
 Related projects
 
+* HttpClient 5.0 migration guide
+
+    {{{https://ok2c.github.io/httpclient-migration-guide/}HttpClient 5.0 migration guide}}
+    is a third party resource with recommendations about the upgrade process and
+    possible upgrade paths from Apache HttpClient 4.x to Apache HttpClient 5.0.
+
 * Asynchronous JSON message processors
 
     {{{https://github.com/ok2c/httpcomponents-jackson}Asynchronous JSON message processors}}
