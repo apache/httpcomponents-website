@@ -30,71 +30,18 @@
 
 HttpComponents Project News
 
-*  24 January 2019 - HttpComponents HttpClient 4.5.7 (GA) released
+* 4 March 2019 - HttpComponents HttpCore 5.0-beta7 released
 
-    This is a maintenance release that corrects Automatic-Module-Name definitions added in
-    the previous release and fixes a number of minor defects discovered since 4.5.6.
-
-*  21 January 2019 - HttpComponents HttpCore 4.4.11 (GA) released
-
-    This is a maintenance release that corrects a number of defects in non-blocking SSL
-    session code that caused compatibility issues with TLSv1.3 protocol implementation
-    shipped with Java 11.
-
-* 17 December 2018 - HttpComponents HttpClient 5.0-beta3 released
-
-    This BETA release adds support for advanced TLS functions (such as ALPN protocol negotiation)
-    on Java 1.7 and Java 1.8 through Conscrypt TLS library and picks up the latest fixes
-    and performance improvements from HttpCore.
+    This BETA release adds support for SOCKS version 5, improves support for TLS
+    handshake timeout configuration, improves URI builder, and fixes various defects.
 
     Notable new features in this release:
 
-    * TLS ALPN protocol negotiation support on older JREs through Conscrypt TLS library.
+    * SOCKS version 5 support
+
+    * Improved TLS handshake timeout configuration
 
     []
-
-    Notable changes and features included in the 5.0 series are:
-
-    * Support for the HTTP/2 protocol and conformance to requirements and
-      recommendations of the latest HTTP/2 protocol specification documents
-      (RFC 7540, RFC 7541.)
-
-      Supported features:
-
-        * HPACK header compression
-
-        * Stream multiplexing (client and server)
-
-        * Flow control
-
-        * Response push
-
-        * Message trailers
-
-        * Expect-continue handshake
-
-        * Connection validation (ping)
-
-        * Application-layer protocol negotiation (ALPN) on Java 9.0.1+
-
-        * TLS 1.2 security features
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification documents (RFC 7230, RFC 7231.)
-
-    * New connection pool implementation with lax connection limit guarantees and better
-      performance under higher concurrency due to absence of a global pool lock.
-
-    * Package name space changed to 'org.apache.hc.client5'.
-
-    * Maven group id changed to 'org.apache.httpcomponents.client5'.
-
-
-* 6 December 2018 - HttpComponents HttpCore 5.0-beta5 released
-
-    This BETA release adds support for advanced TLS functions (such as ALPN protocol negotiation)
-    on Java 1.7 and Java 1.8 through Conscrypt TLS library, and fixes a number of defects found
-    since the previous release.
 
     Notable changes and features included in the 5.0 series are:
 
@@ -155,12 +102,81 @@ HttpComponents Project News
     * Maven group id changed to 'org.apache.httpcomponents.core5'
 
 
+*  24 January 2019 - HttpComponents HttpClient 4.5.7 (GA) released
+
+    This is a maintenance release that corrects Automatic-Module-Name definitions added in
+    the previous release and fixes a number of minor defects discovered since 4.5.6.
+
+*  21 January 2019 - HttpComponents HttpCore 4.4.11 (GA) released
+
+    This is a maintenance release that corrects a number of defects in non-blocking SSL
+    session code that caused compatibility issues with TLSv1.3 protocol implementation
+    shipped with Java 11.
+
+* 17 December 2018 - HttpComponents HttpClient 5.0-beta3 released
+
+    This BETA release adds support for advanced TLS functions (such as ALPN protocol negotiation)
+    on Java 1.7 and Java 1.8 through Conscrypt TLS library and picks up the latest fixes
+    and performance improvements from HttpCore.
+
+    Notable new features in this release:
+
+    * TLS ALPN protocol negotiation support on older JREs through Conscrypt TLS library.
+
+    []
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Support for the HTTP/2 protocol and conformance to requirements and
+      recommendations of the latest HTTP/2 protocol specification documents
+      (RFC 7540, RFC 7541.)
+
+      Supported features:
+
+        * HPACK header compression
+
+        * Stream multiplexing (client and server)
+
+        * Flow control
+
+        * Response push
+
+        * Message trailers
+
+        * Expect-continue handshake
+
+        * Connection validation (ping)
+
+        * Application-layer protocol negotiation (ALPN) on Java 9.0.1+
+
+        * TLS 1.2 security features
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification documents (RFC 7230, RFC 7231.)
+
+    * New connection pool implementation with lax connection limit guarantees and better
+      performance under higher concurrency due to absence of a global pool lock.
+
+    * Package name space changed to 'org.apache.hc.client5'.
+
+    * Maven group id changed to 'org.apache.httpcomponents.client5'.
+
+
+* 6 December 2018 - HttpComponents HttpCore 5.0-beta6 released
+
+    This BETA release adds support for advanced TLS functions (such as ALPN protocol negotiation)
+    on Java 1.7 and Java 1.8 through Conscrypt TLS library, and fixes a number of defects found
+    since the previous release.
+
+    Notable new features in this release:
+
+    * TLS ALPN protocol negotiation on Java 1.7 and Java 1.8 through Conscrypt TLS library
+
+
 * 29 October 2018 - HttpComponents HttpClient 5.0-beta2 released
 
     This BETA release resolves compatibility issues with Java 11 new TLS engine as well as
     a number of defects found since the previous release.
-
-    []
 
     Notable new features in this release:
 
