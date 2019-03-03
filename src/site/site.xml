@@ -64,7 +64,6 @@
       <item name="License" href="http://www.apache.org/licenses/"/>
       <item name="Download" href="downloads.cgi"/>
       <item name="Mailing Lists" href="mail.html"/>
-      <item name="Developer documents" href="dev-docs.html"/>
       <item name="Wiki (external)" href="http://wiki.apache.org/HttpComponents/"/>
       <item name="Security" href="http://www.apache.org/security/"/>
     </menu>
