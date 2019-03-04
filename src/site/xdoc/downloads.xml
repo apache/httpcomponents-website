@@ -107,13 +107,11 @@
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.tar.gz">4.4.11.tar.gz</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.zip">4.4.11.zip</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-4.4.11-bin.zip.sha512">sha512</a>]
      </li>
     </ul>
     <p>Source</p>
@@ -122,13 +120,11 @@
        <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.tar.gz">4.4.11.tar.gz</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.tar.gz.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.tar.gz.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.tar.gz.sha512">sha512</a>]
      </li>
      <li>
        <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.zip">4.4.11.zip</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.zip.asc">pgp</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.4.11-src.zip.sha512">sha512</a>]
      </li>
     </ul>
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
