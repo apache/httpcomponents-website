@@ -30,6 +30,12 @@
 
 HttpComponents Project News
 
+* 31 March 2019 - HttpComponents HttpClient 4.5.8 (GA) released
+
+    This is a maintenance release that makes request URI normalization configurable on
+    per request basis and also ports several improvements in URI handling from HttpCore
+    master.
+
 * 4 March 2019 - HttpComponents HttpCore 5.0-beta7 released
 
     This BETA release adds support for SOCKS version 5, improves support for TLS
