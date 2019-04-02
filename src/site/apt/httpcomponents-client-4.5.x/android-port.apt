@@ -50,6 +50,14 @@ HttpClient for Android
     Those users who want to continue using Apache HttpClient on Android are advised to 
     consider 
 
+    * Apache HttpCLient 5.x stock version, which works well with Android API 19 and newer, currently in beta
+    
+----
+dependencies {
+    compile group: 'org.apache.httpcomponents.client5' , name: 'httpclient5' , version: '5.0-beta3'
+}
+----
+
     * Apache HttpClient 4.3 port for Android when targeting Android API 22 and older 
 
 ----
@@ -63,7 +71,7 @@ dependencies {
 
 ----
 dependencies {
-    compile group: 'cz.msebera.android' , name: 'httpclient', version: '4.4.1.1'
+    compile group: 'cz.msebera.android' , name: 'httpclient', version: '4.5.3'
 }
 ----
 
