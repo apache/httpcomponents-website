@@ -30,65 +30,65 @@
 
 HttpClient Examples (Async)
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientHttpExchange.java}
+    * {{{./httpclient5/examples/AsyncClientHttpExchange.java}
     Asynchronous HTTP exchange}}
 
     This example demonstrates a basic asynchronous HTTP request / response exchange. 
     Response content is buffered in memory for simplicity.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientHttpExchangeStreaming.java}
+    * {{{./httpclient5/examples/AsyncClientHttpExchangeStreaming.java}
     Asynchronous HTTP exchange with content streaming}}
     
     This example demonstrates an asynchronous HTTP request / response exchange with a full content 
     streaming.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientTlsAlpn.java}
+    * {{{./httpclient5/examples/AsyncClientTlsAlpn.java}
     HTTP/2 ALPN support}}
 
     This example demonstrates how to avoid the illegal reflective access operation warning when running
     with Oracle JRE 9 or newer.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientHttp1Pipelining.java}
+    * {{{./httpclient5/examples/AsyncClientHttp1Pipelining.java}
     Pipelined HTTP/1.1 exchanges}}
 
     This example demonstrates a pipelined execution of multiple HTTP/1.1 request / response exchanges.
     Response content is buffered in memory for simplicity.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientHttp2Multiplexing.java}
+    * {{{./httpclient5/examples/AsyncClientHttp2Multiplexing.java}
     Multiplexed HTTP/2 exchanges}}
 
     This example demonstrates a multiplexed execution of multiple HTTP/2 request / response exchanges.
     Response content is buffered in memory for simplicity.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientInterceptors.java}
+    * {{{./httpclient5/examples/AsyncClientInterceptors.java}
     Request execution interceptors}}
 
     This example demonstrates how to insert custom request interceptor and an execution interceptor to the
     request execution chain.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientMessageTrailers.java}
+    * {{{./httpclient5/examples/AsyncClientMessageTrailers.java}
     Message trailers}}
 
     This example demonstrates how to use a custom execution interceptor to add trailers to all 
     outgoing request enclosing an entity..
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientHttp2ServerPush.java}
+    * {{{./httpclient5/examples/AsyncClientHttp2ServerPush.java}
     Multiplexed HTTP/2 exchanges}}
 
     This example demonstrates handling of HTTP/2 message exchanges pushed by the server.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientAuthentication.java}
+    * {{{./httpclient5/examples/AsyncClientAuthentication.java}
     Client authentication}}
 
     This example demonstrates execution of an HTTP request against a target site that requires user
     authentication.  
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientCustomSSL.java}
+    * {{{./httpclient5/examples/AsyncClientCustomSSL.java}
     Custom SSL context}}
     
     This example demonstrates how to create secure connections with a custom SSL context.
 
-    * {{{./httpclient5/examples/org/apache/hc/client5/http/examples/AsyncClientConnectionEviction.java}
+    * {{{./httpclient5/examples/AsyncClientConnectionEviction.java}
     Connection eviction}}
     
     This example demonstrates how to evict expired and idle connections from the connection pool.
