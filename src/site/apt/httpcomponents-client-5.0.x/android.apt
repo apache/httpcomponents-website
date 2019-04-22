@@ -23,21 +23,17 @@
 ~~ <http://www.apache.org/>.
 
     ----------
-    HttpComponents HttpCore Examples
+    HttpClient for Android
     ----------
     ----------
     ----------
 
-Related projects
+HttpClient for Android
 
-* Asynchronous JSON message processors
-
-    {{{https://ok2c.github.io/httpcomponents-jackson/}Asynchronous JSON message processors}}
-    library is a companion project for HttpCore 5.0 developed outside the Apache Software Foundation.
-
-    The library provides a number of asynchronous message consumers and producers
-    for efficient, reactive processing of HTTP messages with enclosed JSON content using
-    {{{https://github.com/FasterXML/jackson}Jackson JSON processor}}.
-
-
+    Apache HttpCLient 5.x is expected to work well with Android API 19 and newer
     
+----
+dependencies {
+    compile group: 'org.apache.httpcomponents.client5' , name: 'httpclient5' , version: '5.0-beta4'
+}
+----

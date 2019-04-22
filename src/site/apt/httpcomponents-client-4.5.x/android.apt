@@ -35,34 +35,20 @@ HttpClient for Android
     of interfaces and internal structures were still not fully worked out. As Apache HttpClient 4.0 
     was maturing the project was expecting Google to incorporate the latest code improvements into 
     their code tree. Unfortunately it did not happen. Version of Apache HttpClient shipped with 
-    Android has effectively become a fork. Eventually Google decided to discontinue further 
-    development of their fork while refusing to upgrade to the stock version of Apache HttpClient 
-    citing compatibility concerns as a reason for such decision. As a result those Android 
-    developers who would like to continue using Apache HttpClient APIs on Android cannot take 
-    advantage of newer features, performance improvements and bug fixes. 
+    Android has effectively become a fork.
 
-    Apache HttpClient 4.3 port for Android was intended to remedy the situation by providing 
-    official releases compatible with Google Android.  
-
-    Given that as of Android API 23 Google's fork of HttpClient has been removed this project
-    has been discontinued. 
+    Eventually Google decided to discontinue further development of their fork while refusing to upgrade
+    to the stock version of Apache HttpClient citing compatibility concerns as a reason for such decision.
+    Google completely removed their fork of Apache HttpClient from Android in version 8.0 (API 26) only.
 
     Those users who want to continue using Apache HttpClient on Android are advised to 
     consider 
 
-    * Apache HttpCLient 5.x stock version, which works well with Android API 19 and newer, currently in beta
+    * Apache HttpCLient 5.x stock version, which works well with Android API 19 and newer
     
 ----
 dependencies {
-    compile group: 'org.apache.httpcomponents.client5' , name: 'httpclient5' , version: '5.0-beta3'
-}
-----
-
-    * Apache HttpClient 4.3 port for Android when targeting Android API 22 and older 
-
-----
-dependencies {
-    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    compile group: 'org.apache.httpcomponents.client5' , name: 'httpclient5' , version: '5.0-beta4'
 }
 ----
 
@@ -75,3 +61,15 @@ dependencies {
 }
 ----
 
+    * {{{https://ok2c.github.io/httpclient-android-ext/}Android extensions}} for Apache HttpClient 4.5
+    when targeting Android API 26 or newer.
+
+    Android extensions for Apache HttpClient provide a replacement for the default <<<HostnameVerifier>>>
+    implementation incompatible with Android and provide a builder for <<<PoolingHttpClientConnectionManager>>>
+    instances optimized for Android called <<<AndroidHttpClientConnectionManagerBuilder>>>.
+
+----
+dependencies {
+    api 'com.github.ok2c.hc4.android:httpclient-android:0.1.0'
+}
+----

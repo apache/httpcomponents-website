@@ -38,7 +38,7 @@ Related projects
 
 * Asynchronous JSON message processors
 
-    {{{https://github.com/ok2c/httpcomponents-jackson}Asynchronous JSON message processors}}
+    {{{https://ok2c.github.io/httpcomponents-jackson/}Asynchronous JSON message processors}}
     library is a companion project for HttpClient 5.0 developed outside the Apache Software
     Foundation.
 
@@ -47,4 +47,8 @@ Related projects
     {{{https://github.com/FasterXML/jackson}Jackson JSON processor}}.
 
 
-    
+* Android extensions
+
+    {{{https://ok2c.github.io/httpclient-android-ext/}Android extensions for
+    Apache HttpClient 5.0}} is a third party library that provides extra functionality
+    simplifying application of Apache HttpClient on Google Android platform.

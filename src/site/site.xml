@@ -82,6 +82,7 @@
         <item name="Examples (Async)" href="httpcomponents-client-5.0.x/examples-async.html"/>
         <item name="Examples (Reactive)" href="httpcomponents-client-5.0.x/examples-reactive.html"/>
         <item name="Logging Guide" href="httpcomponents-client-5.0.x/logging.html"/>
+        <item name="Android" href="httpcomponents-client-5.0.x/android.html"/>
         <item name="Related" href="httpcomponents-client-5.0.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-client-5.0.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-5.0.x/project-info.html"/>
@@ -90,7 +91,7 @@
         <item name="Quick Start" href="httpcomponents-client-4.5.x/quickstart.html"/>
         <item name="Tutorial" href="httpcomponents-client-4.5.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-client-4.5.x/examples.html"/>
-        <item name="Android Port" href="httpcomponents-client-4.5.x/android-port.html"/>
+        <item name="Android" href="httpcomponents-client-4.5.x/android.html"/>
         <item name="Programming Primer" href="httpcomponents-client-4.5.x/primer.html"/>
         <item name="NTLM Guide" href="httpcomponents-client-4.5.x/ntlm.html"/>
         <item name="Logging Guide" href="httpcomponents-client-4.5.x/logging.html"/>
