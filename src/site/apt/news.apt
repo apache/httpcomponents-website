@@ -30,6 +30,10 @@
 
 HttpComponents Project News
 
+* 12 June 2019 - HttpComponents HttpClient 4.5.9 (GA) released
+
+    This is a maintenance release that fixes a number defects discovered since 4.5.8.
+
 * 8 April 2019 - HttpComponents HttpClient 5.0-beta4 released
 
     This BETA release picks up the latest fixes and performance improvements from HttpCore

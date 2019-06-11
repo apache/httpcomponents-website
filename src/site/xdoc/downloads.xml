@@ -64,34 +64,34 @@
    <code>sha512</code> link downloads the SHA 512 checksum from the main site.
   </p>
 
-  <subsection name="HttpClient 4.5.8 (GA)">
+  <subsection name="HttpClient 4.5.9 (GA)">
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.5.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.8-bin.tar.gz">4.5.8.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.8-bin.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.8-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.9-bin.tar.gz">4.5.9.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.9-bin.tar.gz.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.9-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.8-bin.zip">4.5.8.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.8-bin.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.8-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-4.5.9-bin.zip">4.5.9.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.9-bin.zip.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-4.5.9-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.8-src.tar.gz">4.5.8.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.8-src.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.8-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.9-src.tar.gz">4.5.9.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.9-src.tar.gz.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.9-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.8-src.zip">4.5.8.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.8-src.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.8-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-4.5.9-src.zip">4.5.9.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.9-src.zip.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.5.9-src.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Recent releases of HttpClient can be found <a href="[preferred]/httpcomponents/httpclient">here</a></p>
