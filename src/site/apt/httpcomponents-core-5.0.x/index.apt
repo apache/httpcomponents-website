@@ -54,16 +54,18 @@ HttpCore Overview
     HttpCore components strive to conform to the following specifications endorsed by the Internet 
     Engineering Task Force (IETF) and the internet at large:
 
-    * {{{https://tools.ietf.org/html/rfc7540}RFC 7540}} - Hypertext Transfer Protocol Version 2 
+    * {{{http://tools.ietf.org/html/rfc7540}RFC 7540}} - Hypertext Transfer Protocol Version 2
     (HTTP/2)
 
-    * {{{https://tools.ietf.org/html/rfc7541}RFC 7541}} - HPACK: Header Compression for HTTP/2
+    * {{{http://tools.ietf.org/html/rfc7541}RFC 7541}} - HPACK: Header Compression for HTTP/2
 
-    * {{{https://tools.ietf.org/html/rfc7230}RFC 7230}} - Hypertext Transfer Protocol (HTTP/1.1): 
+    * {{{http://tools.ietf.org/html/rfc7230}RFC 7230}} - Hypertext Transfer Protocol (HTTP/1.1):
     Message Syntax and Routing
 
-    * {{{https://tools.ietf.org/html/rfc7231}RFC 7231}} - Hypertext Transfer Protocol (HTTP/1.1): 
+    * {{{http://tools.ietf.org/html/rfc7231}RFC 7231}} - Hypertext Transfer Protocol (HTTP/1.1):
     Semantics and Content
 
-    * {{{https://tools.ietf.org/html/rfc1945}RFC 1945}} - Hypertext Transfer Protocol -- HTTP/1.0
+    * {{{http://tools.ietf.org/html/rfc1945}RFC 1945}} - Hypertext Transfer Protocol -- HTTP/1.0
+
+    * {{{http://tools.ietf.org/html/rfc2396}RFC 2396}} - Uniform Resource Identifiers (URI): Generic Syntax
 
