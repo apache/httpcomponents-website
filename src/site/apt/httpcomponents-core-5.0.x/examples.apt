@@ -46,19 +46,19 @@ HttpCore Examples
     
     This example demonstrates asynchronous execution of multiple HTTP/1.1 requests.
 
-    * {{{./httpcore5-h2/examples/Http2RequestExecutionExample.java} 
+    * {{{./httpcore5-h2/examples/H2RequestExecutionExample.java}
     Asynchronous HTTP/2 GET requests}}
     
     This example demonstrates asynchronous execution of multiple HTTP/2 requests.
 
-    * {{{./httpcore5-h2/examples/Http2TlsAlpnRequestExecutionExample.java}
+    * {{{./httpcore5-h2/examples/H2TlsAlpnRequestExecutionExample.java}
     HTTP/2 requests over TLS connections with ALPN support}}
 
     This example demonstrates how to execute HTTP/2 requests over TLS connections with ALPN support.
     It also explains how to avoid the illegal reflective access operation warning when running
     Java 9 or older.
 
-    * {{{./httpcore5-h2/examples/Http2ConscriptRequestExecutionExample.java}
+    * {{{./httpcore5-h2/examples/H2ConscriptRequestExecutionExample.java}
     HTTP/2 requests over TLS connections with ALPN support on Java 1.7 and Java 1.8}}
 
     This example demonstrates how to execute HTTP/2 requests over TLS connections with ALPN support
@@ -69,7 +69,7 @@ HttpCore Examples
     
     This example demonstrates asynchronous, pipelined execution multiple HTTP/1.1 requests.
 
-    * {{{./httpcore5-h2/examples/Http2MultiStreamExecutionExample.java} 
+    * {{{./httpcore5-h2/examples/H2MultiStreamExecutionExample.java}
     Asynchronous HTTP/2 GET requests with multiple concurrent streams}}
     
     This example demonstrates asynchronous, multistream execution of multiple HTTP/2 requests.
@@ -94,7 +94,7 @@ HttpCore Examples
 
     This is an example of using asynchronous request filters with an embedded HTTP/1.1 server.
 
-    * {{{./httpcore5-h2/examples/Http2FileServerExample.java} 
+    * {{{./httpcore5-h2/examples/H2FileServerExample.java}
     Asynchronous HTTP/2 file server}}
     
     This is an example of an embedded HTTP/2 file server with an event driven, non-blocking message transport.
