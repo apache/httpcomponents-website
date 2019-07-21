@@ -30,6 +30,48 @@
 
 HttpComponents Project News
 
+* 22 July 2019 - HttpComponents HttpClient 5.0-beta5 released
+
+    This BETA release picks up the latest fixes and performance improvements from
+    HttpCore and addresses a number of issues found since the previous BETA release.
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Support for the HTTP/2 protocol and conformance to requirements and
+      recommendations of the latest HTTP/2 protocol specification documents
+      (RFC 7540, RFC 7541.)
+
+      Supported features:
+
+        * HPACK header compression
+
+        * Stream multiplexing (client and server)
+
+        * Flow control
+
+        * Response push
+
+        * Message trailers
+
+        * Expect-continue handshake
+
+        * Connection validation (ping)
+
+        * Application-layer protocol negotiation (ALPN) on Java 9.0.1+
+
+        * TLS 1.2 security features
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification documents (RFC 7230, RFC 7231.)
+
+    * New connection pool implementation with lax connection limit guarantees and better
+      performance under higher concurrency due to absence of a global pool lock.
+
+    * Package name space changed to 'org.apache.hc.client5'.
+
+    * Maven group id changed to 'org.apache.httpcomponents.client5'.
+
+
 * 15 July 2019 - HttpComponents HttpCore 5.0-beta8 released
 
     This BETA fixes a number of defects found since the last release and adds several
@@ -117,45 +159,6 @@ HttpComponents Project News
     * Security improvements.
 
     * URI handling improvements.
-
-    []
-
-    Notable changes and features included in the 5.0 series are:
-
-    * Support for the HTTP/2 protocol and conformance to requirements and
-      recommendations of the latest HTTP/2 protocol specification documents
-      (RFC 7540, RFC 7541.)
-
-      Supported features:
-
-        * HPACK header compression
-
-        * Stream multiplexing (client and server)
-
-        * Flow control
-
-        * Response push
-
-        * Message trailers
-
-        * Expect-continue handshake
-
-        * Connection validation (ping)
-
-        * Application-layer protocol negotiation (ALPN) on Java 9.0.1+
-
-        * TLS 1.2 security features
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification documents (RFC 7230, RFC 7231.)
-
-    * New connection pool implementation with lax connection limit guarantees and better
-      performance under higher concurrency due to absence of a global pool lock.
-
-    * Package name space changed to 'org.apache.hc.client5'.
-
-    * Maven group id changed to 'org.apache.httpcomponents.client5'.
-
 
 * 31 March 2019 - HttpComponents HttpClient 4.5.8 (GA) released
 
