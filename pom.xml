@@ -28,7 +28,7 @@
   <parent>
     <artifactId>httpcomponents-parent</artifactId>
     <groupId>org.apache.httpcomponents</groupId>
-    <version>10</version>
+    <version>11</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>website</artifactId>
@@ -76,10 +76,9 @@
            <reportSets>
              <reportSet>
                <reports>
-                 <report>mailing-list</report>
-                 <report>issue-tracking</report>
-                 <report>license</report>
-                 <report>project-team</report>
+                 <report>mailing-lists</report>
+                 <report>licenses</report>
+                 <report>team</report>
                </reports>
              </reportSet>
            </reportSets>
