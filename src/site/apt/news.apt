@@ -30,10 +30,10 @@
 
 HttpComponents Project News
 
-* 31 October 2019 - HttpComponents HttpCore 5.0-beta9 released
+* 8 January 2019 - HttpComponents HttpCore 5.0-beta11 released
 
-    This BETA fixes a bug in the HTTP/2 setting handshake implementation and a performance
-    regression in HTTP/1.1 protocol handler.
+    This BETA fixes HTTP/2 SETTINGS_HEADER_TABLE_SIZE negotiation and HTTP/2 connection window
+    management logic as well as fixes a number of other defects found since the last release.
 
     Notable changes and features included in the 5.0 series are:
 
@@ -93,6 +93,12 @@ HttpComponents Project News
     * Package name space changed to 'org.apache.hc.core5'
 
     * Maven group id changed to 'org.apache.httpcomponents.core5'
+
+
+* 31 October 2019 - HttpComponents HttpCore 5.0-beta10 released
+
+    This BETA fixes a bug in the HTTP/2 setting handshake implementation and a performance
+    regression in HTTP/1.1 protocol handler.
 
 
 * 10 October 2019 - HttpComponents HttpClient 5.0-beta6 released
