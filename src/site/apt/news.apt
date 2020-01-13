@@ -30,6 +30,12 @@
 
 HttpComponents Project News
 
+* 14 January 2020 - HttpComponents Core 4.4.13 (GA) released
+
+    This is a maintenance release that corrects a number of defects discovered since
+    release 4.4.12.
+
+
 * 8 January 2019 - HttpComponents HttpCore 5.0-beta11 released
 
     This BETA fixes HTTP/2 SETTINGS_HEADER_TABLE_SIZE negotiation and HTTP/2 connection window
