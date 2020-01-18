@@ -30,6 +30,13 @@
 
 HttpComponents Project News
 
+
+* 20 January 2020 - HttpComponents Client 4.5.11 (GA) released
+
+    This is a maintenance release that fixes a number defects discovered since 4.5.10
+    and upgrades HttpCore dependency to version 4.4.13.
+
+
 * 14 January 2020 - HttpComponents Core 4.4.13 (GA) released
 
     This is a maintenance release that corrects a number of defects discovered since
