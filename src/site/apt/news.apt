@@ -30,18 +30,56 @@
 
 HttpComponents Project News
 
+* 27 January 2020 - HttpComponents Client 5.0-beta7 released
+
+    This BETA release upgrades HttpCore to the latest version  and addresses a number of issues found
+    since the previous BETA release.
+
+    Notable changes and features included in the 5.0 series are:
+
+    * Support for the HTTP/2 protocol and conformance to requirements and
+      recommendations of the latest HTTP/2 protocol specification documents
+      (RFC 7540, RFC 7541.)
+
+      Supported features:
+
+        * HPACK header compression
+
+        * Stream multiplexing (client and server)
+
+        * Flow control
+
+        * Response push
+
+        * Message trailers
+
+        * Expect-continue handshake
+
+        * Connection validation (ping)
+
+        * Application-layer protocol negotiation (ALPN) on Java 9.0.1+
+
+        * TLS 1.2 security features
+
+    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+      specification documents (RFC 7230, RFC 7231.)
+
+    * New connection pool implementation with lax connection limit guarantees and better
+      performance under higher concurrency due to absence of a global pool lock.
+
+    * Package name space changed to 'org.apache.hc.client5'.
+
+    * Maven group id changed to 'org.apache.httpcomponents.client5'.
 
 * 20 January 2020 - HttpComponents Client 4.5.11 (GA) released
 
     This is a maintenance release that fixes a number defects discovered since 4.5.10
     and upgrades HttpCore dependency to version 4.4.13.
 
-
 * 14 January 2020 - HttpComponents Core 4.4.13 (GA) released
 
     This is a maintenance release that corrects a number of defects discovered since
     release 4.4.12.
-
 
 * 8 January 2019 - HttpComponents HttpCore 5.0-beta11 released
 
@@ -118,43 +156,6 @@ HttpComponents Project News
 
     This BETA release picks up the latest fixes and performance improvements from HttpCore
     and addresses a number of issues found since the previous BETA release.
-
-    Notable changes and features included in the 5.0 series are:
-
-    * Support for the HTTP/2 protocol and conformance to requirements and
-      recommendations of the latest HTTP/2 protocol specification documents
-      (RFC 7540, RFC 7541.)
-
-      Supported features:
-
-        * HPACK header compression
-
-        * Stream multiplexing (client and server)
-
-        * Flow control
-
-        * Response push
-
-        * Message trailers
-
-        * Expect-continue handshake
-
-        * Connection validation (ping)
-
-        * Application-layer protocol negotiation (ALPN) on Java 9.0.1+
-
-        * TLS 1.2 security features
-
-    * Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
-      specification documents (RFC 7230, RFC 7231.)
-
-    * New connection pool implementation with lax connection limit guarantees and better
-      performance under higher concurrency due to absence of a global pool lock.
-
-    * Package name space changed to 'org.apache.hc.client5'.
-
-    * Maven group id changed to 'org.apache.httpcomponents.client5'.
-
 
 * 7 October 2019 - HttpComponents HttpCore 5.0-beta9 released
 

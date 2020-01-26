@@ -130,34 +130,34 @@
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
   </subsection>
 
-  <subsection name="HttpClient 5.0-beta6">
+  <subsection name="HttpClient 5.0-beta7">
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-5.0.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta6-bin.tar.gz">5.0-beta6.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta6-bin.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta6-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta7-bin.tar.gz">5.0-beta7.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta7-bin.tar.gz.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta7-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta6-bin.zip">5.0-beta6.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta6-bin.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta6-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta7-bin.zip">5.0-beta7.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta7-bin.zip.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/binary/httpcomponents-client-5.0-beta7-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta6-src.tar.gz">5.0-beta6.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta6-src.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta6-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.tar.gz">5.0-beta7.tar.gz</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.tar.gz.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta6-src.zip">5.0-beta6.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta6-src.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta6-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.zip">5.0-beta7.zip</a>
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.zip.sha512">sha512</a>]
+       [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.zip.asc">pgp</a>]
      </li>
     </ul>
   </subsection>
