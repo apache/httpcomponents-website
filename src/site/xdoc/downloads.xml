@@ -64,7 +64,49 @@
    <code>sha512</code> link downloads the SHA 512 checksum from the main site.
   </p>
 
-  <subsection name="HttpClient 4.5.11 (GA)">
+    <subsection name="HttpCore 5.0 (GA)">
+      <a href="https://www.apache.org/dist/httpcomponents/httpcore/KEYS">KEYS</a>
+      <a href="https://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.0.x.txt">Release Notes</a>
+      <br/>
+      <p>Binary</p>
+      <ul>
+        <li>
+          <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-bin.tar.gz">5.0.tar.gz</a>
+          [<a
+            href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-bin.tar.gz.sha512">
+          sha512</a>]
+          [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-bin.tar.gz.asc">
+          pgp</a>]
+        </li>
+        <li>
+          <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-bin.zip">5.0.zip</a>
+          [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-bin.zip.sha512">
+          sha512</a>]
+          [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-bin.zip.asc">
+          pgp</a>]
+        </li>
+      </ul>
+      <p>Source</p>
+      <ul>
+        <li>
+          <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-src.tar.gz">5.0.tar.gz</a>
+          [<a
+            href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-src.tar.gz.sha512">
+          sha512</a>]
+          [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-src.tar.gz.asc">
+          pgp</a>]
+        </li>
+        <li>
+          <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-src.zip">5.0.zip</a>
+          [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-src.zip.sha512">
+          sha512</a>]
+          [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-src.zip.asc">
+          pgp</a>]
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection name="HttpClient 4.5.11 (GA)">
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/KEYS">KEYS</a>
     <a href="https://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.5.x.txt">Release Notes</a>
     <br/>
@@ -158,38 +200,6 @@
        <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.zip">5.0-beta7.zip</a>
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.zip.sha512">sha512</a>]
        [<a href="https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-5.0-beta7-src.zip.asc">pgp</a>]
-     </li>
-    </ul>
-  </subsection>
-
-  <subsection name="HttpCore 5.0-beta11">
-    <a href="https://www.apache.org/dist/httpcomponents/httpcore/KEYS">KEYS</a>
-    <a href="https://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.0.x.txt">Release Notes</a>
-    <br/>
-    <p>Binary</p>
-    <ul>
-     <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta11-bin.tar.gz">5.0-beta11.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta11-bin.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta11-bin.tar.gz.asc">pgp</a>]
-     </li>
-     <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta11-bin.zip">5.0-beta11.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta11-bin.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/binary/httpcomponents-core-5.0-beta11-bin.zip.asc">pgp</a>]
-     </li>
-    </ul>
-    <p>Source</p>
-    <ul>
-     <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta11-src.tar.gz">5.0-beta11.tar.gz</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta11-src.tar.gz.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta11-src.tar.gz.asc">pgp</a>]
-     </li>
-     <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta11-src.zip">5.0-beta11.zip</a>
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta11-src.zip.sha512">sha512</a>]
-       [<a href="https://www.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-5.0-beta11-src.zip.asc">pgp</a>]
      </li>
     </ul>
   </subsection>

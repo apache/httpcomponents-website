@@ -30,11 +30,21 @@
 
 HttpComponents Project Status
 
+* {HttpComponents HttpCore 5.0.x}
+
+    HttpCore 5.0.x branch is considered stable and production ready. It is being actively
+    maintained and supported. The 5.x release series provides comprehensive support
+    for HTTP/1.1 and HTTP/2 protocol and full conformance with mandatory requirements
+    of RFC 7230, RFC 7231, RFC 7540 and RFC 7541
+
+    Users of all versions of HttpCore are advised to upgrade to the latest release
+    of the 5.0 series.
+
 * {HttpComponents HttpCore 4.4.x}
 
-    HttpCore 4.4.x branch is considered stable and production ready. It is being actively 
-    maintained and supported. Users of all versions of HttpCore are advised to upgrade to the 
-    latest release of the 4.4 series. 
+    HttpCore 4.4.x branch is considered stable and production ready. While being actively
+    maintained and supported, the 4.x release series will be receiving fixes for major defects
+    and security issues only.
 
 * {HttpComponents HttpCore 5.x}
 
