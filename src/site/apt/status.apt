@@ -40,38 +40,33 @@ HttpComponents Project Status
     Users of all versions of HttpCore are advised to upgrade to the latest release
     of the 5.0 series.
 
+* {HttpComponents HttpClient 5.0.x}
+
+    HttpClient 5.0.x branch is considered stable and production ready. It is being actively
+    maintained and supported. The 5.x release series provides comprehensive support
+    for HTTP/1.1 and HTTP/2 protocol and full conformance with mandatory requirements
+    of RFC 7230, RFC 7231, RFC 7540 and RFC 7541
+
+    Users of all versions of HttpClient are advised to upgrade to the latest release
+    of the 5.0 series.
+
 * {HttpComponents HttpCore 4.4.x}
 
     HttpCore 4.4.x branch is considered stable and production ready. While being actively
     maintained and supported, the 4.x release series will be receiving fixes for major defects
     and security issues only.
 
-* {HttpComponents HttpCore 5.x}
-
-    HttpCore 5.x branch is the current unstable development branch. The main focus of the 5.0
-    series is providing full-featured support for HTTP/1.1 and HTTP/2 and ensuring full compliance 
-    with RFC 7230, RFC 7231, RFC 7540 and RFC 7541. While 5.0 APIs are likely to change somewhat
-    in the course of BETA development phase the branch is considered feature complete. No major
-    API changes are expected.
-
 * {HttpComponents HttpClient 4.5.x}
 
-    HttpClient 4.5.x branch is considered stable and production ready. It is being actively 
-    maintained and supported. Users of all versions of HttpClient are advised to upgrade to the 
-    latest release of the 4.5 series. 
-
-* {HttpComponents HttpClient 5.x}
-
-    HttpClient 5.x branch is the current unstable development branch. The main focus of the 5.0
-    series is providing full-featured support for HTTP/1.1 and HTTP/2 and ensuring full compliance
-    with RFC 7230, RFC 7231, RFC 7540 and RFC 7541. While 5.0 APIs are likely to change somewhat
-    in the course of BETA development phase the branch is considered feature complete. No major
-    API changes are expected.
+    HttpClient 4.5.x branch is considered stable and production ready. While being actively
+    maintained and supported, the 4.x release series will be receiving fixes for major defects
+    and security issues only.
 
 * {HttpComponents HttpAsyncClient 4.1.x}
 
-    HttpAsyncClient 4.1.x branch is considered stable and production ready. It is being actively 
-    maintained and supported. 
+    HttpAsyncClient 4.1.x branch is considered stable and production ready. While being actively
+    maintained and supported, the 4.x release series will be receiving fixes for major defects
+    and security issues only.
 
 * {Commons HttpClient 3.1.x}
 
