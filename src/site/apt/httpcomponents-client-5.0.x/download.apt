@@ -49,6 +49,4 @@ HttpClient Downloads
 
     {{{./httpclient5-cache/dependency-info.html}HttpClient Cache}}
 
-    {{{./httpclient5-win/dependency-info.html}HttpClient Windows extensions}}
-
 
