@@ -30,6 +30,12 @@
 
 HttpComponents Project News
 
+* 9 March 2020 - HttpComponents Client 4.5.12 (GA) released
+
+    This is a maintenance release that fixes a regression introduced by the previous release
+    that caused rejection of certificates with non-standard domains.
+
+
 * 24 February 2020 - HttpComponents Client 5.0 (GA) released
 
     This is the first stable (GA) release of HttpClient 5.0.
