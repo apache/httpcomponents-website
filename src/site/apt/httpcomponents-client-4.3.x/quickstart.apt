@@ -99,7 +99,7 @@ Request.Post("http://targethost/login")
 -------------    
     
     Source can be downloaded 
-    {{{./httpclient/examples/org/apache/http/examples/client/fuent/FluentQuickStart.java}here}}
+    {{{./fluent-hc/examples/org/apache/http/client/fluent/FluentQuickStart.java}here}}
     
     [[1]] {{{./examples.html}HttpClient Examples}} - a set of examples demonstrating some of 
     the more complex behavior. 
