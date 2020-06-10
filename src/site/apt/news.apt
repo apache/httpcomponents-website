@@ -32,8 +32,8 @@ HttpComponents Project News
 
 * 10 June 2020 - HttpComponents Core 5.0.1 (GA) released
 
-    maintenance release that improves handling of early response messages by the classic client
-    protocol handler and fixes a number of minor defects.
+    This is maintenance release that improves handling of early response messages by the classic
+    client protocol handler and fixes a number of minor defects.
 
 
 * 9 March 2020 - HttpComponents Client 4.5.12 (GA) released
