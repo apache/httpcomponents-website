@@ -87,6 +87,12 @@
         <item name="Download" href="httpcomponents-client-5.0.x/download.html"/>
         <item name="Project Info" href="httpcomponents-client-5.0.x/project-info.html"/>
       </item>
+      <item name="HttpCore 5.1 BETA" collapse="true" href="httpcomponents-core-5.1.x/index.html">
+        <item name="Examples" href="httpcomponents-core-5.1.x/examples.html"/>
+        <item name="Related" href="httpcomponents-core-5.1.x/related-projects.html"/>
+        <item name="Download" href="httpcomponents-core-5.1.x/download.html"/>
+        <item name="Project Info" href="httpcomponents-core-5.1.x/project-info.html"/>
+      </item>
       <item name="HttpCore 5.0" collapse="true" href="httpcomponents-core-5.0.x/index.html">
         <item name="Examples" href="httpcomponents-core-5.0.x/examples.html"/>
         <item name="Related" href="httpcomponents-core-5.0.x/related-projects.html"/>

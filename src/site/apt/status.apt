@@ -30,6 +30,12 @@
 
 HttpComponents Project Status
 
+* {HttpComponents HttpCore 5.1.x}
+
+    HttpCore 5.1.x branch is the current feature development branch. The 5.x release
+    series is expected to provide conditional conformance to RFC 3986 as well as
+    a number of incremental functional enhancements and performance improvements.
+
 * {HttpComponents HttpCore 5.0.x}
 
     HttpCore 5.0.x branch is considered stable and production ready. It is being actively
