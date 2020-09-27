@@ -30,6 +30,12 @@
 
 HttpComponents Project News
 
+* 28 September 2020 - HttpComponents Client 5.0.2 (GA) released
+
+    This is a maintenance release that upgrades HttpCore to the latest version and addresses
+    a number of issues found since 5.0.1 release.
+
+
 * 21 September 2020 - HttpComponents Core 5.1-beta1 released
 
     This is the first BETA release in the 5.1 release series that includes a number of
