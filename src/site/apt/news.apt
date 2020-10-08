@@ -30,6 +30,18 @@
 
 HttpComponents Project News
 
+* 8 October 2020 - HttpComponents Client 5.0.3 (GA) released
+
+    This is a maintenance release that fixes incorrect handling of malformed authority component
+    in request URIs.
+
+
+* 8 October 2020 - HttpComponents Client 4.5.13 (GA) released
+
+    This is a maintenance release that fixes incorrect handling of malformed authority component
+    in request URIs.
+
+
 * 28 September 2020 - HttpComponents Client 5.0.2 (GA) released
 
     This is a maintenance release that upgrades HttpCore to the latest version and addresses
