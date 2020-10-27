@@ -63,7 +63,7 @@
     <site>
       <id>apache.website</id>
       <name>Apache HttpComponents Website</name>
-      <url>${hc.site.url}</url>
+      <url>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/site/</url>
     </site>
   </distributionManagement>
 
@@ -87,4 +87,57 @@
     </plugins>
   </reporting>
 
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <configuration>
+            <skipDeploy>true</skipDeploy>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-publish-plugin</artifactId>
+        <configuration>
+          <content>${project.reporting.outputDirectory}</content><!-- no need for site:stage, use target/site -->
+          <ignorePathsToDelete><!-- don't delete content until site svnpubsub location refactoring done -->
+            <ignorePathsToDelete>*.html</ignorePathsToDelete>
+            <ignorePathsToDelete>apidocs</ignorePathsToDelete>
+            <ignorePathsToDelete>xref</ignorePathsToDelete>
+            <ignorePathsToDelete>xref-test</ignorePathsToDelete>
+            <ignorePathsToDelete>css</ignorePathsToDelete>
+            <ignorePathsToDelete>images</ignorePathsToDelete>
+            <ignorePathsToDelete>checkstyle.rss</ignorePathsToDelete>
+            <ignorePathsToDelete>mail</ignorePathsToDelete>
+            <ignorePathsToDelete>examples</ignorePathsToDelete>
+            <ignorePathsToDelete>tutorial</ignorePathsToDelete>
+            <ignorePathsToDelete>style</ignorePathsToDelete>
+            <ignorePathsToDelete>fluent-hc</ignorePathsToDelete>
+            <ignorePathsToDelete>http*</ignorePathsToDelete>
+          </ignorePathsToDelete>
+          <tryUpdate>true</tryUpdate>
+          <checkoutDirectory>scmpublish-checkout</checkoutDirectory><!-- don't checkout in target/ to avoid cleanup on "mvn clean" -->
+        </configuration>
+        <executions>
+          <execution>
+            <id>scm-publish</id>
+            <phase>site-deploy</phase><!-- deploy site with maven-scm-publish-plugin -->
+            <goals>
+              <goal>publish-scm</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

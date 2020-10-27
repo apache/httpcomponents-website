@@ -1,7 +1,10 @@
 .idea
 *.iml
 target
-tmp.log
+*.log
 
 /.project
 /.settings/
+/.vscode/
+
+/scmpublish-checkout/
