@@ -39,19 +39,6 @@
   <inceptionYear>2005</inceptionYear>
   <packaging>pom</packaging>
 
-  <organization>
-    <name>The Apache Software Foundation</name>
-    <url>https://www.apache.org/</url>
-  </organization>
-
-  <licenses>
-    <license>
-      <name>Apache License</name>
-      <url>LICENSE.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/httpcomponents-parent.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/httpcomponents-parent.git</developerConnection>
