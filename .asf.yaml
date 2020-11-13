@@ -1,0 +1,7 @@
+# see https://s.apache.org/asfyaml
+github:
+  description: "Apache HttpComponents Site"
+  homepage: https://hc.apache.org/
+  labels:
+    - apache
+    - httpcomponents
