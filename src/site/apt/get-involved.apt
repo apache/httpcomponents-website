@@ -25,18 +25,30 @@
    -----------
    Get Involved With HttpComponents
 
-Get Involved
+Community
 
-   Oh shame on us... we don't really have a <Get Involved> page.
-   Of course we'd like you to get involved into our project,
-   but we just didn't have the time yet to explain how.
+   Users mailing list: httpclient-users@hc.apache.org for general discussion, questions, and announcements. This is the perfect place to ask for help if you need it!
+   Development mailing list: dev@hc.apache.org for discussion about project development.
+   GitHub: Star us at {{{apache/httpcomponents-core/}https://github.com/apache/httpcomponents-core/}} and {{{https://github.com/apache/httpcomponents-client/}apache/httpcomponents-client/}} and use this to follow HttpComponents development or contribute pull requests. If you're interested in development, please see the Contributing section below for details on our development process.
+   Reporting issues:
+    * {{{https://issues.apache.org/jira/projects/HTTPCORE}HttpComponents Core}}
+    * {{{https://issues.apache.org/jira/projects/HTTPCLIENT}HttpComponents Client}} and {{{https://issues.apache.org/jira/projects/HTTPASYNC}HttpComponents AsyncClient}}
+   Slack: Some committers and users are present in the channel {{{#httpcomponents-client}https://the-asf.slack.com/archives/CGC9KPJKH}}} on the Apache Slack team.
+   StackOverflow: While the user mailing list is the primary resource for asking questions, if you prefer StackOverflow, make sure to tag your question with {{{apache-httpcomponents}https://stackoverflow.com/questions/tagged/apache-httpcomponents}}.
 
-   As it happens, the ways to get involved into an open source project
-   are basically the same for all projects.
-   Please have a look at the
-   {{{http://incubator.apache.org/guides/participation.html}
-     Incubator Guide To Participation}}.
+Contributing
+
+   HttpComponents is a community-led project and we are delighted to receive contributions of anything from minor fixes to new features.
+   If you have an itch to scratch, then by all means do that! Fixing bugs you run into, or adding features you need, are both immensely helpful.
+   There are plenty of ways to help outside writing code. Code review of pull requests (even if you are not a committer), feature suggestions, reporting bugs, documentation and usability feedback all matter immensely.
+
+Testing
+
+   All Pull Requests are automatically tested on {{{Travis CI (Core)}https://travis-ci.com/apache/httpcomponents-core}}, {{{Travis CI (Client)}https://travis-ci.com/apache/httpcomponents-client}} on both AMD64 and ARM64 architectures.
+
+More information
+
+   As it happens, the ways to get involved into an open source project are basically the same for all projects.
+   Please have a look at the {{{http://incubator.apache.org/guides/participation.html}Incubator Guide To Participation}}.
    It's terse, but has pointers to additional information elsewhere at Apache.
    The sections on participating as a User and as a Developer apply here, too.
-   
-
