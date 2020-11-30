@@ -30,6 +30,13 @@
 
 HttpComponents Project News
 
+* 1 December 2020 - HttpComponents Core 4.4.14 (GA) released
+
+    This is a maintenance release that corrects a number of defects discovered since release 4.4.13
+    including two defects in the async (non-blocking) transport potentially causing an infinite
+    event loop and and excessive CPU utilization.
+
+
 * 8 October 2020 - HttpComponents Client 5.0.3 (GA) released
 
     This is a maintenance release that fixes incorrect handling of malformed authority component
