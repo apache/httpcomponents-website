@@ -30,6 +30,23 @@
 
 HttpComponents Project News
 
+* 3 December 2020 - HttpComponents Core 5.1-beta2 released
+
+    This is the second BETA release in the 5.1 release series that includes a number of
+    new features as well as bug fixes from the stable 5.0.x branch.
+
+    Notable changes and features included in the 5.1 series:
+
+    * Application protocol upgrade support for non-blocking HTTP/1.1 connections.
+
+
+* 3 December 2020 - HttpComponents Core 5.0.3 released
+
+    This is a maintenance release that corrects a number of defects discovered since
+    release 5.0.2 including a defect in the async (non-blocking) transport potentially
+    causing an infinite event loop and and excessive CPU utilization.
+
+
 * 1 December 2020 - HttpComponents Core 4.4.14 (GA) released
 
     This is a maintenance release that corrects a number of defects discovered since release 4.4.13
