@@ -37,6 +37,12 @@ HttpComponents Project News
 
     Notable changes and features included in the 5.1 series:
 
+    * Conditional conformance with RFC 3986 (Uniform Resource Identifier (URI):
+    Generic Syntax).
+
+    * Improved support for out of sequence response message handing by the the classic
+    (blocking) HTTP transport.
+
     * Application protocol upgrade support for non-blocking HTTP/1.1 connections.
 
 
@@ -76,14 +82,6 @@ HttpComponents Project News
 
     This is the first BETA release in the 5.1 release series that includes a number of
     new features as well performance optimizations in the classic HTTP transport.
-
-    Notable changes and features included in the 5.1 series:
-
-    * Conditional conformance with RFC 3986 (Uniform Resource Identifier (URI):
-    Generic Syntax).
-
-    * Improved support for out of sequence response message handing by the the classic
-    (blocking) HTTP transport.
 
 
 * 13 September 2020 - HttpComponents Core 5.0.2 (GA) released
