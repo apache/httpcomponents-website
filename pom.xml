@@ -99,6 +99,7 @@
           <content>${project.reporting.outputDirectory}</content><!-- no need for site:stage, use target/site -->
           <ignorePathsToDelete><!-- don't delete content until site svnpubsub location refactoring done -->
             <ignorePathsToDelete>*.html</ignorePathsToDelete>
+            <ignorePathsToDelete>doc</ignorePathsToDelete>
             <ignorePathsToDelete>apidocs</ignorePathsToDelete>
             <ignorePathsToDelete>xref</ignorePathsToDelete>
             <ignorePathsToDelete>xref-test</ignorePathsToDelete>
