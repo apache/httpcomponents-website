@@ -22,6 +22,8 @@ under the License.
 
 <!-- N.B. all non-body elements are automatically inherited -->
 
+  <version position="none" /><!-- no version display on unversioned part of the site -->
+
   <skin>
     <groupId>org.apache.httpcomponents</groupId>
     <artifactId>maven-site-skin</artifactId>
