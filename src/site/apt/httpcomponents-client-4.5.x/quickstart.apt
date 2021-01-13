@@ -35,7 +35,7 @@ HttpClient Quick Start
     {{{./fluent-hc/dependency-info.html}Fluent HC}} modules using a dependency manager of your 
     choice as described {{{./download.html}here}}. 
 
-    [[1]] HttpClient 4.5 requires Java 1.5 or newer. 
+    [[1]] HttpClient 4.5 requires Java 1.6 or newer. 
 
     [[1]] The below code fragment illustrates the execution of HTTP GET and POST requests using 
     the HttpClient native API.
