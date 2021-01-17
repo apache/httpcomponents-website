@@ -75,8 +75,8 @@ try (CloseableHttpClient httpclient = HttpClients.createDefault()) {
 }
 -------------    
 
-    Source can be downloaded 
-    {{{./httpclient5/examples/QuickStart.java}here}}
+    Source can be found here
+    {{{./httpclient5/xref-test/org/apache/hc/client5/http/examples/QuickStart.html}here}}
 
     [[1]] The same requests can be executed using a simpler, albeit less flexible, fluent API.
 
@@ -94,7 +94,7 @@ Request.Post("http://targethost/login")
 -------------    
     
     Source can be downloaded 
-    {{{./httpclient5-fluent/examples/FluentQuickStart.java}here}}
+    {{{./httpclient5-fluent/xref-test/org/apache/hc/client5/http/examples/fluent/FluentQuickStart.html}here}}
 
     [[1]] The below code fragment illustrates the execution of HTTP requests using 
     HttpClient async API.
@@ -198,6 +198,6 @@ try (CloseableHttpAsyncClient httpclient = HttpAsyncClients.createDefault()) {
 ---
     
     Source can be downloaded 
-    {{{./httpclient5/examples/AsyncQuickStart.java}here}}
+    {{{./httpclient5/xref-test/org/apache/hc/client5/http/examples/AsyncQuickStart.java}here}}
 
 
