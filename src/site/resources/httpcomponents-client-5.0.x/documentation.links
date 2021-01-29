@@ -1,0 +1,7 @@
+# links property file for Ant's symlink task in pom.xml:
+# links to components in http://hc.apache.org/components/
+LATEST   ../components/httpcomponents-client-5.0.x/LATEST
+
+# sample future release, once it has been released and
+# its documentation has been versioned from LATEST staging with something like "svn cp https://svn.apache.org/repos/asf/httpcomponents/site/components/httpcomponents-client-5.0.x/LATEST https://svn.apache.org/repos/asf/httpcomponents/site/components/httpcomponents-client-5.0.x/5.0.3"
+5.1-beta-3   ../components/httpcomponents-client-5.0.x/5.0.3
