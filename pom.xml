@@ -98,8 +98,8 @@
         <configuration>
           <content>${project.reporting.outputDirectory}</content><!-- no need for site:stage, use target/site -->
           <ignorePathsToDelete><!-- don't delete content until site svnpubsub location refactoring done -->
+            <ignorePathsToDelete>components</ignorePathsToDelete>
             <ignorePathsToDelete>*.html</ignorePathsToDelete>
-            <ignorePathsToDelete>doc</ignorePathsToDelete>
             <ignorePathsToDelete>apidocs</ignorePathsToDelete>
             <ignorePathsToDelete>xref</ignorePathsToDelete>
             <ignorePathsToDelete>xref-test</ignorePathsToDelete>
@@ -123,6 +123,34 @@
             <goals>
               <goal>publish-scm</goal>
             </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.10.9</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>link-components</id>
+            <phase>site</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <!-- links to components directories containing documentation generated from code -->
+                <symlink action="recreate" overwrite="true">
+                  <fileset dir="${project.reporting.outputDirectory}" includes="**/documentation.links"/>  
+                </symlink>
+              </target>
+            </configuration>
           </execution>
         </executions>
       </plugin>
