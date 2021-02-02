@@ -40,9 +40,9 @@
   <packaging>pom</packaging>
 
   <scm>
-    <connection>scm:git:https://gitbox.apache.org/repos/asf/httpcomponents-parent.git</connection>
-    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/httpcomponents-parent.git</developerConnection>
-    <url>https://github.com/apache/httpcomponents-parent/tree/${project.scm.tag}</url>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/httpcomponents-website.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/httpcomponents-website.git</developerConnection>
+    <url>https://github.com/apache/httpcomponents-website/tree/${project.scm.tag}</url>
     <tag>master</tag>
   </scm>
 

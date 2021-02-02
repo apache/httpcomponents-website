@@ -23,11 +23,12 @@ under the License.
 <!-- N.B. all non-body elements are automatically inherited -->
 
   <version position="none" /><!-- no version display on unversioned part of the site -->
+  <edit>${project.scm.url}</edit>
 
   <skin>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>maven-site-skin</artifactId>
-    <version>1.1</version>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.9</version>
   </skin>
 
   <bannerLeft>
@@ -43,10 +44,13 @@ under the License.
   </bannerRight>
 
   <body>
+    <breadcrumbs>
+      <item name="HttpComponents" href="http://hc.apache.org/index.html"/>
+    </breadcrumbs>
+
     <!-- N.B. body links are automatically inherited -->
     <links>
       <item name="Apache" href="http://www.apache.org/"/>
-      <item name="HttpComponents" href="http://hc.apache.org/index.html"/>
     </links>
     
     <!-- add standard menu links for all sub-sites -->
@@ -150,5 +154,8 @@ under the License.
       <br/>
       <div class="xleft">All other marks mentioned may be trademarks or registered trademarks of their respective owners.</div>
     </footer>
+    <fluidoSkin>
+      <skipGenerationDate>true</skipGenerationDate>
+    </fluidoSkin>
   </custom>
 </project>
