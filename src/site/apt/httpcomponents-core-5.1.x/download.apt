@@ -43,8 +43,8 @@ HttpCore Downloads
     {{{http://ant.apache.org/projects/ivy.html}Apache Ivy}}, 
     you can create a dependency on HttpClient modules by using this information:
 
-    {{{./httpcore5/dependency-info.html}HttpCore HTTP/1.1}}
-    {{{./httpcore5-h2/dependency-info.html}HttpCore HTTP/2}}
-    {{{./httpcore5-reactive/dependency-info.html}HttpCore Reactive Streams}}
-    {{{./httpcore5-testing/dependency-info.html}HttpCore testing support}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5}HttpCore HTTP/1.1}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-h2}HttpCore HTTP/2}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-reactive}HttpCore Reactive Streams}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-testing}HttpCore testing support}}
 

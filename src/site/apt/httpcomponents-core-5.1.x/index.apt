@@ -39,15 +39,25 @@ HttpCore Overview
 
     [[1]] Some examples of HttpCore components in action can be found {{{./examples.html}here}}
 
-    [[1]] Project reports
+    [[1]] Javadocs
 
-    * {{{./httpcore5/project-reports.html}HttpCore HTTP/1.1}}
+    * {{{./current/httpcore5/apidocs/}HttpCore HTTP/1.1}}
 
-    * {{{./httpcore5-h2/project-reports.html}HttpCore HTTP/2}}
+    * {{{./current/httpcore5-h2/apidocs/}HttpCore HTTP/2}}
 
-    * {{{./httpcore5-reactive/project-reports.html}HttpCore Reactive Streams}}
+    * {{{./current/httpcore5-reactive/apidocs/}HttpCore Reactive Streams}}
 
-    * {{{./httpcore5-testing/project-reports.html}HttpCore testing support}}
+    * {{{./current/httpcore5-testing/apidocs/}HttpCore testing support}}
+
+    [[1]] API compatibility reports
+
+    * {{{./current/httpcore5/clirr-report.html/}HttpCore HTTP/1.1}}
+
+    * {{{./current/httpcore5-h2/clirr-report.html/}HttpCore HTTP/2}}
+
+    * {{{./current/httpcore5-reactive/clirr-report.html/}HttpCore Reactive Streams}}
+
+    * {{{./current/httpcore5-testing/clirr-report.html/}HttpCore testing support}}
 
 {Standards Compliance}
 

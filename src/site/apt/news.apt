@@ -30,10 +30,11 @@
 
 HttpComponents Project News
 
-* 3 December 2020 - HttpComponents Core 5.1-beta2 released
+* 8 February 2021 - HttpComponents Core 5.1-beta3 released
 
-    This is the second BETA release in the 5.1 release series that includes a number of
-    new features as well as bug fixes from the stable 5.0.x branch.
+    This is likely the last BETA release in the 5.1 release series. The next release is
+    expected to be 5.1 GA. This beta includes a number of new features as well as
+    bug fixes from the stable 5.0.x branch.
 
     Notable changes and features included in the 5.1 series:
 
@@ -43,7 +44,10 @@ HttpComponents Project News
     * Improved support for out of sequence response message handing by the the classic
     (blocking) HTTP transport.
 
-    * Application protocol upgrade support for non-blocking HTTP/1.1 connections.
+* 3 December 2020 - HttpComponents Core 5.1-beta2 released
+
+    This is the second BETA release in the 5.1 release series that includes a number of
+    new features as well as bug fixes from the stable 5.0.x branch.
 
 
 * 3 December 2020 - HttpComponents Core 5.0.3 released
