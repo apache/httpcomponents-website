@@ -23,31 +23,32 @@
 ~~ <http://www.apache.org/>.
 
     ----------
-    HttpComponents HttpCore Download Page
+    HttpComponents HttpCore Examples
     ----------
     ----------
     ----------
 
-HttpCore Downloads
+Related projects
 
-    The latest release available for download:
+* HttpClient 5.0 migration guide
 
-    {{{http://hc.apache.org/downloads.cgi}Release packages}} - 
-    {{{http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.1.x.txt}Release Notes}} -
-    {{{http://www.apache.org/licenses/LICENSE-2.0.html}License}}
+    {{{https://ok2c.github.io/httpclient-migration-guide/}HttpClient 5.0 migration guide}}
+    is a third party resource with recommendations about the upgrade process and
+    possible upgrade paths from Apache HttpClient 4.x to Apache HttpClient 5.0.
 
-{Dependency management}
+* Asynchronous JSON message processors
 
-    If you are using a dependency manager for your project such as 
-    {{{http://maven.apache.org}Apache Maven}} or 
-    {{{http://ant.apache.org/projects/ivy.html}Apache Ivy}}, 
-    you can create a dependency on HttpClient modules by using this information:
+    {{{https://ok2c.github.io/httpcomponents-jackson/}Asynchronous JSON message processors}}
+    library is a companion project for HttpClient 5.0 developed outside the Apache Software
+    Foundation.
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5}HttpCore HTTP/1.1}}
+    The library provides a number of asynchronous message consumers and producers
+    for efficient, reactive processing of HTTP messages with enclosed JSON content using
+    {{{https://github.com/FasterXML/jackson}Jackson JSON processor}}.
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-h2}HttpCore HTTP/2}}
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-reactive}HttpCore Reactive Streams}}
+* Android extensions
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-testing}HttpCore testing support}}
-
+    {{{https://ok2c.github.io/httpclient-android-ext/}Android extensions for
+    Apache HttpClient 5.0}} is a third party library that provides extra functionality
+    simplifying application of Apache HttpClient on Google Android platform.

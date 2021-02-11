@@ -1,0 +1,5 @@
+# links property file for Ant's symlink task in pom.xml:
+# links to components in http://hc.apache.org/components/
+
+5.1-beta1   ../components/httpcomponents-client-5.1.x/5.1-beta1
+current     ../components/httpcomponents-client-5.1.x/5.1-beta1

@@ -71,6 +71,16 @@ under the License.
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
+      <item name="HttpClient 5.1 BETA" collapse="true" href="httpcomponents-client-5.1.x/index.html">
+        <item name="Quick Start" href="httpcomponents-client-5.1.x/quickstart.html"/>
+        <item name="Examples (Classic)" href="httpcomponents-client-5.1.x/examples.html"/>
+        <item name="Examples (Async)" href="httpcomponents-client-5.1.x/examples-async.html"/>
+        <item name="Examples (Reactive)" href="httpcomponents-client-5.1.x/examples-reactive.html"/>
+        <item name="Logging Guide" href="httpcomponents-client-5.1.x/logging.html"/>
+        <item name="Android" href="httpcomponents-client-5.1.x/android.html"/>
+        <item name="Related" href="httpcomponents-client-5.1.x/related-projects.html"/>
+        <item name="Download" href="httpcomponents-client-5.1.x/download.html"/>
+      </item>
       <item name="HttpClient 5.0" collapse="true" href="httpcomponents-client-5.0.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-5.0.x/quickstart.html"/>
         <item name="Examples (Classic)" href="httpcomponents-client-5.0.x/examples.html"/>
@@ -80,19 +90,16 @@ under the License.
         <item name="Android" href="httpcomponents-client-5.0.x/android.html"/>
         <item name="Related" href="httpcomponents-client-5.0.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-client-5.0.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-client-5.0.x/project-info.html"/>
       </item>
       <item name="HttpCore 5.1 BETA" collapse="true" href="httpcomponents-core-5.1.x/index.html">
         <item name="Examples" href="httpcomponents-core-5.1.x/examples.html"/>
         <item name="Related" href="httpcomponents-core-5.1.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-core-5.1.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-core-5.1.x/project-info.html"/>
       </item>
       <item name="HttpCore 5.0" collapse="true" href="httpcomponents-core-5.0.x/index.html">
         <item name="Examples" href="httpcomponents-core-5.0.x/examples.html"/>
         <item name="Related" href="httpcomponents-core-5.0.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-core-5.0.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-core-5.0.x/project-info.html"/>
       </item>
       <item name="HttpClient 4.5" collapse="true" href="httpcomponents-client-4.5.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-4.5.x/quickstart.html"/>
@@ -103,19 +110,16 @@ under the License.
         <item name="NTLM Guide" href="httpcomponents-client-4.5.x/ntlm.html"/>
         <item name="Logging Guide" href="httpcomponents-client-4.5.x/logging.html"/>
         <item name="Download" href="httpcomponents-client-4.5.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-client-4.5.x/project-info.html"/>
       </item>
       <item name="HttpCore 4.4" collapse="true" href="httpcomponents-core-4.4.x/index.html">
         <item name="Tutorial" href="httpcomponents-core-4.4.x/tutorial/html/index.html"/>
         <item name="Examples" href="httpcomponents-core-4.4.x/examples.html"/>
         <item name="Download" href="httpcomponents-core-4.4.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-core-4.4.x/project-info.html"/>
       </item>
       <item name="HttpAsyncClient 4.1" collapse="true" href="httpcomponents-asyncclient-4.1.x/index.html">
         <item name="Quick Start" href="httpcomponents-asyncclient-4.1.x/quickstart.html"/>
         <item name="Examples" href="httpcomponents-asyncclient-4.1.x/examples.html"/>
         <item name="Download" href="httpcomponents-asyncclient-4.1.x/download.html"/>
-        <item name="Project Info" href="httpcomponents-asyncclient-4.1.x/project-info.html"/>
       </item>
     </menu>
     <menu name="Legacy">

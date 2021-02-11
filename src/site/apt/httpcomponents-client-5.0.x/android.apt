@@ -34,6 +34,6 @@ HttpClient for Android
     
 ----
 dependencies {
-    compile group: 'org.apache.httpcomponents.client5' , name: 'httpclient5' , version: '5.0'
+    compile group: 'org.apache.httpcomponents.client5' , name: 'httpclient5' , version: '5.0.3'
 }
 ----

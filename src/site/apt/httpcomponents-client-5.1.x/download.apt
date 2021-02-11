@@ -23,17 +23,17 @@
 ~~ <http://www.apache.org/>.
 
     ----------
-    HttpComponents HttpCore Download Page
+    HttpComponents HttpClient Download Page
     ----------
     ----------
     ----------
 
-HttpCore Downloads
+HttpClient Downloads
 
     The latest release available for download:
 
     {{{http://hc.apache.org/downloads.cgi}Release packages}} - 
-    {{{http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.1.x.txt}Release Notes}} -
+    {{{http://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-5.1.x.txt}Release Notes}} -
     {{{http://www.apache.org/licenses/LICENSE-2.0.html}License}}
 
 {Dependency management}
@@ -43,11 +43,12 @@ HttpCore Downloads
     {{{http://ant.apache.org/projects/ivy.html}Apache Ivy}}, 
     you can create a dependency on HttpClient modules by using this information:
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5}HttpCore HTTP/1.1}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.client5/httpclient5}HttpClient}}
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-h2}HttpCore HTTP/2}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.client5/httpclient5-fluent}Fluent HC}}
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-reactive}HttpCore Reactive Streams}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.client5/httpclient5-cache}HttpClient Cache}}
 
-    {{{https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-testing}HttpCore testing support}}
+    {{{https://search.maven.org/artifact/org.apache.httpcomponents.client5/httpclient5-win}HttpClient Windows
+    extensions}}
 

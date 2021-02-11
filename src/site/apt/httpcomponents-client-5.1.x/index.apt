@@ -47,18 +47,37 @@ HttpClient Overview
 
 {Documentation}
 
-    [[1]] {{{./examples.html}HttpClient Examples}} - a set of examples demonstrating some of 
-    the more complex behavior. 
-    
-    [[1]] Project reports
+    [[1]] Examples demonstrating some common as well as more complex use cases
 
-    * {{{./httpclient5/project-reports.html}HttpClient}}
+    * {{{./examples.html}HttpClient (classic APIs)}}
 
-    * {{{./httpclient5-fluent/project-reports.html}HC Fluent}}
+    * {{{./examples-async.html}HttpClient (async APIs)}}
 
-    * {{{./httpclient5-cache/project-reports.html}HttpClient Cache}}
-   
-    * {{{./httpclient5-win/project-reports.html}HttpClient Windows extensions}}
+    * {{{./examples-reactive.html}HttpClient (reactive APIs)}}
+
+    []
+
+    [[1]] Javadocs
+
+    * {{{./current/httpclient5/apidocs/}HttpClient}}
+
+    * {{{./current/httpclient5-fluent/apidocs/}HC Fluent}}
+
+    * {{{./current/httpclient5-cache/apidocs/}HttpClient Cache}}
+
+    * {{{./current/httpclient5-win/apidocs/}HttpClient Windows extensions}}
+
+    []
+
+    [[1]] API compatibility reports
+
+    * {{{./current/httpclient5/clirr-report.html}HttpClient}}
+
+    * {{{./current/httpclient5-fluent/clirr-report.html}HC Fluent}}
+
+    * {{{./current/httpclient5-cache/clirr-report.html}HttpClient Cache}}
+
+    * {{{./current/httpclient5-win/clirr-report.html}HttpClient Windows extensions}}
 
 {Standards Compliance}
 
@@ -82,5 +101,5 @@ HttpClient Overview
     
     * {{{http://tools.ietf.org/html/rfc6265}RFC 6265}} - HTTP State Management Mechanism (Cookies)
 
-    * {{{http://tools.ietf.org/html/rfc2396}RFC 2396}} - Uniform Resource Identifiers (URI): Generic Syntax
+    * {{{http://tools.ietf.org/html/rfc3986}RFC 3986}} - Uniform Resource Identifiers (URI): Generic Syntax
 
