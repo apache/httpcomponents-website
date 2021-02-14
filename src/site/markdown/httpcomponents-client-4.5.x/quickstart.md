@@ -90,7 +90,7 @@ HttpClient Quick Start
 - [HttpClient Tutorial](./current/tutorial/html/) - gives a detailed examination of the HttpClient API, which was
   written in close accordance with the (sometimes not very intuitive)
   HTTP specification/standard. A copy is also shipped with the release.  
-  [A PDF version](./current/tutorial/pdf/httpclient-tutorial.pdf) is also available
+  A [PDF version](./current/tutorial/pdf/httpclient-tutorial.pdf) is also available.
 
 - [HttpClient Primer](./primer.html) - explains the scope of HttpClient. Note that HttpClient is not a browser. It lacks
   the UI, HTML renderer and a JavaScript engine that a browser will possess.   

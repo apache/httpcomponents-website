@@ -27,7 +27,7 @@ and non-blocking, event driven I/O model based on Java NIO.
 Documentation
 -------------
 
-1. HttpCore [Tutorial](./current/tutorial/html/) ([PDF](./tutorial/pdf/httpcore-tutorial.pdf))
+1. HttpCore [Tutorial](./current/tutorial/html/) ([PDF](./current/tutorial/pdf/httpcore-tutorial.pdf))
 1. Examples of HttpCore components in action can be found [here](examples.md)
 1. Javadocs
     - [HttpCore](./current/httpcore/apidocs/)

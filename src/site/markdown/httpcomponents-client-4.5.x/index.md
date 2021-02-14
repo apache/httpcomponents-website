@@ -36,7 +36,7 @@ Documentation
 -------------
 
 1. [Quick Start](quickstart.md) - contains a simple, complete example of an HTTP GET and POST with parameters.
-1. HttpClient [Tutorial](./current/tutorial/html/) ([PDF](./tutorial/pdf/httpcore-tutorial.pdf))
+1. HttpClient [Tutorial](./current/tutorial/html/) ([PDF](./current/tutorial/pdf/httpclient-tutorial.pdf))
 1. [HttpClient Examples](examples.md) - a set of examples demonstrating some of the more complex use scenarios.
 1. [HttpClient Primer](./primer.html) - explains the scope of HttpClient. Note that HttpClient is not a browser. It
    lacks the UI, HTML renderer and a JavaScript engine that a browser will possess.
