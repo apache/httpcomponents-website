@@ -99,19 +99,6 @@
           <content>${project.reporting.outputDirectory}</content><!-- no need for site:stage, use target/site -->
           <ignorePathsToDelete><!-- don't delete content until site svnpubsub location refactoring done -->
             <ignorePathsToDelete>components</ignorePathsToDelete>
-            <ignorePathsToDelete>*.html</ignorePathsToDelete>
-            <ignorePathsToDelete>apidocs</ignorePathsToDelete>
-            <ignorePathsToDelete>xref</ignorePathsToDelete>
-            <ignorePathsToDelete>xref-test</ignorePathsToDelete>
-            <ignorePathsToDelete>css</ignorePathsToDelete>
-            <ignorePathsToDelete>images</ignorePathsToDelete>
-            <ignorePathsToDelete>checkstyle.rss</ignorePathsToDelete>
-            <ignorePathsToDelete>mail</ignorePathsToDelete>
-            <ignorePathsToDelete>examples</ignorePathsToDelete>
-            <ignorePathsToDelete>tutorial</ignorePathsToDelete>
-            <ignorePathsToDelete>style</ignorePathsToDelete>
-            <ignorePathsToDelete>fluent-hc</ignorePathsToDelete>
-            <ignorePathsToDelete>http*</ignorePathsToDelete>
           </ignorePathsToDelete>
           <tryUpdate>true</tryUpdate>
           <checkoutDirectory>scmpublish-checkout</checkoutDirectory><!-- don't checkout in target/ to avoid cleanup on "mvn clean" -->
