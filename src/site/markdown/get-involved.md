@@ -50,6 +50,13 @@ you need, are both immensely helpful. There are plenty of ways to help outside w
 requests (even if you are not a committer), feature suggestions, reporting bugs, documentation and usability feedback
 all matter immensely.
 
+The best way to get involved with the project and potentially to make the first step toward becoming a project committer
+is to look at the open issues in JIRA and help resolve them. Open issues labelled `volunteers-wanted` are especially
+unlikely to get resolved without help from volunteers / external contributors.
+
+Here is the list of [HttpComponents Issues](https://issues.apache.org/jira/issues/?filter=12350197) that HttpComponents
+project members require a helping hand with.
+
 Testing
 -------
 
