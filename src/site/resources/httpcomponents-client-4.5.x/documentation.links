@@ -3,3 +3,8 @@
 
 current     ../components/httpcomponents-client-4.5.x/4.5.13
 4.5.13      ../components/httpcomponents-client-4.5.x/4.5.13
+
+android.html    ../components/httpcomponents-client-4.x/android.html
+logging.html    ../components/httpcomponents-client-4.x/logging.html
+ntlm.html    ../components/httpcomponents-client-4.x/ntml.html
+primer.html    ../components/httpcomponents-client-4.x/primer.html

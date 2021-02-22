@@ -3,3 +3,7 @@
 
 5.1-beta1   ../components/httpcomponents-client-5.1.x/5.1-beta1
 current     ../components/httpcomponents-client-5.1.x/5.1-beta1
+
+android.html             ../components/httpcomponents-client-5.x/android.html
+logging.html             ../components/httpcomponents-client-5.x/logging.html
+related-projects.html    ../components/httpcomponents-client-5.x/related-projects.html

@@ -3,3 +3,7 @@
 
 5.0.3       ../components/httpcomponents-client-5.0.x/5.0.3
 current     ../components/httpcomponents-client-5.0.x/5.0.3
+
+android.html             ../components/httpcomponents-client-5.x/android.html
+logging.html             ../components/httpcomponents-client-5.x/logging.html
+related-projects.html    ../components/httpcomponents-client-5.x/related-projects.html
