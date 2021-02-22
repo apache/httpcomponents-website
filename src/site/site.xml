@@ -67,7 +67,6 @@ under the License.
     <menu name="Overview">
       <item name="About" href="index.html"/>
       <item name="News" href="news.html"/>
-      <item name="Powered by" href="poweredby.html"/>
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
