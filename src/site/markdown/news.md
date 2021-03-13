@@ -20,6 +20,17 @@
 HttpComponents Project News
 ===========================
 
+###### 15 March 2021 - HttpComponents Core 5.1 (GA) released
+
+This is the first GA release in the 5.1 release series.
+
+Notable changes and features included in the 5.1 series:
+
+- Conditional conformance with RFC 3986 (Uniform Resource Identifier (URI): Generic Syntax).
+- Improved support for out of sequence response message handing by the the classic (blocking)
+  HTTP transport.
+- Improved message builders.
+
 ###### 12 February 2021 - HttpComponents Client 5.1-beta1 released
 
 This is the first BETA release in the 5.1 release series that includes a number of new features as well performance
@@ -34,11 +45,6 @@ Notable changes and features included in the 5.1 series:
 
 This is likely the last BETA release in the 5.1 release series. The next release is expected to be 5.1 GA. This beta
 includes a number of new features as well as bug fixes from the stable 5.0.x branch.
-
-Notable changes and features included in the 5.1 series:
-
-- Conditional conformance with RFC 3986 (Uniform Resource Identifier (URI): Generic Syntax).
-- Improved support for out of sequence response message handing by the classic (blocking) HTTP transport.
 
 ###### 3 December 2020 - HttpComponents Core 5.1-beta2 released
 

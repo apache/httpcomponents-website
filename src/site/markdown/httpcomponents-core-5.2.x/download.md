@@ -23,7 +23,7 @@ HttpCore Downloads
 The latest release available for download:
 
 [Release packages](http://hc.apache.org/downloads.cgi) -
-[Release Notes](http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.0.x.txt) -
+[Release Notes](http://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.2.x.txt) -
 [License](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 Dependency management

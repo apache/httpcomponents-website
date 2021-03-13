@@ -20,73 +20,73 @@
 HttpCore Examples
 =================
 
-- [ Classic (blocking) HTTP/1.1 GET requests](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicGetExecutionExample.java)
+- [ Classic (blocking) HTTP/1.1 GET requests](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicGetExecutionExample.java)
 
   This example demonstrates synchronous execution of multiple HTTP/1.1 GET requests.
 
-- [ Classic (blocking) HTTP/1.1 POST requests](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicPostExecutionExample.java)
+- [ Classic (blocking) HTTP/1.1 POST requests](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicPostExecutionExample.java)
 
   This example demonstrates synchronous execution of multiple HTTP/1.1 POST requests with enclosed content of various
   types.
 
-- [ Asynchronous HTTP/1.1 GET requests](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncRequestExecutionExample.java)
+- [ Asynchronous HTTP/1.1 GET requests](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncRequestExecutionExample.java)
 
   This example demonstrates asynchronous execution of multiple HTTP/1.1 requests.
 
-- [ Asynchronous HTTP/2 GET requests](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2RequestExecutionExample.java)
+- [ Asynchronous HTTP/2 GET requests](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2RequestExecutionExample.java)
 
   This example demonstrates asynchronous execution of multiple HTTP/2 requests.
 
-- [ HTTP/2 requests over TLS connections with ALPN support](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2TlsAlpnRequestExecutionExample.java)
+- [ HTTP/2 requests over TLS connections with ALPN support](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2TlsAlpnRequestExecutionExample.java)
 
   This example demonstrates how to execute HTTP/2 requests over TLS connections with ALPN support. It also explains how
   to avoid the illegal reflective access operation warning when running Java 9 or older.
 
-- [ HTTP/2 requests over TLS connections with ALPN support on Java 1.7 and Java 1.8](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2ConscriptRequestExecutionExample.java)
+- [ HTTP/2 requests over TLS connections with ALPN support on Java 1.7 and Java 1.8](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2ConscriptRequestExecutionExample.java)
 
   This example demonstrates how to execute HTTP/2 requests over TLS connections with ALPN support on Java 1.7 and Java
   1.8.
 
-- [ Asynchronous HTTP/1.1 GET requests with message pipelining](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncPipelinedRequestExecutionExample.java)
+- [ Asynchronous HTTP/1.1 GET requests with message pipelining](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncPipelinedRequestExecutionExample.java)
 
   This example demonstrates asynchronous, pipelined execution multiple HTTP/1.1 requests.
 
-- [ Asynchronous HTTP/2 GET requests with multiple concurrent streams](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2MultiStreamExecutionExample.java)
+- [ Asynchronous HTTP/2 GET requests with multiple concurrent streams](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2MultiStreamExecutionExample.java)
 
   This example demonstrates asynchronous, multistream execution of multiple HTTP/2 requests.
 
-- [ Classic (blocking) HTTP/1.1 file server](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicFileServerExample.java)
+- [ Classic (blocking) HTTP/1.1 file server](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicFileServerExample.java)
 
   This is an example of an embedded HTTP/1.1 file server with a classic (blocking) message transport.
 
-- [ Request filters with classic (blocking) HTTP/1.1 server](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicServerFilterExample.java)
+- [ Request filters with classic (blocking) HTTP/1.1 server](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicServerFilterExample.java)
 
   This is an example of using synchronous request filters with an embedded HTTP/1.1 server.
 
-- [ Asynchronous HTTP/1.1 file server](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncFileServerExample.java)
+- [ Asynchronous HTTP/1.1 file server](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncFileServerExample.java)
 
   This is an example of an embedded HTTP/1.1 file server with an event driven, non-blocking message transport.
 
-- [ Request filters with asynchronous HTTP/1.1 server](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncServerFilterExample.java)
+- [ Request filters with asynchronous HTTP/1.1 server](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncServerFilterExample.java)
 
   This is an example of using asynchronous request filters with an embedded HTTP/1.1 server.
 
-- [ Asynchronous HTTP/2 file server](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2FileServerExample.java)
+- [ Asynchronous HTTP/2 file server](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2FileServerExample.java)
 
   This is an example of an embedded HTTP/2 file server with an event driven, non-blocking message transport.
 
-- [ Classic (blocking) HTTP reverse proxy](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicReverseProxyExample.java)
+- [ Classic (blocking) HTTP reverse proxy](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/ClassicReverseProxyExample.java)
 
   This is an example of an embedded HTTP/1.1 reverse proxy with a classic (blocking) message transport.
 
-- [ Asynchronous HTTP reverse proxy](https://github.com/apache/httpcomponents-core/tree/master/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncReverseProxyExample.java)
+- [ Asynchronous HTTP reverse proxy](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5/src/test/java/org/apache/hc/core5/http/examples/AsyncReverseProxyExample.java)
 
   This is an example of an embedded HTTP/1.1 reverse proxy with an event driven, non-blocking message transport.
 
-- [ Client Reactive Streams](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-reactive/src/test/java/org/apache/hc/core5/reactive/examples/ReactiveFullDuplexClientExample.java)
+- [ Client Reactive Streams](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5-reactive/src/test/java/org/apache/hc/core5/reactive/examples/ReactiveFullDuplexClientExample.java)
 
   This is an example of full-duplex HTTP/1.1 client side message exchanges using reactive streaming.
 
-- [ Server Reactive Streams](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-reactive/src/test/java/org/apache/hc/core5/reactive/examples/ReactiveFullDuplexServerExample.java)
+- [ Server Reactive Streams](https://github.com/apache/httpcomponents-core/tree/5.1.x/httpcore5-reactive/src/test/java/org/apache/hc/core5/reactive/examples/ReactiveFullDuplexServerExample.java)
 
   This is an example of full-duplex HTTP/1.1 server side message exchanges using reactive streaming.

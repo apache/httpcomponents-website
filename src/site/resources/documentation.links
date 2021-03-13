@@ -3,8 +3,3 @@
 
 httpclient-3.x                  ./components/httpclient-legacy
 httpclient-legacy               ./components/httpclient-legacy
-httpcomponents-asyncclient-ga   ./httpcomponents-asyncclient-4.1.x
-httpcomponents-core-ga          ./httpcomponents-core-5.0.x
-httpcomponents-client-ga        ./httpcomponents-client-5.0.x
-httpcomponents-core-dev         ./httpcomponents-core-5.1.x
-httpcomponents-client-dev       ./httpcomponents-client-5.1.x
