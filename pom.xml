@@ -54,10 +54,6 @@
     </site>
   </distributionManagement>
 
-  <modules>
-    <module>samples</module>
-  </modules>
-
   <reporting>
     <plugins>
         <plugin>
@@ -147,5 +143,14 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>sample-code</id>
+      <modules>
+        <module>samples</module>
+      </modules>
+    </profile>
+  </profiles>
 
 </project>
