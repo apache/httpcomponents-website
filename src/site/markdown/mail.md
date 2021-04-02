@@ -156,15 +156,16 @@ we'll only give you the highlights here.
 The HttpComponents project currently uses the following lists. Clicking on a list name will take you to a page with
 subscribe, unsubscribe, and archive information. See below for information on digests.
 
-* [httpclient-users](./mail-lists.html) - The list for users of HttpClient, either version 3 or 4. Users of HttpCore can
-  also post their questions here, although most subscribers will probably not be able to answer them.
+* [httpclient-users@hc.apache.org](https://apache.org/foundation/mailinglists.html) - The list for users of HttpClient,
+  either version 3 or 4. Users of HttpCore can also post their questions here, although most subscribers will probably
+  not be able to answer them.
 
-* [dev](./mail-lists.html) - The list for developers of HttpComponents and HttpClient 3. We don't mind getting HttpCore
-  user questions here. Our issues tracker JIRA also posts here.
+* [dev@hc.apache.org](https://apache.org/foundation/mailinglists.html) - The list for developers of HttpComponents and
+  HttpClient 3. We don't mind getting HttpCore user questions here. Our issues tracker JIRA also posts here.
 
-* [commits](./mail-lists.html) - The list for messages from our source code repository. Whenever the source code is
-  modified, a mail with the changes is sent. This list is read-only. HttpComponents committers are expected to subscribe
-  to the commits list, so they can review the changes.
+* [commits@hc.apache.org](https://apache.org/foundation/mailinglists.html) - The list for messages from our source code
+  repository. Whenever the source code is modified, a mail with the changes is sent. This list is read-only.
+  HttpComponents committers are expected to subscribe to the commits list, so they can review the changes.
 
 * _private_ - The list for private communication of the HttpComponents PMC. Only PMC members and ASF members can
   subscribe. There is no public archive.
