@@ -20,10 +20,10 @@
 HttpClient Quick Start
 ======================
 
-- Download 'Binary' package of the latest HttpClient 4.5 release or configure dependency on `HttpClient` and `Fluent HC`
+- Download 'Binary' package of the latest HttpClient 5.1 release or configure dependency on `HttpClient` and `Fluent HC`
   modules using a dependency manager of your choice as described [here](download.md).
 
-- HttpClient 5.0 requires Java 1.7 or newer.
+- HttpClient 5.1 requires Java 1.7 or newer.
 
 - The below code fragment illustrates the execution of HTTP GET and POST requests using the HttpClient native API.
 
@@ -62,7 +62,7 @@ HttpClient Quick Start
     ```
 
   Source can be found here
-  [here](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/QuickStart.java)
+  [here](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/QuickStart.java)
 
 - The same requests can be executed using a simpler, albeit less flexible, fluent API.
 
@@ -78,7 +78,7 @@ HttpClient Quick Start
     ```
 
   Source can be downloaded
-  [here](https://github.com/apache/httpcomponents-client/tree/master/httpclient5-fluent/src/test/java/org/apache/hc/client5/http/examples/fluent/FluentQuickStart.java)
+  [here](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5-fluent/src/test/java/org/apache/hc/client5/http/examples/fluent/FluentQuickStart.java)
 
 - The below code fragment illustrates the execution of HTTP requests using HttpClient async API.
 
@@ -180,6 +180,6 @@ HttpClient Quick Start
     ```    
 
   Source can be downloaded
-  [here](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncQuickStart.java)
+  [here](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncQuickStart.java)
 
 

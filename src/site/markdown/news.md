@@ -20,6 +20,24 @@
 HttpComponents Project News
 ===========================
 
+###### 12 May 2021 - HttpComponents Client 5.1 (GA) released
+
+This is the first GA release in the 5.1 release series.
+
+Notable changes and features included in the 5.1 series:
+
+- Conditional conformance with RFC 3986 (Uniform Resource Identifier (URI): Generic Syntax).
+- Improved support for out of sequence response message handing by the classic (blocking) HTTP transport.
+- Improved message builders.
+
+Please note that 5.1 is going to be the last release series compatible with Java 1.7. HttpClient will require Java 1.8
+as of 5.2.
+
+###### 12 May 2021 - HttpComponents Client 5.0.4 (GA) released
+
+This is a maintenance release that corrects a number of defects discovered since release 5.0.3 and upgrades HttpCore to
+version 5.0.4 and Common Codec to version 1.15.
+
 ###### 6 May 2021 - HttpComponents Core 5.1.1 (GA) released
 
 This is a maintenance release that corrects a number of defects discovered since release 5.1

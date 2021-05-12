@@ -77,12 +77,13 @@ Standards Compliance
 HttpClient strives to conform to the following specifications endorsed by the Internet Engineering Task Force (IETF) and
 the internet at large:
 
-* [RFC 7230](http://tools.ietf.org/html/rfc7230) - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing
-* [RFC 7231](http://tools.ietf.org/html/rfc7231) - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
-* [RFC 7235](http://tools.ietf.org/html/rfc7235) - Hypertext Transfer Protocol (HTTP/1.1): Authentication
-* [RFC 1945](http://tools.ietf.org/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
-* [RFC 2817](http://tools.ietf.org/html/rfc2817) - Upgrading to TLS Within HTTP/1.1
-* [RFC 2818](http://tools.ietf.org/html/rfc2818) - HTTP Over TLS
-* [RFC 6265](http://tools.ietf.org/html/rfc6265) - HTTP State Management Mechanism (Cookies)
-* [RFC 2396](http://tools.ietf.org/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
+- [RFC 7540](http://tools.ietf.org/html/rfc7540) - Hypertext Transfer Protocol Version 2 (HTTP/2)
+- [RFC 7541](http://tools.ietf.org/html/rfc7541) - HPACK: Header Compression for HTTP/2
+- [RFC 7230](http://tools.ietf.org/html/rfc7230) - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing
+- [RFC 7231](http://tools.ietf.org/html/rfc7231) - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
+- [RFC 1945](http://tools.ietf.org/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
+- [RFC 3986](http://tools.ietf.org/html/rfc3986) - Uniform Resource Identifier (URI): Generic Syntax
+- [RFC 2817](http://tools.ietf.org/html/rfc2817) - Upgrading to TLS Within HTTP/1.1
+- [RFC 2818](http://tools.ietf.org/html/rfc2818) - HTTP Over TLS
+- [RFC 6265](http://tools.ietf.org/html/rfc6265) - HTTP State Management Mechanism (Cookies)
 

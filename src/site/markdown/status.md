@@ -20,37 +20,35 @@
 HttpComponents Project Status
 =============================
 
+HttpComponents HttpCore 5.2.x
+-----------------------------
+
+HttpCore 5.2.x branch is the current feature development branch. The 5.2.x release series is expected to support 
+Java 1.8 features and functionality. 
+
+HttpComponents HttpCore 5.2.x
+-----------------------------
+
+HttpCore 5.2.x branch is the current feature development branch. The 5.2.x release series is expected to support
+Java 1.8 features and functionality.
+
 HttpComponents HttpCore 5.1.x
 -----------------------------
 
-HttpCore 5.1.x branch is the current feature development branch. The 5.x release series is expected to provide
-conditional conformance to RFC 3986 as well as a number of incremental functional enhancements and performance
-improvements.
+HttpCore 5.1.x branch is considered stable and production ready. It is being actively maintained and supported. The
+5.1.x release series provides comprehensive support for HTTP/1.1 and HTTP/2 protocol, full conformance with mandatory
+requirements of RFC 7230, RFC 7231, RFC 7540 and RFC 7541 and conditional conformance to RFC 3986.
 
 This is likely to be the last release series with Java 1.7 support.
 
-HttpComponents HttpCore 5.1.x
------------------------------
-
-HttpCore 5.1.x branch is the current feature development branch. The 5.x release series is expected to provide
-conditional conformance to RFC 3986 as well as a number of incremental functional enhancements and performance
-improvements.
-
-This is likely to be the last release series with Java 1.7 support.
-
-HttpComponents HttpCore 5.0.x
------------------------------
-
-HttpCore 5.0.x branch is considered stable and production ready. It is being actively maintained and supported. The 5.x
-release series provides comprehensive support for HTTP/1.1 and HTTP/2 protocol and full conformance with mandatory
-requirements of RFC 7230, RFC 7231, RFC 7540 and RFC 7541
-
-HttpComponents HttpClient 5.0.x
+HttpComponents HttpClient 5.1.x
 -------------------------------
 
-HttpClient 5.0.x branch is considered stable and production ready. It is being actively maintained and supported. The
-5.x release series provides comprehensive support for HTTP/1.1 and HTTP/2 protocol and full conformance with mandatory
-requirements of RFC 7230, RFC 7231, RFC 7540 and RFC 7541
+HttpClient 5.1.x branch is considered stable and production ready. It is being actively maintained and supported. The
+5.1.x release series provides comprehensive support for HTTP/1.1 and HTTP/2 protocol, full conformance with mandatory
+requirements of RFC 7230, RFC 7231, RFC 7540 and RFC 7541 and conditional conformance to RFC 3986
+
+This is likely to be the last release series with Java 1.7 support.
 
 HttpComponents HttpCore 4.4.x
 -----------------------------

@@ -20,53 +20,53 @@
 HttpClient Examples (Async)
 ===========================
 
-- [Asynchronous HTTP exchange](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpExchange.java)
+- [Asynchronous HTTP exchange](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpExchange.java)
 
   This example demonstrates a basic asynchronous HTTP request / response exchange. Response content is buffered in
   memory for simplicity.
 
-- [Asynchronous HTTP exchange with content streaming](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpExchangeStreaming.java)
+- [Asynchronous HTTP exchange with content streaming](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpExchangeStreaming.java)
 
   This example demonstrates an asynchronous HTTP request / response exchange with a full content streaming.
 
-- [HTTP/2 ALPN support](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientTlsAlpn.java)
+- [HTTP/2 ALPN support](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientTlsAlpn.java)
 
   This example demonstrates how to avoid the illegal reflective access operation warning when running with Oracle JRE 9
   or newer.
 
-- [Pipelined HTTP/1.1 exchanges](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp1Pipelining.java)
+- [Pipelined HTTP/1.1 exchanges](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp1Pipelining.java)
 
   This example demonstrates a pipelined execution of multiple HTTP/1.1 request / response exchanges. Response content is
   buffered in memory for simplicity.
 
-- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp2Multiplexing.java)
+- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp2Multiplexing.java)
 
   This example demonstrates a multiplexed execution of multiple HTTP/2 request / response exchanges. Response content is
   buffered in memory for simplicity.
 
-- [Request execution interceptors](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientInterceptors.java)
+- [Request execution interceptors](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientInterceptors.java)
 
   This example demonstrates how to insert custom request interceptor and an execution interceptor to the request
   execution chain.
 
-- [Message trailers](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientMessageTrailers.java)
+- [Message trailers](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientMessageTrailers.java)
 
   This example demonstrates how to use a custom execution interceptor to add trailers to all outgoing request enclosing
   an entity..
 
-- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp2ServerPush.java)
+- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp2ServerPush.java)
 
 This example demonstrates handling of HTTP/2 message exchanges pushed by the server.
 
-- [Client authentication](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientAuthentication.java)
+- [Client authentication](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientAuthentication.java)
 
   This example demonstrates execution of an HTTP request against a target site that requires user authentication.
 
-- [Custom SSL context](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientCustomSSL.java)
+- [Custom SSL context](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientCustomSSL.java)
 
   This example demonstrates how to create secure connections with a custom SSL context.
 
-- [Connection eviction](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientConnectionEviction.java)
+- [Connection eviction](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientConnectionEviction.java)
 
   This example demonstrates how to evict expired and idle connections from the connection pool.
 
