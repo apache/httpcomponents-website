@@ -23,7 +23,7 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
 
 -  Use `SSLConnectionSocketFactoryBuilder` class to create SSL connection socket factories with custom parameters
 
--  Explicitly specify TLSv1.2 or TLSv1.3 in order to disable older less versions of the SSL/TLS protocol. Please note
+-  Explicitly specify TLSv1.2 or TLSv1.3 in order to disable older less secure versions of the SSL/TLS protocol. Please note
    all SSL versions are excluded by default.
 
 -  Use `Timeout` class to define timeouts.
