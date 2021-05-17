@@ -6,10 +6,10 @@ abstract classes that can be used as a base for custom handlers.
 * `BasicAsyncEntityConsumer`, `BasicAsyncEntityProducer` entity handlers that buffer entity content in memory and
   therefore are not much different than simple handlers.
 
-* `AbstractBinAsyncEntityConsumer` and `AbstractBinAsyncEntityProducer` handlers can server as the base classes for
+* `AbstractBinAsyncEntityConsumer` and `AbstractBinAsyncEntityProducer` handlers can serve as the base classes for
   custom binary entity consumers or producers.
 
-* `AbstractCharAsyncEntityConsumer` and `AbstractCharAsyncEntityProducer` handlers can server as the base classes for
+* `AbstractCharAsyncEntityConsumer` and `AbstractCharAsyncEntityProducer` handlers can serve as the base classes for
   custom character entity consumers or producers.
 
 * `FileEntityProducer` entity handler that generates data stream from a file.
@@ -19,11 +19,11 @@ abstract classes that can be used as a base for custom handlers.
   an `Executor`.
 
 * `BasicRequestProducer` and `BasicResponseConsumer` messages handlers that perform no message head transformation and
-  can use any custom entity producer or consumer to handler the message body.
+  can use any custom entity producer or consumer to handle the message body.
 
-* `AbstractBinResponseConsumer` response handler can server as the base class for custom binary response consumers.
+* `AbstractBinResponseConsumer` response handler can serve as the base class for custom binary response consumers.
 
-* `AbstractCharResponseConsumer` response handler can server as the base class for custom character response consumers.
+* `AbstractCharResponseConsumer` response handler can serve as the base class for custom character response consumers.
 
 There are also third-party libraries that can provide specialized message handlers, for instance,
 for [JSON message processing](https://github.com/ok2c/httpcomponents-jackson) using
