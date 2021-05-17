@@ -35,7 +35,7 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
    per route maximum limit under high load and does not enforce the total maximum limit.
 
 -  Optionally choose a connection pool re-use policy: `FILO` to re-use as few connections as possible making it possible
-   for connections to become idle and expire; `LILO` to re-use all connections equally preventing them from becoming
+   for connections to become idle and expire; `LIFO` to re-use all connections equally preventing them from becoming
    idle and expiring.
 
    ```java
