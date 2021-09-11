@@ -26,12 +26,6 @@ HttpComponents HttpCore 5.2.x
 HttpCore 5.2.x branch is the current feature development branch. The 5.2.x release series is expected to support 
 Java 1.8 features and functionality. 
 
-HttpComponents HttpCore 5.2.x
------------------------------
-
-HttpCore 5.2.x branch is the current feature development branch. The 5.2.x release series is expected to support
-Java 1.8 features and functionality.
-
 HttpComponents HttpCore 5.1.x
 -----------------------------
 

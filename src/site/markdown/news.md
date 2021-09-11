@@ -20,6 +20,18 @@
 HttpComponents Project News
 ===========================
 
+###### 13 September 2021 - HttpComponents Client 5.2-alpha1 released
+
+This is the first ALPHA release in the 5.2 release series that upgrades minimal JRE level to version 1.8 (8u251 is
+required) and includes several protocol level and API improvements. It also includes all bug fixes from the 5.1 branch.
+
+Notable changes and features included in the 5.2 series:
+
+- Upgrade to Java 1.8.
+- Improved support for TLS upgrade and HTTP protocol upgrade (async).
+- Improved customization of HTTP listeners (async).
+- Improved parsing and formatting of URI components.
+
 ###### 12 May 2021 - HttpComponents Client 5.1 (GA) released
 
 This is the first GA release in the 5.1 release series.

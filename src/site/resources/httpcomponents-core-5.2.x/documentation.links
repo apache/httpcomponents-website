@@ -1,0 +1,5 @@
+# links property file for Ant's symlink task in pom.xml:
+# links to components in http://hc.apache.org/components/
+
+5.2-alpha1  ../components/httpcomponents-core-5.1.x/5.2-alpha1
+current     ../components/httpcomponents-core-5.1.x/5.2-alpha1
