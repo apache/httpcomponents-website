@@ -86,9 +86,9 @@ Standards Compliance
 HttpClient strives to conform to the following specifications endorsed by the Internet Engineering Task Force (IETF) and
 the internet at large:
 
-- [RFC 1945](http://tools.ietf.org/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
-- [RFC 2616](http://tools.ietf.org/html/rfc2616) - Hypertext Transfer Protocol -- HTTP/1.1
-- [RFC 2617](http://tools.ietf.org/html/rfc2617) - HTTP Authentication: Basic and Digest Access Authentication
-- [RFC 2396](http://tools.ietf.org/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
-- [RFC 6265](http://tools.ietf.org/html/rfc6265) - HTTP State Management Mechanism (Cookies)
+- [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
+- [RFC 2616](https://datatracker.ietf.org/doc/html/rfc2616) - Hypertext Transfer Protocol -- HTTP/1.1
+- [RFC 2617](https://datatracker.ietf.org/doc/html/rfc2617) - HTTP Authentication: Basic and Digest Access Authentication
+- [RFC 2396](https://datatracker.ietf.org/doc/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
+- [RFC 6265](https://datatracker.ietf.org/doc/html/rfc6265) - HTTP State Management Mechanism (Cookies)
 

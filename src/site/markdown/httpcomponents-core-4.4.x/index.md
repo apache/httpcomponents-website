@@ -43,5 +43,5 @@ Standards Compliance
 HttpCore components strive to conform to the following specifications endorsed by the Internet Engineering Task Force
 (IETF) and the internet at large:
 
-- [RFC 1945](http://tools.ietf.org/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
-- [RFC 2616](http://tools.ietf.org/html/rfc2616) - Hypertext Transfer Protocol -- HTTP/1.1
+- [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
+- [RFC 2616](https://datatracker.ietf.org/doc/html/rfc2616) - Hypertext Transfer Protocol -- HTTP/1.1

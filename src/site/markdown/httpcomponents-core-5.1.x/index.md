@@ -45,10 +45,10 @@ Standards Compliance
 HttpCore components strive to conform to the following specifications endorsed by the Internet Engineering Task Force
 (IETF) and the internet at large:
 
-- [RFC 7540](http://tools.ietf.org/html/rfc7540) - Hypertext Transfer Protocol Version 2 (HTTP/2)
-- [RFC 7541](http://tools.ietf.org/html/rfc7541) - HPACK: Header Compression for HTTP/2
-- [RFC 7230](http://tools.ietf.org/html/rfc7230) - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing
-- [RFC 7231](http://tools.ietf.org/html/rfc7231) - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
-- [RFC 1945](http://tools.ietf.org/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
-- [RFC 3986](http://tools.ietf.org/html/rfc3986) - Uniform Resource Identifier (URI): Generic Syntax
+- [RFC 7540](https://datatracker.ietf.org/doc/html/rfc7540) - Hypertext Transfer Protocol Version 2 (HTTP/2)
+- [RFC 7541](https://datatracker.ietf.org/doc/html/rfc7541) - HPACK: Header Compression for HTTP/2
+- [RFC 7230](https://datatracker.ietf.org/doc/html/rfc7230) - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing
+- [RFC 7231](https://datatracker.ietf.org/doc/html/rfc7231) - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
+- [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
+- [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) - Uniform Resource Identifier (URI): Generic Syntax
 
