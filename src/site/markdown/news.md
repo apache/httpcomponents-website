@@ -20,15 +20,10 @@
 HttpComponents Project News
 ===========================
 
-###### 30 September 2021 - HttpComponents Core 5.1.2 (GA) released
+###### 20 September 2021 - HttpComponents Core 5.2-alpha2 released
 
-This is a maintenance release that corrects a number of defects discovered since release 5.1.1 including defects in
-handling of identity transfer encoded HTTP/1.1 response messages.
-
-###### 13 September 2021 - HttpComponents Client 5.2-alpha1 released
-
-This is the first ALPHA release in the 5.2 release series that upgrades minimal JRE level to version 1.8 (8u251 is
-required) and includes several protocol level and API improvements. It also includes all bug fixes from the 5.1 branch.
+This is the second ALPHA release in the 5.2 release series that fixes a regression in the TLS layer introduced by the
+previous ALPHA and adds a number of incremental improvements.
 
 Notable changes and features included in the 5.2 series:
 
@@ -36,6 +31,16 @@ Notable changes and features included in the 5.2 series:
 - Improved support for TLS upgrade and HTTP protocol upgrade (async).
 - Improved customization of HTTP listeners (async).
 - Improved parsing and formatting of URI components.
+
+###### 30 September 2021 - HttpComponents Core 5.1.2 (GA) released
+
+This is a maintenance release that corrects a number of defects discovered since release 5.1.1 including defects in
+handling of identity transfer encoded HTTP/1.1 response messages.
+
+###### 13 September 2021 - HttpComponents Core 5.2-alpha1 released
+
+This is the first ALPHA release in the 5.2 release series that upgrades minimal JRE level to version 1.8 (8u251 is
+required) and includes several protocol level and API improvements. It also includes all bug fixes from the 5.1 branch.
 
 ###### 12 May 2021 - HttpComponents Client 5.1 (GA) released
 
