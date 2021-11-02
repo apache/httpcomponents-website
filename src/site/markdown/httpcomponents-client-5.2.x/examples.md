@@ -80,6 +80,10 @@ HttpClient Examples (Classic)
 
   This example demonstrates how to create secure connections with a custom SSL context.
 
+- [Connection / TLS configuation per route / host](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientConnectionConfig.java)
+
+  This example demonstrates how to use connection configuration on a per-route or a per-host basis.
+
 - [Preemptive BASIC authentication](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientPreemptiveBasicAuthentication.java)
 
   This example shows how HttpClient can be customized to authenticate preemptively using BASIC scheme. Generally,

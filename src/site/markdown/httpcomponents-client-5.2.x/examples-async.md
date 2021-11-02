@@ -29,11 +29,6 @@ HttpClient Examples (Async)
 
   This example demonstrates an asynchronous HTTP request / response exchange with a full content streaming.
 
-- [HTTP/2 ALPN support](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientTlsAlpn.java)
-
-  This example demonstrates how to avoid the illegal reflective access operation warning when running with Oracle JRE 9
-  or newer.
-
 - [Pipelined HTTP/1.1 exchanges](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp1Pipelining.java)
 
   This example demonstrates a pipelined execution of multiple HTTP/1.1 request / response exchanges. Response content is
@@ -65,6 +60,10 @@ This example demonstrates handling of HTTP/2 message exchanges pushed by the ser
 - [Custom SSL context](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientCustomSSL.java)
 
   This example demonstrates how to create secure connections with a custom SSL context.
+
+- [Connection / TLS configuation per route / host](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientConnectionConfig.java)
+
+  This example demonstrates how to use connection configuration on a per-route or a per-host basis.
 
 - [Connection eviction](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientConnectionEviction.java)
 
