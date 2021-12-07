@@ -20,6 +20,10 @@
 HttpComponents Project News
 ===========================
 
+###### 8 December 2021 - HttpComponents Core 4.4.15 (GA) released
+
+This is a maintenance release that corrects a number of defects discovered since release 4.4.14.
+
 ###### 17 November 2021 - HttpComponents Client 5.1.2 (GA) released
 
 This is an emergency release that fixes a regression introduced in the previous release that can lead to a connection

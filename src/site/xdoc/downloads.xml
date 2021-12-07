@@ -171,34 +171,34 @@
     <p>Recent releases of HttpClient can be found <a href="[preferred]/httpcomponents/httpclient">here</a></p>
   </subsection>
 
-  <subsection name="HttpCore 4.4.14 (GA)">
+  <subsection name="HttpCore 4.4.15 (GA)">
     <a href="https://downloads.apache.org/httpcomponents/httpcore/KEYS">KEYS</a>
     <a href="https://downloads.apache.org/httpcomponents/httpcore/RELEASE_NOTES-4.4.x.txt">Release Notes</a>
     <br/>
     <p>Binary</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.14-bin.tar.gz">4.4.14.tar.gz</a>
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.14-bin.tar.gz.sha512">sha512</a>]
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.14-bin.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.15-bin.tar.gz">4.4.15.tar.gz</a>
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.15-bin.tar.gz.sha512">sha512</a>]
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.15-bin.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.14-bin.zip">4.4.14.zip</a>
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.14-bin.zip.sha512">sha512</a>]
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.14-bin.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/binary/httpcomponents-core-4.4.15-bin.zip">4.4.15.zip</a>
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.15-bin.zip.sha512">sha512</a>]
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-4.4.15-bin.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Source</p>
     <ul>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.14-src.tar.gz">4.4.14.tar.gz</a>
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.14-src.tar.gz.sha512">sha512</a>]
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.14-src.tar.gz.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.15-src.tar.gz">4.4.15.tar.gz</a>
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.15-src.tar.gz.sha512">sha512</a>]
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.15-src.tar.gz.asc">pgp</a>]
      </li>
      <li>
-       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.14-src.zip">4.4.14.zip</a>
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.14-src.zip.sha512">sha512</a>]
-       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.14-src.zip.asc">pgp</a>]
+       <a href="[preferred]/httpcomponents/httpcore/source/httpcomponents-core-4.4.15-src.zip">4.4.15.zip</a>
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.15-src.zip.sha512">sha512</a>]
+       [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-4.4.15-src.zip.asc">pgp</a>]
      </li>
     </ul>
     <p>Recent releases of HttpCore can be found <a href="[preferred]/httpcomponents/httpcore">here</a></p>
