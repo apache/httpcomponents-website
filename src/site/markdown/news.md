@@ -20,6 +20,10 @@
 HttpComponents Project News
 ===========================
 
+###### 13 December 2021 - HttpComponents AsyncClient 4.1.5 (GA) released
+
+This is a maintenance release that fixes a number of issues discovered since 4.1.4.
+
 ###### 8 December 2021 - HttpComponents Core 4.4.15 (GA) released
 
 This is a maintenance release that corrects a number of defects discovered since release 4.4.14.
