@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 17 November 2021 - HttpComponents Client 5.1.2 (GA) released
+
+This is an emergency release that fixes a regression introduced in the previous release that can lead to a connection
+leak when executing requests with a non-repeatable streaming entity with the classic (blocking) HttpClient. Async and
+minimal HttpClient implementations are not affected by the regression.
+
 ###### 3 November 2021 - HttpComponents Client 5.2-alpha1 released
 
 This is the first ALPHA release in the 5.2 release series that upgrades minimal JRE level to version 1.8 (8u251 is
