@@ -92,7 +92,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
     ```
     <Configuration>
       <Appenders>
-        <Console name="STDOUT">
+        <Console name="Console">
           <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
         </Console>
       </Appenders>
@@ -104,7 +104,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
           <AppenderRef ref="Console"/>
         </Logger>
         <Root level="INFO">
-          <AppenderRef ref="STDOUT" />
+          <AppenderRef ref="Console" />
         </Root>
       </Loggers>
     </Configuration>
@@ -115,7 +115,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
     ```
     <Configuration>
       <Appenders>
-        <Console name="STDOUT">
+        <Console name="Console">
           <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
         </Console>
       </Appenders>
@@ -124,7 +124,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
           <AppenderRef ref="Console"/>
         </Logger>
         <Root level="INFO">
-          <AppenderRef ref="STDOUT" />
+          <AppenderRef ref="Console" />
         </Root>
       </Loggers>
     </Configuration>
@@ -135,7 +135,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
     ```
     <Configuration>
       <Appenders>
-        <Console name="STDOUT">
+        <Console name="Console">
           <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
         </Console>
       </Appenders>
@@ -147,7 +147,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
           <AppenderRef ref="Console"/>
         </Logger>
         <Root level="INFO">
-          <AppenderRef ref="STDOUT" />
+          <AppenderRef ref="Console" />
         </Root>
       </Loggers>
     </Configuration>
@@ -158,7 +158,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
     ```
     <Configuration>
       <Appenders>
-        <Console name="STDOUT">
+        <Console name="Console">
           <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
         </Console>
       </Appenders>
@@ -167,7 +167,7 @@ in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/lo
           <AppenderRef ref="Console"/>
         </Logger>
         <Root level="INFO">
-          <AppenderRef ref="STDOUT" />
+          <AppenderRef ref="Console" />
         </Root>
       </Loggers>
     </Configuration>
