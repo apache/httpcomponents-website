@@ -20,6 +20,21 @@
 HttpComponents Project News
 ===========================
 
+###### 8 June 2022 - HttpComponents Client 5.2-beta1 released
+
+This is the first BETA release in the 5.2 release series that upgrades minimal JRE level to version 8 (8u251 is
+required) and includes several protocol level and API improvements. It also includes all bug fixes from the 5.1 branch.
+
+Notable changes and features included in the 5.2 series:
+
+- Upgrade to Java 8.
+- Improved support for TLS upgrade and HTTP protocol upgrade (async).
+- Support for H2 tunneling via HTTP/1.1 proxy.
+- Conformance to RFC 7617 (The 'Basic' HTTP Authentication Scheme).
+- Migration to Java 8 Time primitives in State Management and Cache APIs.
+- Base64 codec based on Commons Codec replaced with JRE Base64 codec. Dependency on Commons Codec dropped.
+- Optional support for BR (Brotli) decompression.
+
 ###### 2 June 2022 - HttpComponents Core 5.2-beta2 released
 
 This BETA release corrects a major regression in the TLS handshake handling code introduced in the previous BETA
@@ -66,15 +81,6 @@ minimal HttpClient implementations are not affected by the regression.
 
 This is the first ALPHA release in the 5.2 release series that upgrades minimal JRE level to version 1.8 (8u251 is
 required) and includes several protocol level and API improvements. It also includes all bug fixes from the 5.1 branch.
-
-Notable changes and features included in the 5.2 series:
-
-- Upgrade to Java 8.
-- Improved support for TLS upgrade and HTTP protocol upgrade (async).
-- Support for HTTP/2 tunneling via HTTP/1.1 proxy.
-- Conformance to RFC 7617 (The 'Basic' HTTP Authentication Scheme).
-- Improved connection configuration on a per-route basis.
-- Improved TLS configuration on a per-host basis.
 
 ###### 26 October 2021 - HttpComponents Client 5.1.1 (GA) released
 

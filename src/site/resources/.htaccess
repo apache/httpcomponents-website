@@ -9,5 +9,5 @@ Redirect temp       "/httpcomponents-client-5.0.x"     "/httpcomponents-client-5
 Redirect temp       "/httpcomponents-client"           "/httpcomponents-client-5.1.x"
 Redirect temp       "/httpcomponents-client-ga"        "/httpcomponents-client-5.1.x"
 
-Redirect temp       "/httpcomponents-core-dev"         "/httpcomponents-core-5.1.x"
-Redirect temp       "/httpcomponents-client-dev"       "/httpcomponents-client-5.1.x"
+Redirect temp       "/httpcomponents-core-dev"         "/httpcomponents-core-5.2.x"
+Redirect temp       "/httpcomponents-client-dev"       "/httpcomponents-client-5.2.x"
