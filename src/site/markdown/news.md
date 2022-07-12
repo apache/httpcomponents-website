@@ -20,6 +20,11 @@
 HttpComponents Project News
 ===========================
 
+###### 12 July 2022 - HttpComponents Core 5.1.4 (GA) released
+
+This is a maintenance release that corrects a number of defects discovered since release 5.1.3, mostly in H2 protocol
+handling.
+
 ###### 8 June 2022 - HttpComponents Client 5.2-beta1 released
 
 This is the first BETA release in the 5.2 release series that upgrades minimal JRE level to version 8 (8u251 is
