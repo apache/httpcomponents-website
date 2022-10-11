@@ -28,7 +28,7 @@ using `Commons Logging`, HttpClient can be configured for a variety of different
 will have to make a choice which logging framework to use. By default `Commons Logging` supports the following logging
 frameworks:
 
-* [Log4J](http://logging.apache.org/log4j/docs/index.html)
+* [Log4J 2](https://logging.apache.org/log4j/2.x/index.html)
 
 * [java.util.logging](http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html)
 
@@ -66,8 +66,7 @@ the `org.apache.http.headers` logging category for capturing HTTP headers only.
 ### Configuration Examples
 
 `Commons Logging` can delegate to a variety of loggers for processing the actual output. Below are configuration
-examples for `Commons Logging`, `Log4j` and
-`java.util.logging`.
+examples for `Commons Logging`, `Log4j 2` and `java.util.logging`.
 
 ## Commons Logging Examples
 
@@ -111,68 +110,110 @@ system properties through JVM process arguments at the start up.
   -Dorg.apache.commons.logging.simplelog.log.org.apache.http.client=DEBUG
   ```
 
-## Log4j Examples
+## Log4j 2 Examples
 
-The simplest way to configure `Log4j` is via a `log4j.properties` file. `Log4j` will automatically read and configure
-itself using a file named `log4j.properties` when it's present at the root of the application classpath. Below are
-some `Log4j` configuration examples.
+The simplest way to [configure](https://logging.apache.org/log4j/2.x/manual/configuration.html) `Log4j 2` is via
+a `log4j2.xml` file. `Log4j 2`
+will [automatically](https://logging.apache.org/log4j/2.x/manual/configuration.html#AutomaticConfiguration) configure
+itself using a file named `log4j2.xml` when it's present at the root of the application classpath.
 
-**Note:** `Log4j` is not included in the `HttpClient` distribution.
+Below are some `Log4j` configuration examples.
 
-* Enable header wire + context logging - **Best for Debugging**
+**Note:** The `Log4j 2` implementation a.k.a "core" is not included in the `HttpClient` distribution. You can include it
+in your project using [Maven, Ivy, Gradle, or SBT](https://logging.apache.org/log4j/2.x/maven-artifacts.html).
 
-  ```
-  log4j.rootLogger=INFO, stdout
-  
-  log4j.appender.stdout=org.apache.log4j.ConsoleAppender
-  log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
-  log4j.appender.stdout.layout.ConversionPattern=%5p [%c] %m%n
-  
-  log4j.logger.org.apache.http=DEBUG
-  log4j.logger.org.apache.http.wire=ERROR
-  ```
+- Enable header wire + context logging - **Best for Debugging**
 
-* Enable full wire + context logging
+    ```
+    <Configuration>
+      <Appenders>
+        <Console name="Console">
+          <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
+        </Console>
+      </Appenders>
+      <Loggers>
+        <Logger name="org.apache.http" level="DEBUG">
+          <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="org.apache.http.wire" level="DEBUG">
+          <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="INFO">
+          <AppenderRef ref="Console" />
+        </Root>
+      </Loggers>
+    </Configuration>
+    ```
 
-  ```
-  log4j.rootLogger=INFO, stdout
-  
-  log4j.appender.stdout=org.apache.log4j.ConsoleAppender
-  log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
-  log4j.appender.stdout.layout.ConversionPattern=%5p [%c] %m%n
-  
-  log4j.logger.org.apache.http=DEBUG
-  ```
+- Enable full wire + context logging
 
-* Enable context logging for connection management
+    ```
+    <Configuration>
+      <Appenders>
+        <Console name="Console">
+          <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
+        </Console>
+      </Appenders>
+      <Loggers>
+        <Logger name="org.apache.http" level="DEBUG">
+          <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="INFO">
+          <AppenderRef ref="Console" />
+        </Root>
+      </Loggers>
+    </Configuration>
+    ```
 
-  ```
-  log4j.rootLogger=INFO, stdout
-  
-  log4j.appender.stdout=org.apache.log4j.ConsoleAppender
-  log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
-  log4j.appender.stdout.layout.ConversionPattern=%5p [%c] %m%n
-  
-  log4j.logger.org.apache.http.impl.conn=DEBUG
-  ```
+- Enable context logging for connection management
 
-* Enable context logging for connection management / request execution
+    ```
+    <Configuration>
+      <Appenders>
+        <Console name="Console">
+          <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
+        </Console>
+      </Appenders>
+      <Loggers>
+        <Logger name="org.apache.http.impl.conn" level="DEBUG">
+          <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="INFO">
+          <AppenderRef ref="Console" />
+        </Root>
+      </Loggers>
+    </Configuration>
+    ```
 
-  ```
-  log4j.rootLogger=INFO, stdout
-  
-  log4j.appender.stdout=org.apache.log4j.ConsoleAppender
-  log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
-  log4j.appender.stdout.layout.ConversionPattern=%5p [%c] %m%n
-  
-  log4j.logger.org.apache.http.impl.conn=DEBUG
-  log4j.logger.org.apache.http.impl.client=DEBUG
-  log4j.logger.org.apache.http.client=DEBUG
-  ```
+- Enable context logging for connection management / request execution
 
-Note that the default configuration for Log4J is very inefficient as it causes all the logging information to be
-generated but not actually sent anywhere. The `Log4J` manual is the best reference for how to configure `Log4J`. It is
-available at http://logging.apache.org/log4j/docs/manual.html .
+    ```
+    <Configuration>
+      <Appenders>
+        <Console name="Console">
+          <PatternLayout pattern="%d %-5level [%logger] %msg%n%xThrowable" />
+        </Console>
+      </Appenders>
+      <Loggers>
+        <Logger name="org.apache.http.impl.conn" level="DEBUG">
+          <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="org.apache.http.impl.client" level="DEBUG">
+          <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="org.apache.http.client" level="DEBUG">
+          <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="INFO">
+          <AppenderRef ref="Console" />
+        </Root>
+      </Loggers>
+    </Configuration>
+    ```
+
+The `Log4J 2` manual is the best reference for how to configure `Log4J 2`. It is available at 
+[https://logging.apache.org/log4j/2.x/manual/](https://logging.apache.org/log4j/2.x/manual/).
+
 
 ### java.util.logging Examples
 
