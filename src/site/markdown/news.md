@@ -20,6 +20,20 @@
 HttpComponents Project News
 ===========================
 
+###### 7 November 2022 - HttpComponents Core 5.2 (GA) released
+
+This is the first GA release in the 5.2 release series. This release finalizes the 5.2 APIs  and also corrects 
+a number of defects discovered since the previous release.
+
+Notable changes and features included in the 5.2 series:
+
+- Upgrade to Java 8.
+- Improved support for TLS upgrade and HTTP protocol upgrade (async).
+- Improved HTTP protocol negotiation.
+- Improved customization of HTTP listeners (async).
+- Improved parsing and formatting of URI components.
+- Use of Java 1.8 date / time APIs
+
 ###### 12 July 2022 - HttpComponents Core 5.1.4 (GA) released
 
 This is a maintenance release that corrects a number of defects discovered since release 5.1.3, mostly in H2 protocol
@@ -44,15 +58,6 @@ Notable changes and features included in the 5.2 series:
 
 This BETA release corrects a major regression in the TLS handshake handling code introduced in the previous BETA
 release.
-
-Notable changes and features included in the 5.2 series:
-
-- Upgrade to Java 8.
-- Improved support for TLS upgrade and HTTP protocol upgrade (async).
-- Improved HTTP protocol negotiation.
-- Improved customization of HTTP listeners (async).
-- Improved parsing and formatting of URI components.
-- Use of Java 1.8 date / time APIs
 
 ###### 17 March 2022 - HttpComponents Core 5.2-beta1 released
 
