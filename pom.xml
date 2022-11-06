@@ -28,7 +28,7 @@
   <parent>
     <artifactId>httpcomponents-parent</artifactId>
     <groupId>org.apache.httpcomponents</groupId>
-    <version>12</version>
+    <version>13</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>website</artifactId>
