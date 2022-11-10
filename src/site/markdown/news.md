@@ -20,6 +20,27 @@
 HttpComponents Project News
 ===========================
 
+###### 10 November 2022 - HttpComponents Client 5.2 (GA) released
+
+This is the first GA release in the 5.2 release series. This release finalizes the 5.2 APIs and corrects several 
+minor defects discovered since the previous release.
+
+Please note this is likely to be the last release series with support for SPNEGO and NTLM  authentication. 
+As of version 5.3 GSS-API-based authentication schemes (Kerberos, SPNEGO) and NTLM authentication schemes are going 
+to be deprecated and disabled by default.
+
+Notable changes and features included in the 5.2 series:
+
+- Upgrade to Java 8.
+- Improved support for TLS upgrade and HTTP protocol upgrade (async).
+- Support for H2 tunneling via HTTP/1.1 proxy.
+- Conformance to RFC 7617 (The 'Basic' HTTP Authentication Scheme).
+- Migration to Java 8 Time primitives in State Management and Cache APIs.
+- Connection and TLS configuration on a per route basis.
+- Base64 codec based on Commons Codec replaced with JRE Base64 codec. Dependency on Commons Codec dropped.
+
+* Optional support for BR (Brotli) decompression.
+
 ###### 7 November 2022 - HttpComponents Core 5.2 (GA) released
 
 This is the first GA release in the 5.2 release series. This release finalizes the 5.2 APIs  and also corrects 
@@ -43,16 +64,6 @@ handling.
 
 This is the first BETA release in the 5.2 release series that upgrades minimal JRE level to version 8 (8u251 is
 required) and includes several protocol level and API improvements. It also includes all bug fixes from the 5.1 branch.
-
-Notable changes and features included in the 5.2 series:
-
-- Upgrade to Java 8.
-- Improved support for TLS upgrade and HTTP protocol upgrade (async).
-- Support for H2 tunneling via HTTP/1.1 proxy.
-- Conformance to RFC 7617 (The 'Basic' HTTP Authentication Scheme).
-- Migration to Java 8 Time primitives in State Management and Cache APIs.
-- Base64 codec based on Commons Codec replaced with JRE Base64 codec. Dependency on Commons Codec dropped.
-- Optional support for BR (Brotli) decompression.
 
 ###### 2 June 2022 - HttpComponents Core 5.2-beta2 released
 

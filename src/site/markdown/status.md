@@ -20,14 +20,12 @@
 HttpComponents Project Status
 =============================
 
-HttpComponents HttpClient 5.1.x
+HttpComponents HttpClient 5.2.x
 -------------------------------
 
-HttpClient 5.1.x branch is considered stable and production ready. It is being actively maintained and supported. The
-5.1.x release series provides comprehensive support for HTTP/1.1 and HTTP/2 protocol, full conformance with mandatory
+HttpClient 5.2.x branch is considered stable and production ready. It is being actively maintained and supported. The
+5.2.x release series provides comprehensive support for HTTP/1.1 and HTTP/2 protocol, full conformance with mandatory
 requirements of RFC 7230, RFC 7231, RFC 7540 and RFC 7541 and conditional conformance to RFC 3986
-
-This is likely to be the last release series with Java 1.7 support.
 
 HttpComponents HttpCore 5.2.x
 -----------------------------
@@ -39,22 +37,24 @@ requirements of RFC 7230, RFC 7231, RFC 7540 and RFC 7541 and conditional confor
 HttpComponents HttpCore 4.4.x
 -----------------------------
 
-HttpCore 4.4.x branch is considered stable and production ready. While being actively maintained and supported, the 4.x
-release series will be receiving fixes for major defects and security issues only.
+HttpCore 4.4.x branch is considered stable and production ready. Please note the 4.x release series will be receiving 
+fixes for major defects and security issues only.
 
 Users of HttpCore 4.x are strongly encouraged to migrate to HttpCore 5.x
 
 HttpComponents HttpClient 4.5.x
 -------------------------------
 
-HttpClient 4.5.x branch is considered stable and production ready. While being actively maintained and supported, the
-4.x release series will be receiving fixes for major defects and security issues only.
+HttpClient 4.5.x branch is considered stable and production ready. Please note the 4.x release series will be receiving 
+fixes for major defects and security issues only.
+
+Users of HttpClient 4.x are strongly encouraged to migrate to HttpClient 5.x
 
 HttpComponents HttpAsyncClient 4.1.x
 ------------------------------------
 
-HttpAsyncClient 4.1.x branch is considered stable and production ready. While being actively maintained and supported,
-the 4.x release series will be receiving fixes for major defects and security issues only.
+HttpAsyncClient 4.1.x branch is considered stable and production ready. Please note the 4.x release series will be receiving 
+fixes for major defects and security issues only.
 
 Users of HttpAsyncClient 4.x are strongly encouraged to migrate to HttpClient 5.x
 
