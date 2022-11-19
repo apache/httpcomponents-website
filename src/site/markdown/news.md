@@ -20,6 +20,13 @@
 HttpComponents Project News
 ===========================
 
+###### 21 November 2022 - HttpComponents Client 5.1.4 (GA) released
+
+This is a maintenance release that corrects several minor defects discovered since release 5.1.3.
+
+This is likely to be the last release in the 5.1 release series. Users of HttpClient 5.1 are advised to upgrade
+to the latest version of 5.2.
+
 ###### 14 November 2022 - HttpComponents Core 5.1.5 (GA) released
 
 This is a maintenance release that corrects several minor defects discovered since release 5.1.4.
