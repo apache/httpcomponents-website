@@ -67,6 +67,6 @@ More information
 ----------------
 
 As it happens, the ways to get involved into an open source project are basically the same for all projects. Please have
-a look at the [Incubator Guide To Participation](http://incubator.apache.org/guides/participation.html). It's terse, but
+a look at the [Incubator Guide To Participation](https://incubator.apache.org/guides/participation.html). It's terse, but
 has pointers to additional information elsewhere at Apache. The sections on participating as a User and as a Developer
 apply here, too.

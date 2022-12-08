@@ -31,7 +31,7 @@ get started quickly and learn the details later.
 
 This document has evolved from discussions on the HttpClient mailing lists. Although it refers to HttpClient, the
 concepts described here apply equally to HttpComponents or
-Java's [HttpURLConnection](http://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)
+Java's [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)
 or any other HTTP communication library for any programming language. So you might find it useful even if you're not
 using Java and HttpClient.
 
@@ -237,7 +237,7 @@ sent in individual header fields. HttpClient can be advised to put all cookies i
 
 If that doesn't help, you are in trouble. The server may use additional means to track the session, for example the
 header field named Referer. Set that field to the URL of the previous request.
-([see this mail](http://mail-archives.apache.org/mod_mbox/jakarta-httpclient-user/200602.mbox/%3c19b.44e04b45.31166eaa@aol.com%3e))
+([see this mail](https://mail-archives.apache.org/mod_mbox/jakarta-httpclient-user/200602.mbox/%3c19b.44e04b45.31166eaa@aol.com%3e))
 
 If that doesn't help either, you will have to compare the request from your application to a corresponding one generated
 by a browser. The instructions in step 5 for POST requests apply for GET requests as well. It's even simpler with GET,
@@ -411,7 +411,7 @@ Inspect the request you are sending:
 
 There is a variety of sniffer programs you can use to grep the browser request. Some of them are mentioned in the
 responses
-to [on the mailing list](http://mail-archives.apache.org/mod_mbox/jakarta-httpclient-user/200603.mbox/%3c981224FF5B88B349B7C1FED584D2620E02A2CBB2@CORPUSMX50B.corp.emc.com%3e
+to [on the mailing list](https://mail-archives.apache.org/mod_mbox/jakarta-httpclient-user/200603.mbox/%3c981224FF5B88B349B7C1FED584D2620E02A2CBB2@CORPUSMX50B.corp.emc.com%3e
 this question).
 
 Candidates for problems are missing or wrong parameters, and differences in the header fields. The parameters are all up
@@ -474,14 +474,14 @@ Further Reading
 
 ReferenceMaterials: a list of technical specifications for HTTP and related stuff.
 
-* [ HTML 4.01 Specification, Section on Forms](http://www.w3.org/TR/html4/interact/forms.html): Includes how browsers
+* [ HTML 4.01 Specification, Section on Forms](https://www.w3.org/TR/html4/interact/forms.html): Includes how browsers
   have to generate the data to submit to the server.
 
 * [Giving Form to Forms](https://digital.com/tools/html-cheatsheet/):
   Explains how to define HTML forms and what is submitted to the server. Probably easier to digest than the HTML 4.01
   Specification.
 
-* [Commons File Upload](http://jakarta.apache.org/commons/fileupload/): Server-side library for parsing multipart
+* [Commons File Upload](https://jakarta.apache.org/commons/fileupload/): Server-side library for parsing multipart
   requests.
 
 * [Tutorial on File Upload in HTML](http://www.cs.tut.fi/~jkorpela/forms/file.html)

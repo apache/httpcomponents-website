@@ -26,15 +26,15 @@ Background
 NTLM is a proprietary authentication scheme developed by Microsoft and optimized for Windows operating system.
 
 Until year 2008 there was no official, publicly available, complete documentation of the
-protocol. [Unofficial](http://davenport.sourceforge.net/ntlm.html) 3rd party protocol descriptions existed as a result
+protocol. [Unofficial](https://davenport.sourceforge.net/ntlm.html) 3rd party protocol descriptions existed as a result
 of reverse-engineering efforts. It was not really known whether the protocol based on the reverse-engineering were
 complete or even correct.
 
 Microsoft
-published [MS-NLMP](http://download.microsoft.com/download/a/e/6/ae6e4142-aa58-45c6-8dcf-a657e5900cd3/%5BMS-NLMP%5D.pdf)
-and [MS-NTHT](http://download.microsoft.com/download/a/e/6/ae6e4142-aa58-45c6-8dcf-a657e5900cd3/%5BMS-NTHT%5D.pdf)
+published [MS-NLMP](https://download.microsoft.com/download/a/e/6/ae6e4142-aa58-45c6-8dcf-a657e5900cd3/%5BMS-NLMP%5D.pdf)
+and [MS-NTHT](https://download.microsoft.com/download/a/e/6/ae6e4142-aa58-45c6-8dcf-a657e5900cd3/%5BMS-NTHT%5D.pdf)
 specifications in February 2008 as a part of its
-[Interoperability Principles initiative](http://www.microsoft.com/interop/principles/default.mspx).
+[Interoperability Principles initiative](https://www.microsoft.com/interop/principles/default.mspx).
 
 HttpClient as of version 4.1 initially supported NTLMv1, NTLMv2, and NTLM2SessionResponse authentication protocols,
 based on the reverse engineering approach. As of version 4.2.3, HttpClient now supports a more correct implementation,
@@ -53,7 +53,7 @@ The new HttpClient NTLM implementation is known to have been tried successfully 
 
 If the current HttpClient NTLM implementation should prove problematic in your environment, we'd definitely like to hear
 about it. You are also welcome to try an alternative NTLM implementation, should it seem necessary. One can also
-use [JCIFS](http://jcifs.samba.org/), which includes an NTLM engine developed by members of the Samba project.
+use [JCIFS](https://jcifs.samba.org/), which includes an NTLM engine developed by members of the Samba project.
 
 Using Samba JCIFS as an alternative NTLM engine
 -----------------------------------------------
@@ -63,7 +63,7 @@ Follow these instructions to build an NTLMEngine implementation using JCIFS libr
 ***Disclaimer: Use code at your own discretion. Do NOT report any issues related to the use of JCIFS library to Apache
 HttpComponents project***.
 
-* Download version 1.3.14 or newer of the JCIFS library from the [Samba](http://jcifs.samba.org/) web site
+* Download version 1.3.14 or newer of the JCIFS library from the [Samba](https://jcifs.samba.org/) web site
 
 * Implement NTLMEngine interface
 

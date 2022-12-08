@@ -23,7 +23,7 @@ Apache HttpComponents
 The Apache HttpComponents project is responsible for creating and maintaining a toolset of low level Java components
 focused on HTTP and associated protocols.
 
-This project functions under the Apache Software Foundation (http://www.apache.org), and is part of a larger community
+This project functions under the Apache Software Foundation (https://www.apache.org), and is part of a larger community
 of developers and users.
 
 HttpComponents Overview
@@ -51,7 +51,7 @@ based on the classic Java I/O and non-blocking, event driven I/O model based on 
 [HttpClient](./httpcomponents-client-ga/) is a HTTP/1.1 compliant HTTP agent implementation based on HttpCore. It also
 provides reusable components for client-side authentication, HTTP state management, and HTTP connection management.
 HttpComponents Client is a successor of and replacement for
-[Commons HttpClient 3.x](http://hc.apache.org/httpclient-legacy/index.html). Users of Commons HttpClient are strongly
+[Commons HttpClient 3.x](https://hc.apache.org/httpclient-legacy/index.html). Users of Commons HttpClient are strongly
 encouraged to upgrade.
 
 ### Commons HttpClient (legacy)

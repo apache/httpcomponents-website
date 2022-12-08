@@ -28,7 +28,7 @@ every email that is sent to the list, and you can send mails to the list yoursel
 received by hundreds, maybe thousands of subscribers. It will also become available in public archives indefinitely.
 
 Please note that usage of these mailing lists is subject to the
-[Public Forum Archive Policy](http://www.apache.org/foundation/public-archives.html)
+[Public Forum Archive Policy](https://www.apache.org/foundation/public-archives.html)
 
 **Please** take a few minutes to read this page, in order to avoid annoyance for other subscribers, and embarrassment
 for yourself. There is a common set of etiquette guidelines for internet forums, sometimes called _netiquette_. You
