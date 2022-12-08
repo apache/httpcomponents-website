@@ -33,34 +33,34 @@ under the License.
 
   <bannerLeft>
     <name>Apache</name>
-    <src>http://www.apache.org/images/asf_logo_wide.gif</src>
-    <href>http://www.apache.org/</href>
+    <src>https://www.apache.org/images/asf_logo_wide.gif</src>
+    <href>https://www.apache.org/</href>
   </bannerLeft>
 
   <bannerRight>
     <name>HttpComponents</name>
-    <src>http://hc.apache.org/images/logos/httpcomponents.png</src>
-    <href>http://hc.apache.org/</href>
+    <src>https://hc.apache.org/images/logos/httpcomponents.png</src>
+    <href>https://hc.apache.org/</href>
   </bannerRight>
 
   <body>
     <breadcrumbs>
-      <item name="HttpComponents" href="http://hc.apache.org/index.html"/>
+      <item name="HttpComponents" href="https://hc.apache.org/index.html"/>
     </breadcrumbs>
 
     <!-- N.B. body links are automatically inherited -->
     <links>
-      <item name="Apache" href="http://www.apache.org/"/>
+      <item name="Apache" href="https://www.apache.org/"/>
     </links>
     
     <!-- add standard menu links for all sub-sites -->
     <menu name="HttpComponents" inherit="top">
       <item name="Home" href="index.html"/>
-      <item name="License" href="http://www.apache.org/licenses/"/>
+      <item name="License" href="https://www.apache.org/licenses/"/>
       <item name="Download" href="downloads.cgi"/>
       <item name="Mailing Lists" href="mail.html"/>
-      <item name="Wiki (external)" href="http://wiki.apache.org/HttpComponents/"/>
-      <item name="Security" href="http://www.apache.org/security/"/>
+      <item name="Wiki (external)" href="https://wiki.apache.org/HttpComponents/"/>
+      <item name="Security" href="https://www.apache.org/security/"/>
     </menu>
     
     <!-- sections for top-level site only -->
@@ -125,21 +125,21 @@ under the License.
     <menu ref="reports" inherit="bottom"/>
 
     <menu name="ASF" inherit="bottom">
-      <item name="ASF Home Page" href="http://www.apache.org"/>
-      <item name="Foundation" href="http://www.apache.org/foundation/"/>
-      <item name="Sponsor Apache" href="http://www.apache.org/foundation/sponsorship.html"/>
-      <item name="Thanks" href="http://www.apache.org/foundation/thanks.html"/>
+      <item name="ASF Home Page" href="https://www.apache.org"/>
+      <item name="Foundation" href="https://www.apache.org/foundation/"/>
+      <item name="Sponsor Apache" href="https://www.apache.org/foundation/sponsorship.html"/>
+      <item name="Thanks" href="https://www.apache.org/foundation/thanks.html"/>
     </menu>
   </body>
   
   <!-- inherited -->
   <poweredBy>
     <!-- Add ApacheCon logo -->
-    <logo name="ApacheCon" href="http://www.apache.org/events/current-event.html"
-          img="http://www.apache.org/events/current-event-125x125.png"/>
+    <logo name="ApacheCon" href="https://www.apache.org/events/current-event.html"
+          img="https://www.apache.org/events/current-event-125x125.png"/>
     <!-- Keep the default logo as well -->
-    <logo name="Maven" href="http://maven.apache.org/"
-          img="http://maven.apache.org/images/logos/maven-feather.png"/>
+    <logo name="Maven" href="https://maven.apache.org/"
+          img="https://maven.apache.org/images/logos/maven-feather.png"/>
   </poweredBy>
 
   <!-- inherited -->

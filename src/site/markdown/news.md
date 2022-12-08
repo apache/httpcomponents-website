@@ -287,7 +287,7 @@ Notable changes and features included in the 5.0 series are:
   RFC 7230, RFC 7231.)
 - New connection pool implementation with lax connection limit guarantees and better performance under higher
   concurrency due to absence of a global pool lock.
-- Support for Reactive Streams API http://www.reactive-streams.org/
+- Support for Reactive Streams API https://www.reactive-streams.org/
 - Package name space changed to 'org.apache.hc.client5'.
 - Maven group id changed to 'org.apache.httpcomponents.client5'.
 
@@ -328,7 +328,7 @@ Notable changes and features included in the 5.0 series:
 - Support for server-side request filters for classic and asynchronous server implementations. Request filters could be
   used to implement cross-cutting protocol aspects such as the 'expect-continue' handshaking and user authentication /
   authorization.
-- Support for Reactive Streams API http://www.reactive-streams.org/
+- Support for Reactive Streams API https://www.reactive-streams.org/
 - Redesigned connection pool implementation with strict connection limit guarantees. The connection pool is expected to
   have a better performance under higher concurrency due to reduced global pool lock contention.
 - New connection pool implementation with lax connection limit guarantees and better performance under higher
@@ -460,11 +460,11 @@ Notable new features in this release:
 
 - JDK 11 compatibility
 - Support for request specific push consumers
-- Support for Reactive Streams API http://www.reactive-streams.org/
+- Support for Reactive Streams API https://www.reactive-streams.org/
 
 ###### 22 October 2018 - HttpComponents HttpCore 5.0-beta5 released
 
-This BETA release adds support for Reactive Streams API [http://www.reactive-streams.org/]
+This BETA release adds support for Reactive Streams API [https://www.reactive-streams.org/]
 and fixes compatibility issues with Java 11 new TLS engine as well as a number of defects found since the previous
 release.
 
@@ -1351,7 +1351,7 @@ undergoes another round of reviews and optimization in the SVN trunk.
 ###### 12 May 2006 - HttpClient issue tracking migrated to Jira
 
 HttpClient issue tracking has migrated from Bugzilla to Jira. Please use
-[this project](http://issues.apache.org/jira/browse/HTTPCLIENT) in Jira to report new issues against HttpClient and
+[this project](https://issues.apache.org/jira/browse/HTTPCLIENT) in Jira to report new issues against HttpClient and
 search for reported ones. All existing issue reports can be accessed in Jira by their original Bugzilla bug id.
 
 ###### 29 April 2006 - New Project Logo

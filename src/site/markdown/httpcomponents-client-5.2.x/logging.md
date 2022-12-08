@@ -21,21 +21,21 @@ Logging Practices
 =================
 
 Being a library HttpClient is not to dictate which logging framework the user has to use. Therefore HttpClient utilizes
-the logging facade provided by the [Simple Logging Facade for Java (SLF4J)](http://slf4j.org/) package. `SLF4J` provides
-a simple and generalized [log interface](http://slf4j.org/manual.html) to various logging packages. By using `SLF4J`,
+the logging facade provided by the [Simple Logging Facade for Java (SLF4J)](https://slf4j.org/) package. `SLF4J` provides
+a simple and generalized [log interface](https://slf4j.org/manual.html) to various logging packages. By using `SLF4J`,
 HttpClient can be configured for a variety of different logging behaviours. That means the user will have to make a
 choice which logging implementation to use. There are several popular logging backends that can be used through
 the `SLF4J` facade APIs:
 
-- [Logback](http://logback.qos.ch/)
+- [Logback](https://logback.qos.ch/)
 
-- [Log4j 2](http://logging.apache.org/log4j/2.x/index.html)
+- [Log4j 2](https://logging.apache.org/log4j/2.x/index.html)
 
 - [SimpleLogger](http://slf4j.org/api/org/slf4j/impl/SimpleLogger.html) (internal to `SLF4J`)
 
 - [java.util.logging](http://slf4j.org/api/org/slf4j/impl/JDK14LoggerAdapter.html) (internal to `SLF4J`)
 
-HttpComponents project however mostly works with [Log4j 2](http://logging.apache.org/log4j/2.x/index.html) backend and
+HttpComponents project however mostly works with [Log4j 2](https://logging.apache.org/log4j/2.x/index.html) backend and
 recommends it to our users.
 
 HttpClient performs three different kinds of logging: the standard context logging used within each class, HTTP header

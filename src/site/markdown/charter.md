@@ -56,7 +56,7 @@ History
 -------
 
 The history of the HttpComponents starts with the now retired
-[Jakarta Slide](http://jakarta.apache.org/slide/) project. Slide was a WebDAV server including a client component, and
+[Jakarta Slide](https://jakarta.apache.org/slide/) project. Slide was a WebDAV server including a client component, and
 the WebDAV protocol builds on HTTP. There was interest in using the client-side HTTP implementation independently of
 Slide. The code was spun off from Slide in 2001 to become the HttpClient subproject of the Jakarta Commons.
 
@@ -65,7 +65,7 @@ separate mailing lists. This started the dissociation of HttpClient from Commons
 promoted to the Jakarta subproject level in 2004. The latter event is recorded as the oldest [News](news.md) item of the
 HttpComponents project.
 
-The [Commons](http://commons.apache.org/), cradle of HttpClient, left Jakarta in 2007 to become an independent Top Level
+The [Commons](https://commons.apache.org/), cradle of HttpClient, left Jakarta in 2007 to become an independent Top Level
 Project. Later in the same year, the HttpComponents project also left Jakarta to become an independent Top Level
 Project, taking the responsibility for maintaining HttpClient 3.x with it. Our TLP resolution is presented below.
 

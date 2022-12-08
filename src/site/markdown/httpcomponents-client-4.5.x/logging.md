@@ -22,7 +22,7 @@ Logging Practices
 
 Being a library HttpClient is not to dictate which logging framework the user has to use. Therefore HttpClient utilizes
 the logging interface provided by the
-[Commons Logging](http://commons.apache.org/logging/) package. `Commons Logging` provides a simple and generalized
+[Commons Logging](https://commons.apache.org/logging/) package. `Commons Logging` provides a simple and generalized
 [log interface](http://commons.apache.org/logging/commons-logging-1.0.4/docs/apidocs/) to various logging packages. By
 using `Commons Logging`, HttpClient can be configured for a variety of different logging behaviours. That means the user
 will have to make a choice which logging framework to use. By default `Commons Logging` supports the following logging
@@ -30,7 +30,7 @@ frameworks:
 
 * [Log4J 2](https://logging.apache.org/log4j/2.x/index.html)
 
-* [java.util.logging](http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html)
+* [java.util.logging](https://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html)
 
 * [SimpleLog](http://commons.apache.org/logging/commons-logging-1.0.4/docs/apidocs/org/apache/commons/logging/impl/SimpleLog.html) (
   internal to `Commons Logging`)
@@ -218,7 +218,7 @@ The `Log4J 2` manual is the best reference for how to configure `Log4J 2`. It is
 ### java.util.logging Examples
 
 Since JDK 1.4 there has been a package
-[java.util.logging](http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html) that provides a
+[java.util.logging](https://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html) that provides a
 logging framework similar to `Log4J`. By default it reads a config file from `$JAVA_HOME/jre/lib/logging.properties`
 which looks like this (comments stripped):
 
@@ -242,7 +242,7 @@ $JAVA_HOME/java -Djava.util.logging.config.file=$HOME/myapp/logging.properties
 -classpath $HOME/myapp/target/classes com.myapp.Main
 ```
 
-Alternatively [LogManager#readConfiguration(InputStream)](http://docs.oracle.com/javase/7/docs/api/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream))
+Alternatively [LogManager#readConfiguration(InputStream)](https://docs.oracle.com/javase/7/docs/api/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream))
 can be used to pass it the desired configuration.
 
 * Enable header wire + context logging - **Best for Debugging**
@@ -297,4 +297,4 @@ can be used to pass it the desired configuration.
   ```
 
 More detailed information is available from the
-[Java Logging documentation](http://docs.oracle.com/javase/7/docs/technotes/guides/logging/overview.html).
+[Java Logging documentation](https://docs.oracle.com/javase/7/docs/technotes/guides/logging/overview.html).

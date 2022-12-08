@@ -69,8 +69,8 @@ Standards Compliance
 HttpAsyncClient strives to conform to the following specifications endorsed by the Internet Engineering Task Force
 (IETF) and the internet at large:
 
-- [RFC 1945](http://www.ietf.org/rfc/rfc1945.txt) Hypertext Transfer Protocol -- HTTP/1.0
-- [RFC 2616](http://www.ietf.org/rfc/rfc2616.txt) Hypertext Transfer Protocol -- HTTP/1.1
-- [RFC 2617](http://www.ietf.org/rfc/rfc2617.txt) HTTP Authentication: Basic and Digest Access Authentication
-- [RFC 2109](http://www.ietf.org/rfc/rfc2109.txt) HTTP State Management Mechanism (Cookies)
-- [RFC 2965](http://www.ietf.org/rfc/rfc2965.txt) HTTP State Management Mechanism (Cookies v2)
+- [RFC 1945](https://www.ietf.org/rfc/rfc1945.txt) Hypertext Transfer Protocol -- HTTP/1.0
+- [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) Hypertext Transfer Protocol -- HTTP/1.1
+- [RFC 2617](https://www.ietf.org/rfc/rfc2617.txt) HTTP Authentication: Basic and Digest Access Authentication
+- [RFC 2109](https://www.ietf.org/rfc/rfc2109.txt) HTTP State Management Mechanism (Cookies)
+- [RFC 2965](https://www.ietf.org/rfc/rfc2965.txt) HTTP State Management Mechanism (Cookies v2)
