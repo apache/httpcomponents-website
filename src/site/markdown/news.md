@@ -20,6 +20,11 @@
 HttpComponents Project News
 ===========================
 
+###### 12 January 2023 - HttpComponents Core 5.2.1 (GA) released
+
+This is a maintenance release that corrects several minor defects discovered since release 5.2
+and fixes SOCKS proxy protocol support in the async transport.
+
 ###### 8 December 2022 - HttpComponents Client 5.2.1 (GA) released
 
 This is a maintenance release that fixes several regressions found in release 5.2.
