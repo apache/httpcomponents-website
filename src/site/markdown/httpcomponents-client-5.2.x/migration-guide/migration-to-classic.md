@@ -1,18 +1,18 @@
-# Migration to Apache HttpClient 5.0 classic APIs
+# Migration to Apache HttpClient 5.x classic APIs
 
-HttpClient 5.0 releases can be co-located with earlier major versions on the same classpath due to versioned package
+HttpClient 5.x releases can be co-located with earlier major versions on the same classpath due to versioned package
 namespace and Maven module coordinates.
 
-HttpClient 5.0 classic APIs are largely compatible with HttpClient 4.0 APIs. Major differences are related to connection
+HttpClient 5.x classic APIs are largely compatible with HttpClient 4.0 APIs. Major differences are related to connection
 management configuration, SSL/TLS and timeout settings when building HttpClient instances.
 
 ## Migration steps
 
--  Add HttpClient 5.0 as a new dependency to the project and optionally remove HttpClient 4.x
+-  Add HttpClient 5.x as a new dependency to the project and optionally remove HttpClient 4.x
 
 -  Remove old `org.apache.http` imports and re-import HttpClient classes from
    `org.apache.hc.httpclient5` package namespace. Most old interfaces and classes should resolve automatically. One
-   notable exception is `HttpEntityEnclosingRequest` interface In HttpClient 5.0 one can enclose a request entity with
+   notable exception is `HttpEntityEnclosingRequest` interface In HttpClient 5.x one can enclose a request entity with
    any HTTP method even if violates semantic of the method.
 
 -  There will be compilation errors due to API incompatibilities between version series 4.x and 5.x mostly related to
@@ -23,8 +23,8 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
 
 -  Use `SSLConnectionSocketFactoryBuilder` class to create SSL connection socket factories with custom parameters
 
--  Explicitly specify TLSv1.2 or TLSv1.3 in order to disable older less secure versions of the SSL/TLS protocol. Please note
-   all SSL versions are excluded by default.
+-  While HttpClient 5 automatically disables all SSL versions and weak TLS versions it may still be advisable to
+   explicitly specify TLSv1.3 as the only enabled version.
 
 -  Use `Timeout` class to define timeouts.
 
@@ -38,18 +38,24 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
    for connections to become idle and expire; `LIFO` to re-use all connections equally preventing them from becoming
    idle and expiring.
 
+-  Optionally choose a finite total time to live for connections. 
+
    ```java
    PoolingHttpClientConnectionManager connectionManager = PoolingHttpClientConnectionManagerBuilder.create()
          .setSSLSocketFactory(SSLConnectionSocketFactoryBuilder.create()
                  .setSslContext(SSLContexts.createSystemDefault())
-                 .setTlsVersions(TLS.V_1_3, TLS.V_1_2)
+                 .setTlsVersions(TLS.V_1_3)
                  .build())
          .setDefaultSocketConfig(SocketConfig.custom()
-                 .setSoTimeout(Timeout.ofSeconds(5))
+                 .setSoTimeout(Timeout.ofMinutes(1))
                  .build())
          .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
          .setConnPoolPolicy(PoolReusePolicy.LIFO)
-         .setConnectionTimeToLive(TimeValue.ofMinutes(1L))
+         .setDefaultConnectionConfig(ConnectionConfig.custom()
+                 .setSocketTimeout(Timeout.ofMinutes(1))
+                 .setConnectTimeout(Timeout.ofMinutes(1))
+                 .setTimeToLive(TimeValue.ofMinutes(10))
+                 .build())
          .build();
    ```
 
@@ -58,14 +64,12 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
 -  Use response timeout to define the maximum period of inactivity until receipt of response data.
 
 -  All base principles and good practices of HttpClient programing still apply. Always re-use client instances. Client
-   instances are expensive to create and are thread safe in both HttpClient 4.x and 5.0 series.
+   instances are expensive to create and are thread safe in both HttpClient 4.x and 5.x series.
 
    ```java
    CloseableHttpClient client = HttpClients.custom()
          .setConnectionManager(connectionManager)
          .setDefaultRequestConfig(RequestConfig.custom()
-                 .setConnectTimeout(Timeout.ofSeconds(5))
-                 .setResponseTimeout(Timeout.ofSeconds(5))
                  .setCookieSpec(StandardCookieSpec.STRICT)
                  .build())
          .build();
@@ -78,22 +82,20 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
    clientContext.setCookieStore(cookieStore);
    clientContext.setCredentialsProvider(credentialsProvider);
    clientContext.setRequestConfig(RequestConfig.custom()
-         .setConnectTimeout(Timeout.ofSeconds(10))
-         .setResponseTimeout(Timeout.ofSeconds(10))
+         .setCookieSpec(StandardCookieSpec.STRICT)
          .build());
    
    JsonFactory jsonFactory = new JsonFactory();
    ObjectMapper objectMapper = new ObjectMapper(jsonFactory);
    
-   HttpPost httpPost = new HttpPost("https://httpbin.org/post");
-   
-   List<NameValuePair> requestData = Arrays.asList(
-         new BasicNameValuePair("name1", "value1"),
-         new BasicNameValuePair("name2", "value2"));
-   httpPost.setEntity(HttpEntities.create(outstream -> {
-     objectMapper.writeValue(outstream, requestData);
-     outstream.flush();
-   }, ContentType.APPLICATION_JSON));
+   ClassicHttpRequest httpPost = ClassicRequestBuilder.post("https://httpbin.org/post")
+          .setEntity(HttpEntities.create(outstream -> {
+              objectMapper.writeValue(outstream, Arrays.asList(
+                      new BasicNameValuePair("name1", "value1"),
+                      new BasicNameValuePair("name2", "value2")));
+              outstream.flush();
+          }, ContentType.APPLICATION_JSON))
+          .build();
    ```
 
 -  HTTP response messages in HttpClient 5.x no longer have a status line. Use response code directly.

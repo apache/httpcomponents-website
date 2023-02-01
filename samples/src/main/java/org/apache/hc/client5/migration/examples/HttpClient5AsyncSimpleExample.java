@@ -18,14 +18,19 @@ package org.apache.hc.client5.migration.examples;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.Future;
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.apache.hc.client5.http.async.methods.SimpleHttpRequest;
-import org.apache.hc.client5.http.async.methods.SimpleHttpRequests;
 import org.apache.hc.client5.http.async.methods.SimpleHttpResponse;
+import org.apache.hc.client5.http.async.methods.SimpleRequestBuilder;
 import org.apache.hc.client5.http.auth.CredentialsProvider;
+import org.apache.hc.client5.http.config.ConnectionConfig;
 import org.apache.hc.client5.http.config.RequestConfig;
+import org.apache.hc.client5.http.config.TlsConfig;
 import org.apache.hc.client5.http.cookie.BasicCookieStore;
 import org.apache.hc.client5.http.cookie.CookieStore;
 import org.apache.hc.client5.http.cookie.StandardCookieSpec;
@@ -47,12 +52,7 @@ import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
-import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class HttpClient5AsyncSimpleExample {
 
@@ -60,24 +60,29 @@ public class HttpClient5AsyncSimpleExample {
         PoolingAsyncClientConnectionManager connectionManager = PoolingAsyncClientConnectionManagerBuilder.create()
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
                         .setSslContext(SSLContexts.createSystemDefault())
-                        .setTlsVersions(TLS.V_1_3, TLS.V_1_2)
+                        .setTlsVersions(TLS.V_1_3)
                         .build())
                 .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
                 .setConnPoolPolicy(PoolReusePolicy.LIFO)
-                .setConnectionTimeToLive(TimeValue.ofMinutes(1L))
+                .setDefaultConnectionConfig(ConnectionConfig.custom()
+                        .setSocketTimeout(Timeout.ofMinutes(1))
+                        .setConnectTimeout(Timeout.ofMinutes(1))
+                        .setTimeToLive(TimeValue.ofMinutes(10))
+                        .build())
+                .setDefaultTlsConfig(TlsConfig.custom()
+                        .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
+                        .setHandshakeTimeout(Timeout.ofMinutes(1))
+                        .build())
                 .build();
 
         CloseableHttpAsyncClient client = HttpAsyncClients.custom()
                 .setConnectionManager(connectionManager)
                 .setIOReactorConfig(IOReactorConfig.custom()
-                        .setSoTimeout(Timeout.ofSeconds(5))
+                        .setSoTimeout(Timeout.ofMinutes(1))
                         .build())
                 .setDefaultRequestConfig(RequestConfig.custom()
-                        .setConnectTimeout(Timeout.ofSeconds(5))
-                        .setResponseTimeout(Timeout.ofSeconds(5))
                         .setCookieSpec(StandardCookieSpec.STRICT)
                         .build())
-                .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
                 .build();
         client.start();
 
@@ -89,20 +94,17 @@ public class HttpClient5AsyncSimpleExample {
         clientContext.setCookieStore(cookieStore);
         clientContext.setCredentialsProvider(credentialsProvider);
         clientContext.setRequestConfig(RequestConfig.custom()
-                .setConnectTimeout(Timeout.ofSeconds(10))
-                .setResponseTimeout(Timeout.ofSeconds(10))
+                .setCookieSpec(StandardCookieSpec.STRICT)
                 .build());
 
         JsonFactory jsonFactory = new JsonFactory();
         ObjectMapper objectMapper = new ObjectMapper(jsonFactory);
 
-        SimpleHttpRequest httpPost = SimpleHttpRequests.post("https://httpbin.org/post");
-
-        List<NameValuePair> requestData = Arrays.asList(
-                new BasicNameValuePair("name1", "value1"),
-                new BasicNameValuePair("name2", "value2"));
-
-        httpPost.setBody(objectMapper.writeValueAsString(requestData), ContentType.APPLICATION_JSON);
+        SimpleHttpRequest httpPost = SimpleRequestBuilder.post("https://httpbin.org/post")
+                .setBody(objectMapper.writeValueAsString(Arrays.asList(
+                        new BasicNameValuePair("name1", "value1"),
+                        new BasicNameValuePair("name2", "value2"))), ContentType.APPLICATION_JSON)
+                .build();
 
         Future<?> future = client.execute(httpPost, new FutureCallback<SimpleHttpResponse>() {
 

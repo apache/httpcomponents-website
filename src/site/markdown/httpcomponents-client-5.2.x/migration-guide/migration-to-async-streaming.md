@@ -1,4 +1,4 @@
-# Migration to Apache HttpClient 5.0 async APIs
+# Migration to Apache HttpClient 5.x async APIs
 
 HttpClient ships with a number of standard message handlers for the most common scenarios as well as a number of
 abstract classes that can be used as a base for custom handlers.
@@ -31,11 +31,11 @@ for [JSON message processing](https://github.com/ok2c/httpcomponents-jackson) us
 
 ## Migration steps
 
--  Depending on the preferred migration path it one might consider migrating to HttpClient 5.0 classic APIs or
-   HttpClient 5.0 async APIs with simple message handlers as the first step.
+-  Depending on the preferred migration path it one might consider migrating to HttpClient 5.x classic APIs or
+   HttpClient 5.x async APIs with simple message handlers as the first step.
 
 -  Replace the existing request generation and response processing code with optimized message handlers shipped with
-   HttpClient 5.0 or custom-built handlers.
+   HttpClient 5.x or custom-built handlers.
 
    In this particular instance [JSON message handlers](https://github.com/ok2c/httpcomponents-jackson)
    are used to process JSON messages of arbitrary length without intermediate buffering of the entire message.
@@ -46,24 +46,29 @@ for [JSON message processing](https://github.com/ok2c/httpcomponents-jackson) us
    PoolingAsyncClientConnectionManager connectionManager = PoolingAsyncClientConnectionManagerBuilder.create()
         .setTlsStrategy(ClientTlsStrategyBuilder.create()
                 .setSslContext(SSLContexts.createSystemDefault())
-                .setTlsVersions(TLS.V_1_3, TLS.V_1_2)
+                .setTlsVersions(TLS.V_1_3)
                 .build())
         .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
         .setConnPoolPolicy(PoolReusePolicy.LIFO)
-        .setConnectionTimeToLive(TimeValue.ofMinutes(1L))
+        .setDefaultConnectionConfig(ConnectionConfig.custom()
+                .setSocketTimeout(Timeout.ofMinutes(1))
+                .setConnectTimeout(Timeout.ofMinutes(1))
+                .setTimeToLive(TimeValue.ofMinutes(10))
+                .build())
+        .setDefaultTlsConfig(TlsConfig.custom()
+                .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
+                .setHandshakeTimeout(Timeout.ofMinutes(1))
+                .build())
         .build();
     
    CloseableHttpAsyncClient client = HttpAsyncClients.custom()
         .setConnectionManager(connectionManager)
         .setIOReactorConfig(IOReactorConfig.custom()
-                .setSoTimeout(Timeout.ofSeconds(5))
+                .setSoTimeout(Timeout.ofMinutes(1))
                 .build())
         .setDefaultRequestConfig(RequestConfig.custom()
-                .setConnectTimeout(Timeout.ofSeconds(5))
-                .setResponseTimeout(Timeout.ofSeconds(5))
                 .setCookieSpec(StandardCookieSpec.STRICT)
                 .build())
-        .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
         .build();
    client.start();
     
@@ -75,21 +80,19 @@ for [JSON message processing](https://github.com/ok2c/httpcomponents-jackson) us
    clientContext.setCookieStore(cookieStore);
    clientContext.setCredentialsProvider(credentialsProvider);
    clientContext.setRequestConfig(RequestConfig.custom()
-        .setConnectTimeout(Timeout.ofSeconds(10))
-        .setResponseTimeout(Timeout.ofSeconds(10))
+        .setCookieSpec(StandardCookieSpec.STRICT)
         .build());
     
    JsonFactory jsonFactory = new JsonFactory();
    ObjectMapper objectMapper = new ObjectMapper(jsonFactory);
     
-   HttpRequest httpPost = BasicHttpRequests.post("https://httpbin.org/post");
-    
-   List<NameValuePair> requestData = Arrays.asList(
-        new org.apache.http.message.BasicNameValuePair("name1", "value1"),
-        new org.apache.http.message.BasicNameValuePair("name2", "value2"));
-    
    Future<?> future = client.execute(
-        JsonRequestProducers.create(httpPost, requestData, objectMapper),
+        JsonRequestProducers.create(
+                BasicRequestBuilder.post("https://httpbin.org/post").build(),
+                Arrays.asList(
+                        new org.apache.http.message.BasicNameValuePair("name1", "value1"),
+                        new org.apache.http.message.BasicNameValuePair("name2", "value2")),
+                objectMapper),
         JsonResponseConsumers.create(jsonFactory),
         new FutureCallback<Message<HttpResponse, JsonNode>>() {
 

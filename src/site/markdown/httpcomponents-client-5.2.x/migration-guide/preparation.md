@@ -2,7 +2,7 @@
 
 It is strongly encouraged to follow the best practices and common use patterns in programming with Apache HttpClient
 4.x. They remain largely unchanged between 4.x and 5.x release series. Correctly written code will be easier to port to
-5.0 APIs and from the classic I/O model to the async I/O model.
+5.x APIs and from the classic I/O model to the async I/O model.
 
 ## Preparation steps
 
@@ -33,11 +33,11 @@ It is strongly encouraged to follow the best practices and common use patterns i
                     SSLConnectionSocketFactory.getDefaultHostnameVerifier()))
             .setConnectionTimeToLive(1, TimeUnit.MINUTES)
             .setDefaultSocketConfig(SocketConfig.custom()
-                    .setSoTimeout(5000)
+                    .setSoTimeout(60000)
                     .build())
             .setDefaultRequestConfig(RequestConfig.custom()
-                    .setConnectTimeout(5000)
-                    .setSocketTimeout(5000)
+                    .setConnectTimeout(60000)
+                    .setSocketTimeout(60000)
                     .setCookieSpec(CookieSpecs.STANDARD_STRICT)
                     .build())
             .build();
@@ -60,8 +60,8 @@ It is strongly encouraged to follow the best practices and common use patterns i
     clientContext.setCookieStore(cookieStore);
     clientContext.setCredentialsProvider(credentialsProvider);
     clientContext.setRequestConfig(RequestConfig.custom()
-            .setConnectTimeout(10000)
-            .setSocketTimeout(10000)
+            .setConnectTimeout(60000)
+            .setSocketTimeout(60000)
             .setCookieSpec(CookieSpecs.STANDARD)
             .build());
     ```

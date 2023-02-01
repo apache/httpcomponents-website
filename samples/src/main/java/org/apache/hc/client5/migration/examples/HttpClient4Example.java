@@ -22,6 +22,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -42,10 +46,6 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.ssl.SSLContexts;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 public class HttpClient4Example {
 
     public static void main(String... args) throws Exception {
@@ -55,13 +55,13 @@ public class HttpClient4Example {
                         new String[] { "TLSv1.2" },
                         null,
                         SSLConnectionSocketFactory.getDefaultHostnameVerifier()))
-                .setConnectionTimeToLive(1, TimeUnit.MINUTES)
+                .setConnectionTimeToLive(10, TimeUnit.MINUTES)
                 .setDefaultSocketConfig(SocketConfig.custom()
-                        .setSoTimeout(5000)
+                        .setSoTimeout(60000)
                         .build())
                 .setDefaultRequestConfig(RequestConfig.custom()
-                        .setConnectTimeout(5000)
-                        .setSocketTimeout(5000)
+                        .setConnectTimeout(60000)
+                        .setSocketTimeout(60000)
                         .setCookieSpec(CookieSpecs.STANDARD_STRICT)
                         .build())
                 .build();
@@ -73,8 +73,8 @@ public class HttpClient4Example {
         clientContext.setCookieStore(cookieStore);
         clientContext.setCredentialsProvider(credentialsProvider);
         clientContext.setRequestConfig(RequestConfig.custom()
-                .setConnectTimeout(10000)
-                .setSocketTimeout(10000)
+                .setConnectTimeout(60000)
+                .setSocketTimeout(60000)
                 .setCookieSpec(CookieSpecs.STANDARD)
                 .build());
 

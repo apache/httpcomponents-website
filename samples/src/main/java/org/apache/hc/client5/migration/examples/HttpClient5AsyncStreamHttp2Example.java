@@ -17,11 +17,16 @@
 package org.apache.hc.client5.migration.examples;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.Future;
 
-import org.apache.hc.client5.http.async.methods.BasicHttpRequests;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ok2c.hc5.json.http.JsonRequestProducers;
+import com.ok2c.hc5.json.http.JsonResponseConsumers;
+
 import org.apache.hc.client5.http.auth.CredentialsProvider;
+import org.apache.hc.client5.http.config.ConnectionConfig;
 import org.apache.hc.client5.http.config.RequestConfig;
 import org.apache.hc.client5.http.cookie.BasicCookieStore;
 import org.apache.hc.client5.http.cookie.CookieStore;
@@ -32,21 +37,16 @@ import org.apache.hc.client5.http.impl.auth.BasicCredentialsProvider;
 import org.apache.hc.client5.http.protocol.HttpClientContext;
 import org.apache.hc.client5.http.ssl.ClientTlsStrategyBuilder;
 import org.apache.hc.core5.concurrent.FutureCallback;
-import org.apache.hc.core5.http.HttpRequest;
 import org.apache.hc.core5.http.HttpResponse;
 import org.apache.hc.core5.http.Message;
+import org.apache.hc.core5.http.message.BasicNameValuePair;
 import org.apache.hc.core5.http.ssl.TLS;
+import org.apache.hc.core5.http.support.BasicRequestBuilder;
 import org.apache.hc.core5.io.CloseMode;
 import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.ssl.SSLContexts;
+import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
-import org.apache.http.NameValuePair;
-
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ok2c.hc5.json.http.JsonRequestProducers;
-import com.ok2c.hc5.json.http.JsonResponseConsumers;
 
 public class HttpClient5AsyncStreamHttp2Example {
 
@@ -54,14 +54,17 @@ public class HttpClient5AsyncStreamHttp2Example {
         CloseableHttpAsyncClient client = HttpAsyncClients.customHttp2()
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
                         .setSslContext(SSLContexts.createSystemDefault())
-                        .setTlsVersions(TLS.V_1_3, TLS.V_1_2)
+                        .setTlsVersions(TLS.V_1_3)
                         .build())
                 .setIOReactorConfig(IOReactorConfig.custom()
-                        .setSoTimeout(Timeout.ofSeconds(5))
+                        .setSoTimeout(Timeout.ofMinutes(1))
+                        .build())
+                .setDefaultConnectionConfig(ConnectionConfig.custom()
+                        .setSocketTimeout(Timeout.ofMinutes(1))
+                        .setConnectTimeout(Timeout.ofMinutes(1))
+                        .setTimeToLive(TimeValue.ofMinutes(10))
                         .build())
                 .setDefaultRequestConfig(RequestConfig.custom()
-                        .setConnectTimeout(Timeout.ofSeconds(5))
-                        .setResponseTimeout(Timeout.ofSeconds(5))
                         .setCookieSpec(StandardCookieSpec.STRICT)
                         .build())
                 .build();
@@ -75,21 +78,19 @@ public class HttpClient5AsyncStreamHttp2Example {
         clientContext.setCookieStore(cookieStore);
         clientContext.setCredentialsProvider(credentialsProvider);
         clientContext.setRequestConfig(RequestConfig.custom()
-                .setConnectTimeout(Timeout.ofSeconds(10))
-                .setResponseTimeout(Timeout.ofSeconds(10))
+                .setCookieSpec(StandardCookieSpec.STRICT)
                 .build());
 
         JsonFactory jsonFactory = new JsonFactory();
         ObjectMapper objectMapper = new ObjectMapper(jsonFactory);
 
-        HttpRequest httpPost = BasicHttpRequests.post("https://nghttp2.org/httpbin/post");
-
-        List<NameValuePair> requestData = Arrays.asList(
-                new org.apache.http.message.BasicNameValuePair("name1", "value1"),
-                new org.apache.http.message.BasicNameValuePair("name2", "value2"));
-
         Future<?> future = client.execute(
-                JsonRequestProducers.create(httpPost, requestData, objectMapper),
+                JsonRequestProducers.create(
+                        BasicRequestBuilder.post("https://httpbin.org/post").build(),
+                        Arrays.asList(
+                                new BasicNameValuePair("name1", "value1"),
+                                new BasicNameValuePair("name2", "value2")),
+                        objectMapper),
                 JsonResponseConsumers.create(jsonFactory),
                 new FutureCallback<Message<HttpResponse, JsonNode>>() {
 

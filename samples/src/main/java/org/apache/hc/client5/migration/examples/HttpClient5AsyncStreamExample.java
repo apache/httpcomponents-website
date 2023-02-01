@@ -17,12 +17,18 @@
 package org.apache.hc.client5.migration.examples;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.Future;
 
-import org.apache.hc.client5.http.async.methods.BasicHttpRequests;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ok2c.hc5.json.http.JsonRequestProducers;
+import com.ok2c.hc5.json.http.JsonResponseConsumers;
+
 import org.apache.hc.client5.http.auth.CredentialsProvider;
+import org.apache.hc.client5.http.config.ConnectionConfig;
 import org.apache.hc.client5.http.config.RequestConfig;
+import org.apache.hc.client5.http.config.TlsConfig;
 import org.apache.hc.client5.http.cookie.BasicCookieStore;
 import org.apache.hc.client5.http.cookie.CookieStore;
 import org.apache.hc.client5.http.cookie.StandardCookieSpec;
@@ -34,10 +40,10 @@ import org.apache.hc.client5.http.impl.nio.PoolingAsyncClientConnectionManagerBu
 import org.apache.hc.client5.http.protocol.HttpClientContext;
 import org.apache.hc.client5.http.ssl.ClientTlsStrategyBuilder;
 import org.apache.hc.core5.concurrent.FutureCallback;
-import org.apache.hc.core5.http.HttpRequest;
 import org.apache.hc.core5.http.HttpResponse;
 import org.apache.hc.core5.http.Message;
 import org.apache.hc.core5.http.ssl.TLS;
+import org.apache.hc.core5.http.support.BasicRequestBuilder;
 import org.apache.hc.core5.http2.HttpVersionPolicy;
 import org.apache.hc.core5.io.CloseMode;
 import org.apache.hc.core5.pool.PoolConcurrencyPolicy;
@@ -46,13 +52,6 @@ import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
-import org.apache.http.NameValuePair;
-
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ok2c.hc5.json.http.JsonRequestProducers;
-import com.ok2c.hc5.json.http.JsonResponseConsumers;
 
 public class HttpClient5AsyncStreamExample {
 
@@ -60,24 +59,29 @@ public class HttpClient5AsyncStreamExample {
         PoolingAsyncClientConnectionManager connectionManager = PoolingAsyncClientConnectionManagerBuilder.create()
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
                         .setSslContext(SSLContexts.createSystemDefault())
-                        .setTlsVersions(TLS.V_1_3, TLS.V_1_2)
+                        .setTlsVersions(TLS.V_1_3)
                         .build())
                 .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
                 .setConnPoolPolicy(PoolReusePolicy.LIFO)
-                .setConnectionTimeToLive(TimeValue.ofMinutes(1L))
+                .setDefaultConnectionConfig(ConnectionConfig.custom()
+                        .setSocketTimeout(Timeout.ofMinutes(1))
+                        .setConnectTimeout(Timeout.ofMinutes(1))
+                        .setTimeToLive(TimeValue.ofMinutes(10))
+                        .build())
+                .setDefaultTlsConfig(TlsConfig.custom()
+                        .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
+                        .setHandshakeTimeout(Timeout.ofMinutes(1))
+                        .build())
                 .build();
 
         CloseableHttpAsyncClient client = HttpAsyncClients.custom()
                 .setConnectionManager(connectionManager)
                 .setIOReactorConfig(IOReactorConfig.custom()
-                        .setSoTimeout(Timeout.ofSeconds(5))
+                        .setSoTimeout(Timeout.ofMinutes(1))
                         .build())
                 .setDefaultRequestConfig(RequestConfig.custom()
-                        .setConnectTimeout(Timeout.ofSeconds(5))
-                        .setResponseTimeout(Timeout.ofSeconds(5))
                         .setCookieSpec(StandardCookieSpec.STRICT)
                         .build())
-                .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
                 .build();
         client.start();
 
@@ -89,21 +93,19 @@ public class HttpClient5AsyncStreamExample {
         clientContext.setCookieStore(cookieStore);
         clientContext.setCredentialsProvider(credentialsProvider);
         clientContext.setRequestConfig(RequestConfig.custom()
-                .setConnectTimeout(Timeout.ofSeconds(10))
-                .setResponseTimeout(Timeout.ofSeconds(10))
+                .setCookieSpec(StandardCookieSpec.STRICT)
                 .build());
 
         JsonFactory jsonFactory = new JsonFactory();
         ObjectMapper objectMapper = new ObjectMapper(jsonFactory);
 
-        HttpRequest httpPost = BasicHttpRequests.post("https://httpbin.org/post");
-
-        List<NameValuePair> requestData = Arrays.asList(
-                new org.apache.http.message.BasicNameValuePair("name1", "value1"),
-                new org.apache.http.message.BasicNameValuePair("name2", "value2"));
-
         Future<?> future = client.execute(
-                JsonRequestProducers.create(httpPost, requestData, objectMapper),
+                JsonRequestProducers.create(
+                        BasicRequestBuilder.post("https://httpbin.org/post").build(),
+                        Arrays.asList(
+                                new org.apache.http.message.BasicNameValuePair("name1", "value1"),
+                                new org.apache.http.message.BasicNameValuePair("name2", "value2")),
+                        objectMapper),
                 JsonResponseConsumers.create(jsonFactory),
                 new FutureCallback<Message<HttpResponse, JsonNode>>() {
 

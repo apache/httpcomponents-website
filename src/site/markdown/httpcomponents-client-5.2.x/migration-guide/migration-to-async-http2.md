@@ -1,4 +1,4 @@
-# Migration to Apache HttpClient 5.0 async APIs for HTTP/2 only
+# Migration to Apache HttpClient 5.x async APIs for HTTP/2 only
 
 For those scenarios where HTTP/1.1 compatibility is no longer required HttpClient 5.0
 provides `CloseableHttpAsyncClient` optimized for HTTP/2 protocol with full support for multiplexed request execution
@@ -19,14 +19,17 @@ over a single HTTP/2 connection.
    CloseableHttpAsyncClient client = HttpAsyncClients.customHttp2()
          .setTlsStrategy(ClientTlsStrategyBuilder.create()
                  .setSslContext(SSLContexts.createSystemDefault())
-                 .setTlsVersions(TLS.V_1_3, TLS.V_1_2)
+                 .setTlsVersions(TLS.V_1_3)
                  .build())
          .setIOReactorConfig(IOReactorConfig.custom()
-                 .setSoTimeout(Timeout.ofSeconds(5))
+                 .setSoTimeout(Timeout.ofMinutes(1))
+                 .build())
+         .setDefaultConnectionConfig(ConnectionConfig.custom()
+                 .setSocketTimeout(Timeout.ofMinutes(1))
+                 .setConnectTimeout(Timeout.ofMinutes(1))
+                 .setTimeToLive(TimeValue.ofMinutes(10))
                  .build())
          .setDefaultRequestConfig(RequestConfig.custom()
-                 .setConnectTimeout(Timeout.ofSeconds(5))
-                 .setResponseTimeout(Timeout.ofSeconds(5))
                  .setCookieSpec(StandardCookieSpec.STRICT)
                  .build())
          .build();
@@ -40,21 +43,19 @@ over a single HTTP/2 connection.
    clientContext.setCookieStore(cookieStore);
    clientContext.setCredentialsProvider(credentialsProvider);
    clientContext.setRequestConfig(RequestConfig.custom()
-         .setConnectTimeout(Timeout.ofSeconds(10))
-         .setResponseTimeout(Timeout.ofSeconds(10))
+         .setCookieSpec(StandardCookieSpec.STRICT)
          .build());
    
    JsonFactory jsonFactory = new JsonFactory();
    ObjectMapper objectMapper = new ObjectMapper(jsonFactory);
-   
-   HttpRequest httpPost = BasicHttpRequests.post("https://nghttp2.org/httpbin/post");
-   
-   List<NameValuePair> requestData = Arrays.asList(
-         new org.apache.http.message.BasicNameValuePair("name1", "value1"),
-         new org.apache.http.message.BasicNameValuePair("name2", "value2"));
-   
+
    Future<?> future = client.execute(
-         JsonRequestProducers.create(httpPost, requestData, objectMapper),
+        JsonRequestProducers.create(
+                BasicRequestBuilder.post("https://httpbin.org/post").build(),
+                Arrays.asList(
+                     new BasicNameValuePair("name1", "value1"),
+                     new BasicNameValuePair("name2", "value2")),
+                objectMapper),
          JsonResponseConsumers.create(jsonFactory),
          new FutureCallback<Message<HttpResponse, JsonNode>>() {
    
