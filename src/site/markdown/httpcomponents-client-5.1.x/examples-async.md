@@ -39,7 +39,7 @@ HttpClient Examples (Async)
   This example demonstrates a pipelined execution of multiple HTTP/1.1 request / response exchanges. Response content is
   buffered in memory for simplicity.
 
-- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp2Multiplexing.java)
+- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientH2Multiplexing.java)
 
   This example demonstrates a multiplexed execution of multiple HTTP/2 request / response exchanges. Response content is
   buffered in memory for simplicity.
@@ -54,7 +54,7 @@ HttpClient Examples (Async)
   This example demonstrates how to use a custom execution interceptor to add trailers to all outgoing request enclosing
   an entity..
 
-- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp2ServerPush.java)
+- [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/5.1.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientH2ServerPush.java)
 
 This example demonstrates handling of HTTP/2 message exchanges pushed by the server.
 
