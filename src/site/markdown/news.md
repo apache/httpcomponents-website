@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 21 June 2023 - HttpComponents Core 5.2.2 (GA) released
+
+This is a maintenance release that corrects several defects discovered since release 5.2.1 including
+a major defect that can cause HTTP/2 connections allocate excessive amount of memory for their output
+frame buffer if the opposite endpoint transmits a high value of MAX_FRAME_SIZE in its settings.
+
 ###### 12 January 2023 - HttpComponents Core 5.2.1 (GA) released
 
 This is a maintenance release that corrects several minor defects discovered since release 5.2
