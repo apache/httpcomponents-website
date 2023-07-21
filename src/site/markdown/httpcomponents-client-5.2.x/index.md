@@ -60,7 +60,7 @@ Documentation
 Features
 --------
 
-- Standards based, pure Java, implementation of HTTP versions 1.0, 1.1, 2.0
+- Standards based, pure Java, implementation of HTTP versions 1.0, 1.1, 2.0 (only async APIs)
 - Supports encryption with HTTPS (HTTP over SSL) protocol.
 - Pluggable socket factories and TLS strategies.
 - Transparent message exchanges through HTTP/1.1 and HTTP/1.0 proxies.
