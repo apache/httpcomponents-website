@@ -52,10 +52,10 @@ Documentation
 
 1. API compatibility reports
 
-    * [HttpClient](./current/httpclient5/clirr-report.html)
-    * [HC Fluent](./current/httpclient5-fluent/clirr-report.html)
-    * [HttpClient Cache](./current/httpclient5-cache/clirr-report.html)
-    * [HttpClient Windows extensions](./current/httpclient5-win/clirr-report.html)
+    * [HttpClient](./current/httpclient5/japicmp.html)
+    * [HC Fluent](./current/httpclient5-fluent/japicmp.html)
+    * [HttpClient Cache](./current/httpclient5-cache/japicmp.html)
+    * [HttpClient Windows extensions](./current/httpclient5-win/japicmp.html)
 
 Features
 --------

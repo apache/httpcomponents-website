@@ -35,9 +35,9 @@ Documentation
     - [HttpCore Reactive Streams](./current/httpcore5-reactive/apidocs/)
 
 1. API compatibility reports
-    - [HttpCore HTTP/1.1](./current/httpcore5/clirr-report.html)
-    - [HttpCore HTTP/2](./current/httpcore5-h2/clirr-report.html)
-    - [HttpCore Reactive Streams](./current/httpcore5-reactive/clirr-report.html)
+    - [HttpCore HTTP/1.1](./current/httpcore5/japicmp.html)
+    - [HttpCore HTTP/2](./current/httpcore5-h2/japicmp.html)
+    - [HttpCore Reactive Streams](./current/httpcore5-reactive/japicmp.html)
 
 Standards Compliance
 --------------------
