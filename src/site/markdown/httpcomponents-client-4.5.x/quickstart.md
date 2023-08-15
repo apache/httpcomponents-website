@@ -66,9 +66,6 @@ HttpClient Quick Start
     }
     ```
 
-  Source can be
-  downloaded [here](https://github.com/apache/httpcomponents-client/blob/4.5.x/httpclient/src/examples/org/apache/http/examples/client/QuickStart.java)
-
 - The same requests can be executed using a simpler, albeit less flexible, fluent API.
 
     ```
@@ -81,9 +78,6 @@ HttpClient Quick Start
         .bodyForm(Form.form().add("username",  "vip").add("password",  "secret").build())
         .execute().returnContent();
     ```
-
-  Source can be
-  downloaded [here](https://github.com/apache/httpcomponents-client/blob/4.5.x/fluent-hc/src/examples/org/apache/http/client/fluent/FluentQuickStart.java)
 
 - [HttpClient Examples](examples.md) - a set of examples demonstrating some of the more complex scenarios.
 

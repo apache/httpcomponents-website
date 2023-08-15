@@ -182,6 +182,6 @@ HttpClient Quick Start
     ```    
 
   Source can be found here
-  [here](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncQuickStart.java)
+  [here](https://github.com/apache/httpcomponents-website/blob/master/samples/src/main/java/org/apache/hc/client5/http/examples/AsyncQuickStart.java)
 
 
