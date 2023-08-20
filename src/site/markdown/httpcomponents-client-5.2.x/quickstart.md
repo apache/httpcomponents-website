@@ -64,7 +64,7 @@ HttpClient Quick Start
     ```
 
   Source can be found here
-  [here](https://github.com/apache/httpcomponents-website/blob/master/samples/src/main/java/org/apache/hc/client5/http/examples/QuickStart.java)
+  [here](https://github.com/apache/httpcomponents-website/blob/5.2.x/samples/src/main/java/org/apache/hc/client5/http/examples/QuickStart.java)
 
 - The same requests can be executed using a simpler, albeit less flexible, fluent API.
 
@@ -80,7 +80,7 @@ HttpClient Quick Start
     ```
 
   Source can be found here
-  [here](https://github.com/apache/httpcomponents-website/blob/master/samples/src/main/java/org/apache/hc/client5/http/examples/fluent/FluentQuickStart.java)
+  [here](https://github.com/apache/httpcomponents-website/blob/5.2.x/samples/src/main/java/org/apache/hc/client5/http/examples/fluent/FluentQuickStart.java)
 
 - The below code fragment illustrates the execution of HTTP requests using HttpClient async API.
 
@@ -182,6 +182,6 @@ HttpClient Quick Start
     ```    
 
   Source can be found here
-  [here](https://github.com/apache/httpcomponents-website/blob/master/samples/src/main/java/org/apache/hc/client5/http/examples/AsyncQuickStart.java)
+  [here](https://github.com/apache/httpcomponents-website/blob/5.2.x/samples/src/main/java/org/apache/hc/client5/http/examples/AsyncQuickStart.java)
 
 

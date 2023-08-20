@@ -70,6 +70,12 @@ under the License.
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
+      <item name="HttpClient 5.3 ALPHA" collapse="true" href="httpcomponents-client-5.3.x/index.html">
+        <item name="Examples (Classic)" href="httpcomponents-client-5.3.x/examples.html"/>
+        <item name="Examples (Async)" href="httpcomponents-client-5.3.x/examples-async.html"/>
+        <item name="Examples (Reactive)" href="httpcomponents-client-5.3.x/examples-reactive.html"/>
+        <item name="Download" href="httpcomponents-client-5.3.x/download.html"/>
+      </item>
       <item name="HttpClient 5.2" collapse="true" href="httpcomponents-client-5.2.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-5.2.x/quickstart.html"/>
         <item name="Migration Guide" collapse="true" href="httpcomponents-client-5.2.x/migration-guide/index.html">

@@ -20,6 +20,22 @@
 HttpComponents Project News
 ===========================
 
+###### 21 August 2023 - HttpComponents Client 5.3-alpha1 released
+
+This is the first release in the 5.3 release series that introduces support for the Bearer authentication 
+scheme (RFC6750) and deprecates NTLM and GSS based experimental authentication schemes in favor of 
+Basic / Bearer authentication with TLS.
+
+Notable changes and features included in the 5.3 series:
+
+* Introduction of the Bearer authentication scheme.
+
+* Deprecation of the NTLM authentication scheme.
+
+* Deprecation of the GSS based experimental authentication schemes.
+
+* Support for load distribution across multiple proxies.
+
 ###### 21 June 2023 - HttpComponents Core 5.2.2 (GA) released
 
 This is a maintenance release that corrects several defects discovered since release 5.2.1 including
