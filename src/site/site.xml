@@ -67,6 +67,8 @@ under the License.
     <menu name="Overview">
       <item name="About" href="index.html"/>
       <item name="News" href="news.html"/>
+      <item name="Project Status" href="status.html"/>
+      <item name="Project Charter" href="charter.html"/>
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
@@ -121,10 +123,6 @@ under the License.
     </menu>
     <menu name="Legacy">
       <item name="Commons HttpClient" href="httpclient-legacy/index.html"/>
-    </menu>
-    <menu name="Project">
-      <item name="Status" href="status.html"/>
-      <item name="Charter" href="charter.html"/>
     </menu>
 
     <!-- inherited -->
