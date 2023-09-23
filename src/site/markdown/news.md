@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 25 September 2023 - HttpComponents Core 5.2.3 (GA) released
+
+This is a maintenance release that corrects several defects discovered since release 5.2.2 including
+a major defect that can cause non-blocking character-based consumers to enter an invalid state and
+stop processing incoming data.
+
 ###### 21 August 2023 - HttpComponents Client 5.3-alpha1 released
 
 This is the first release in the 5.3 release series that introduces support for the Bearer authentication 
