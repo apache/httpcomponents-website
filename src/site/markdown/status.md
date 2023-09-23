@@ -20,6 +20,25 @@
 HttpComponents Project Status
 =============================
 
+HttpComponents HttpClient 5.4.x
+-------------------------------
+
+HttpClient 5.4.x branch is the future development branch. The 5.4.x release series will upgrade HTTP protocol
+conformance level to RFC 9110 and 9111 and will replace `synchronized` blocks with lock primitives.
+
+HttpComponents HttpClient 5.3.x
+-------------------------------
+
+HttpClient 5.3.x branch is the current development branch. The 5.3.x release series will introduce support for the
+Bearer authentication scheme (RFC 6750) and will deprecate NTLM and GSS based experimental authentication schemes in
+favor of Basic / Bearer authentication with TLS.
+
+HttpComponents HttpCore 5.3.x
+-------------------------------
+
+HttpClient 5.3.x branch is the current development branch. The 5.3.x release series will upgrade HTTP protocol 
+conformance level to RFC 9110 and will replace `synchronized` blocks with lock primitives.
+
 HttpComponents HttpClient 5.2.x
 -------------------------------
 
