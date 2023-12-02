@@ -20,6 +20,13 @@
 HttpComponents Project News
 ===========================
 
+###### 4 December 2023 - HttpComponents Core 5.2.4 (GA) released
+
+This is a maintenance release that corrects a major defect discovered since release 5.2.3 that
+can lead to an H2 connection failing at runtime with the message "Frame size exceeds maximum" when
+executing requests with an enclosed message body and the remote endpoint having negotiated
+a maximum frame size larger than the protocol default (16KB).
+
 ###### 25 September 2023 - HttpComponents Core 5.2.3 (GA) released
 
 This is a maintenance release that corrects several defects discovered since release 5.2.2 including
