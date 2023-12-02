@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 4 December 2023 - HttpComponents Client 5.2.3 (GA) released
+
+This is a maintenance release that fixes a regression introduced in 5.2.2 that causes
+all requests over a TLS connection fail with a runtime exception and upgrades HttpCore
+to version 5.2.4.
+
 ###### 4 December 2023 - HttpComponents Core 5.2.4 (GA) released
 
 This is a maintenance release that corrects a major defect discovered since release 5.2.3 that
