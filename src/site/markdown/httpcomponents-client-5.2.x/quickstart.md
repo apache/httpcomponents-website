@@ -21,7 +21,7 @@ HttpClient Quick Start
 ======================
 
 - Download 'Binary' package of the latest HttpClient 5.2 release or configure dependency on `HttpClient` and `Fluent HC`
-  modules using a dependency manager of your choice as described [here](download.md).
+  modules using a dependency manager of your choice as described [here](../httpcomponents-client-5.2.x/download.md).
 
 - HttpClient 5.2 requires Java 1.8 or newer.
 
@@ -63,9 +63,6 @@ HttpClient Quick Start
     }
     ```
 
-  Source can be found here
-  [here](https://github.com/apache/httpcomponents-website/blob/5.2.x/samples/src/main/java/org/apache/hc/client5/http/examples/QuickStart.java)
-
 - The same requests can be executed using a simpler, albeit less flexible, fluent API.
 
     ```
@@ -78,9 +75,6 @@ HttpClient Quick Start
         .bodyForm(Form.form().add("username",  "vip").add("password",  "secret").build())
         .execute().returnContent();
     ```
-
-  Source can be found here
-  [here](https://github.com/apache/httpcomponents-website/blob/5.2.x/samples/src/main/java/org/apache/hc/client5/http/examples/fluent/FluentQuickStart.java)
 
 - The below code fragment illustrates the execution of HTTP requests using HttpClient async API.
 
@@ -180,8 +174,5 @@ HttpClient Quick Start
     
     }
     ```    
-
-  Source can be found here
-  [here](https://github.com/apache/httpcomponents-website/blob/5.2.x/samples/src/main/java/org/apache/hc/client5/http/examples/AsyncQuickStart.java)
 
 

@@ -69,4 +69,10 @@ This example demonstrates handling of HTTP/2 message exchanges pushed by the ser
 
   This example demonstrates how to evict expired and idle connections from the connection pool.
 
+- [Preemptive BASIC authentication](https://github.com/apache/httpcomponents-client/blob/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncPreemptiveBasicClientAuthentication.java)
+
+  This example shows how HttpClient can be customized to authenticate preemptively using BASIC scheme. Generally,
+  preemptive authentication can be considered less secure than a response to an authentication challenge and therefore
+  discouraged.
+
 
