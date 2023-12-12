@@ -20,6 +20,9 @@
 HttpAsyncClient Overview
 ========================
 
+<span style="color:red">IMPORTANT: HttpAsyncClient 4 is at End of Life and is no longer being developed or supported. 
+The users of HttpAsyncClient 4 4 are strongly encouraged to upgrade to HttpClient 5.</span>
+
 The Hyper-Text Transfer Protocol (HTTP) is perhaps the most significant protocol used on the Internet today. Web
 services, network-enabled appliances and the growth of network computing continue to expand the role of the HTTP
 protocol beyond user-driven web browsers, while increasing the number of applications that require HTTP support.

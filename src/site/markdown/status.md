@@ -53,31 +53,30 @@ HttpCore 5.2.x branch is considered stable and production ready. It is being act
 5.2.x release series provides comprehensive support for HTTP/1.1 and HTTP/2 protocol, full conformance with mandatory
 requirements of RFC 7230, RFC 7231, RFC 7540 and RFC 7541 and conditional conformance to RFC 3986.
 
-HttpComponents HttpCore 4.4.x
------------------------------
-
-HttpCore 4.4.x branch is considered stable and production ready. Please note the 4.x release series will be receiving 
-fixes for major defects and security issues only.
-
-Users of HttpCore 4.x are strongly encouraged to migrate to HttpCore 5.x
-
 HttpComponents HttpClient 4.5.x
 -------------------------------
 
-HttpClient 4.5.x branch is considered stable and production ready. Please note the 4.x release series will be receiving 
+HttpClient 4.5.x branch is considered stable and production ready. Please note the 4.x release series will be receiving
 fixes for major defects and security issues only.
 
 Users of HttpClient 4.x are strongly encouraged to migrate to HttpClient 5.x
 
-HttpComponents HttpAsyncClient 4.1.x
+HttpComponents HttpCore 4.4.x (EOL)
+-----------------------------
+
+HttpCore NIO in the 4.4.x branch is at End of Life. It is no longer being developed or supported. HttpCore Classic
+in the 4.4.x branch will be receiving fixes for major defects and security issues only.
+
+Users of HttpCore 4.x are strongly encouraged to migrate to HttpCore 5.x
+
+HttpComponents HttpAsyncClient 4.1.x (EOL)
 ------------------------------------
 
-HttpAsyncClient 4.1.x branch is considered stable and production ready. Please note the 4.x release series will be receiving 
-fixes for major defects and security issues only.
+HttpAsyncClient 4.1.x branch is at the End of Life. It is no longer being developed or supported.
 
 Users of HttpAsyncClient 4.x are strongly encouraged to migrate to HttpClient 5.x
 
-Commons HttpClient 3.1.x
+Commons HttpClient 3.1.x (EOL)
 ------------------------
 
 The 3.1 branch of Commons HttpClient is at the end of life. No more public releases are expected.

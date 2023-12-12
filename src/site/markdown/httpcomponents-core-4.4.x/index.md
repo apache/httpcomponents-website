@@ -20,6 +20,9 @@
 HttpCore Overview
 =================
 
+<span style="color:red">IMPORTANT: HttpCore 4 is at End of Life and is no longer being developed or supported. 
+The users of HttpCore 4 are strongly encouraged to upgrade to HttpCore 5.</span>
+
 HttpCore is a set of low level HTTP transport components that can be used to build custom client and server side HTTP
 services with a minimal footprint. HttpCore supports two I/O models: blocking I/O model based on the classic Java I/O
 and non-blocking, event driven I/O model based on Java NIO.

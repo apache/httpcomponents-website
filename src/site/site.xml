@@ -104,19 +104,19 @@ under the License.
         <item name="Logging Guide" href="httpcomponents-client-4.5.x/logging.html"/>
         <item name="Download" href="httpcomponents-client-4.5.x/download.html"/>
       </item>
-      <item name="HttpCore 4.4" collapse="true" href="httpcomponents-core-4.4.x/index.html">
-        <item name="Tutorial" href="httpcomponents-core-4.4.x/current/tutorial/html/index.html"/>
-        <item name="Examples" href="httpcomponents-core-4.4.x/examples.html"/>
-        <item name="Download" href="httpcomponents-core-4.4.x/download.html"/>
-      </item>
-      <item name="HttpAsyncClient 4.1" collapse="true" href="httpcomponents-asyncclient-4.1.x/index.html">
+    </menu>
+    <menu name="Legacy">
+      <item name="HttpAsyncClient 4.1 (EOL)" collapse="true" href="httpcomponents-asyncclient-4.1.x/index.html">
         <item name="Quick Start" href="httpcomponents-asyncclient-4.1.x/quickstart.html"/>
         <item name="Examples" href="httpcomponents-asyncclient-4.1.x/examples.html"/>
         <item name="Download" href="httpcomponents-asyncclient-4.1.x/download.html"/>
       </item>
-    </menu>
-    <menu name="Legacy">
-      <item name="Commons HttpClient" href="httpclient-legacy/index.html"/>
+      <item name="HttpCore 4.4 (EOL)" collapse="true" href="httpcomponents-core-4.4.x/index.html">
+        <item name="Tutorial" href="httpcomponents-core-4.4.x/current/tutorial/html/index.html"/>
+        <item name="Examples" href="httpcomponents-core-4.4.x/examples.html"/>
+        <item name="Download" href="httpcomponents-core-4.4.x/download.html"/>
+      </item>
+      <item name="Commons HttpClient (EOL)" href="httpclient-legacy/index.html"/>
     </menu>
 
     <!-- inherited -->
