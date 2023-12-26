@@ -89,6 +89,11 @@ under the License.
         <item name="Related" href="httpcomponents-client-5.3.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-client-5.3.x/download.html"/>
       </item>
+      <item name="HttpCore 5.3 ALPHA" collapse="true" href="httpcomponents-core-5.3.x/index.html">
+        <item name="Examples" href="httpcomponents-core-5.3.x/examples.html"/>
+        <item name="Related" href="httpcomponents-core-5.2.x/related-projects.html"/>
+        <item name="Download" href="httpcomponents-core-5.3.x/download.html"/>
+      </item>
       <item name="HttpCore 5.2" collapse="true" href="httpcomponents-core-5.2.x/index.html">
         <item name="Examples" href="httpcomponents-core-5.2.x/examples.html"/>
         <item name="Related" href="httpcomponents-core-5.2.x/related-projects.html"/>
