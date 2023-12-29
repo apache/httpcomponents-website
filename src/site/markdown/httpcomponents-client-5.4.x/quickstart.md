@@ -20,16 +20,17 @@
 HttpClient Quick Start
 ======================
 
-- Download 'Binary' package of the latest HttpClient 5.1 release or configure dependency on `HttpClient` and `Fluent HC`
-  modules using a dependency manager of your choice as described [here](download.md).
+- Download 'Binary' package of the latest HttpClient 5.4 release or configure dependency on `HttpClient` and `Fluent HC`
+  modules using a dependency manager of your choice as described [here](./download.md).
 
-- HttpClient 5.1 requires Java 1.7 or newer.
+- HttpClient 5.4 requires Java 1.8 or newer.
 
 - The below code fragment illustrates the execution of HTTP GET and POST requests using the HttpClient native API.
 
     ```
     try (CloseableHttpClient httpclient = HttpClients.createDefault()) {
-        HttpGet httpGet = new HttpGet("http://httpbin.org/get");
+        ClassicHttpRequest httpGet = ClassicRequestBuilder.get("http://httpbin.org/get")
+                .build();
         // The underlying HTTP connection is still held by the response object
         // to allow the response content to be streamed directly from the network socket.
         // In order to ensure correct deallocation of system resources
@@ -37,27 +38,28 @@ HttpClient Quick Start
         // Please note that if response content is not fully consumed the underlying
         // connection cannot be safely re-used and will be shut down and discarded
         // by the connection manager.
-        try (CloseableHttpResponse response1 = httpclient.execute(httpGet)) {
-            System.out.println(response1.getCode() + " " + response1.getReasonPhrase());
-            HttpEntity entity1 = response1.getEntity();
+        httpclient.execute(httpGet, response -> {
+            System.out.println(response.getCode() + " " + response.getReasonPhrase());
+            final HttpEntity entity1 = response.getEntity();
             // do something useful with the response body
             // and ensure it is fully consumed
             EntityUtils.consume(entity1);
-        }
-    
-        HttpPost httpPost = new HttpPost("http://httpbin.org/post");
-        List<NameValuePair> nvps = new ArrayList<>();
-        nvps.add(new BasicNameValuePair("username", "vip"));
-        nvps.add(new BasicNameValuePair("password", "secret"));
-        httpPost.setEntity(new UrlEncodedFormEntity(nvps));
-    
-        try (CloseableHttpResponse response2 = httpclient.execute(httpPost)) {
-            System.out.println(response2.getCode() + " " + response2.getReasonPhrase());
-            HttpEntity entity2 = response2.getEntity();
+            return null;
+        });
+
+        ClassicHttpRequest httpPost = ClassicRequestBuilder.post("http://httpbin.org/post")
+                .setEntity(new UrlEncodedFormEntity(Arrays.asList(
+                        new BasicNameValuePair("username", "vip"),
+                        new BasicNameValuePair("password", "secret"))))
+                .build();
+        httpclient.execute(httpPost, response -> {
+            System.out.println(response.getCode() + " " + response.getReasonPhrase());
+            final HttpEntity entity2 = response.getEntity();
             // do something useful with the response body
             // and ensure it is fully consumed
             EntityUtils.consume(entity2);
-        }
+            return null;
+        });
     }
     ```
 
@@ -82,7 +84,7 @@ HttpClient Quick Start
         httpclient.start();
     
         // Execute request
-        SimpleHttpRequest request1 = SimpleHttpRequests.get("http://httpbin.org/get");
+        SimpleHttpRequest request1 = SimpleRequestBuilder.get("http://httpbin.org/get").build();
         Future<SimpleHttpResponse> future = httpclient.execute(request1, null);
         // and wait until response is received
         SimpleHttpResponse response1 = future.get();
@@ -90,7 +92,7 @@ HttpClient Quick Start
     
         // One most likely would want to use a callback for operation result
         CountDownLatch latch1 = new CountDownLatch(1);
-        SimpleHttpRequest request2 = SimpleHttpRequests.get("http://httpbin.org/get");
+        SimpleHttpRequest request2 = SimpleRequestBuilder.get("http://httpbin.org/get").build();
         httpclient.execute(request2, new FutureCallback<SimpleHttpResponse>() {
     
             @Override
