@@ -20,6 +20,11 @@
 HttpComponents Project News
 ===========================
 
+###### 25 January 2024 - HttpComponents Client 5.3.1 GA released
+
+This is a maintenance release that fixes several minor defects and a regression in the Fluent 
+module causing the response body truncation discovered since release 5.3.
+
 ###### 30 December 2023 - HttpComponents Client 5.4-alpha1 released
 
 This is the first ALPHA release in the 5.4 release series that improves HTTP protocol support
