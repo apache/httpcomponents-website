@@ -136,34 +136,34 @@
       </ul>
     </subsection>
 
-    <subsection name="HttpClient 5.4-alpha1">
+    <subsection name="HttpClient 5.4-alpha2">
       <a href="https://downloads.apache.org/httpcomponents/httpclient/KEYS">KEYS</a>
       <a href="https://downloads.apache.org/httpcomponents/httpclient/RELEASE_NOTES-5.4.x.txt">Release Notes</a>
       <br/>
       <p>Binary</p>
       <ul>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha1-bin.tar.gz">5.4-alpha1.tar.gz</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha1-bin.tar.gz.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha1-bin.tar.gz.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha2-bin.tar.gz">5.4-alpha2.tar.gz</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha2-bin.tar.gz.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha2-bin.tar.gz.asc">pgp</a>]
         </li>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha1-bin.zip">5.4-alpha1.zip</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha1-bin.zip.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha1-bin.zip.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha2-bin.zip">5.4-alpha2.zip</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha2-bin.zip.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4-alpha2-bin.zip.asc">pgp</a>]
         </li>
       </ul>
       <p>Source</p>
       <ul>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha1-src.tar.gz">5.4-alpha1.tar.gz</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha1-src.tar.gz.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha1-src.tar.gz.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha2-src.tar.gz">5.4-alpha2.tar.gz</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha2-src.tar.gz.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha2-src.tar.gz.asc">pgp</a>]
         </li>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha1-src.zip">5.4-alpha1.zip</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha1-src.zip.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha1-src.zip.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha2-src.zip">5.4-alpha2.zip</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha2-src.zip.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4-alpha2-src.zip.asc">pgp</a>]
         </li>
       </ul>
     </subsection>

@@ -20,7 +20,43 @@
 HttpComponents Project News
 ===========================
 
-###### 14 February 2023 - HttpComponents Core 5.3-alpha2 released
+###### 11 March 2024 - HttpComponents Client 5.4-alpha2 released
+
+This is the second and likely the last ALPHA release in the 5.3 release series.
+It finalizes the new Cache API introduced in the previous ALPHA release and also
+improves TLS customization for the classic transport, SNI and endpoint identification
+support, authentication data caching, and HTTP context performance. It also introduces
+support for optional TLS upgrades for HTTP/1.1 connections.
+
+Notable changes and features included in the 5.4 series:
+
+* Improved conformance to RFC 9110 (HTTP Semantics), RFC 7616 (HTTP Digest Access
+  Authentication), RFC 2617 (’Basic’ HTTP Authentication Scheme).
+
+* UTF-8 encoding to be used by default for text where appropriate.
+
+* Compatibility with Java Virtual Threads and Java 21 Runtime.
+
+* Redesign and rewrite of the HTTP caching protocol layer for better efficiency
+  and improved conformance to RFC 9111 (HTTP Caching).
+
+* Cache control and context APIs.
+
+* ETag APIs.
+
+* TLS SNI and endpoint identification improvements.
+
+* Support for RFC 2817 (Upgrading to TLS Within HTTP/1.1).
+
+* Auth cache no longer makes use of Java serialization.
+
+* Deprecation of ConnectionSocketFactory and LayeredConnectionSocketFactory.
+
+* HttpContext optimization and performance improvement.
+
+
+
+###### 14 February 2024 - HttpComponents Core 5.3-alpha2 released
 
 This is the second and likely the last ALPHA release in the 5.3 release series.
 It finalizes the API changes introduced in the previous ALPHA release and also
@@ -51,18 +87,6 @@ by ensuring conformance to the latest HTTP specification (RFC 9110, RFC 9111, RF
 RFC 7617), ensures compatibility with Java Virtual Threads by replacing 'synchronized' keywords
 in critical sections with Java lock primitives. The HTTP caching protocol layer has also been
 redesigned and overhauled to improve cache efficiency and optimize performance.
-
-Notable changes and features included in the 5.4 series:
-
-* Improved conformance to RFC 9110 (HTTP Semantics), RFC 7616 (HTTP Digest Access
-  Authentication), RFC 2617 (’Basic’ HTTP Authentication Scheme).
-
-* UTF-8 encoding to be used by default for text where appropriate.
-
-* Compatibility with Java Virtual Threads and Java 21 Runtime.
-
-* Redesign and rewrite of the HTTP caching protocol layer for better efficiency
-  and improved conformance to RFC 9111 (HTTP Caching).
 
 ###### 26 December 2023 - HttpComponents Core 5.3-alpha1 released
 

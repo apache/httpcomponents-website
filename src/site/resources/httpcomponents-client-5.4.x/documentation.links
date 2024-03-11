@@ -2,4 +2,5 @@
 # links to components in https://hc.apache.org/components/
 
 5.4-alpha1  ../components/httpcomponents-client-5.4.x/5.4-alpha1
-current     ../components/httpcomponents-client-5.4.x/5.4-alpha1
+5.4-alpha2  ../components/httpcomponents-client-5.4.x/5.4-alpha2
+current     ../components/httpcomponents-client-5.4.x/5.4-alpha2
