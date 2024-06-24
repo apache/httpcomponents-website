@@ -20,6 +20,28 @@
 HttpComponents Project News
 ===========================
 
+###### 26 June 2024 - HttpComponents Core 5.3-beta1 released
+
+This is the first BETA release in the 5.3 release series. It features a re-designed
+classic (blocking) TLS session management and server-side request routing APIs.
+It is likely to be the last BETA release in the 5.3 release series.
+
+Notable changes and features included in the 5.3 series:
+
+* Improved conformance to RFC 9110 and RFC 9112.
+
+* UTF-8 encoding to be used by default for text where appropriate.
+
+* Compatibility with Java Virtual Threads and Java 21 Runtime.
+
+* Message parsing API improvements and performance optimization
+
+* TLS client endpoints to make use of JSSE Endpoint Identification by default.
+
+* Redesign of server-side request routing API.
+
+* Redesign of TLS session handling by classic (blocking) connections.
+
 ###### 11 March 2024 - HttpComponents Client 5.4-alpha2 released
 
 This is the second and likely the last ALPHA release in the 5.3 release series.
@@ -54,26 +76,12 @@ Notable changes and features included in the 5.4 series:
 
 * HttpContext optimization and performance improvement.
 
-
-
 ###### 14 February 2024 - HttpComponents Core 5.3-alpha2 released
 
 This is the second and likely the last ALPHA release in the 5.3 release series.
 It finalizes the API changes introduced in the previous ALPHA release and also
 improves Message Parsing APIs and client-side TLS defaults by making use of
 JSSE Endpoint Identification.
-
-Notable changes and features included in the 5.3 series:
-
-* Improved conformance to RFC 9110 and RFC 9112.
-
-* UTF-8 encoding to be used by default for text where appropriate.
-
-* Compatibility with Java Virtual Threads and Java 21 Runtime.
-
-* Message parsing API improvements and performance optimization
-
-* TLS client endpoints to make use of JSSE Endpoint Identification by default.
 
 ###### 25 January 2024 - HttpComponents Client 5.3.1 GA released
 
