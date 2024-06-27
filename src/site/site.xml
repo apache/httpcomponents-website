@@ -72,7 +72,7 @@ under the License.
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
-      <item name="HttpClient 5.4 ALPHA" collapse="true" href="httpcomponents-client-5.4.x/index.html">
+      <item name="HttpClient 5.4 BETA" collapse="true" href="httpcomponents-client-5.4.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-5.4.x/quickstart.html"/>
         <item name="Migration Guide" collapse="true" href="httpcomponents-client-5.3.x/migration-guide/index.html">
           <item name="Preparation" href="httpcomponents-client-5.3.x/migration-guide/preparation.html"/>
@@ -106,7 +106,7 @@ under the License.
         <item name="Related" href="httpcomponents-client-5.3.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-client-5.3.x/download.html"/>
       </item>
-      <item name="HttpCore 5.3 ALPHA" collapse="true" href="httpcomponents-core-5.3.x/index.html">
+      <item name="HttpCore 5.3 BETA" collapse="true" href="httpcomponents-core-5.3.x/index.html">
         <item name="Examples" href="httpcomponents-core-5.3.x/examples.html"/>
         <item name="Related" href="httpcomponents-core-5.2.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-core-5.3.x/download.html"/>

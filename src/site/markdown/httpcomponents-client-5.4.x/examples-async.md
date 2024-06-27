@@ -75,4 +75,11 @@ This example demonstrates handling of HTTP/2 message exchanges pushed by the ser
   preemptive authentication can be considered less secure than a response to an authentication challenge and therefore
   discouraged.
 
+- [HTTP version negotiation](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpVersionPolicy.java)
 
+  This example demonstrates how to make HttpClient negotiate or force a particular version of HTTP protocol during 
+  the TLS handshake. Please note that protocol version policy setting also applies to non-HTTPS connections.
+
+- [Virtual HTTPS / SNI](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientSNI.java)
+
+  This example demonstrates how to use SNI to send requests to a virtual HTTPS endpoint using the async I/O.

@@ -105,3 +105,10 @@ HttpClient Examples (Classic)
 
   This example shows how to execute requests enclosing a multipart encoded entity. 
 
+- [Connection endpoint details](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientRemoteEndpointDetails.java)
+
+  This example demonstrates how to get details of the underlying connection endpoint.
+
+- [Virtual HTTPS / SNI](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientSNI.java)
+
+  This example demonstrates how to use SNI to send requests to a virtual HTTPS endpoint using the classic I/O.
