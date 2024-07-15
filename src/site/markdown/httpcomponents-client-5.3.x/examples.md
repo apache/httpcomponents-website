@@ -20,7 +20,7 @@
 HttpClient Examples (Classic)
 =============================
 
-- [Response handling](https://github.com/apache/httpcomponents-client/tree/5.3.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientWithResponseHandler.java)
+- [Response handling](https://github.com/apache/httpcomponents-client/tree/5.3.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientResponseProcessing.java)
 
   This example demonstrates how to process HTTP responses using a response handler. This is the recommended way of
   executing HTTP requests and processing HTTP responses. This approach enables the caller to concentrate on the process
