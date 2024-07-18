@@ -20,6 +20,6 @@
 HttpClient Examples (Async)
 ===========================
 
-- [HTTP exchange with Reactive Streams](https://github.com/apache/httpcomponents-client/tree/5.3.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpExchange.java)
+- [HTTP exchange with Reactive Streams](https://github.com/apache/httpcomponents-client/tree/5.3.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ReactiveClientFullDuplexExchange.java)
 
   This example demonstrates a reactive, full-duplex HTTP/1.1 message exchange using RxJava.
