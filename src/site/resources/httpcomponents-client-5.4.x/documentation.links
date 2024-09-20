@@ -4,4 +4,5 @@
 5.4-alpha1  ../components/httpcomponents-client-5.4.x/5.4-alpha1
 5.4-alpha2  ../components/httpcomponents-client-5.4.x/5.4-alpha2
 5.4-beta1   ../components/httpcomponents-client-5.4.x/5.4-beta1
-current     ../components/httpcomponents-client-5.4.x/5.4-beta1
+5.4         ../components/httpcomponents-client-5.4.x/5.4
+current     ../components/httpcomponents-client-5.4.x/5.4

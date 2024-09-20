@@ -20,6 +20,39 @@
 HttpComponents Project News
 ===========================
 
+###### 23 September 2024 - HttpComponents Client 5.4 GA released
+
+This is the first GA release in the 5.4 release series. This release finalizes the 5.4 APIs,
+upgrades HttpCore to version 5.3 and improves the Public Suffix matching algorithm implementation.
+
+Notable changes and features included in the 5.4 series:
+
+* Improved conformance to RFC 9110 (HTTP Semantics), RFC 7616 (HTTP Digest Access
+  Authentication), RFC 2617 (’Basic’ HTTP Authentication Scheme).
+
+* UTF-8 encoding is used by default for text where appropriate.
+
+* Compatibility with Java Virtual Threads and Java 21 Runtime.
+
+* Redesign and rewrite of the HTTP caching protocol layer for better efficiency
+  and improved conformance to RFC 9111 (HTTP Caching).
+
+* Cache control and context APIs.
+
+* ETag APIs.
+
+* TLS SNI and endpoint identification improvements.
+
+* Support for RFC 2817 (Upgrading to TLS Within HTTP/1.1).
+
+* Auth cache no longer makes use of Java serialization.
+
+* Deprecation of ConnectionSocketFactory and LayeredConnectionSocketFactory.
+
+* HttpContext optimization and performance improvement.
+
+* Async cache is no longer considered experimental.
+
 ###### 12 September 2024 - HttpComponents Core 5.3 GA released
 
 This is the first GA release in the 5.3 release series. This release finalizes the 5.3 APIs
@@ -50,32 +83,6 @@ release 5.2.4.
 
 This is the first BETA release in the 5.4 release series. It upgrades HttpCore to version
 5.3-beta1 and adds a few minor improvements and fixes.
-
-Notable changes and features included in the 5.4 series:
-
-* Improved conformance to RFC 9110 (HTTP Semantics), RFC 7616 (HTTP Digest Access
-  Authentication), RFC 2617 (’Basic’ HTTP Authentication Scheme).
-
-* UTF-8 encoding is used by default for text where appropriate.
-
-* Compatibility with Java Virtual Threads and Java 21 Runtime.
-
-* Redesign and rewrite of the HTTP caching protocol layer for better efficiency
-  and improved conformance to RFC 9111 (HTTP Caching).
-
-* Cache control and context APIs.
-
-* ETag APIs.
-
-* TLS SNI and endpoint identification improvements.
-
-* Support for RFC 2817 (Upgrading to TLS Within HTTP/1.1).
-
-* Auth cache no longer makes use of Java serialization.
-
-* Deprecation of ConnectionSocketFactory and LayeredConnectionSocketFactory.
-
-* HttpContext optimization and performance improvement.
 
 ###### 26 June 2024 - HttpComponents Core 5.3-beta1 released
 
