@@ -18,7 +18,7 @@ It is strongly encouraged to follow the best practices and common use patterns i
 
 1. Set finite connection total time to live (TTL).
 
-1. Favor `standard` and `standard-strict` cookie policies.
+1. Favor the `strict` cookie policy.
 
 1. IMPORTANT: Always re-use `CloseableHttpClient` instances. They are expensive to create, but they are also fully
    thread safe, so multiple threads can use the same instance of `CloseableHttpClient` to execute multiple requests
@@ -38,7 +38,7 @@ It is strongly encouraged to follow the best practices and common use patterns i
             .setDefaultRequestConfig(RequestConfig.custom()
                     .setConnectTimeout(60000)
                     .setSocketTimeout(60000)
-                    .setCookieSpec(CookieSpecs.STANDARD_STRICT)
+                    .setCookieSpec(StandardCookieSpec.STRICT)
                     .build())
             .build();
     ```   
@@ -62,7 +62,7 @@ It is strongly encouraged to follow the best practices and common use patterns i
     clientContext.setRequestConfig(RequestConfig.custom()
             .setConnectTimeout(60000)
             .setSocketTimeout(60000)
-            .setCookieSpec(CookieSpecs.STANDARD)
+            .setCookieSpec(StandardCookieSpec.STRICT)
             .build());
     ```
 

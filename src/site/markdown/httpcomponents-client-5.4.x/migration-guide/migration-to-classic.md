@@ -59,7 +59,7 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
          .build();
    ```
 
--  Favor `standard-strict` cookie policy when using HttpClient 5.0.
+-  Favor the `strict` cookie policy when using HttpClient 5.0.
 
 -  Use response timeout to define the maximum period of inactivity until receipt of response data.
 
