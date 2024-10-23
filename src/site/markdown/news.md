@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 23 October 2024 - HttpComponents Core 5.3.1 GA released
+
+This is a maintenance release that corrects several defects found since 5.3 release
+including an HTTP/2 protocol handler failure to notify the opposite endpoint when using
+non-default dynamic table sizes.
+
 ###### 23 September 2024 - HttpComponents Client 5.4 GA released
 
 This is the first GA release in the 5.4 release series. This release finalizes the 5.4 APIs,
