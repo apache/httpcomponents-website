@@ -116,7 +116,7 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
    System.out.println(responseData);
    ```
 
--  `CloseableHttpClient` instances should be closed when no longer needed or about to go out of score.
+-  `CloseableHttpClient` instances should be closed when no longer needed or about to go out of scope.
 
    ```java
    client.close();

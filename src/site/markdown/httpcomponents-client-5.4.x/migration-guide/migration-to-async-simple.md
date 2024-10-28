@@ -119,8 +119,8 @@ either known to be well-behaved or specifically designed for simple message hand
    
    });
    ```    
--  `CloseableHttpAsyncClient` instances should be closed when no longer needed or about to go out of score.
+-  `CloseableHttpAsyncClient` instances should be closed when no longer needed or about to go out of scope.
 
    ```java
    client.close(CloseMode.GRACEFUL);
-   ```       
+   ```
