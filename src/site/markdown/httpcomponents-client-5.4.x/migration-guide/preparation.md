@@ -106,7 +106,7 @@ It is strongly encouraged to follow the best practices and common use patterns i
     });
     System.out.println(responseData);
     ```
-1. `CloseableHttpClient` instances should be closed when no longer needed or about to go out of score.
+1. `CloseableHttpClient` instances should be closed when no longer needed or about to go out of scope.
 
     ```java
     client.close();
