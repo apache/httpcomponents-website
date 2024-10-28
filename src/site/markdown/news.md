@@ -20,6 +20,11 @@
 HttpComponents Project News
 ===========================
 
+###### 28 October 2024 - HttpComponents Client 5.4.1 GA released
+
+This is a maintenance release that upgrades HttpCore to version 5.3.1 and fixes several defects 
+found since release 5.4.
+
 ###### 23 October 2024 - HttpComponents Core 5.3.1 GA released
 
 This is a maintenance release that corrects several defects found since 5.3 release
