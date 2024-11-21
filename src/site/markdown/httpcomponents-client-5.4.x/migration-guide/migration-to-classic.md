@@ -4,7 +4,8 @@ HttpClient 5.x releases can be co-located with earlier major versions on the sam
 namespace and Maven module coordinates.
 
 HttpClient 5.x classic APIs are largely compatible with HttpClient 4.0 APIs. Major differences are related to connection
-management configuration, SSL/TLS and timeout settings when building HttpClient instances.
+management configuration, SSL/TLS and timeout settings when building HttpClient instances. 
+There are also some important differences with URL normalization and encoding.
 
 ## Migration steps
 
@@ -121,3 +122,11 @@ management configuration, SSL/TLS and timeout settings when building HttpClient 
    ```java
    client.close();
    ```
+
+- The 4.x `RequestConfig` property `normalizeUri` has been removed, and `URIUtils.normalizeSyntax` is no longer public.
+ In 4.x, these only supported limited normalization from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) 
+including removal of dot segments (section 5.2.4), and syntax-based normalization (section 6.2.2). 
+The 5.x `URIBuilder` in [httpcomponents-core](https://hc.apache.org/httpcomponents-core-5.3.x/index.html) has a new 
+public `normalizeSyntax` method, but it strives for more thorough support of RFC 3986, 
+specifically percent-encoding all components. 
+Since 5.3, `normalizeSyntax` has been deprecated and renamed to `optimize` to emphasize the difference in behaviour.
