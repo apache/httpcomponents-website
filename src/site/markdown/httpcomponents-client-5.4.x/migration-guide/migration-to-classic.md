@@ -35,8 +35,8 @@ There are also some important differences with URL normalization and encoding.
    for higher concurrency but with lax connection maximum limit guarantees. With `LAX` policy HttpClient can exceed the
    per route maximum limit under high load and does not enforce the total maximum limit.
 
--  Optionally choose a connection pool re-use policy: `FILO` to re-use as few connections as possible making it possible
-   for connections to become idle and expire; `LIFO` to re-use all connections equally preventing them from becoming
+-  Optionally choose a connection pool re-use policy: `LIFO` to re-use as few connections as possible making it possible
+   for connections to become idle and expire; `FIFO` to re-use all connections equally preventing them from becoming
    idle and expiring.
 
 -  Optionally choose a finite total time to live for connections. 
