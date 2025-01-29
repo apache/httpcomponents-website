@@ -20,6 +20,13 @@
 HttpComponents Project News
 ===========================
 
+###### 29 January 2025 - HttpComponents Core 5.3.3 GA released
+
+This maintenance release fixes a defect in how asynchronous SSL sessions handle an overflow
+condition when encrypting application data. There have also been several fixes for edge
+cases related to handling HTTP/1.1 asynchronous connections half-closed by the opposite
+endpoint.
+
 ###### 13 January 2025 - HttpComponents Core 5.3.2 GA released
 
 This is a maintenance release that corrects several major defects in the HTTP/2 protocol
