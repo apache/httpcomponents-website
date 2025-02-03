@@ -20,6 +20,13 @@
 HttpComponents Project News
 ===========================
 
+###### 3 Feb 2025 - HttpComponents Client 5.4.2 GA released
+
+This is a maintenance release that upgrades HttpCore to version 5.3.3 and fixes several
+regressions reported since the last release. One of the regressions could cause connection
+leaks and eventual connection pool exhaustion in case of proxy authentication
+failure when establishing a tunnel via the proxy.
+
 ###### 29 January 2025 - HttpComponents Core 5.3.3 GA released
 
 This maintenance release fixes a defect in how asynchronous SSL sessions handle an overflow
