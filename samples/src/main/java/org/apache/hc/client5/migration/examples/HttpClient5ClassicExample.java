@@ -36,7 +36,8 @@ import org.apache.hc.client5.http.impl.classic.HttpClients;
 import org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager;
 import org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder;
 import org.apache.hc.client5.http.protocol.HttpClientContext;
-import org.apache.hc.client5.http.ssl.SSLConnectionSocketFactoryBuilder;
+import org.apache.hc.client5.http.ssl.ClientTlsStrategyBuilder;
+import org.apache.hc.client5.http.ssl.TlsSocketStrategy;
 import org.apache.hc.core5.http.ClassicHttpRequest;
 import org.apache.hc.core5.http.ContentType;
 import org.apache.hc.core5.http.HttpEntity;
@@ -56,7 +57,7 @@ public class HttpClient5ClassicExample {
 
     public static void main(String... args) throws Exception {
         PoolingHttpClientConnectionManager connectionManager = PoolingHttpClientConnectionManagerBuilder.create()
-                .setSSLSocketFactory(SSLConnectionSocketFactoryBuilder.create()
+                .setTlsSocketStrategy((TlsSocketStrategy) ClientTlsStrategyBuilder.create()
                         .setSslContext(SSLContexts.createSystemDefault())
                         .setTlsVersions(TLS.V_1_3)
                         .build())

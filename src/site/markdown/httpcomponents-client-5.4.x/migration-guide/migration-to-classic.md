@@ -43,7 +43,7 @@ There are also some important differences with URL normalization and encoding.
 
    ```java
    PoolingHttpClientConnectionManager connectionManager = PoolingHttpClientConnectionManagerBuilder.create()
-         .setSSLSocketFactory(SSLConnectionSocketFactoryBuilder.create()
+         .setTlsSocketStrategy((TlsSocketStrategy) ClientTlsStrategyBuilder.create()
                  .setSslContext(SSLContexts.createSystemDefault())
                  .setTlsVersions(TLS.V_1_3)
                  .build())
