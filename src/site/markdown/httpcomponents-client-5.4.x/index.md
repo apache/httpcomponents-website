@@ -62,8 +62,8 @@ Features
 
 - Standards based, pure Java, implementation of HTTP versions 1.0, 1.1, 2.0 (only async APIs)
 - Supports encryption with HTTPS (HTTP over SSL) protocol.
-- Pluggable socket factories and TLS strategies.
-- Transparent message exchanges through HTTP/1.1 and HTTP/1.0 proxies.
+- Pluggable TLS strategies.
+- Transparent message exchanges through HTTP/1.1, HTTP/1.0 and SOCKS proxies.
 - Tunneled HTTPS connections through HTTP/1.1 and HTTP/1.0 proxies, via the CONNECT method.
 - Basic, Digest, Bearer authentication schemes.
 - HTTP state management and cookie support.
@@ -73,7 +73,7 @@ Features
 
 Standards Compliance
 --------------------
-
+   
 HttpClient strives to conform to the following specifications endorsed by the Internet Engineering Task Force (IETF) and
 the internet at large:
 

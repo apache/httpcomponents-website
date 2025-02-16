@@ -20,6 +20,15 @@
 HttpComponents Project Status
 =============================
 
+HttpComponents HttpClient 5.5.x
+-------------------------------
+
+HttpClient 5.5.x branch is the current development branch. The 5.5.x release series is going to feature 
+an experimental Classic API facade acting as a compatibility bridge between the classic I/O client services 
+(based on the standard InputStream / OutputStream model) and the asynchronous message transport used internally.
+This branch also makes it possible for the pooling connection manager to make use of HTTP/2 message 
+multiplexing.  
+
 HttpComponents HttpClient 5.4.x
 -------------------------------
 
