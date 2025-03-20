@@ -20,6 +20,11 @@
 HttpComponents Project News
 ===========================
 
+###### 20 March 2025 - HttpComponents Core 5.3.4 GA released
+
+This maintenance release fixes several corner-case defects in the asynchronous HTTP/1.1 protocol
+handler as well as several other minor defects.
+
 ###### 17 Feb 2025 - HttpComponents Client 5.5-alpha1 released
 
 This is the first ALPHA release in the 5.5 release series. It adds several experimental
