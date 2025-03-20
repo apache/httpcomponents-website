@@ -57,12 +57,6 @@ unlikely to get resolved without help from volunteers / external contributors.
 Here is the list of [HttpComponents Issues](https://issues.apache.org/jira/issues/?filter=12350197) that HttpComponents
 project members require a helping hand with.
 
-Testing
--------
-
-All Pull Requests are automatically tested on [Travis CI (Core)](https://travis-ci.com/apache/httpcomponents-core)
-, [Travis CI (Client)](https://travis-ci.com/apache/httpcomponents-client) on both AMD64 and ARM64 architectures.
-
 More information
 ----------------
 
