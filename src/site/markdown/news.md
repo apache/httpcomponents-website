@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 27 March 2025 - HttpComponents Client 5.4.3 GA released
+
+This maintenance release upgrades HttpCore to version 5.3.4 and fixes a regression
+preventing the PublicSuffixMatcherLoader from finding the resource containing the Public
+Suffix List and causing the Public Suffix List to be empty by default.
+
 ###### 20 March 2025 - HttpComponents Core 5.3.4 GA released
 
 This maintenance release fixes several corner-case defects in the asynchronous HTTP/1.1 protocol
