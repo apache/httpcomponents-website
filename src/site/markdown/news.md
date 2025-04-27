@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 28 April 2025 - HttpComponents Client 5.4.4 GA released
+
+This maintenance release corrects several regressions reported since the last  release, 
+including a defect causing some private domains in SSL certificates to get rejected 
+as a mismatch.
+
 ###### 27 March 2025 - HttpComponents Client 5.4.3 GA released
 
 This maintenance release upgrades HttpCore to version 5.3.4 and fixes a regression
@@ -28,8 +34,8 @@ Suffix List and causing the Public Suffix List to be empty by default.
 
 ###### 20 March 2025 - HttpComponents Core 5.3.4 GA released
 
-This maintenance release fixes several corner-case defects in the asynchronous HTTP/1.1 protocol
-handler as well as several other minor defects.
+This maintenance release fixes several corner-case defects in the asynchronous HTTP/1.1 
+protocol handler as well as several other minor defects.
 
 ###### 17 Feb 2025 - HttpComponents Client 5.5-alpha1 released
 
