@@ -2,9 +2,9 @@
 *.iml
 target
 *.log
-
-/.project
-/.settings/
+**/.classpath
+**/.project
+**/.settings/
 /.vscode/
 
 /scmpublish-checkout/
