@@ -60,7 +60,7 @@ under the License.
       <item name="Download" href="downloads.cgi"/>
       <item name="Mailing Lists" href="mail.html"/>
       <item name="Wiki (external)" href="https://wiki.apache.org/HttpComponents/"/>
-      <item name="Security" href="https://www.apache.org/security/"/>
+      <item name="Security" href="security.html"/>
     </menu>
     
     <!-- sections for top-level site only -->
