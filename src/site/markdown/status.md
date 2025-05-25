@@ -23,21 +23,19 @@ HttpComponents Project Status
 HttpComponents HttpClient 5.5.x
 -------------------------------
 
-HttpClient 5.5.x branch is the current development branch. The 5.5.x release series is going to feature 
-an experimental Classic API facade acting as a compatibility bridge between the classic I/O client services 
-(based on the standard InputStream / OutputStream model) and the asynchronous message transport used internally.
-This branch also makes it possible for the pooling connection manager to make use of HTTP/2 message 
-multiplexing.  
+HttpClient 5.5.x branch is considered stable and production ready. It is being actively maintained and supported.
+The 5.5.x release series features  an experimental Classic API facade acting as a compatibility bridge between 
+the classic I/O client services (based on the standard InputStream / OutputStream model) and the asynchronous 
+message transport used internally. This branch also makes it possible for the pooling connection manager to make 
+use of HTTP/2 message multiplexing.
 
-HttpComponents HttpClient 5.4.x
+HttpComponents HttpCore 5.4.x
 -------------------------------
 
-HttpClient 5.4.x branch is considered stable and production ready. It is being actively maintained and supported.
-The 5.4.x release series upgrades HTTP protocol  conformance level to RFC 9110, replaces `synchronized` blocks 
-with lock primitives, redesigns the HTTP caching protocol layer for better efficiency and improved conformance 
-to RFC 9111, introduces support for RFC 2817 (Upgrading to TLS Within HTTP/1.1), and provides a number of 
-other API enhancements. This branch also seeks to optimize common HTTP context operations that should translate 
-in a better performance of HTTP message exchanges.
+HttpCore 5.4.x branch is the current development branch. The 5.5.x release series is going to feature
+an experimental Classic API facade acting as a compatibility bridge between the classic I/O client and server 
+services (based on the standard InputStream / OutputStream model) and the asynchronous message transport used 
+internally. It also adds HTTP QUERY method support.
 
 HttpComponents HttpCore 5.3.x
 -------------------------------

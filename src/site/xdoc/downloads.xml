@@ -64,34 +64,34 @@
    <code>sha512</code> link downloads the SHA 512 checksum from the main site.
   </p>
 
-    <subsection name="HttpClient 5.4.4 (GA)">
+    <subsection name="HttpClient 5.5 (GA)">
       <a href="https://downloads.apache.org/httpcomponents/httpclient/KEYS">KEYS</a>
-      <a href="https://downloads.apache.org/httpcomponents/httpclient/RELEASE_NOTES-5.4.x.txt">Release Notes</a>
+      <a href="https://downloads.apache.org/httpcomponents/httpclient/RELEASE_NOTES-5.5.x.txt">Release Notes</a>
       <br/>
       <p>Binary</p>
       <ul>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.4.4-bin.tar.gz">5.4.4.tar.gz</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4.4-bin.tar.gz.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4.4-bin.tar.gz.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.5-bin.tar.gz">5.5.tar.gz</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-bin.tar.gz.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-bin.tar.gz.asc">pgp</a>]
         </li>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.4.4-bin.zip">5.4.4.zip</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4.4-bin.zip.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.4.4-bin.zip.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.5-bin.zip">5.5.zip</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-bin.zip.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-bin.zip.asc">pgp</a>]
         </li>
       </ul>
       <p>Source</p>
       <ul>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.4.4-src.tar.gz">5.4.4.tar.gz</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4.4-src.tar.gz.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4.4-src.tar.gz.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.5-src.tar.gz">5.5.tar.gz</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-src.tar.gz.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-src.tar.gz.asc">pgp</a>]
         </li>
         <li>
-          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.4.4-src.zip">5.4.4.zip</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4.4-src.zip.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.4.4-src.zip.asc">pgp</a>]
+          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.5-src.zip">5.5.zip</a>
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-src.zip.sha512">sha512</a>]
+          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-src.zip.asc">pgp</a>]
         </li>
       </ul>
     </subsection>
@@ -134,38 +134,6 @@
           sha512</a>]
           [<a href="https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.3.4-src.zip.asc">
           pgp</a>]
-        </li>
-      </ul>
-    </subsection>
-
-    <subsection name="HttpClient 5.5 ALPHA1">
-      <a href="https://downloads.apache.org/httpcomponents/httpclient/KEYS">KEYS</a>
-      <a href="https://downloads.apache.org/httpcomponents/httpclient/RELEASE_NOTES-5.5.x.txt">Release Notes</a>
-      <br/>
-      <p>Binary</p>
-      <ul>
-        <li>
-          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.5-alpha1-bin.tar.gz">5.5-alpha1.tar.gz</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-alpha1-bin.tar.gz.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-alpha1-bin.tar.gz.asc">pgp</a>]
-        </li>
-        <li>
-          <a href="[preferred]/httpcomponents/httpclient/binary/httpcomponents-client-5.5-alpha1-bin.zip">5.5-alpha1.zip</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-alpha1-bin.zip.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.5-alpha1-bin.zip.asc">pgp</a>]
-        </li>
-      </ul>
-      <p>Source</p>
-      <ul>
-        <li>
-          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.5-alpha1-src.tar.gz">5.5-alpha1.tar.gz</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-alpha1-src.tar.gz.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-alpha1-src.tar.gz.asc">pgp</a>]
-        </li>
-        <li>
-          <a href="[preferred]/httpcomponents/httpclient/source/httpcomponents-client-5.5-alpha1-src.zip">5.5-alpha1.zip</a>
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-alpha1-src.zip.sha512">sha512</a>]
-          [<a href="https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.5-alpha1-src.zip.asc">pgp</a>]
         </li>
       </ul>
     </subsection>

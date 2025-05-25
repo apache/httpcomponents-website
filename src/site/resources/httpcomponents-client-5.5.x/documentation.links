@@ -21,4 +21,5 @@
 # links to components in https://hc.apache.org/components/
 
 5.5-alpha1  ../components/httpcomponents-client-5.5.x/5.5-alpha1
-current     ../components/httpcomponents-client-5.5.x/5.5-alpha1
+5.5         ../components/httpcomponents-client-5.5.x/5.5
+current     ../components/httpcomponents-client-5.5.x/5.5

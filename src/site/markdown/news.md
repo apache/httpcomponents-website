@@ -20,6 +20,30 @@
 HttpComponents Project News
 ===========================
 
+###### 26 May 2025 - HttpComponents Client 5.5 GA released
+
+This is the first GA release in the 5.5 release series. It adds several experimental
+features and improvements such as request multiplexing over a shared HTTP/2 connection
+and the Classic API facade acting as a compatibility bridge between classic I/O client
+services and the asynchronous message transport used internally.
+
+Notable changes and features included in the 5.5 series:
+
+* Improved conformance to RFC 7616 (HTTP Digest Access Authentication).
+
+* The connection pool implementation acts as a caching facade in front of a standard
+  managed connection pool and shares already leased connections to multiplex message
+  exchanges over active HTTP/2 connections. Experimental.
+
+* Extended Auth API and improved authentication protocol logic to support mutual
+  authentication.
+
+* The Classic API facade acting as a compatibility bridge between the classic I/O client
+  services (based on the standard InputStream / OutputStream model) and the asynchronous
+  message transport used internally. Experimental.
+
+* HTTP/2 support for the Fluent Facade (via Classic API facade). Experimental.
+
 ###### 28 April 2025 - HttpComponents Client 5.4.4 GA released
 
 This maintenance release corrects several regressions reported since the last  release, 
@@ -43,23 +67,6 @@ This is the first ALPHA release in the 5.5 release series. It adds several exper
 features and improvements such as request multiplexing over a shared HTTP/2 connection
 and the Classic API facade acting as a compatibility bridge between classic I/O client
 services and the asynchronous message transport used internally.
-
-Notable changes and features included in the 5.5 series:
-
-* Improved conformance to RFC 7616 (HTTP Digest Access Authentication).
-
-* The connection pool implementation acts as a caching facade in front of a standard
-  managed connection pool and shares already leased connections to multiplex message
-  exchanges over active HTTP/2 connections. Experimental.
-
-* Extended Auth API and improved authentication protocol logic to support mutual
-  authentication.
-
-* The Classic API facade acting as a compatibility bridge between the classic I/O client
-  services (based on the standard InputStream / OutputStream model) and the asynchronous
-  message transport used internally. Experimental.
-
-* HTTP/2 support for the Fluent Facade (via Classic API facade). Experimental.
 
 ###### 3 Feb 2025 - HttpComponents Client 5.4.2 GA released
 
