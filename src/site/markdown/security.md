@@ -28,10 +28,14 @@ The Apache HttpComponents operates under the [Apache-wide security procedures](h
 HttpComponents Security Model
 -----------------------------
 
-The HttpComponents libraries are low-level libraries typically designed to work with input that is either trusted or validated/sanitized by the application using the library. It is unsafe to provide possibly malicious input to HttpComponents libraries unless otherwise specified.
+The HttpComponents libraries are low-level libraries typically designed to work with input that is either trusted or
+validated/sanitized by the application using the library. It is unsafe to provide possibly malicious input to
+HttpComponents libraries unless otherwise specified.
 
-We consider calls to the HttpComponents API subject to the same caveat as the JDK, those calls will usually do what the caller asks. Whether it is "dangerous" depends on the (application) context. Therefore, don't report a behavior as a HttpComponents component's vulnerability if the same behavior would be considered legitimate for the JDK. We welcome suggestions for hardening the code base.
-
-For example, if your program adds an HTTP header to a request, you are responsible for the data you add to that header.
-On the other hand, the headers that are added and removed by HttpComponents are its responsibility.
+We consider calls to the HttpComponents API subject to the same caveat as the JDK, those calls will usually do what the
+caller asks. Whether it is "dangerous" depends on the (application) context. Therefore, don't report a behavior as a
+HttpComponents component's vulnerability if the same behavior would be considered legitimate for the JDK. We welcome
+suggestions for hardening the code base. For example, if your program adds an HTTP header to a request, you are
+responsible for the data you add to that header. On the other hand, the headers that are added and removed by
+HttpComponents are its responsibility.
 
