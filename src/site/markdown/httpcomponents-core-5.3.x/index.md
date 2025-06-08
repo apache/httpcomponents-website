@@ -50,4 +50,4 @@ HttpCore components strive to conform to the following specifications endorsed b
 - [RFC 7540](https://datatracker.ietf.org/doc/html/rfc7540) - Hypertext Transfer Protocol Version 2 (HTTP/2)
 - [RFC 7541](https://datatracker.ietf.org/doc/html/rfc7541) - HPACK: Header Compression for HTTP/2
 - [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
-- [RFC 2396](https://datatracker.ietf.org/doc/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
+- [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) - Uniform Resource Identifier (URI): Generic Syntax

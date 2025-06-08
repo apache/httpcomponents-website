@@ -83,8 +83,9 @@ the internet at large:
 - [RFC 7540](https://datatracker.ietf.org/doc/html/rfc7540) - Hypertext Transfer Protocol Version 2 (HTTP/2)
 - [RFC 7541](https://datatracker.ietf.org/doc/html/rfc7541) - HPACK: Header Compression for HTTP/2
 - [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
-- [RFC 2396](https://datatracker.ietf.org/doc/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
+- [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) - Uniform Resource Identifier (URI): Generic Syntax
 - [RFC 6265](https://datatracker.ietf.org/doc/html/rfc6265) - HTTP State Management Mechanism (Cookies)
 - [RFC 7616](https://datatracker.ietf.org/doc/html/rfc7616) - HTTP Digest Access Authentication
 - [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617) - HTTP 'Basic' Authentication Scheme
 - [RFC 5861](https://datatracker.ietf.org/doc/html/rfc5861) - HTTP Cache-Control Extensions for Stale Content
+- [RFC 2817](https://datatracker.ietf.org/doc/html/rfc2817) - Upgrading to TLS Within HTTP/1.1
