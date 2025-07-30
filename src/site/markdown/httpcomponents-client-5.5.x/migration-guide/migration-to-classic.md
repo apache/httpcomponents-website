@@ -154,6 +154,8 @@ Since 5.3, `normalizeSyntax` has been deprecated and renamed to `optimize` to em
 
 The following table provides some migration recipes from HttpClient 4.x to HttpClient 5.x classic APIs.
 
+**Note:** the list of recipes is by no means complete and users are encouraged to contribute other recipes based on their experience.
+
 | HttpClient 4.x                                                                                              | HttpClient 5.x                                                                                                                                                                                                                              |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `BasicHttpContext`                                                                                          | `HttpCoreContext`/ `HttpClientContext`                                                                                                                                                                                                      |
