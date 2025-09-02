@@ -20,6 +20,13 @@
 HttpComponents Project News
 ===========================
 
+###### 2 September 2025 - HttpComponents Core 5.3.5 GA released
+
+This maintenance release fixes several corner cases in the H2 protocol handler that could 
+have been potentially exploited to make H2 endpoints allocate extra resources and lead to 
+Denial-of-Service conditions. This release also improves handling of H2 stream abnormal 
+termination.
+
 ###### 26 May 2025 - HttpComponents Client 5.5 GA released
 
 This is the first GA release in the 5.5 release series. It adds several experimental
