@@ -20,6 +20,13 @@
 HttpComponents Project News
 ===========================
 
+###### 22 September 2025 - HttpComponents Core 5.3.6 GA released
+
+This maintenance release fixes a regression introduced by the previous release that can 
+cause a temporary I/O spin during HTTP/2 connection shutdown in case the opposite endpoint
+fails to send a GOAWAY frame, and also fixes several bugs related to abnormal termination 
+of HTTP/2 connections found since the last release.
+
 ###### 2 September 2025 - HttpComponents Core 5.3.5 GA released
 
 This maintenance release fixes several corner cases in the H2 protocol handler that could 
