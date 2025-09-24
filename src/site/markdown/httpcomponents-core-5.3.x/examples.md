@@ -37,11 +37,6 @@ HttpCore Examples
 
   This example demonstrates asynchronous execution of multiple HTTP/2 requests.
 
-- [ HTTP/2 requests over TLS connections with ALPN support](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2TlsAlpnRequestExecutionExample.java)
-
-  This example demonstrates how to execute HTTP/2 requests over TLS connections with ALPN support. It also explains how
-  to avoid the illegal reflective access operation warning when running Java 9 or older.
-
 - [ HTTP/2 requests over TLS connections with ALPN support on Java 1.7 and Java 1.8](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/H2ConscriptRequestExecutionExample.java)
 
   This example demonstrates how to execute HTTP/2 requests over TLS connections with ALPN support on Java 1.7 and Java
