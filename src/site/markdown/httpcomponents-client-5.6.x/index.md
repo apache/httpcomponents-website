@@ -74,6 +74,7 @@ Features
 - Optional observability module** (`httpclient5-observation`) with Micrometer / OpenTelemetry support for request timers/counters,
 - I/O byte counters, connection-pool gauges, and DNS/TLS meters for classic and async clients.  <!-- new -->
 - Source code is freely available under the Apache License.
+- Experimental RFC 9218 prioritization (Priority header & PRIORITY_UPDATE for HTTP/2). <!-- experimental -->
 
 Standards Compliance
 --------------------
@@ -92,3 +93,4 @@ the internet at large:
 - [RFC 7616](https://datatracker.ietf.org/doc/html/rfc7616) - HTTP Digest Access Authentication
 - [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617) - HTTP 'Basic' Authentication Scheme
 - [RFC 5861](https://datatracker.ietf.org/doc/html/rfc5861) - HTTP Cache-Control Extensions for Stale Content
+- [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP *(experimental support: Priority header & PRIORITY_UPDATE for HTTP/2)*
