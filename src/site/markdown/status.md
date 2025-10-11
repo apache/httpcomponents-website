@@ -32,11 +32,10 @@ use of HTTP/2 message multiplexing.
 HttpComponents HttpCore 5.4.x
 -------------------------------
 
-HttpCore 5.4.x branch is the current development branch. The 5.5.x release series is going to feature
-an experimental Classic API facade acting as a compatibility bridge between the classic I/O client and server 
-services (based on the standard InputStream / OutputStream model) and the asynchronous message transport used 
-internally. It also adds HTTP QUERY method support.
-
+HttpCore 5.4.x branch is the current development branch. The 5.4.x release series improves HTTP/2 protocol support 
+by ensuring conformance to the latest HTTP specification (RFC 9113), adds support for Unix domain sockets, and
+also redesigns the classic over async API compatibity bridge.
+ 
 HttpComponents HttpCore 5.3.x
 -------------------------------
 
