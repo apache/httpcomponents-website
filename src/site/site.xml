@@ -89,6 +89,16 @@ under the License.
         <item name="Related" href="httpcomponents-client-5.5.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-client-5.5.x/download.html"/>
       </item>
+      <item name="HttpClient 5.6 ALPHA" collapse="false" href="httpcomponents-client-5.6.x/index.html">
+        <item name="Quick Start" href="httpcomponents-client-5.6.x/quickstart.html"/>
+        <item name="Examples (Classic)" href="httpcomponents-client-5.6.x/examples.html"/>
+        <item name="Examples (Async)" href="httpcomponents-client-5.6.x/examples-async.html"/>
+        <item name="Examples (Reactive)" href="httpcomponents-client-5.6.x/examples-reactive.html"/>
+        <item name="Logging Guide" href="httpcomponents-client-5.5.x/logging.html"/>
+        <item name="Android" href="httpcomponents-client-5.5.x/android.html"/>
+        <item name="Related" href="httpcomponents-client-5.5.x/related-projects.html"/>
+        <item name="Download" href="httpcomponents-client-5.6.x/download.html"/>
+      </item>
       <item name="HttpCore 5.3" collapse="true" href="httpcomponents-core-5.3.x/index.html">
         <item name="Examples" href="httpcomponents-core-5.3.x/examples.html"/>
         <item name="Related" href="httpcomponents-core-5.3.x/related-projects.html"/>

@@ -23,7 +23,7 @@ HttpClient Downloads
 The latest release available for download:
 
 [Release packages](https://hc.apache.org/downloads.cgi) -
-[Release Notes](https://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-5.5.x.txt) -
+[Release Notes](https://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-5.6.x.txt) -
 [License](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 Dependency management

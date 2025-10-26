@@ -20,6 +20,14 @@
 HttpComponents Project Status
 =============================
 
+HttpComponents HttpClient 5.6.x
+-------------------------------
+
+HttpClient 5.6.x branch is the current development branch. The 5.6.x release series improves HTTP/2 protocol support
+by ensuring conformance to the latest HTTP specification (RFC 9113), adds support for Unix domain sockets and 
+transparent content decompression for the async transport, also provides experimental SCRAM-SHA-256 authentication
+scheme.
+
 HttpComponents HttpClient 5.5.x
 -------------------------------
 

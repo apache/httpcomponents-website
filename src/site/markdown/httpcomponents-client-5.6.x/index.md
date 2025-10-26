@@ -63,10 +63,12 @@ Features
 - Pluggable TLS strategies.
 - Transparent message exchanges through HTTP/1.1, HTTP/1.0 and SOCKS proxies.
 - Tunneled HTTPS connections through HTTP/1.1 and HTTP/1.0 proxies, via the CONNECT method.
-- Basic, Digest, Bearer authentication schemes.
+- Basic, Digest, Bearer, SCRAM-SHA-256 authentication schemes.
 - HTTP state management and cookie support.
 - Flexible connection management and pooling.
 - Support for HTTP response caching.
+- Transparent content decompression.
+- Support for Unix domain sockets.
 - Source code is freely available under the Apache License.
 
 Standards Compliance
@@ -78,7 +80,7 @@ the internet at large:
 - [RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110) - HTTP Semantics
 - [RFC 9111](https://datatracker.ietf.org/doc/html/rfc9111) - HTTP Caching
 - [RFC 9112](https://datatracker.ietf.org/doc/html/rfc9112) - Hypertext Transfer Protocol Version 1.1 (HTTP/1.1)
-- [RFC 7540](https://datatracker.ietf.org/doc/html/rfc7540) - Hypertext Transfer Protocol Version 2 (HTTP/2)
+- [RFC 9113](https://datatracker.ietf.org/doc/html/rfc9113) - Hypertext Transfer Protocol Version 2 (HTTP/2)
 - [RFC 7541](https://datatracker.ietf.org/doc/html/rfc7541) - HPACK: Header Compression for HTTP/2
 - [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
 - [RFC 2396](https://datatracker.ietf.org/doc/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
@@ -86,3 +88,6 @@ the internet at large:
 - [RFC 7616](https://datatracker.ietf.org/doc/html/rfc7616) - HTTP Digest Access Authentication
 - [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617) - HTTP 'Basic' Authentication Scheme
 - [RFC 5861](https://datatracker.ietf.org/doc/html/rfc5861) - HTTP Cache-Control Extensions for Stale Content
+- [RFC 2817](https://datatracker.ietf.org/doc/html/rfc2817) - Upgrading to TLS Within HTTP/1.1
+- [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP
+- [RFC 7804](https://datatracker.ietf.org/doc/html/rfc7804) - Salted Challenge Response HTTP Authentication Mechanism
