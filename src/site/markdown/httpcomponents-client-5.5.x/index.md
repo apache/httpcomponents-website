@@ -35,8 +35,15 @@ extend the HTTP protocol for distributed communication.
 Documentation
 -------------
 
-1. [Quick Start](quickstart.md) - contains simple, complete examples of request execution with the classic, fluent and
-   async APIs.
+1. [Quick Start](quickstart.md) - contains simple, complete examples of request execution
+   with the classic, fluent and async APIs.
+1. [Architecture](architecture.md) - describes HttpClient architecture pronciples such as
+   the layering concept.
+2. [Configuration guide](configuration.md) - describes principles of HttpClient
+   configuration.
+3. [Migration guide](migration-guide/index.md) - helps choose the best migration path from
+   older version of Apache HttpClient, different i/o models supported by Apache HttpClient
+   or other HTTP clients.
 1. Examples demonstrating some common as well as more complex use cases
 
     * [HttpClient (classic APIs)](examples.md)
