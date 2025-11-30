@@ -55,7 +55,7 @@ public class HttpClient5AsyncStreamHttp2Example {
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
                         .setSslContext(SSLContexts.createSystemDefault())
                         .setTlsVersions(TLS.V_1_3)
-                        .build())
+                        .buildAsync())
                 .setIOReactorConfig(IOReactorConfig.custom()
                         .setSoTimeout(Timeout.ofMinutes(1))
                         .build())

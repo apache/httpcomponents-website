@@ -66,7 +66,7 @@ for [JSON message processing](https://github.com/ok2c/httpcomponents-jackson) us
         .setTlsStrategy(ClientTlsStrategyBuilder.create()
                 .setSslContext(SSLContexts.createSystemDefault())
                 .setTlsVersions(TLS.V_1_3)
-                .build())
+                .buildAsync())
         .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
         .setConnPoolPolicy(PoolReusePolicy.LIFO)
         .setDefaultConnectionConfig(ConnectionConfig.custom()

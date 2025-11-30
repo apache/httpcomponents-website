@@ -61,7 +61,7 @@ public class HttpClient5AsyncSimpleExample {
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
                         .setSslContext(SSLContexts.createSystemDefault())
                         .setTlsVersions(TLS.V_1_3)
-                        .build())
+                        .buildAsync())
                 .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
                 .setConnPoolPolicy(PoolReusePolicy.LIFO)
                 .setDefaultConnectionConfig(ConnectionConfig.custom()

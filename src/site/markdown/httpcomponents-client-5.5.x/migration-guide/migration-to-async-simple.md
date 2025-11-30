@@ -45,7 +45,7 @@ either known to be well-behaved or specifically designed for simple message hand
          .setTlsStrategy(ClientTlsStrategyBuilder.create()
                  .setSslContext(SSLContexts.createSystemDefault())
                  .setTlsVersions(TLS.V_1_3)
-                 .build())
+                 .buildAsync())
          .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
          .setConnPoolPolicy(PoolReusePolicy.LIFO)
          .setDefaultConnectionConfig(ConnectionConfig.custom()
