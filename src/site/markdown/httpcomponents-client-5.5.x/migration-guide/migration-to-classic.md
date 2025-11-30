@@ -41,7 +41,7 @@ There are also some important differences with URL normalization and encoding.
 
 -  Use `PoolingHttpClientConnectionManagerBuilder` class to create connection managers with custom parameters
 
--  Use `SSLConnectionSocketFactoryBuilder` class to create SSL connection socket factories with custom parameters
+-  Use `DefaultClientTlsStrategy` class to create SSL connection socket factories with custom parameters
 
 -  While HttpClient 5 automatically disables all SSL versions and weak TLS versions it may still be advisable to
    explicitly specify TLSv1.3 as the only enabled version.
@@ -62,10 +62,10 @@ There are also some important differences with URL normalization and encoding.
 
    ```java
    PoolingHttpClientConnectionManager connectionManager = PoolingHttpClientConnectionManagerBuilder.create()
-         .setTlsSocketStrategy((TlsSocketStrategy) ClientTlsStrategyBuilder.create()
+      .setTlsSocketStrategy(ClientTlsStrategyBuilder.create()
                  .setSslContext(SSLContexts.createSystemDefault())
                  .setTlsVersions(TLS.V_1_3)
-                 .build())
+                 .buildClassic())
          .setDefaultSocketConfig(SocketConfig.custom()
                  .setSoTimeout(Timeout.ofMinutes(1))
                  .build())

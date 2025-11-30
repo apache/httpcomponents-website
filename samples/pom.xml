@@ -41,7 +41,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <hc4.client.version>4.5.13</hc4.client.version>
-    <hc5.client.version>5.4.2</hc5.client.version>
+    <hc5.client.version>5.5.1</hc5.client.version>
     <jackson.version>2.12.6.1</jackson.version>
     <asyncjson.version>0.4.0</asyncjson.version>
   </properties>

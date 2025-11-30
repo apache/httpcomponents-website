@@ -57,10 +57,10 @@ public class HttpClient5ClassicExample {
 
     public static void main(String... args) throws Exception {
         PoolingHttpClientConnectionManager connectionManager = PoolingHttpClientConnectionManagerBuilder.create()
-                .setTlsSocketStrategy((TlsSocketStrategy) ClientTlsStrategyBuilder.create()
+                .setTlsSocketStrategy(ClientTlsStrategyBuilder.create()
                         .setSslContext(SSLContexts.createSystemDefault())
                         .setTlsVersions(TLS.V_1_3)
-                        .build())
+                        .buildClassic())
                 .setDefaultSocketConfig(SocketConfig.custom()
                         .setSoTimeout(Timeout.ofMinutes(1))
                         .build())
