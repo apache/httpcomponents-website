@@ -35,7 +35,9 @@ It is strongly encouraged to follow the best practices and common use patterns i
 
 1. Set finite socket and connect timeouts.
 
-1. Set finite connection total time to live (TTL).
+1. Set a finite connection total time to live (TTL). Use a negative value for connections with unlimited / infinite 
+   time to live. Please note as of version 5.0 HttpClient treats zero TTL as an instruction that connections 
+   are not meant to be re-used.
 
 1. Favor the `strict` cookie policy.
 
