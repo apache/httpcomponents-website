@@ -117,3 +117,7 @@ HttpClient Examples (Classic)
 - [Virtual HTTPS / SNI](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientSNI.java)
 
   This example demonstrates how to use SNI to send requests to a virtual HTTPS endpoint using the classic I/O.
+
+- [Unix domain sockets](https://github.com/apache/httpcomponents-client/blob/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/UnixDomainSocket.java)
+
+  This example demonstrates how to connect to a local daemon (in this case, the Docker daemon) over a Unix domain socket. Note that this requires either Java 17+ or a dependency on [JUnixSocket](https://mvnrepository.com/artifact/com.kohlschutter.junixsocket/junixsocket-core).
