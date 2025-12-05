@@ -43,13 +43,15 @@ Documentation
     * [HttpClient (async APIs)](examples-async.md)
     * [HttpClient (reactive APIs)](examples-reactive.md)
     * [HttpClient (observation APIs)](examples-observation.md)
+    * [HttpClient (sse APIs)](server-sent-events.md)
 
 1. Javadocs
 
     * [HttpClient](./current/httpclient5/apidocs/)
     * [HC Fluent](./current/httpclient5-fluent/apidocs/)
     * [HttpClient Cache](./current/httpclient5-cache/apidocs/)
-   * [HttpClient Observation](./current/httpclient5-observation/apidocs/)
+    * [HttpClient Observation](./current/httpclient5-observation/apidocs/)
+    * [HttpClient sse](./current/httpclient5-sse/apidocs/)
 
 1. API compatibility reports
 
@@ -82,6 +84,8 @@ Features
 - Async support for RFC 8297 **103 Early Hints** via a pluggable
   [`EarlyHintsListener`](./current/httpclient5/apidocs/org/apache/hc/client5/http/EarlyHintsListener.html).
 - Optional [SPKI pinning TLS strategy](scram-sha-256.md)  (`SpkiPinningClientTlsStrategy`) for host / wildcard public-key pinning.
+- Optional [Server-Sent Events (SSE) module](server-sent-events.md) (`httpclient5-sse`) for consuming long-lived event
+  streams over HTTP/1.1 and HTTP/2 using the async transport.
 
 
 Standards Compliance
