@@ -51,7 +51,7 @@ HttpClient Examples (Async)
 
 - [Multiplexed HTTP/2 exchanges](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttp2ServerPush.java)
 
-This example demonstrates handling of HTTP/2 message exchanges pushed by the server.
+  This example demonstrates handling of HTTP/2 message exchanges pushed by the server.
 
 - [Client authentication](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientAuthentication.java)
 
@@ -83,3 +83,7 @@ This example demonstrates handling of HTTP/2 message exchanges pushed by the ser
 - [Virtual HTTPS / SNI](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientSNI.java)
 
   This example demonstrates how to use SNI to send requests to a virtual HTTPS endpoint using the async I/O.
+
+- [Unix domain sockets](https://github.com/apache/httpcomponents-client/blob/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/UnixDomainSocketAsync.java)
+
+  This example demonstrates how to connect to a local daemon (in this case, the Docker daemon) over a Unix domain socket. Note that this requires Java 17+. On older versions of Java, Unix domain sockets are only supported with [classic I/O](examples.md) and require an additional dependency on JUnixSocket.
