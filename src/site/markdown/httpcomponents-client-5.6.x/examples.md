@@ -117,3 +117,7 @@ HttpClient Examples (Classic)
 - [Virtual HTTPS / SNI](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientSNI.java)
 
   This example demonstrates how to use SNI to send requests to a virtual HTTPS endpoint using the classic I/O.
+
+- [HTTP/2 Priority (RFC 9218)](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-h2/src/test/java/org/apache/hc/core5/http2/examples/ClassicH2PriorityExample.java)
+
+  Demonstrates emitting the RFC 9218 Priority request header (u / i) via H2RequestPriority and context. Requires HTTP/2 and H2Processors.client() (which includes the interceptor).

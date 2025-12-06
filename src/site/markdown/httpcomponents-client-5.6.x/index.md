@@ -42,12 +42,16 @@ Documentation
     * [HttpClient (classic APIs)](examples.md)
     * [HttpClient (async APIs)](examples-async.md)
     * [HttpClient (reactive APIs)](examples-reactive.md)
+    * [HttpClient (observation APIs)](examples-observation.md)
+    * [HttpClient (sse APIs)](server-sent-events.md)
 
 1. Javadocs
 
     * [HttpClient](./current/httpclient5/apidocs/)
     * [HC Fluent](./current/httpclient5-fluent/apidocs/)
     * [HttpClient Cache](./current/httpclient5-cache/apidocs/)
+    * [HttpClient Observation](./current/httpclient5-observation/apidocs/)
+    * [HttpClient sse](./current/httpclient5-sse/apidocs/)
 
 1. API compatibility reports
 
@@ -70,6 +74,19 @@ Features
 - Transparent content decompression.
 - Support for Unix domain sockets.
 - Source code is freely available under the Apache License.
+- Experimental RFC 9218 prioritization (Priority header & PRIORITY_UPDATE for HTTP/2).
+- Optional observability module** [httpclient5-observation)](observation.md) with Micrometer / OpenTelemetry support for request timers/counters,
+- I/O byte counters, connection-pool gauges, and DNS/TLS meters for classic and async clients.
+- Optional Caffeine-based cache backend for in-memory HTTP cache storage.
+- Basic, Digest, Bearer, and [SCRAM-SHA-256](scram-sha-256.md) authentication schemes.
+- Async transparent content compression and decompression with `deflate`,  `gzip`, and optional `zstd` / `brotli` codecs. See
+  [Async content compression & decompression](async-compression.md).
+- Async support for RFC 8297 **103 Early Hints** via a pluggable
+  [`EarlyHintsListener`](./current/httpclient5/apidocs/org/apache/hc/client5/http/EarlyHintsListener.html).
+- Optional [SPKI pinning TLS strategy](scram-sha-256.md)  (`SpkiPinningClientTlsStrategy`) for host / wildcard public-key pinning.
+- Optional [Server-Sent Events (SSE) module](server-sent-events.md) (`httpclient5-sse`) for consuming long-lived event
+  streams over HTTP/1.1 and HTTP/2 using the async transport.
+
 
 Standards Compliance
 --------------------
@@ -91,3 +108,5 @@ the internet at large:
 - [RFC 2817](https://datatracker.ietf.org/doc/html/rfc2817) - Upgrading to TLS Within HTTP/1.1
 - [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP
 - [RFC 7804](https://datatracker.ietf.org/doc/html/rfc7804) - Salted Challenge Response HTTP Authentication Mechanism
+- [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP *(experimental support: Priority header & PRIORITY_UPDATE for HTTP/2)*
+- [RFC 8297](https://datatracker.ietf.org/doc/html/rfc8297) – Early Hints status code
