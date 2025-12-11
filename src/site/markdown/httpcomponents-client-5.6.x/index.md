@@ -45,6 +45,10 @@ Documentation
     * [HttpClient (observation APIs)](examples-observation.md)
     * [HttpClient (sse APIs)](server-sent-events.md)
 
+1. Guides
+
+    * [Connection pooling](connection-pooling.md)
+
 1. Javadocs
 
     * [HttpClient](./current/httpclient5/apidocs/)
@@ -69,13 +73,14 @@ Features
 - Tunneled HTTPS connections through HTTP/1.1 and HTTP/1.0 proxies, via the CONNECT method.
 - Basic, Digest, Bearer, SCRAM-SHA-256 authentication schemes.
 - HTTP state management and cookie support.
-- Flexible connection management and pooling.
+- Flexible connection management and pooling with STRICT, LAX and OFFLOCK concurrency policies.
+- Optional off-lock disposal for blocking connection pools to move slow graceful closes off hot pool locks.
 - Support for HTTP response caching.
 - Transparent content decompression.
 - Support for Unix domain sockets.
 - Source code is freely available under the Apache License.
 - Experimental RFC 9218 prioritization (Priority header & PRIORITY_UPDATE for HTTP/2).
-- Optional observability module** [httpclient5-observation)](observation.md) with Micrometer / OpenTelemetry support for request timers/counters,
+- Optional observability module [httpclient5-observation)](observation.md) with Micrometer / OpenTelemetry support for request timers/counters,
 - I/O byte counters, connection-pool gauges, and DNS/TLS meters for classic and async clients.
 - Optional Caffeine-based cache backend for in-memory HTTP cache storage.
 - Basic, Digest, Bearer, and [SCRAM-SHA-256](scram-sha-256.md) authentication schemes.
