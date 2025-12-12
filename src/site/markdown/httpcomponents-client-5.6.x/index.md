@@ -46,7 +46,7 @@ Documentation
     * [HttpClient (sse APIs)](server-sent-events.md)
 
 1. Guides
-
+    * [Connection management](connection-management.md)
     * [Connection pooling](connection-pooling.md)
 
 1. Javadocs
