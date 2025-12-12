@@ -49,11 +49,12 @@ The concurrency behaviour of the underlying pool is controlled by
   and busy routes can get more connections under load. This can improve
   utilisation at the cost of strict per-route fairness.
 
-* **OFFLOCK**  
+* **OFFLOCK** *(experimental)*  
   Uses the route-segmented pool implementation (`RouteSegmentedConnPool`) which
   keeps per-route state in independent segments and reduces contention on shared
   structures. The implementation still uses locking where needed; the goal is
-  to minimise time spent under hot pool locks.
+  to minimise time spent under hot pool locks. As an experimental policy its
+  behaviour and configuration may change in future releases.
 
 You can select the policy with the builder:
 
