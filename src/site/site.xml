@@ -98,14 +98,9 @@ under the License.
         <item name="Examples (Reactive)" href="httpcomponents-client-5.6.x/examples-reactive.html"/>
         <item name="Download" href="httpcomponents-client-5.6.x/download.html"/>
       </item>
-      <item name="HttpCore 5.3" collapse="true" href="httpcomponents-core-5.3.x/index.html">
-        <item name="Examples" href="httpcomponents-core-5.3.x/examples.html"/>
-        <item name="Related" href="httpcomponents-core-5.3.x/related-projects.html"/>
-        <item name="Download" href="httpcomponents-core-5.3.x/download.html"/>
-      </item>
-      <item name="HttpCore 5.4 ALPHA" collapse="true" href="httpcomponents-core-5.4.x/index.html">
+      <item name="HttpCore 5.4" collapse="true" href="httpcomponents-core-5.4.x/index.html">
         <item name="Examples" href="httpcomponents-core-5.4.x/examples.html"/>
-        <item name="Related" href="httpcomponents-core-5.3.x/related-projects.html"/>
+        <item name="Related" href="httpcomponents-core-5.4.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-core-5.4.x/download.html"/>
       </item>
       <item name="HttpClient 4.5" collapse="true" href="httpcomponents-client-4.5.x/index.html">

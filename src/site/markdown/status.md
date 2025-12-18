@@ -40,17 +40,10 @@ use of HTTP/2 message multiplexing.
 HttpComponents HttpCore 5.4.x
 -------------------------------
 
-HttpCore 5.4.x branch is the current development branch. The 5.4.x release series improves HTTP/2 protocol support 
-by ensuring conformance to the latest HTTP specification (RFC 9113), adds support for Unix domain sockets, and
-also redesigns the classic over async API compatibity bridge.
+HttpCore 5.4.x branch is the current stable and production ready. The 5.4.x release series improves HTTP/2 protocol 
+support by ensuring conformance to the latest HTTP specification (RFC 9113), adds support for Unix domain sockets, 
+and  also redesigns the classic over async API compatibity bridge.
  
-HttpComponents HttpCore 5.3.x
--------------------------------
-
-HttpCore 5.3.x branch is considered stable and production ready. It is being actively maintained and supported. 
-The 5.3.x release series upgrades HTTP protocol conformance level to RFC 9110 and replaces `synchronized` 
-blocks with lock primitives.
-
 HttpComponents HttpClient 4.5.x
 -------------------------------
 

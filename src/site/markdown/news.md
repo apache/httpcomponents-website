@@ -20,6 +20,33 @@
 HttpComponents Project News
 ===========================
 
+###### 16 December 2025 - HttpComponents Core 5.4 GA released
+
+This is the first GA release in the 5.4 release series that improves HTTP/2 protocol
+support by ensuring conformance to the latest HTTP specification (RFC 9113) and adds
+support for Unix domain sockets.
+
+Notable changes and features included in the 5.4 series:
+
+* Experimental OFFLOCK (lock-free) connection pool.
+
+* Conformance to RFC 9218 (Extensible Prioritization Scheme for HTTP).
+
+* Improved conformance to RFC 9113 (Hypertext Transfer Protocol Version 2).
+
+* Five-second TCP keep-alive enabled by default.
+
+* Unix domain socket support by the classic and async transports.
+
+* Redesign of classic over async API bridge.
+
+* Improved URI encoding per RFC 3986.
+
+* QUERY method support.
+
+* Improved idle connection validation in the async transport.
+
+
 ###### 27 October 2025 - HttpComponents Client 5.6-alpha1 released
 
 This is the first ALPHA release in the 5.6 release series. It adds several features
@@ -50,24 +77,6 @@ Notable changes and features included in the 5.6 series:
 This is the first ALPHA release in the 5.4 release series that improves HTTP/2 protocol
 support by ensuring conformance to the latest HTTP specification (RFC 9113) and adds
 support for Unix domain sockets.
-
-Notable changes and features included in the 5.4 series:
-
-* Experimental OFFLOCK (lock-free) connection pool.
-
-* Conformance to RFC 9218 (Extensible Prioritization Scheme for HTTP).
-
-* Improved conformance to RFC 9113 (Hypertext Transfer Protocol Version 2).
-
-* Five-second TCP keep-alive enabled by default.
-
-* Unix domain socket support by the classic and async transports.
-
-* Redesign of classic over async API bridge.
-
-* Improved URI encoding per RFC 3986.
-
-* QUERY method support.
 
 ###### 22 September 2025 - HttpComponents Core 5.3.6 GA released
 
