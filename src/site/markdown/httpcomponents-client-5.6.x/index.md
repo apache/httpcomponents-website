@@ -62,6 +62,8 @@ Documentation
     * [HttpClient](./current/httpclient5/japicmp.html)
     * [HC Fluent](./current/httpclient5-fluent/japicmp.html)
     * [HttpClient Cache](./current/httpclient5-cache/japicmp.html)
+    * [HC Observation](./current/httpclient5-observation/japicmp.html)
+    * [HC sse](./current/httpclient5-sse/japicmp.html)
 
 Features
 --------
