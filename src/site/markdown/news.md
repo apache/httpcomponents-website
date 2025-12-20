@@ -20,6 +20,11 @@
 HttpComponents Project News
 ===========================
 
+###### 22 December 2025 - HttpComponents Client 5.5.2 GA released
+
+This is a maintenance release that fixes incompatibility with the 5.4 branch 
+of HttpCore.
+
 ###### 16 December 2025 - HttpComponents Core 5.4 GA released
 
 This is the first GA release in the 5.4 release series that improves HTTP/2 protocol
