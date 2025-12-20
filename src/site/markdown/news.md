@@ -20,6 +20,33 @@
 HttpComponents Project News
 ===========================
 
+###### 22 December 2025 - HttpComponents Client 5.6 GA released
+
+This is the first GA release in the 5.6 release series. It adds several features
+such as transport content decompression and content compression for the async transport,
+support for Unix sockets, experimental support for SCRAM-SHA-256 authentication scheme,
+and Micrometer/OTel observations & metrics.
+
+Notable changes and features included in the 5.6 series:
+
+* Unix domain socket support.
+
+* Support for pluggable content codecs via Commons-Compress in the classic transport.
+  (optional).
+
+* Support for transparent content decompression and content compression with `deflate`,
+  `gzip`, `zstd` (optional), and `brotli` (optional) codecs in the async transport.
+
+* Micrometer/OTel observations & metrics (optinal).
+
+* Off-lock connection disposal by the classic pooling connection manager. Experimental.
+
+* SCRAM-SHA-256 authentication scheme (RFC 7804). Experimental.
+
+* Request Priority support (RFC 9218). Experimental.
+
+* OFFLOCK connection pool concurrency policy. Experimental.
+
 ###### 22 December 2025 - HttpComponents Client 5.5.2 GA released
 
 This is a maintenance release that fixes incompatibility with the 5.4 branch 
@@ -51,31 +78,12 @@ Notable changes and features included in the 5.4 series:
 
 * Improved idle connection validation in the async transport.
 
-
 ###### 27 October 2025 - HttpComponents Client 5.6-alpha1 released
 
 This is the first ALPHA release in the 5.6 release series. It adds several features
 such as transport content decompression and content compression for the async transport,
 support for Unix sockets, experimental support for SCRAM-SHA-256 authentication scheme,
 and Micrometer/OTel observations & metrics.
-
-Notable changes and features included in the 5.6 series:
-
-* Unix domain socket support.
-
-* Support for pluggable content codecs via Commons-Compress in the classic transport.
-  (optional).
-
-* Support for transparent content decompression and content compression with `deflate`,
-  `gzip`, `zstd` (optional), and `brotli` (optional) codecs in the async transport.
-
-* Micrometer/OTel observations & metrics (optinal).
-
-* Off-lock connection disposal by the classic pooling connection manager. Experimental.
-
-* SCRAM-SHA-256 authentication scheme (RFC 7804). Experimental.
-
-* Request Priority support (RFC 9218). Experimental.
 
 ###### 13 October 2025 - HttpComponents Core 5.4-alpha1 released
 

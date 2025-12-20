@@ -35,35 +35,45 @@ extend the HTTP protocol for distributed communication.
 Documentation
 -------------
 
-1. [Quick Start](quickstart.md) - contains simple, complete examples of request execution with the classic, fluent and
-   async APIs.
-1. Examples demonstrating some common as well as more complex use cases
-
-    * [HttpClient (classic APIs)](examples.md)
-    * [HttpClient (async APIs)](examples-async.md)
-    * [HttpClient (reactive APIs)](examples-reactive.md)
-    * [HttpClient (observation APIs)](examples-observation.md)
-    * [HttpClient (sse APIs)](server-sent-events.md)
-
+1. [Quick Start](quickstart.md) - contains simple, complete examples of request execution
+   with the classic, fluent and async APIs.
+1. [Architecture](architecture.md) - describes HttpClient architecture pronciples such as
+   the layering concept.
 1. Guides
-    * [Connection management](connection-management.md)
-    * [Connection pooling](connection-pooling.md)
+   * [Migration](migration-guide/index.md) - helps choose the best migration path from
+     older version of Apache HttpClient, different i/o models supported by Apache HttpClient
+     or other HTTP clients.
+   * [Configuration](configuration.md) - describes principles of HttpClient configuration.
+   * [Logging](logging.md)
+   * [Connection management](connection-management.md)
+   * [Connection pooling](connection-pooling.md)
+   * [Async content compression / decompression](async-compression.md)
+   * [Android support](android.md)
+   * [Early Hints](early-hints.md)
+   * [Observation](observation.md)
+   * [SCRAM-SHA-256](scram-sha-256.md)
+   * [SPKI pinning TLS strategy](spki-pinning.md)
+
+6. Examples demonstrating some common as well as more complex use cases
+
+   * [HttpClient (classic APIs)](examples.md)
+   * [HttpClient (async APIs)](examples-async.md)
+   * [HttpClient (reactive APIs)](examples-reactive.md)
+   * [HttpClient (observation APIs)](examples-observation.md)
 
 1. Javadocs
 
-    * [HttpClient](./current/httpclient5/apidocs/)
-    * [HC Fluent](./current/httpclient5-fluent/apidocs/)
-    * [HttpClient Cache](./current/httpclient5-cache/apidocs/)
-    * [HttpClient Observation](./current/httpclient5-observation/apidocs/)
-    * [HttpClient sse](./current/httpclient5-sse/apidocs/)
+   * [HttpClient](./current/httpclient5/apidocs/)
+   * [HC Fluent](./current/httpclient5-fluent/apidocs/)
+   * [HttpClient Cache](./current/httpclient5-cache/apidocs/)
+   * [HttpClient Observation](./current/httpclient5-observation/apidocs/)
 
 1. API compatibility reports
 
-    * [HttpClient](./current/httpclient5/japicmp.html)
-    * [HC Fluent](./current/httpclient5-fluent/japicmp.html)
-    * [HttpClient Cache](./current/httpclient5-cache/japicmp.html)
-    * [HC Observation](./current/httpclient5-observation/japicmp.html)
-    * [HC sse](./current/httpclient5-sse/japicmp.html)
+   * [HttpClient](./current/httpclient5/japicmp.html)
+   * [HC Fluent](./current/httpclient5-fluent/japicmp.html)
+   * [HttpClient Cache](./current/httpclient5-cache/japicmp.html)
+   * [HC Observation](./current/httpclient5-observation/japicmp.html)
 
 Features
 --------
@@ -77,22 +87,18 @@ Features
 - HTTP state management and cookie support.
 - Flexible connection management and pooling with STRICT, LAX and OFFLOCK concurrency policies.
 - Optional off-lock disposal for blocking connection pools to move slow graceful closes off hot pool locks.
-- Support for HTTP response caching.
-- Transparent content decompression.
+- Basic, Digest, Bearer, and SCRAM-SHA-256 authentication schemes.
+- Support for HTTP response caching. Pluggable storage backends based on Ehcache, Memcached, Caffeine.
+- Transparent content decompression with deflate, gzip, and optional zstd / brotli codecs.
 - Support for Unix domain sockets.
-- Source code is freely available under the Apache License.
 - Experimental RFC 9218 prioritization (Priority header & PRIORITY_UPDATE for HTTP/2).
-- Optional observability module [httpclient5-observation)](observation.md) with Micrometer / OpenTelemetry support for request timers/counters,
 - I/O byte counters, connection-pool gauges, and DNS/TLS meters for classic and async clients.
-- Optional Caffeine-based cache backend for in-memory HTTP cache storage.
-- Basic, Digest, Bearer, and [SCRAM-SHA-256](scram-sha-256.md) authentication schemes.
-- Async transparent content compression and decompression with `deflate`,  `gzip`, and optional `zstd` / `brotli` codecs. See
-  [Async content compression & decompression](async-compression.md).
-- Async support for RFC 8297 **103 Early Hints** via a pluggable
-  [`EarlyHintsListener`](./current/httpclient5/apidocs/org/apache/hc/client5/http/EarlyHintsListener.html).
-- Optional [SPKI pinning TLS strategy](scram-sha-256.md)  (`SpkiPinningClientTlsStrategy`) for host / wildcard public-key pinning.
-- Optional [Server-Sent Events (SSE) module](server-sent-events.md) (`httpclient5-sse`) for consuming long-lived event
+- Optional SPKI pinning TLS strategy for host / wildcard public-key pinning.
+- Async support for 103 Early Hints via a pluggable
+- Optional Observability nodule with Micrometer / OpenTelemetry support for request timers/counters,
+- Optional Server-Sent Events (SSE) module for consuming long-lived event
   streams over HTTP/1.1 and HTTP/2 using the async transport.
+- Source code is freely available under the Apache License.
 
 
 Standards Compliance
@@ -104,7 +110,7 @@ the internet at large:
 - [RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110) - HTTP Semantics
 - [RFC 9111](https://datatracker.ietf.org/doc/html/rfc9111) - HTTP Caching
 - [RFC 9112](https://datatracker.ietf.org/doc/html/rfc9112) - Hypertext Transfer Protocol Version 1.1 (HTTP/1.1)
-- [RFC 9113](https://datatracker.ietf.org/doc/html/rfc9113) - Hypertext Transfer Protocol Version 2 (HTTP/2)
+- [RFC 7540](https://datatracker.ietf.org/doc/html/rfc7540) - Hypertext Transfer Protocol Version 2 (HTTP/2)
 - [RFC 7541](https://datatracker.ietf.org/doc/html/rfc7541) - HPACK: Header Compression for HTTP/2
 - [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
 - [RFC 2396](https://datatracker.ietf.org/doc/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
@@ -115,5 +121,4 @@ the internet at large:
 - [RFC 2817](https://datatracker.ietf.org/doc/html/rfc2817) - Upgrading to TLS Within HTTP/1.1
 - [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP
 - [RFC 7804](https://datatracker.ietf.org/doc/html/rfc7804) - Salted Challenge Response HTTP Authentication Mechanism
-- [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP *(experimental support: Priority header & PRIORITY_UPDATE for HTTP/2)*
 - [RFC 8297](https://datatracker.ietf.org/doc/html/rfc8297) – Early Hints status code

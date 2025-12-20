@@ -17,9 +17,27 @@
     under the License.
 -->
 
-HttpClient Examples (Async)
-===========================
+HttpClient Overview
+===================
 
-- [HTTP exchange with Reactive Streams](https://github.com/apache/httpcomponents-client/tree/5.5.x/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpExchange.java)
+Documentation
+-------------
 
-  This example demonstrates a reactive, full-duplex HTTP/1.1 message exchange using RxJava.
+4. Examples demonstrating some common as well as more complex use cases
+
+    * [HttpClient (sse APIs)](server-sent-events.md)
+
+1. Javadocs
+
+    * [HttpClient sse](./current/httpclient5-sse/apidocs/)
+
+1. API compatibility reports
+
+    * [HC sse](./current/httpclient5-sse/japicmp.html)
+
+Features
+--------
+
+- Support for HTTP response caching. Pluggable storage backends based on Ehcache, Memcached, Caffeine.
+- Optional Server-Sent Events (SSE) module for consuming long-lived event
+  streams over HTTP/1.1 and HTTP/2 using the async transport.

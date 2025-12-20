@@ -72,30 +72,23 @@ under the License.
       <item name="Get Involved" href="get-involved.html"/>
     </menu>
     <menu name="Components">
-      <item name="HttpClient 5.5" collapse="true" href="httpcomponents-client-5.5.x/index.html">
-        <item name="Architecture" href="httpcomponents-client-5.5.x/architecture.html"/>
-        <item name="Quick Start" href="httpcomponents-client-5.5.x/quickstart.html"/>
-        <item name="Configuration Guide" href="httpcomponents-client-5.5.x/configuration.html"/>
-        <item name="Examples (Classic)" href="httpcomponents-client-5.5.x/examples.html"/>
-        <item name="Examples (Async)" href="httpcomponents-client-5.5.x/examples-async.html"/>
-        <item name="Examples (Reactive)" href="httpcomponents-client-5.5.x/examples-reactive.html"/>
-        <item name="Migration Guide" collapse="true" href="httpcomponents-client-5.5.x/migration-guide/index.html">
-          <item name="Preparation" href="httpcomponents-client-5.5.x/migration-guide/preparation.html"/>
-          <item name="Classic" href="httpcomponents-client-5.5.x/migration-guide/migration-to-classic.html"/>
-          <item name="Async Simple" href="httpcomponents-client-5.5.x/migration-guide/migration-to-async-simple.html"/>
-          <item name="Async Streaming" href="httpcomponents-client-5.5.x/migration-guide/migration-to-async-streaming.html"/>
-          <item name="Async HTTP/2 only" href="httpcomponents-client-5.5.x/migration-guide/migration-to-async-http2.html"/>
-        </item>
-        <item name="Logging Guide" href="httpcomponents-client-5.5.x/logging.html"/>
-        <item name="Android" href="httpcomponents-client-5.5.x/android.html"/>
-        <item name="Related" href="httpcomponents-client-5.5.x/related-projects.html"/>
-        <item name="Download" href="httpcomponents-client-5.5.x/download.html"/>
-      </item>
-      <item name="HttpClient 5.6 ALPHA" collapse="true" href="httpcomponents-client-5.6.x/index.html">
+      <item name="HttpClient 5.6" collapse="true" href="httpcomponents-client-5.6.x/index.html">
         <item name="Quick Start" href="httpcomponents-client-5.6.x/quickstart.html"/>
+        <item name="Architecture" href="httpcomponents-client-5.6.x/architecture.html"/>
+        <item name="Configuration Guide" href="httpcomponents-client-5.6.x/configuration.html"/>
+        <item name="Migration Guide" collapse="true" href="httpcomponents-client-5.6.x/migration-guide/index.html">
+          <item name="Preparation" href="httpcomponents-client-5.6.x/migration-guide/preparation.html"/>
+          <item name="Classic" href="httpcomponents-client-5.6.x/migration-guide/migration-to-classic.html"/>
+          <item name="Async Simple" href="httpcomponents-client-5.6.x/migration-guide/migration-to-async-simple.html"/>
+          <item name="Async Streaming" href="httpcomponents-client-5.6.x/migration-guide/migration-to-async-streaming.html"/>
+          <item name="Async HTTP/2 only" href="httpcomponents-client-5.6.x/migration-guide/migration-to-async-http2.html"/>
+        </item>
+        <item name="Logging Guide" href="httpcomponents-client-5.6.x/logging.html"/>
+        <item name="Android" href="httpcomponents-client-5.6.x/android.html"/>
         <item name="Examples (Classic)" href="httpcomponents-client-5.6.x/examples.html"/>
         <item name="Examples (Async)" href="httpcomponents-client-5.6.x/examples-async.html"/>
         <item name="Examples (Reactive)" href="httpcomponents-client-5.6.x/examples-reactive.html"/>
+        <item name="Related" href="httpcomponents-client-5.6.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-client-5.6.x/download.html"/>
       </item>
       <item name="HttpCore 5.4" collapse="true" href="httpcomponents-core-5.4.x/index.html">

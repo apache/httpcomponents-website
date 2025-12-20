@@ -1,4 +1,4 @@
-    <!--
+<!--
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
@@ -17,11 +17,10 @@
     under the License.
 -->
 
-RFC 8297 – 103 Early Hints (async)
+103 Early Hints (async)
 ==================================
 
-HttpClient 5.6 adds async support for **RFC 8297 – 103 Early Hints** via a
-callback interface:
+HttpClient 5.6 adds async support for **103 Early Hints** via a callback interface:
 
 - `EarlyHintsListener` – functional interface invoked for each `103` response.
 - `HttpAsyncClientBuilder#setEarlyHintsListener(...)` – registers a global
