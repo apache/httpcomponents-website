@@ -225,6 +225,12 @@ Concrete examples live in the `httpclient5-sse` module under
   Minimal HTTP server that emits SSE events at a configurable rate, intended to
   be used together with `SsePerfClient` for end-to-end testing.
 
+- [ClientSseH2Example](https://github.com/apache/httpcomponents-client/tree/master/httpclient5-sse/src/test/java/org/apache/hc/client5/http/sse/example/ClientSseH2Example.java)
+
+  HTTP/2 SSE demo. Forces H2 (TLS + ALPN), probes the negotiated protocol, and
+  demonstrates multiplexing multiple SSE subscriptions over a single HTTP/2
+  connection.
+
 Further reading
 ---------------
 
