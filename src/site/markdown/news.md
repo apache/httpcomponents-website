@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 11 February 2026 - HttpComponents Core 5.4.1 GA released
+
+This maintenance release fixes a latency regression in the async transport caused by
+TCP_NODELAY failing to be set. Several other bugs have also been fixed affecting
+connection management, HTTP/2 exception handling and propagation
+
 ###### 22 December 2025 - HttpComponents Client 5.6 GA released
 
 This is the first GA release in the 5.6 release series. It adds several features
