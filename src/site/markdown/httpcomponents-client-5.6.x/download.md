@@ -22,7 +22,7 @@ HttpClient Downloads
 
 The latest release available for download:
 
-[Release packages](https://hc.apache.org/downloads.cgi) -
+[Release packages](../downloads.md) -
 [Release Notes](https://www.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-5.6.x.txt) -
 [License](https://www.apache.org/licenses/LICENSE-2.0.html)
 
@@ -36,3 +36,4 @@ HttpClient modules by using this information:
 - [HttpClient](https://search.maven.org/artifact/org.apache.httpcomponents.client5/httpclient5)
 - [HttpClient Fluent](https://search.maven.org/artifact/org.apache.httpcomponents.client5/httpclient5-fluent)
 - [HttpClient Cache](https://search.maven.org/artifact/org.apache.httpcomponents.client5/httpclient5-cache)
+- [HttpClient Observation](https://central.sonatype.com/artifact/org.apache.httpcomponents.client5/httpclient5-observation)

@@ -57,7 +57,7 @@ under the License.
     <menu name="HttpComponents" inherit="top">
       <item name="Home" href="index.html"/>
       <item name="License" href="https://www.apache.org/licenses/"/>
-      <item name="Download" href="downloads.cgi"/>
+      <item name="Download" href="download.html"/>
       <item name="Mailing Lists" href="mail.html"/>
       <item name="Wiki (external)" href="https://wiki.apache.org/HttpComponents/"/>
       <item name="Security" href="security.html"/>

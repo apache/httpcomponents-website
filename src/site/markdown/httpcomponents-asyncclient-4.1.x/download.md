@@ -22,7 +22,7 @@ HttpAsyncClient Downloads
 
 The latest release available for download:
 
-[Release packages](https://hc.apache.org/downloads.cgi) -
+[Release packages](../downloads.md) -
 [Release Notes](https://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES-4.1.x.txt) -
 [License](https://www.apache.org/licenses/LICENSE-2.0.html)
 

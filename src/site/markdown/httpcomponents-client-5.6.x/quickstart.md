@@ -21,7 +21,7 @@ HttpClient Quick Start
 ======================
 
 - Download 'Binary' package of the latest HttpClient 5.5 release or configure dependency on `HttpClient` and `Fluent HC`
-  modules using a dependency manager of your choice as described [here](./download.md).
+  modules using a dependency manager of your choice as described [here](../downloads.md).
 
 - HttpClient 5.5 requires Java 1.8 or newer.
 
