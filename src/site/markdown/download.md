@@ -53,29 +53,29 @@ Source
   [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6-src.zip.sha512)]
   [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6-src.zip.asc)]
 
-HttpCore 5.4.1 (GA)
+HttpCore 5.4.2 (GA)
 ------------------
 [KEYS](https://downloads.apache.org/httpcomponents/httpcore/KEYS) |
 [Release Notes](https://downloads.apache.org/httpcomponents/httpcore/RELEASE_NOTES-5.4.x.txt)
 
 Binaries
 
-* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/binary/httpcomponents-core-5.4.1-bin.tar.gz)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.1-bin.tar.gz.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.1-bin.tar.gz.asc)]
-* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/binary/httpcomponents-core-5.4.1-bin.zip)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.1-bin.zip.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.1-bin.zip.asc)]
+* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/binary/httpcomponents-core-5.4.2-bin.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.2-bin.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.2-bin.tar.gz.asc)]
+* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/binary/httpcomponents-core-5.4.2-bin.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.2-bin.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.4.2-bin.zip.asc)]
 
 Source
 
-* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/source/httpcomponents-core-5.4.1-src.tar.gz)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.1-src.tar.gz.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.1-src.tar.gz.asc)]
+* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/source/httpcomponents-core-5.4.2-src.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.2-src.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.2-src.tar.gz.asc)]
 
-* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/source/httpcomponents-core-5.4.1-src.zip)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.1-src.zip.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.1-src.zip.asc)]
+* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpcore/source/httpcomponents-core-5.4.2-src.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.2-src.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.4.2-src.zip.asc)]
 
 Older releases
 ----------------
