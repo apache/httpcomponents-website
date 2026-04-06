@@ -27,7 +27,10 @@ and non-blocking, event driven I/O model based on Java NIO.
 Documentation
 =============
 
-1. Some examples of HttpCore components in action can be found [here](./examples.html)
+1. Examples demonstrating some common as well as more complex use cases
+    - [HttpCore (classic APIs)](examples.md)
+    - [HttpCore (async APIs)](examples-async.md)
+    - [HttpCore (reactive APIs)](examples-reactive.md)
 
 1. Javadocs
     - [HttpCore HTTP/1.1](./current/httpcore5/apidocs/)

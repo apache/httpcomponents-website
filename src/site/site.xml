@@ -96,7 +96,9 @@ under the License.
         <item name="Download" href="httpcomponents-core-5.4.x/download.html"/>
       </item>
       <item name="HttpCore 5.5 ALPHA" collapse="true" href="httpcomponents-core-5.5.x/index.html">
-        <item name="Examples" href="httpcomponents-core-5.5.x/examples.html"/>
+        <item name="Examples (Classic)" href="httpcomponents-core-5.5.x/examples.html"/>
+        <item name="Examples (Async)" href="httpcomponents-core-5.5.x/examples-async.html"/>
+        <item name="Examples (Reactive)" href="httpcomponents-core-5.5.x/examples-reactive.html"/>
         <item name="Download" href="httpcomponents-core-5.5.x/download.html"/>
       </item>
       <item name="HttpClient 4.5" collapse="true" href="httpcomponents-client-4.5.x/index.html">
