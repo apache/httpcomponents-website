@@ -56,10 +56,10 @@ Documentation
 
 6. Examples demonstrating some common as well as more complex use cases
 
-   * [HttpClient (classic APIs)](examples.md)
-   * [HttpClient (async APIs)](examples-async.md)
-   * [HttpClient (reactive APIs)](examples-reactive.md)
-   * [HttpClient (observation APIs)](examples-observation.md)
+   * [HttpClient Classic APIs](examples.md)
+   * [HttpClient Async APIs](examples-async.md)
+   * [HttpClient Reactive Streams APIs](examples-reactive.md)
+   * [HttpClient Observation APIs](examples-observation.md)
 
 1. Javadocs
 

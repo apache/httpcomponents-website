@@ -17,7 +17,7 @@
     under the License.
 -->
 
-HttpClient Examples (Async)
+HttpClient Examples (Reactive Streams)
 ===========================
 
 - [HTTP exchange with Reactive Streams](https://github.com/apache/httpcomponents-client/tree/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/AsyncClientHttpExchange.java)

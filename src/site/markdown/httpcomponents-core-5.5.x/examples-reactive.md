@@ -17,7 +17,7 @@
     under the License.
 -->
 
-HttpCore Examples
+HttpCore Examples (Reactive Streams)
 =================
 
 - [Client Reactive Streams](https://github.com/apache/httpcomponents-core/tree/master/httpcore5-reactive/src/test/java/org/apache/hc/core5/reactive/examples/ReactiveFullDuplexClientExample.java)
