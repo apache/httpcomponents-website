@@ -20,6 +20,13 @@
 HttpComponents Project News
 ===========================
 
+###### 20 April 2026 - HttpComponents Client 5.6.1 GA released
+
+This is a maintenance release that disables the experimental SCRAM auth scheme by
+default and fixes SCRAM final response handling. The SCRAM auth scheme can be
+re-enabled by choosing a custom auth scheme preference sequence that explicitly
+includes SCRAM auth.
+
 ###### 26 March 2026 - HttpComponents Core 5.5-alpha1 released
 
 This is the first ALPHA release in the 5.5 release series that improves performance and
