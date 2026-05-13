@@ -48,3 +48,7 @@ suggestions for hardening the code base. For example, if your program adds an HT
 responsible for the data you add to that header. On the other hand, the headers that are added and removed by
 HttpComponents are its responsibility.
 
+For this reason, you should use a
+[CredentialsProvider](https://github.com/apache/httpcomponents-client/blob/master/httpclient5/src/main/java/org/apache/hc/client5/http/auth/CredentialsProvider.java)
+instead of adding security headers manually. Please see the
+[ClientAuthentication example](https://github.com/apache/httpcomponents-client/blob/master/httpclient5/src/test/java/org/apache/hc/client5/http/examples/ClientAuthentication.java)
