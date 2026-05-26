@@ -84,23 +84,13 @@ Nothing is enabled unless you add Micrometer and call the opt-in helpers.
 ## Dependency
 
 **Maven**
-```xml
-<dependency>
-  <groupId>org.apache.httpcomponents.client5</groupId>
-  <artifactId>httpclient5-observation</artifactId>
-  <version>5.6-alpha1</version>
-</dependency>
-
-## Dependency
-
-**Maven**
 
 ```xml
 <!-- Required: the optional observability module itself -->
 <dependency>
   <groupId>org.apache.httpcomponents.client5</groupId>
   <artifactId>httpclient5-observation</artifactId>
-  <version>5.6-alpha1</version>
+  <version>5.6.1</version>
 </dependency>
 
 <!-- Optional: add only if you actually use Micrometer metrics / observations / Prometheus / tracing -->
@@ -134,3 +124,4 @@ Nothing is enabled unless you add Micrometer and call the opt-in helpers.
   <version>${micrometer.tracing.version}</version>
   <optional>true</optional>
 </dependency>
+```
