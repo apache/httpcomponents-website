@@ -1,39 +1,31 @@
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-    
-      http://www.apache.org/licenses/LICENSE-2.0
-    
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-    KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-
-HttpCore Downloads
-==================
+Download HttpComponents Core 5.5.x
+==================================
 
 The latest release available for download:
 
-[Release packages](../downloads.md) -
-[Release Notes](https://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.4.x.txt) -
-[License](https://www.apache.org/licenses/LICENSE-2.0.html)
+[Release Notes](https://www.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES-5.5.x.txt) -
+[HttpComponents Core 5.5-beta1](https://downloads.apache.org/httpcomponents/httpcore/)
 
-Dependency management
----------------------
+Source
+------
 
-If you are using a dependency manager for your project such as [Apache Maven](https://maven.apache.org),
-[Gradle](https://gradle.org/) or [Apache Ivy](https://ant.apache.org/projects/ivy.html), you can create a dependency on
-HttpCore modules by using this information:
+* [httpcomponents-core-5.5-beta1-src.tar.gz](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.5-beta1-src.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.5-beta1-src.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.5-beta1-src.tar.gz.asc)]
 
-- [HttpCore HTTP/1.1](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5)
-- [HttpCore HTTP/2](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-h2)
-- [HttpCore Reactive Streams](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-reactive)
-- [Jackson JSON Bindings](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-jackson2)
+* [httpcomponents-core-5.5-beta1-src.zip](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.5-beta1-src.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.5-beta1-src.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/source/httpcomponents-core-5.5-beta1-src.zip.asc)]
+
+Binary
+------
+
+* [httpcomponents-core-5.5-beta1-bin.tar.gz](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.5-beta1-bin.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.5-beta1-bin.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.5-beta1-bin.tar.gz.asc)]
+
+* [httpcomponents-core-5.5-beta1-bin.zip](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.5-beta1-bin.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.5-beta1-bin.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpcore/binary/httpcomponents-core-5.5-beta1-bin.zip.asc)]
+
+Recent releases are available from the [Apache archive](https://archive.apache.org/dist/httpcomponents/httpcore/).
