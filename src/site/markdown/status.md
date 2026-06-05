@@ -19,6 +19,13 @@
 
 HttpComponents Project Status
 =============================
+    
+HttpComponents HttpCore 5.5.x
+-------------------------------
+
+HttpClient 5.5.x branch is the current development branch. The 5.5.x release series improves HTTP/2 protocol
+conformance, connection pooling and management, as well as support for JSON message content bindings based
+on [Jackson](https://github.com/fasterxml/jackson) version 2
 
 HttpComponents HttpClient 5.6.x
 -------------------------------
