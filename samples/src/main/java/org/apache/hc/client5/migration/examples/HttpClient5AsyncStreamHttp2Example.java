@@ -16,15 +16,11 @@
 
 package org.apache.hc.client5.migration.examples;
 
-import java.util.Arrays;
-import java.util.concurrent.Future;
-
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ok2c.hc5.json.http.JsonRequestProducers;
-import com.ok2c.hc5.json.http.JsonResponseConsumers;
-
+import java.util.Arrays;
+import java.util.concurrent.Future;
 import org.apache.hc.client5.http.auth.CredentialsProvider;
 import org.apache.hc.client5.http.config.ConnectionConfig;
 import org.apache.hc.client5.http.config.RequestConfig;
@@ -43,6 +39,8 @@ import org.apache.hc.core5.http.message.BasicNameValuePair;
 import org.apache.hc.core5.http.ssl.TLS;
 import org.apache.hc.core5.http.support.BasicRequestBuilder;
 import org.apache.hc.core5.io.CloseMode;
+import org.apache.hc.core5.jackson2.http.JsonRequestProducers;
+import org.apache.hc.core5.jackson2.http.JsonResponseConsumers;
 import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
@@ -53,7 +51,7 @@ public class HttpClient5AsyncStreamHttp2Example {
     public static void main(String... args) throws Exception {
         CloseableHttpAsyncClient client = HttpAsyncClients.customHttp2()
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
-                        .setSslContext(SSLContexts.createSystemDefault())
+                        .setSslContext(SSLContexts.createDefault())
                         .setTlsVersions(TLS.V_1_3)
                         .buildAsync())
                 .setIOReactorConfig(IOReactorConfig.custom()

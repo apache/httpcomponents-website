@@ -64,7 +64,7 @@ for [JSON message processing](https://github.com/ok2c/httpcomponents-jackson) us
    ```java
    PoolingAsyncClientConnectionManager connectionManager = PoolingAsyncClientConnectionManagerBuilder.create()
         .setTlsStrategy(ClientTlsStrategyBuilder.create()
-                .setSslContext(SSLContexts.createSystemDefault())
+                .setSslContext(SSLContexts.createDefault())
                 .setTlsVersions(TLS.V_1_3)
                 .buildAsync())
         .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)

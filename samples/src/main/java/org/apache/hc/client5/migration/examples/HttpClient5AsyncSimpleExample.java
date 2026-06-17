@@ -59,7 +59,7 @@ public class HttpClient5AsyncSimpleExample {
     public static void main(String... args) throws Exception {
         PoolingAsyncClientConnectionManager connectionManager = PoolingAsyncClientConnectionManagerBuilder.create()
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
-                        .setSslContext(SSLContexts.createSystemDefault())
+                        .setSslContext(SSLContexts.createDefault())
                         .setTlsVersions(TLS.V_1_3)
                         .buildAsync())
                 .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)

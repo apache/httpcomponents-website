@@ -99,6 +99,7 @@ under the License.
         <item name="Download" href="httpcomponents-core-5.4.x/download.html"/>
       </item>
       <item name="HttpCore 5.5 BETA" collapse="true" href="httpcomponents-core-5.5.x/index.html">
+        <item name="Getting started" href="httpcomponents-core-5.5.x/getting-started.html"/>
         <item name="JSON bindings" href="httpcomponents-core-5.5.x/json-jackson2.html"/>
         <item name="Examples (Classic)" href="httpcomponents-core-5.5.x/examples.html"/>
         <item name="Examples (Async)" href="httpcomponents-core-5.5.x/examples-async.html"/>

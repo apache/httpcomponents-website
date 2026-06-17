@@ -37,7 +37,7 @@ over a single HTTP/2 connection.
    ```java
    CloseableHttpAsyncClient client = HttpAsyncClients.customHttp2()
          .setTlsStrategy(ClientTlsStrategyBuilder.create()
-                 .setSslContext(SSLContexts.createSystemDefault())
+                 .setSslContext(SSLContexts.createDefault())
                  .setTlsVersions(TLS.V_1_3)
                  .buildAsync())
          .setIOReactorConfig(IOReactorConfig.custom()

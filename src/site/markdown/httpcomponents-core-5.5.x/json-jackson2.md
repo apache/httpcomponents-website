@@ -37,4 +37,4 @@ content and map onto a higher level Java object model.
 
 Presently HttpCore JSON bindings use version 2 of Jackson JSON processor.  
 
-Some examples of HttpCore JSON bindings in action cab be found [here](examples-jackson2.md)
+Some examples of HttpCore JSON bindings in action can be found [here](examples-jackson2.md)

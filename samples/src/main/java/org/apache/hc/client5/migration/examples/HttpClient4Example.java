@@ -51,7 +51,7 @@ public class HttpClient4Example {
     public static void main(String... args) throws Exception {
         CloseableHttpClient client = HttpClients.custom()
                 .setSSLSocketFactory(new SSLConnectionSocketFactory(
-                        SSLContexts.createSystemDefault(),
+                        SSLContexts.createDefault(),
                         new String[] { "TLSv1.2" },
                         null,
                         SSLConnectionSocketFactory.getDefaultHostnameVerifier()))
