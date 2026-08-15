@@ -1,7 +1,7 @@
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
+    distributed with t  zhis work for additional information
     regarding copyright ownership.  The ASF licenses this file
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
@@ -20,6 +20,85 @@
 HttpComponents Project News
 ===========================
 
+###### 17 Aug 2026 - HttpComponents Client 5.7-alpha1 released
+
+This is the first ALPHA release in the 5.7 release series. It introduces several new
+modules with Server-Sent Events (SSE) client, WebSocket client and Jakarta REST client
+implementations that build upon the common foundation of the core and client modules.
+Please note the Jakarta REST client presently supports a sub-set of jakarta.ws.rs APIs
+only. This release series also introduces full support for QUERY method including QUERY
+response caching.
+
+Notable changes and features included in the 5.7 series:
+
+* Experimental. Server-Sent Events (SSE) client optimized to handle push event streams.
+
+* Experimental. WebSocket protocol support (client and server side).
+
+* Experimental. Optional execution queue that enforces a max limit on the number of
+  requests executed concurrently by the same async client instance.
+
+* Caffeine-based cache backend.
+
+* OFFLOCK pool concurrency policy for connection pools (classic and async).
+
+* TLS-Required mode support.
+
+* Jakarta REST client, supporting a sub-set of jakarta.ws.rs APIs.
+
+* QUERY method support / QUERY response caching support.
+
+###### 10 Aug 2026 - HttpComponents Client 5.6.4 GA released
+
+This maintenance release fixes SSL parameter application in the async TLS upgrade
+strategy.
+
+###### 31 July 2026 - HttpComponents Client 5.6.3 GA released
+
+This maintenance release fixes a resource management defect in the content decompression 
+protocol handler of the classic transport.
+
+###### 30 June 2026 - HttpComponents Client 5.6.2 GA released
+
+This maintenance release upgrades HttpCore to the latest stable version and restores
+lazy content decompression by the classic client transport.
+
+###### 25 June 2026 - HttpComponents Core 5.5-beta2 released
+
+This BETA release corrects Java 8 binary problem introduced in the previous BETA
+release. The previous version has been compiled against Java 17 APIs by mistake.
+This release also adds support for QUERY method (RFC 10008).
+
+Notable changes and features included in the 5.5 series:
+
+* Connection pool implementation improvements.
+
+* HTTP message stream APIs and support for HTTP/2 message stream timeout.
+
+* SSLContexts to respect system properties by default.
+
+* Cap pending HTTP/2 request commands per connection.
+
+* HPACK RFC 7540, RFC 7541, and HTTP/2 RFC 9113 conformance improvements.
+
+* Building HttpCore with Maven now requires Java 17 or newer. Published
+  artifacts remain compatible with Java 8.
+
+* QUERY method support (RFC 10008).
+
+###### 25 June 2026 - HttpComponents Core 5.4.3 released
+
+This maintenance release fixes several defects and regression reported since the previous
+release including a regression in backpressure handling of async TLS sessions introduced 
+in version 5.3.3.
+
+###### 5 June 2026 - HttpComponents Core 5.5-beta1 released
+
+This is the first BETA release in the 5.5 release series that improves performance and
+robustness of connection pool implementations, further improves HTTP/2 specification
+conformance and introduces JSON message content bindings based on
+[Jackson](https://github.com/fasterxml/jackson) version 2.
+
 ###### 20 April 2026 - HttpComponents Client 5.6.1 GA released
 
 This is a maintenance release that disables the experimental SCRAM auth scheme by
@@ -33,20 +112,6 @@ This is the first ALPHA release in the 5.5 release series that improves performa
 robustness of connection pool implementations, further improves HTTP/2 specification
 conformance and introduces JSON message content bindings based on 
 [Jackson](https://github.com/fasterxml/jackson) version 2.
-
-Notable changes and features included in the 5.5 series:
-
-* Connection pool implementation improvements.
-
-* HTTP message stream APIs and support for HTTP/2 message stream timeout.
-
-* SSLContexts to respect system properties by default.
-
-* Cap pending HTTP/2 request commands per connection.
-
-* HPACK RFC 7540 / RFC 7541 / HTTP/2 RFC 9113 conformance improvements.
-
-* JSON message content bindings
 
 ###### 6 March 2026 - HttpComponents Core 5.4.2 GA released
 

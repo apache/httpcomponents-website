@@ -90,7 +90,7 @@ Nothing is enabled unless you add Micrometer and call the opt-in helpers.
 <dependency>
   <groupId>org.apache.httpcomponents.client5</groupId>
   <artifactId>httpclient5-observation</artifactId>
-  <version>5.6.1</version>
+  <version>${httpclient5.version}</version>
 </dependency>
 
 <!-- Optional: add only if you actually use Micrometer metrics / observations / Prometheus / tracing -->
