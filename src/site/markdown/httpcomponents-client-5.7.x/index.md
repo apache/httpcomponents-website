@@ -20,22 +20,35 @@
 HttpClient Overview
 ===================
 
-The Hyper-Text Transfer Protocol (HTTP) is perhaps the most significant protocol used on the Internet today. Web
-services, network-enabled appliances and the growth of network computing continue to expand the role of the HTTP
-protocol beyond user-driven web browsers, while increasing the number of applications that require HTTP support.
+The Hyper-Text Transfer Protocol (HTTP) is perhaps the most significant protocol used on
+the Internet today. Web services, network-enabled appliances and the growth of network
+computing continue to expand the role of the HTTP protocol beyond user-driven web
+browsers, while increasing the number of applications that require HTTP support.
 
-Although the java.net package provides basic functionality for accessing resources via HTTP, it doesn't provide the full
-flexibility or functionality needed by many applications. HttpClient seeks to fill this void by providing an efficient,
-up-to-date, and feature-rich package implementing the client side of the most recent HTTP standards and recommendations.
+Although the java.net package provides basic functionality for accessing resources via
+HTTP, it doesn't provide the full flexibility or functionality needed by many
+applications. HttpClient seeks to fill this void by providing an efficient, up-to-date,
+and feature-rich package implementing the client side of the most recent HTTP standards
+and recommendations.
 
-Designed for extension while providing robust support for the base HTTP protocol, HttpClient may be of interest to
-anyone building HTTP-aware client applications such as web browsers, web service clients, or systems that leverage or
-extend the HTTP protocol for distributed communication.
+Designed for extension while providing robust support for the base HTTP protocol,
+HttpClient may be of interest to anyone building HTTP-aware client applications such as
+web browsers, web service clients, or systems that leverage or extend the HTTP protocol
+for distributed communication.
+
+Design objectives and project scope
+-----------------
+* Full-featured HTTP client with many advanced functions.
+* Based on [HttpCore](../httpcomponents-core-5.5.x/index.md). 
+* Minimal set of mandatory dependencies (HttpCore and SLF4J)
+* Other dependencies are optional at runtime or pulled in as transitive dependencies of
+  optional client modules (cache, observation, reactive, Jakarta REST)
 
 Documentation
--------------
+===================
 
 1. Guides
+    * [Getting started](getting-started.md)
     * [SSE](server-sent-events.md) - Server side events
     * [Jakarta REST client](rest-client.md) - Type-safe Jakarta REST client backed by HttpClient
     * [WebSocket](websocket.md) - Full-duplex messaging over HTTP/1.1 and HTTP/2
@@ -64,32 +77,36 @@ Features
 - Supports encryption with HTTPS (HTTP over SSL) protocol.
 - Pluggable TLS strategies.
 - Transparent message exchanges through HTTP/1.1, HTTP/1.0 and SOCKS proxies.
-- Tunneled HTTPS connections through HTTP/1.1 and HTTP/1.0 proxies, via the CONNECT method.
+- Tunneled HTTPS connections through HTTP/1.1 and HTTP/1.0 proxies, via the CONNECT
+  method.
 - Basic, Digest, Bearer, SCRAM-SHA-256 authentication schemes.
 - HTTP state management and cookie support.
-- Flexible connection management and pooling with STRICT, LAX and OFFLOCK concurrency policies.
-- Optional off-lock disposal for blocking connection pools to move slow graceful closes off hot pool locks.
-- Basic, Digest, Bearer, and SCRAM-SHA-256 authentication schemes.
-- Support for HTTP response caching. Pluggable storage backends based on Ehcache, Memcached, Caffeine.
+- Flexible connection management and pooling with STRICT, LAX and OFFLOCK concurrency
+  policies.
+- Optional off-lock disposal for blocking connection pools to move slow graceful closes
+  off hot pool locks.
+- Support for HTTP response caching. Pluggable storage backends based on Ehcache,
+  Memcached, Caffeine.
 - Transparent content decompression with deflate, gzip, and optional zstd / brotli codecs.
 - Support for Unix domain sockets.
 - Experimental RFC 9218 prioritization (Priority header & PRIORITY_UPDATE for HTTP/2).
-- I/O byte counters, connection-pool gauges, and DNS/TLS meters for classic and async clients.
+- I/O byte counters, connection-pool gauges, and DNS/TLS meters for classic and async
+  clients.
 - Optional SPKI pinning TLS strategy for host / wildcard public-key pinning.
-- Async support for 103 Early Hints via a pluggable
-- Optional Observability nodule with Micrometer / OpenTelemetry support for request timers/counters,
+- Async support for 103 Early Hints via a pluggable strategy
+- Optional Observability module with Micrometer / OpenTelemetry support for request
+  timers/counters.
 - Optional Server-Sent Events (SSE) module for consuming long-lived event
   streams over HTTP/1.1 and HTTP/2 using the async transport.
 - Optional WebSocket module for full-duplex messaging over HTTP/1.1 (Upgrade)
   and HTTP/2 (Extended CONNECT), with optional permessage-deflate compression.
 - Source code is freely available under the Apache License.
 
-
 Standards Compliance
 --------------------
 
-HttpClient strives to conform to the following specifications endorsed by the Internet Engineering Task Force (IETF) and
-the internet at large:
+HttpClient strives to conform to the following specifications endorsed by the Internet
+Engineering Task Force (IETF) and the internet at large:
 
 - [RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110) - HTTP Semantics
 - [RFC 9111](https://datatracker.ietf.org/doc/html/rfc9111) - HTTP Caching

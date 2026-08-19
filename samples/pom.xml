@@ -41,6 +41,7 @@
     <hc4.client.version>4.5.14</hc4.client.version>
     <hc5.core.version>5.5-beta1</hc5.core.version>
     <hc5.client.version>5.6.1</hc5.client.version>
+    <slf4j.version>1.7.36</slf4j.version>
   </properties>
 
   <dependencies>
@@ -73,6 +74,12 @@
       <groupId>org.apache.httpcomponents.client5</groupId>
       <artifactId>httpclient5-fluent</artifactId>
       <version>${hc5.client.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
 
