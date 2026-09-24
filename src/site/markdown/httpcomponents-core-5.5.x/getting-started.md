@@ -72,9 +72,7 @@ final HttpAsyncRequester requester = H2RequesterBootstrap.bootstrap()
                 .build())
         .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
         .create();
-requester.
-
-start();
+requester.start();
 
 final HttpHost target = new HttpHost("httpbin.org");
 final HttpCoreContext context = HttpCoreContext.create();
@@ -82,63 +80,44 @@ final HttpCoreContext context = HttpCoreContext.create();
 final ObjectMapper objectMapper = new ObjectMapper();
 
 final CountDownLatch latch = new CountDownLatch(1);
-requester.
-
-execute(
+requester.execute(
         AsyncJsonClientPipeline.assemble(objectMapper)
-                .
+                .request()
+                .post(target, "/post")
+                .asObject(new BasicNameValuePair("name", "value"))
+                .response()
+                .asObject(RequestData.class)
+                .result(new FutureCallback<>() {
 
-request()
-                .
+                    @Override
+                    public void completed(final Message<HttpResponse, RequestData> m) {
+                        final HttpResponse response = m.head();
+                        final RequestData requestData = m.body();
+                        System.out.println(target + "->" + response.getCode());
+                        System.out.println(requestData);
+                        latch.countDown();
+                    }
 
-post(target, "/post")
-                .
+                    @Override
+                    public void failed(final Exception ex) {
+                        ex.printStackTrace(System.out);
+                        latch.countDown();
+                    }
 
-asObject(new BasicNameValuePair("name", "value"))
-        .
+                    @Override
+                    public void cancelled() {
+                        latch.countDown();
+                    }
 
-response()
-                .
+                })
+                .create(),
+        Timeout.ofMinutes(1),
+        context);
 
-asObject(RequestData .class)
-                .
+latch.await();
 
-result(new FutureCallback<>() {
+requester.close(CloseMode.GRACEFUL);
 
-    @Override
-    public void completed ( final Message<HttpResponse, RequestData> m){
-        final HttpResponse response = m.head();
-        System.out.println(target + "->" + response.getCode());
-        latch.countDown();
-    }
-
-    @Override
-    public void failed ( final Exception ex){
-        ex.printStackTrace(System.out);
-        latch.countDown();
-    }
-
-    @Override
-    public void cancelled () {
-        latch.countDown();
-    }
-
-})
-        .
-
-create(),
-        Timeout.
-
-ofMinutes(1),
-
-context);
-
-        latch.
-
-await();
-requester.
-
-close(CloseMode.GRACEFUL);
 ```
 
 ### Classic requester
@@ -181,13 +160,9 @@ final RequestData requestData = requester.execute(target, request, Timeout.ofSec
         return null;
     }
 });
-System.out.
+System.out.println(requestData);
 
-println(requestData);
-
-requester.
-
-close(CloseMode.GRACEFUL);
+requester.close(CloseMode.GRACEFUL);
 ```
 
 HTTP servers
@@ -216,10 +191,6 @@ One can use`AsyncServerPipeline` and `AsyncJsonServerPipeline` utility classes t
 simplify assembly of async message exchange handlers.
 
 ```java
-final IOReactorConfig config = IOReactorConfig.custom()
-        .setSoTimeout(15, TimeUnit.SECONDS)
-        .build();
-
 final ObjectMapper objectMapper = new ObjectMapper();
 
 final Supplier<AsyncServerExchangeHandler> exchangeHandlerSupplier = AsyncJsonServerPipeline.assemble(objectMapper)
@@ -270,23 +241,25 @@ final AbstractAsyncServerAuthFilter<String> authFilter = new AbstractAsyncServer
             final String requestUri,
             final HttpContext context) {
         // Validate token and return true if the user has been autheticated
-        return "let me pass".equals(challengeResponse);
+        return "let me pass".equals(token);
     }
 
     @Override
     protected String generateChallenge(
-            final String challengeResponse,
+            final String token,
             final URIAuthority authority,
             final String requestUri,
             final HttpContext context) {
-        // Generate a challenge in case the user has not been autheticated 
+        // Generate a challenge in case the user has not been autheticated
         return "who goes there?";
     }
 
 };
+
 final HttpAsyncServer server = H2ServerBootstrap.bootstrap()
-        .setExceptionCallback(e -> e.printStackTrace())
-        .setIOReactorConfig(config)
+        .setIOReactorConfig(IOReactorConfig.custom()
+                .setSoTimeout(Timeout.ofMinutes(1))
+                .build())
         .setRequestRouter(RequestRouter.<Supplier<AsyncServerExchangeHandler>>builder()
                 .addRoute(RequestRouter.LOCAL_AUTHORITY, "*", exchangeHandlerSupplier)
                 .resolveAuthority(RequestRouter.LOCAL_AUTHORITY_RESOLVER)
@@ -294,19 +267,11 @@ final HttpAsyncServer server = H2ServerBootstrap.bootstrap()
         .replaceFilter(StandardFilter.EXPECT_CONTINUE.name(), authFilter)
         .create();
 
-
-server.
-
-start();
-
+server.start();
 final Future<ListenerEndpoint> future = server.listen(new InetSocketAddress(port), URIScheme.HTTP);
 final ListenerEndpoint listenerEndpoint = future.get();
-System.out.
-
-println("Listening on "+listenerEndpoint.getAddress());
-        server.
-
-awaitShutdown(TimeValue.MAX_VALUE);
+System.out.println("Listening on " + listenerEndpoint.getAddress());
+server.awaitShutdown(TimeValue.MAX_VALUE);
 ```
 
 ### Classic server
@@ -399,15 +364,9 @@ final HttpServer server = ServerBootstrap.bootstrap()
         .replaceFilter(StandardFilter.EXPECT_CONTINUE.name(), authFilter)
         .create();
 
-server.
-
-start();
-System.out.
-
-println("Listening on port "+port);
-server.
-
-awaitTermination(TimeValue.MAX_VALUE);
+server.start();
+System.out.println("Listening on port " + port);
+server.awaitTermination(TimeValue.MAX_VALUE);
 ```
 
 Request multiplexing / pipelining
@@ -429,9 +388,7 @@ final HttpAsyncRequester requester = H2RequesterBootstrap.bootstrap()
                 .build())
         .setVersionPolicy(HttpVersionPolicy.NEGOTIATE)
         .create();
-requester.
-
-start();
+requester.start();
 
 final HttpHost target = new HttpHost("nghttp2.org");
 
@@ -443,83 +400,51 @@ final AsyncClientEndpoint clientEndpoint = future.get();
 int n = 3;
 final CountDownLatch latch = new CountDownLatch(n);
 final AtomicBoolean failure = new AtomicBoolean();
-for(
-int i = 1;
-i <=3;i++){
-        requester.
+for (int i = 1; i <= 3; i++) {
+    requester.execute(
+            AsyncJsonClientPipeline.assemble(objectMapper)
+                    .request()
+                    .post(target, "/post")
+                    .asObject(new BasicNameValuePair("name", "value"))
+                    .response()
+                    .asObject(RequestData.class)
+                    .result(new FutureCallback<>() {
 
-execute(
-        AsyncJsonClientPipeline.assemble(objectMapper)
-                    .
+                        @Override
+                        public void completed(final Message<HttpResponse, RequestData> m) {
+                            final HttpResponse response = m.head();
+                            final RequestData requestData = m.body();
+                            System.out.println(target + "->" + response.getCode());
+                            System.out.println(requestData);
+                            latch.countDown();
+                        }
 
-request()
-                    .
+                        @Override
+                        public void failed(final Exception ex) {
+                            ex.printStackTrace(System.out);
+                            failure.set(true);
+                            latch.countDown();
+                        }
 
-post(target, "/post")
-                    .
+                        @Override
+                        public void cancelled() {
+                            latch.countDown();
+                        }
 
-asObject(new BasicNameValuePair("name", "value"))
-        .
-
-response()
-                    .
-
-asObject(RequestData .class)
-                    .
-
-result(new FutureCallback<>() {
-
-    @Override
-    public void completed ( final Message<HttpResponse, RequestData> m){
-        final HttpResponse response = m.head();
-        final RequestData requestData = m.body();
-        System.out.println(target + "->" + response.getCode());
-        System.out.println(requestData);
-        latch.countDown();
-    }
-
-    @Override
-    public void failed ( final Exception ex){
-        ex.printStackTrace(System.out);
-        failure.set(true);
-        latch.countDown();
-    }
-
-    @Override
-    public void cancelled () {
-        latch.countDown();
-    }
-
-})
-        .
-
-create(),
-            Timeout.
-
-ofMinutes(1),
-            HttpCoreContext.
-
-create());
-        }
-
-        latch.
-
-await();
-if(failure.
-
-get()){
-        clientEndpoint.
-
-releaseAndDiscard();
-}else{
-        clientEndpoint.
-
-releaseAndReuse();
+                    })
+                    .create(),
+            Timeout.ofMinutes(1),
+            HttpCoreContext.create());
 }
 
-        requester.
+latch.await();
+if (failure.get()) {
+    clientEndpoint.releaseAndDiscard();
+} else {
+    clientEndpoint.releaseAndReuse();
+}
 
-close(CloseMode.GRACEFUL);
+requester.close(CloseMode.GRACEFUL);
 ```
 
 Logging
