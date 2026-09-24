@@ -16,13 +16,8 @@
 
 package org.apache.hc.client5.migration.examples;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.concurrent.Future;
-
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.apache.hc.client5.http.async.methods.SimpleHttpRequest;
 import org.apache.hc.client5.http.async.methods.SimpleHttpResponse;
@@ -53,6 +48,10 @@ import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
 import org.apache.http.message.BasicNameValuePair;
+import tools.jackson.core.exc.JacksonIOException;
+import tools.jackson.core.json.JsonFactory;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 
 public class HttpClient5AsyncSimpleExample {
 
@@ -113,7 +112,7 @@ public class HttpClient5AsyncSimpleExample {
                 try {
                     JsonNode responseData = objectMapper.readTree(response.getBodyText());
                     System.out.println(responseData);
-                } catch (IOException ex) {
+                } catch (JacksonIOException ex) {
                     System.out.println("Error processing jSON content: " + ex.getMessage());
                 }
             }

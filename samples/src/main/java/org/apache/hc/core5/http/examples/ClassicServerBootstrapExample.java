@@ -32,8 +32,6 @@ import java.net.InetSocketAddress;
 import java.net.URISyntaxException;
 import java.util.Objects;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.apache.hc.core5.http.ContentType;
 import org.apache.hc.core5.http.EndpointDetails;
 import org.apache.hc.core5.http.HttpEntity;
@@ -57,6 +55,7 @@ import org.apache.hc.core5.testing.classic.LoggingExceptionListener;
 import org.apache.hc.core5.testing.classic.LoggingHttp1StreamListener;
 import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
+import tools.jackson.databind.ObjectMapper;
 
 /**
  * Example of embedded HTTP/1.1 file server using classic I/O.

@@ -23,4 +23,5 @@
 5.5-alpha1  ../components/httpcomponents-core-5.5.x/5.5-alpha1
 5.5-beta1   ../components/httpcomponents-core-5.5.x/5.5-beta1
 5.5-beta2   ../components/httpcomponents-core-5.5.x/5.5-beta2
-current     ../components/httpcomponents-core-5.5.x/5.5-beta2
+5.5-beta3   ../components/httpcomponents-core-5.5.x/5.5-beta3
+current     ../components/httpcomponents-core-5.5.x/5.5-beta3

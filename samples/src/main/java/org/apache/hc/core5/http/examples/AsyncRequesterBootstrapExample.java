@@ -28,8 +28,6 @@ package org.apache.hc.core5.http.examples;
 
 import java.util.concurrent.CountDownLatch;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.apache.hc.core5.concurrent.FutureCallback;
 import org.apache.hc.core5.http.HttpHost;
 import org.apache.hc.core5.http.HttpResponse;
@@ -40,7 +38,7 @@ import org.apache.hc.core5.http.protocol.HttpCoreContext;
 import org.apache.hc.core5.http2.HttpVersionPolicy;
 import org.apache.hc.core5.http2.impl.nio.bootstrap.H2RequesterBootstrap;
 import org.apache.hc.core5.io.CloseMode;
-import org.apache.hc.core5.jackson2.http.AsyncJsonClientPipeline;
+import org.apache.hc.core5.jackson3.http.AsyncJsonClientPipeline;
 import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.testing.classic.LoggingConnPoolListener;
 import org.apache.hc.core5.testing.nio.LoggingExceptionCallback;
@@ -50,6 +48,7 @@ import org.apache.hc.core5.testing.nio.LoggingIOSessionDecorator;
 import org.apache.hc.core5.testing.nio.LoggingIOSessionListener;
 import org.apache.hc.core5.testing.nio.LoggingReactorMetricsListener;
 import org.apache.hc.core5.util.Timeout;
+import tools.jackson.databind.ObjectMapper;
 
 public class AsyncRequesterBootstrapExample {
 

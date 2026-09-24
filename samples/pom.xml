@@ -39,7 +39,7 @@
 
   <properties>
     <hc4.client.version>4.5.14</hc4.client.version>
-    <hc5.core.version>5.5-beta1</hc5.core.version>
+    <hc5.core.version>5.5-beta3</hc5.core.version>
     <hc5.client.version>5.6.1</hc5.client.version>
     <slf4j.version>1.7.36</slf4j.version>
   </properties>
@@ -57,7 +57,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents.core5</groupId>
-      <artifactId>httpcore5-jackson2</artifactId>
+      <artifactId>httpcore5-jackson3</artifactId>
       <version>${hc5.core.version}</version>
     </dependency>
     <dependency>

@@ -31,10 +31,9 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.fasterxml.jackson.databind.JsonNode;
-
 import org.apache.hc.core5.http.Header;
 import org.apache.hc.core5.http.NameValuePair;
+import tools.jackson.databind.JsonNode;
 
 public class RequestData {
 

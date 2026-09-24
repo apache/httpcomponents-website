@@ -31,8 +31,6 @@ import java.net.URISyntaxException;
 import java.util.Objects;
 import java.util.concurrent.Future;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.apache.hc.core5.function.Supplier;
 import org.apache.hc.core5.http.EndpointDetails;
 import org.apache.hc.core5.http.HttpException;
@@ -51,7 +49,7 @@ import org.apache.hc.core5.http.nio.support.AbstractAsyncServerAuthFilter;
 import org.apache.hc.core5.http.protocol.HttpContext;
 import org.apache.hc.core5.http.protocol.HttpCoreContext;
 import org.apache.hc.core5.http2.impl.nio.bootstrap.H2ServerBootstrap;
-import org.apache.hc.core5.jackson2.http.AsyncJsonServerPipeline;
+import org.apache.hc.core5.jackson3.http.AsyncJsonServerPipeline;
 import org.apache.hc.core5.net.URIAuthority;
 import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.reactor.ListenerEndpoint;
@@ -63,6 +61,7 @@ import org.apache.hc.core5.testing.nio.LoggingIOSessionListener;
 import org.apache.hc.core5.testing.nio.LoggingReactorMetricsListener;
 import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
+import tools.jackson.databind.ObjectMapper;
 
 public class AsyncServerBootstrapExample {
 

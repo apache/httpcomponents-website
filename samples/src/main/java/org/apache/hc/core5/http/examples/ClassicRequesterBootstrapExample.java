@@ -29,8 +29,6 @@ package org.apache.hc.core5.http.examples;
 
 import java.io.InputStream;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.apache.hc.core5.http.ClassicHttpRequest;
 import org.apache.hc.core5.http.ContentType;
 import org.apache.hc.core5.http.HttpEntity;
@@ -46,6 +44,7 @@ import org.apache.hc.core5.io.CloseMode;
 import org.apache.hc.core5.testing.classic.LoggingBHttpClientConnectionFactory;
 import org.apache.hc.core5.testing.classic.LoggingHttp1StreamListener;
 import org.apache.hc.core5.util.Timeout;
+import tools.jackson.databind.ObjectMapper;
 
 public class ClassicRequesterBootstrapExample {
 

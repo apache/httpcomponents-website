@@ -19,10 +19,6 @@ package org.apache.hc.client5.migration.examples;
 import java.util.Arrays;
 import java.util.concurrent.Future;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.apache.hc.client5.http.auth.CredentialsProvider;
 import org.apache.hc.client5.http.config.ConnectionConfig;
 import org.apache.hc.client5.http.config.RequestConfig;
@@ -44,14 +40,17 @@ import org.apache.hc.core5.http.ssl.TLS;
 import org.apache.hc.core5.http.support.BasicRequestBuilder;
 import org.apache.hc.core5.http2.HttpVersionPolicy;
 import org.apache.hc.core5.io.CloseMode;
-import org.apache.hc.core5.jackson2.http.JsonRequestProducers;
-import org.apache.hc.core5.jackson2.http.JsonResponseConsumers;
+import org.apache.hc.core5.jackson3.http.JsonRequestProducers;
+import org.apache.hc.core5.jackson3.http.JsonResponseConsumers;
 import org.apache.hc.core5.pool.PoolConcurrencyPolicy;
 import org.apache.hc.core5.pool.PoolReusePolicy;
 import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
+import tools.jackson.core.json.JsonFactory;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 
 public class HttpClient5AsyncStreamExample {
 
