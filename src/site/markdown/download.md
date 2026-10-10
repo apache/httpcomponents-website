@@ -29,29 +29,29 @@ The `KEYS` link links to the code signing keys used to sign the product. The `pg
 downloads the OpenPGP compatible signature from our main site. The `sha512` link downloads
 the SHA 512 checksum from the main site.
 
-HttpClient 5.6.4 (GA)
+HttpClient 5.6.5 (GA)
 ------------------
 [KEYS](https://downloads.apache.org/httpcomponents/httpclient/KEYS) |
 [Release Notes](https://downloads.apache.org/httpcomponents/httpclient/RELEASE_NOTES-5.6.x.txt)
 
 Binaries
 
-* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.6.4-bin.tar.gz)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.4-bin.tar.gz.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.4-bin.tar.gz.asc)]
-* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.6.4-bin.zip)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.4-bin.zip.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.4-bin.zip.asc)]
+* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.6.5-bin.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.5-bin.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.5-bin.tar.gz.asc)]
+* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.6.5-bin.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.5-bin.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.6.5-bin.zip.asc)]
 
 Source
 
-* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.6.4-src.tar.gz)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.4-src.tar.gz.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.4-src.tar.gz.asc)]
+* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.tar.gz.asc)]
 
-* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.6.4-src.zip)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.4-src.zip.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.4-src.zip.asc)]
+* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.zip.asc)]
 
 HttpClient 5.7-alpha1
 ------------------

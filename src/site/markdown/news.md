@@ -20,6 +20,12 @@
 HttpComponents Project News
 ===========================
 
+###### 12 Oct 2026 - HttpComponents Client 5.6.5 GA released
+
+This maintenance release fixes several defects found since the previous release
+including the defect in the async Brotli decompression code that can cause
+the message exchange to hang indefinitely. It also upgrades HttpCore to version 5.4.4.
+
 ###### 24 Sept 2026 - HttpComponents Core 5.5-beta3 released
 
 This BETA release migrates JSON bindings to Jackson 3, introduces support for
