@@ -20,17 +20,11 @@
 HttpComponents Project News
 ===========================
 
-###### 12 Oct 2026 - HttpComponents Client 5.6.5 GA released
+###### 14 Oct 2026 - HttpComponents Core-beta4 released
 
-This maintenance release fixes several defects found since the previous release
-including the defect in the async Brotli decompression code that can cause
-the message exchange to hang indefinitely. It also upgrades HttpCore to version 5.4.4.
-
-###### 24 Sept 2026 - HttpComponents Core 5.5-beta3 released
-
-This BETA release migrates JSON bindings to Jackson 3, introduces support for
-Structured Field Values (RFC 9651), and improves and optimizes message parsing
-support methods. It is expected to be the last BETA release before 5.5 GA.
+This BETA release features multiple HTTP/2 protocol conformance improvements
+and perfroance optimizations, introduces support for Digest Fields (RFC 9530),
+and improves async IOsession pool functionality.
 
 Notable changes and features included in the 5.5 series:
 
@@ -50,6 +44,23 @@ Notable changes and features included in the 5.5 series:
 * Added support for the QUERY method (RFC 10008).
 
 * Added support for Structured Field Values for HTTP (RFC 9651).
+
+* Added support for Digest Fields (RFC 9530).
+
+* Improved async IOSession pool implementation.
+
+
+###### 12 Oct 2026 - HttpComponents Client 5.6.5 GA released
+
+This maintenance release fixes several defects found since the previous release
+including the defect in the async Brotli decompression code that can cause
+the message exchange to hang indefinitely. It also upgrades HttpCore to version 5.4.4.
+
+###### 24 Sept 2026 - HttpComponents Core 5.5-beta3 released
+
+This BETA release migrates JSON bindings to Jackson 3, introduces support for
+Structured Field Values (RFC 9651), and improves and optimizes message parsing
+support methods. It is expected to be the last BETA release before 5.5 GA.
 
 ###### 24 Sept 2026 - HttpComponents Core 5.4.4 GA released
 
