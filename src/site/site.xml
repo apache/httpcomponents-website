@@ -91,7 +91,7 @@ under the License.
         <item name="Related" href="httpcomponents-client-5.6.x/related-projects.html"/>
         <item name="Download" href="httpcomponents-client-5.6.x/download.html"/>
       </item>
-      <item name="HttpClient 5.7 ALPHA" collapse="true" href="httpcomponents-client-5.7.x/index.html">
+      <item name="HttpClient 5.7 BETA" collapse="true" href="httpcomponents-client-5.7.x/index.html">
         <item name="Download" href="httpcomponents-client-5.7.x/download.html"/>
       </item>
       <item name="HttpCore 5.4" collapse="true" href="httpcomponents-core-5.4.x/index.html">

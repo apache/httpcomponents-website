@@ -20,6 +20,35 @@
 HttpComponents Project News
 ===========================
 
+###### 26 Oct 2026 - HttpComponents Client-beta1 released
+
+This is the first BETA release in the 5.7 release series. In this release, idle
+connection eviction is deprecated in favor of connection expiration management
+and expired connection eviction. This release also introduces configuration
+improvements to HTTP/2 session pooling (HTTP/2 connection pool with message
+multiplexing) and SSE support improvements as well as HTTP header parsing
+optimization.
+
+Notable changes and features included in the 5.7 series:
+
+* [Experimental] Server-Sent Events (SSE) client optimized to handle push event streams.
+
+* [Experimental] WebSocket protocol support (client-side and server-side).
+
+* [Experimental] Optional execution queue that enforces a limit on the number of requests
+  executed concurrently by the same async client instance.
+
+* Caffeine-based cache backend.
+
+* OFFLOCK pool concurrency policy for connection pools (classic and async).
+
+* TLS-Required mode support.
+
+* Jakarta REST client, supporting a subset of jakarta.ws.rs APIs.
+
+* QUERY method support / QUERY response caching support.
+
+
 ###### 14 Oct 2026 - HttpComponents Core-beta4 released
 
 This BETA release features multiple HTTP/2 protocol conformance improvements
@@ -75,25 +104,6 @@ implementations that build upon the common foundation of the core and client mod
 Please note the Jakarta REST client presently supports a sub-set of jakarta.ws.rs APIs
 only. This release series also introduces full support for QUERY method including QUERY
 response caching.
-
-Notable changes and features included in the 5.7 series:
-
-* Experimental. Server-Sent Events (SSE) client optimized to handle push event streams.
-
-* Experimental. WebSocket protocol support (client and server side).
-
-* Experimental. Optional execution queue that enforces a max limit on the number of
-  requests executed concurrently by the same async client instance.
-
-* Caffeine-based cache backend.
-
-* OFFLOCK pool concurrency policy for connection pools (classic and async).
-
-* TLS-Required mode support.
-
-* Jakarta REST client, supporting a sub-set of jakarta.ws.rs APIs.
-
-* QUERY method support / QUERY response caching support.
 
 ###### 10 Aug 2026 - HttpComponents Client 5.6.4 GA released
 

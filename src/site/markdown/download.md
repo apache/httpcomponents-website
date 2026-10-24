@@ -53,29 +53,29 @@ Source
   [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.zip.sha512)]
   [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.6.5-src.zip.asc)]
 
-HttpClient 5.7-alpha1
+HttpClient 5.7-beta1
 ------------------
 [KEYS](https://downloads.apache.org/httpcomponents/httpclient/KEYS) |
 [Release Notes](https://downloads.apache.org/httpcomponents/httpclient/RELEASE_NOTES-5.7.x.txt)
 
 Binaries
 
-* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.7-alpha1-bin.tar.gz)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-alpha1-bin.tar.gz.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-alpha1-bin.tar.gz.asc)]
-* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.7-alpha1-bin.zip)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-alpha1-bin.zip.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-alpha1-bin.zip.asc)]
+* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.7-beta1-bin.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-beta1-bin.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-beta1-bin.tar.gz.asc)]
+* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/binary/httpcomponents-client-5.7-beta1-bin.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-beta1-bin.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/binary/httpcomponents-client-5.7-beta1-bin.zip.asc)]
 
 Source
 
-* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.7-alpha1-src.tar.gz)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-alpha1-src.tar.gz.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-alpha1-src.tar.gz.asc)]
+* [tar.gz](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.7-beta1-src.tar.gz)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-beta1-src.tar.gz.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-beta1-src.tar.gz.asc)]
 
-* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.7-alpha1-src.zip)
-  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-alpha1-src.zip.sha512)]
-  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-alpha1-src.zip.asc)]
+* [zip](http://www.apache.org/dyn/closer.lua/httpcomponents/httpclient/source/httpcomponents-client-5.7-beta1-src.zip)
+  [[sha512](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-beta1-src.zip.sha512)]
+  [[pgp](https://downloads.apache.org/httpcomponents/httpclient/source/httpcomponents-client-5.7-beta1-src.zip.asc)]
 
 HttpCore 5.4.4 (GA)
 ------------------
