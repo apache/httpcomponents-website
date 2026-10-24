@@ -20,7 +20,7 @@
 HttpComponents Project News
 ===========================
 
-###### 26 Oct 2026 - HttpComponents Client-beta1 released
+###### 26 Oct 2026 - HttpComponents Client 5.7-beta1 released
 
 This is the first BETA release in the 5.7 release series. In this release, idle
 connection eviction is deprecated in favor of connection expiration management
@@ -49,7 +49,7 @@ Notable changes and features included in the 5.7 series:
 * QUERY method support / QUERY response caching support.
 
 
-###### 14 Oct 2026 - HttpComponents Core-beta4 released
+###### 14 Oct 2026 - HttpComponents Core 5.5-beta4 released
 
 This BETA release features multiple HTTP/2 protocol conformance improvements
 and perfroance optimizations, introduces support for Digest Fields (RFC 9530),
