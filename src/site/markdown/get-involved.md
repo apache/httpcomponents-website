@@ -41,6 +41,23 @@ Community
   make sure to tag your question
   with [apache-httpcomponents](https://stackoverflow.com/questions/tagged/apache-httpcomponents).
 
+Source Code
+-----------
+
+The source code of all HttpComponents is available on GitHub. The table below shows where to
+find the code for each component line.
+
+| Component                 | Repository                                                                       | Branch   |
+|---------------------------|----------------------------------------------------------------------------------|----------|
+| HttpClient 5.7.x          | [apache/httpcomponents-client](https://github.com/apache/httpcomponents-client/) | `master` |
+| HttpClient 5.6.x          | [apache/httpcomponents-client](https://github.com/apache/httpcomponents-client/) | `5.6.x`  |
+| HttpCore 5.5.x            | [apache/httpcomponents-core](https://github.com/apache/httpcomponents-core/)     | `master` |
+| HttpCore 5.4.x            | [apache/httpcomponents-core](https://github.com/apache/httpcomponents-core/)     | `5.4.x`  |
+| HttpClient 4.5.x          | [apache/httpcomponents-client](https://github.com/apache/httpcomponents-client/) | `4.5.x`  |
+| HttpCore 4.4.x            | [apache/httpcomponents-core](https://github.com/apache/httpcomponents-core/)     | `4.4.x`  |
+| HttpAsyncClient 4.1.x     | [apache/httpasyncclient](https://github.com/apache/httpasyncclient/)             | `4.1.x`  |
+| This website              | [apache/httpcomponents-website](https://github.com/apache/httpcomponents-website/) | `master` |
+
 Contributing
 ------------
 
