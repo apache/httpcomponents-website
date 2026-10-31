@@ -109,3 +109,69 @@ level or at a specific phase of connection life-cycle such as TLS handshake.
   backends may still expose configuration options specific to those backends.
 
   Cache configuration applies on a per-instance basis.
+
+## Timeouts
+
+The socket timeout is the only timeout that can be set at several configuration levels.
+All other timeouts apply to a single phase of connection management.
+
+### Timeouts by Phase
+
+The table below lists the timeouts that apply to a request, in the order the request
+goes through them.
+
+| Phase                                | Setting                                                                                                                                                  | Default                                  |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
+| Waiting for a connection from a pool | [RequestConfig](/httpcomponents-client-5.6.x/current/httpclient5/apidocs/org/apache/hc/client5/http/config/RequestConfig.html) `connectionRequestTimeout` | 3 minutes                                |
+| Host name resolution                 | none                                                                                                                                                     | -                                        |
+| TCP connect                          | [ConnectionConfig](/httpcomponents-client-5.6.x/current/httpclient5/apidocs/org/apache/hc/client5/http/config/ConnectionConfig.html) `connectTimeout`    | 3 minutes                                |
+| TLS handshake                        | [TlsConfig](/httpcomponents-client-5.6.x/current/httpclient5/apidocs/org/apache/hc/client5/http/config/TlsConfig.html) `handshakeTimeout`                | the connect timeout                      |
+| Request and response exchange        | the socket timeout, see [Socket Timeout](#Socket_Timeout)                                                                                                | 3 minutes (classic), no timeout (async) |
+
+* Host name resolution is done by the `DnsResolver` before the connect timeout starts.
+  The system resolver applies its own timeouts.
+* The connect timeout applies to each resolved address separately. If a host name
+  resolves to two addresses and neither of them responds, the connection attempt fails
+  after twice the connect timeout.
+* If the TLS handshake timeout is not set, the connect timeout is used for the TLS
+  handshake. Set the TLS handshake timeout explicitly if the handshake should time out
+  differently from the TCP connect.
+* The deprecated `RequestConfig` `connectTimeout`, if set, takes precedence over the
+  `ConnectionConfig` connect timeout.
+
+### Socket Timeout
+
+The socket timeout is the maximum period of inactivity while waiting for data. It can be
+set at the following levels. A higher level replaces the value set at a lower level. The
+shorter value does not win: a response timeout of 3 seconds replaces a socket timeout of
+1 second.
+
+1. Network I/O level:
+   [SocketConfig](/httpcomponents-core-5.4.x/current/httpcore5/apidocs/org/apache/hc/core5/http/io/SocketConfig.html)
+   `soTimeout` for the classic transport (default: 3 minutes) or
+   [IOReactorConfig](/httpcomponents-core-5.4.x/current/httpcore5/apidocs/org/apache/hc/core5/reactor/IOReactorConfig.html)
+   `soTimeout` for the async transport (default: no timeout).
+2. Connection management level: `ConnectionConfig` `socketTimeout` (default: not set).
+   It is applied when a connection is created or leased from the pool.
+3. Message exchange protocol level: `RequestConfig` `responseTimeout` (default: not set).
+   It is applied for the duration of a single message exchange.
+
+None of these settings apply during the TLS handshake. The TLS handshake timeout is used
+instead.
+
+Response timeout may be unsupported by HTTP transports with message multiplexing such
+as HTTP/2.
+
+### Timeouts Are Not Deadlines
+
+The timeouts above limit how long the client waits for a single event. They do not limit
+the total time of a request.
+
+* The socket timeout limits inactivity. A response that keeps sending data slowly does
+  not time out, even if it takes longer than the response timeout in total.
+* Connect attempts to multiple addresses and automatic request re-execution add up.
+  Please make sure the automatic request re-execution policy has been configured
+  appropriately.
+
+To limit the total time of a request, use a timeout when waiting for the result, for
+example `Future#get(long, TimeUnit)`, and cancel the request when it expires.
