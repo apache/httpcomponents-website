@@ -76,7 +76,7 @@ public class ClassicHttpClientOpenResponseExample {
         final HttpClientContext clientContext = HttpClientContext.create();
         try (final ClassicHttpResponse response = client.executeOpen(target, httpGet, clientContext)) {
             System.out.println(response.getCode());
-            System.out.println(EntityUtils.toString(response.getEntity()));
+            System.out.println(EntityUtils.toString(response.getEntity(), 4096));
         }
 
         final ConnPoolControl<HttpRoute> connPool = getConnPool();

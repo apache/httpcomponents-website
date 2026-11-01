@@ -94,7 +94,7 @@ public class ClassicHttpClientContextExample {
                     .build();
             final Message<HttpResponse, String> response = client.execute(
                     httpGet, localContext, r ->
-                            new Message<>(r, EntityUtils.toString(r.getEntity())));
+                            new Message<>(r, EntityUtils.toString(r.getEntity(), 4096)));
             System.out.println(response.head().getCode());
             System.out.println(response.body());
 

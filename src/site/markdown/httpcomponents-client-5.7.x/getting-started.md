@@ -236,7 +236,7 @@ final ClassicHttpRequest httpGet = ClassicRequestBuilder.get()
 final HttpClientContext clientContext = HttpClientContext.create();
 try (final ClassicHttpResponse response = client.executeOpen(target, httpGet, clientContext)) {
     System.out.println(response.getCode());
-    System.out.println(EntityUtils.toString(response.getEntity()));
+    System.out.println(EntityUtils.toString(response.getEntity(), 4096));
 }
 ```
 

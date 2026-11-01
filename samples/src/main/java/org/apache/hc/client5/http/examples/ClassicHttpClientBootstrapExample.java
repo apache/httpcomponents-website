@@ -75,7 +75,7 @@ public class ClassicHttpClientBootstrapExample {
                 .setPath("/get")
                 .build();
         final Message<HttpResponse, String> response = client.execute(httpGet, r ->
-                new Message<>(r, EntityUtils.toString(r.getEntity())));
+                new Message<>(r, EntityUtils.toString(r.getEntity(), 4095)));
         System.out.println(response.head().getCode());
         System.out.println(response.body());
 
