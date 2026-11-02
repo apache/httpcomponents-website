@@ -58,3 +58,21 @@ encouraged to upgrade.
 
 Commons HttpClient 3.x codeline is at the end of life. All users of Commons HttpClient 3.x are strongly encouraged to
 upgrade to HttpClient 4.1. 
+
+Source Code
+-----------
+
+The source code of all HttpComponents is available on GitHub. The table below shows where to
+find the code for each component line and whether that line is still maintained. See
+[Project Status](status.html) for more details and [Get Involved](get-involved.html) for how to contribute.
+
+| Component             | Repository                                                                         | Branch   | Status                                                           |
+|-----------------------|------------------------------------------------------------------------------------|----------|------------------------------------------------------------------|
+| HttpClient 5.7.x      | [apache/httpcomponents-client](https://github.com/apache/httpcomponents-client/)   | `master` | Development                                                      |
+| HttpClient 5.6.x      | [apache/httpcomponents-client](https://github.com/apache/httpcomponents-client/)   | `5.6.x`  | Stable, actively maintained                                      |
+| HttpCore 5.5.x        | [apache/httpcomponents-core](https://github.com/apache/httpcomponents-core/)       | `master` | Development                                                      |
+| HttpCore 5.4.x        | [apache/httpcomponents-core](https://github.com/apache/httpcomponents-core/)       | `5.4.x`  | Stable, actively maintained                                      |
+| HttpClient 4.5.x      | [apache/httpcomponents-client](https://github.com/apache/httpcomponents-client/)   | `4.5.x`  | Major defects and security fixes only                            |
+| HttpCore 4.4.x        | [apache/httpcomponents-core](https://github.com/apache/httpcomponents-core/)       | `4.4.x`  | Classic: major defects and security fixes only; NIO: End of Life |
+| HttpAsyncClient 4.1.x | [apache/httpasyncclient](https://github.com/apache/httpasyncclient/)               | `4.1.x`  | End of Life                                                      |
+| This website          | [apache/httpcomponents-website](https://github.com/apache/httpcomponents-website/) | `master` | Active                                                           |
