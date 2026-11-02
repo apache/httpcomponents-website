@@ -37,15 +37,8 @@ focuses on:
 Module and dependency
 ---------------------
 
-SSE support lives in a separate module:
-
-```xml
-<dependency>
-  <groupId>org.apache.httpcomponents.client5</groupId>
-  <artifactId>httpclient5-sse</artifactId>
-  <version>${httpclient5.version}</version>
-</dependency>
-```
+SSE support lives in a separate module, `httpclient5-sse`. For the current
+release coordinates, see the [download](download.html) page.
 
 This module depends on the async client (`httpclient5`) and reuses the existing
 I/O reactor, connection pooling and TLS strategies.
@@ -144,17 +137,17 @@ final EventSourceListener listener = new EventSourceListener() {
 };
 
 // 3) Backoff policy (e.g. bounded exponential with jitter)
- BackoffStrategy backoff = BackoffStrategies.exponentialJitter(...);
+final BackoffStrategy backoff = BackoffStrategies.exponentialJitter(...);
 
 // 4) Create an EventSource via SseExecutor (see actual factory signature in code)
- final SseExecutor sse = ...
- final EventSource source = sse.open(
-         URI.create("https://example.com/events"),
-         listener,
-         backoff);
+final SseExecutor sse = ...
+final EventSource source = sse.open(
+        URI.create("https://example.com/events"),
+        listener,
+        backoff);
 
 // 5) Start streaming
- source.start();
+source.start();
 ```
 
 > The exact factory methods and builder options for `SseExecutor` may evolve;

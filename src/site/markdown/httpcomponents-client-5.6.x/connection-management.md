@@ -110,28 +110,26 @@ final PoolingAsyncClientConnectionManager cm =
 Connections that exceed their TTL or idle timeout are discarded when leased or
 by explicit eviction.
 
-Evicting idle and expired connections
+Evicting expired connections
 -------------------------------------
 
-Applications are encouraged to run a background task to evict idle and expired
+Applications are encouraged to run a low-priority background task to evict expired 
 connections from the pool.
 
 Classic:
 
 ```java
 cm.closeExpired();
-cm.closeIdle(TimeValue.ofMinutes(1));
 ```
 
 Async:
 
 ```java
 asyncManager.closeExpired();
-asyncManager.closeIdle(TimeValue.ofMinutes(1));
 ```
 
-This keeps the pool clean in long-lived applications and reduces the probability
-of using dead connections after long periods of inactivity.
+This keeps the pool clean in long-lived applications and proactively
+releases resources when the connection pool has no activity.
 
 Validation after inactivity
 ---------------------------

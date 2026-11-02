@@ -43,7 +43,7 @@ either known to be well-behaved or specifically designed for simple message hand
    ```java
    PoolingAsyncClientConnectionManager connectionManager = PoolingAsyncClientConnectionManagerBuilder.create()
          .setTlsStrategy(ClientTlsStrategyBuilder.create()
-                 .setSslContext(SSLContexts.createSystemDefault())
+                 .setSslContext(SSLContexts.createDefault())
                  .setTlsVersions(TLS.V_1_3)
                  .buildAsync())
          .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)

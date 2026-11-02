@@ -19,12 +19,6 @@ package org.apache.hc.client5.migration.examples;
 import java.util.Arrays;
 import java.util.concurrent.Future;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ok2c.hc5.json.http.JsonRequestProducers;
-import com.ok2c.hc5.json.http.JsonResponseConsumers;
-
 import org.apache.hc.client5.http.auth.CredentialsProvider;
 import org.apache.hc.client5.http.config.ConnectionConfig;
 import org.apache.hc.client5.http.config.RequestConfig;
@@ -46,19 +40,24 @@ import org.apache.hc.core5.http.ssl.TLS;
 import org.apache.hc.core5.http.support.BasicRequestBuilder;
 import org.apache.hc.core5.http2.HttpVersionPolicy;
 import org.apache.hc.core5.io.CloseMode;
+import org.apache.hc.core5.jackson3.http.JsonRequestProducers;
+import org.apache.hc.core5.jackson3.http.JsonResponseConsumers;
 import org.apache.hc.core5.pool.PoolConcurrencyPolicy;
 import org.apache.hc.core5.pool.PoolReusePolicy;
 import org.apache.hc.core5.reactor.IOReactorConfig;
 import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
+import tools.jackson.core.json.JsonFactory;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 
 public class HttpClient5AsyncStreamExample {
 
     public static void main(String... args) throws Exception {
         PoolingAsyncClientConnectionManager connectionManager = PoolingAsyncClientConnectionManagerBuilder.create()
                 .setTlsStrategy(ClientTlsStrategyBuilder.create()
-                        .setSslContext(SSLContexts.createSystemDefault())
+                        .setSslContext(SSLContexts.createDefault())
                         .setTlsVersions(TLS.V_1_3)
                         .buildAsync())
                 .setPoolConcurrencyPolicy(PoolConcurrencyPolicy.STRICT)
@@ -107,7 +106,7 @@ public class HttpClient5AsyncStreamExample {
                                 new org.apache.http.message.BasicNameValuePair("name2", "value2")),
                         objectMapper),
                 JsonResponseConsumers.create(jsonFactory),
-                new FutureCallback<Message<HttpResponse, JsonNode>>() {
+                new FutureCallback<>() {
 
                     @Override
                     public void completed(Message<HttpResponse, JsonNode> message) {

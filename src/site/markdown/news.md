@@ -20,6 +20,101 @@
 HttpComponents Project News
 ===========================
 
+###### 26 Oct 2026 - HttpComponents Client 5.7-beta1 released
+
+This is the first BETA release in the 5.7 release series. In this release, idle
+connection eviction is deprecated in favor of connection expiration management
+and expired connection eviction. This release also introduces configuration
+improvements to HTTP/2 session pooling (HTTP/2 connection pool with message
+multiplexing) and SSE support improvements as well as HTTP header parsing
+optimization.
+
+Notable changes and features included in the 5.7 series:
+
+* [Experimental] Server-Sent Events (SSE) client optimized to handle push event streams.
+
+* [Experimental] WebSocket protocol support (client-side and server-side).
+
+* [Experimental] Optional execution queue that enforces a limit on the number of requests
+  executed concurrently by the same async client instance.
+
+* Caffeine-based cache backend.
+
+* OFFLOCK pool concurrency policy for connection pools (classic and async).
+
+* TLS-Required mode support.
+
+* Jakarta REST client, supporting a subset of jakarta.ws.rs APIs.
+
+* QUERY method support / QUERY response caching support.
+
+
+###### 14 Oct 2026 - HttpComponents Core 5.5-beta4 released
+
+This BETA release features multiple HTTP/2 protocol conformance improvements
+and perfroance optimizations, introduces support for Digest Fields (RFC 9530),
+and improves async IOsession pool functionality.
+
+Notable changes and features included in the 5.5 series:
+
+* Improved connection pool implementation.
+
+* Added HTTP message stream APIs and support for HTTP/2 message stream timeouts.
+
+* Updated SSLContexts to respect system properties by default.
+
+* Limited pending HTTP/2 request commands per connection.
+
+* Improved conformance with RFC 7540, HPACK (RFC 7541), and HTTP/2 (RFC 9113).
+
+* Building HttpCore with Maven now requires Java 17 or newer. Published
+  artifacts remain compatible with Java 8.
+
+* Added support for the QUERY method (RFC 10008).
+
+* Added support for Structured Field Values for HTTP (RFC 9651).
+
+* Added support for Digest Fields (RFC 9530).
+
+* Improved async IOSession pool implementation.
+
+
+###### 12 Oct 2026 - HttpComponents Client 5.6.5 GA released
+
+This maintenance release fixes several defects found since the previous release
+including the defect in the async Brotli decompression code that can cause
+the message exchange to hang indefinitely. It also upgrades HttpCore to version 5.4.4.
+
+###### 24 Sept 2026 - HttpComponents Core 5.5-beta3 released
+
+This BETA release migrates JSON bindings to Jackson 3, introduces support for
+Structured Field Values (RFC 9651), and improves and optimizes message parsing
+support methods. It is expected to be the last BETA release before 5.5 GA.
+
+###### 24 Sept 2026 - HttpComponents Core 5.4.4 GA released
+
+This maintenance release optimizes HTTP/1.1 message buffer configuration and corrects
+the handling of asynchronous entity producer state resets after interrupted writes.
+
+###### 17 Aug 2026 - HttpComponents Client 5.7-alpha1 released
+
+This is the first ALPHA release in the 5.7 release series. It introduces several new
+modules with Server-Sent Events (SSE) client, WebSocket client and Jakarta REST client
+implementations that build upon the common foundation of the core and client modules.
+Please note the Jakarta REST client presently supports a sub-set of jakarta.ws.rs APIs
+only. This release series also introduces full support for QUERY method including QUERY
+response caching.
+
+###### 10 Aug 2026 - HttpComponents Client 5.6.4 GA released
+
+This maintenance release fixes SSL parameter application in the async TLS upgrade
+strategy.
+
+###### 31 July 2026 - HttpComponents Client 5.6.3 GA released
+
+This maintenance release fixes a resource management defect in the content decompression 
+protocol handler of the classic transport.
+
 ###### 30 June 2026 - HttpComponents Client 5.6.2 GA released
 
 This maintenance release upgrades HttpCore to the latest stable version and restores
@@ -30,23 +125,6 @@ lazy content decompression by the classic client transport.
 This BETA release corrects Java 8 binary problem introduced in the previous BETA
 release. The previous version has been compiled against Java 17 APIs by mistake.
 This release also adds support for QUERY method (RFC 10008).
-
-Notable changes and features included in the 5.5 series:
-
-* Connection pool implementation improvements.
-
-* HTTP message stream APIs and support for HTTP/2 message stream timeout.
-
-* SSLContexts to respect system properties by default.
-
-* Cap pending HTTP/2 request commands per connection.
-
-* HPACK RFC 7540, RFC 7541, and HTTP/2 RFC 9113 conformance improvements.
-
-* Building HttpCore with Maven now requires Java 17 or newer. Published
-  artifacts remain compatible with Java 8.
-
-* QUERY method support (RFC 10008).
 
 ###### 25 June 2026 - HttpComponents Core 5.4.3 released
 

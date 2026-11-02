@@ -20,35 +20,53 @@
 HttpCore Overview
 =================
 
-HttpCore is a set of low level HTTP transport components that can be used to build custom client and server side HTTP
-services with a minimal footprint. HttpCore supports two I/O models: blocking I/O model based on the classic Java I/O
-and non-blocking, event driven I/O model based on Java NIO.
+HttpCore is a set of low level HTTP transport components that can be used to build custom
+client and server side HTTP services with a minimal footprint. HttpCore supports two I/O
+models: blocking I/O model based on the classic Java I/O and non-blocking, event driven
+I/O model based on Java NIO.
+
+Design objectives and project scope
+-----------------
+
+* Small footprint with no mandatory dependencies beyond JRE
+* Self-sufficient HTTP transport impmementation capable of executing message exchanges
+  from any endpoint in the network topology (client, server, proxy)
+* Common message primitives, control interfaces and strategies shared by the client and
+  server side protocol implementations
+* Consistent APIs for all supported HTTP protocol versions
+* HTTP protocol logic can be executed and tested against itself on the opposite endpoint
+* A foundation for Apache HttpClient
+* Potentially a foundation for an embeddable server similar in scope to Apache HttpClient
 
 Documentation
 =============
 
+1. Guides
+   - [Getting started](getting-started.md)
+   - [JSON processing](json-jackson2.md)
+
 1. Examples demonstrating some common as well as more complex use cases
-    - [HttpCore Cclassic APIs](examples.md)
-    - [HttpCore Async APIs](examples-async.md)
-    - [HttpCore Reactive Streams APIs](examples-reactive.md)
-    - [HttpCore JSON bindings](examples-jackson2.md)
+   - [HttpCore Cclassic APIs](examples.md)
+   - [HttpCore Async APIs](examples-async.md)
+   - [HttpCore Reactive Streams APIs](examples-reactive.md)
+   - [HttpCore JSON bindings](examples-jackson2.md)
 
 1. Javadocs
-    - [HttpCore HTTP/1.1](./current/httpcore5/apidocs/)
-    - [HttpCore HTTP/2](./current/httpcore5-h2/apidocs/)
-    - [HttpCore Reactive Streams](./current/httpcore5-reactive/apidocs/)
-    - [HttpCore JSON bindings](./current/httpcore5-jackson2/apidocs/)
+   - [HttpCore HTTP/1.1](./current/httpcore5/apidocs/)
+   - [HttpCore HTTP/2](./current/httpcore5-h2/apidocs/)
+   - [HttpCore Reactive Streams](./current/httpcore5-reactive/apidocs/)
+   - [HttpCore JSON bindings](./current/httpcore5-jackson2/apidocs/)
 
 1. API compatibility reports
-    - [HttpCore HTTP/1.1](./current/httpcore5/japicmp.html)
-    - [HttpCore HTTP/2](./current/httpcore5-h2/japicmp.html)
-    - [HttpCore Reactive Streams](./current/httpcore5-reactive/japicmp.html)
+   - [HttpCore HTTP/1.1](./current/httpcore5/japicmp.html)
+   - [HttpCore HTTP/2](./current/httpcore5-h2/japicmp.html)
+   - [HttpCore Reactive Streams](./current/httpcore5-reactive/japicmp.html)
 
 Standards Compliance
 --------------------
 
-HttpCore components strive to conform to the following specifications endorsed by the Internet Engineering Task Force
-(IETF) and the internet at large:
+HttpCore components strive to conform to the following specifications endorsed by the
+Internet Engineering Task Force (IETF) and the internet at large:
 
 - [RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110) - HTTP Semantics
 - [RFC 9112](https://datatracker.ietf.org/doc/html/rfc9112) - Hypertext Transfer Protocol Version 1.1 (HTTP/1.1)

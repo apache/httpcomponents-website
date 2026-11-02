@@ -38,12 +38,10 @@
   <packaging>jar</packaging>
 
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
     <hc4.client.version>4.5.14</hc4.client.version>
-    <hc5.client.version>5.6</hc5.client.version>
-    <jackson.version>2.21.5</jackson.version>
-    <asyncjson.version>0.4.0</asyncjson.version>
+    <hc5.core.version>5.5-beta3</hc5.core.version>
+    <hc5.client.version>5.7-beta1</hc5.client.version>
+    <slf4j.version>1.7.36</slf4j.version>
   </properties>
 
   <dependencies>
@@ -58,6 +56,16 @@
       <version>${hc4.client.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.httpcomponents.core5</groupId>
+      <artifactId>httpcore5-jackson3</artifactId>
+      <version>${hc5.core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents.core5</groupId>
+      <artifactId>httpcore5-testing</artifactId>
+      <version>${hc5.core.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.httpcomponents.client5</groupId>
       <artifactId>httpclient5</artifactId>
       <version>${hc5.client.version}</version>
@@ -68,14 +76,10 @@
       <version>${hc5.client.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.github.ok2c.hc5</groupId>
-      <artifactId>hc5-async-json</artifactId>
-      <version>${asyncjson.version}</version>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
 

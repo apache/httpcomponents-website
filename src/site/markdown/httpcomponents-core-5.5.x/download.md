@@ -36,4 +36,4 @@ HttpCore modules by using this information:
 - [HttpCore HTTP/1.1](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5)
 - [HttpCore HTTP/2](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-h2)
 - [HttpCore Reactive Streams](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-reactive)
-- [Jackson JSON Bindings](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-jackson2)
+- [Jackson JSON Bindings](https://search.maven.org/artifact/org.apache.httpcomponents.core5/httpcore5-jackson3)

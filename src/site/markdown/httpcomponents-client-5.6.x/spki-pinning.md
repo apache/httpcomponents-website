@@ -112,7 +112,7 @@ import org.apache.hc.core5.ssl.SSLContexts;
 public final class ClientSpkiPinningExample {
 
     public static void main(final String[] args) throws Exception {
-        final SSLContext sslContext = SSLContexts.createSystemDefault();
+        final SSLContext sslContext = SSLContexts.createDefault();
 
         final SpkiPinningClientTlsStrategy pinning = SpkiPinningClientTlsStrategy
                 .newBuilder(sslContext)
@@ -179,7 +179,7 @@ import org.apache.hc.core5.ssl.SSLContexts;
 public final class AsyncSpkiPinningExample {
 
     public static void main(final String[] args) throws Exception {
-        final SSLContext sslContext = SSLContexts.createSystemDefault();
+        final SSLContext sslContext = SSLContexts.createDefault();
 
         final SpkiPinningClientTlsStrategy pinning = SpkiPinningClientTlsStrategy
                 .newBuilder(sslContext)
