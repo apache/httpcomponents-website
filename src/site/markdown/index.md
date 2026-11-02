@@ -58,3 +58,10 @@ encouraged to upgrade.
 
 Commons HttpClient 3.x codeline is at the end of life. All users of Commons HttpClient 3.x are strongly encouraged to
 upgrade to HttpClient 4.1. 
+
+Source Code
+-----------
+
+The source code of all HttpComponents is available on GitHub. See
+[Get Involved](get-involved.html#Source_Code) for the repository, branch and maintenance status
+of each component line.
