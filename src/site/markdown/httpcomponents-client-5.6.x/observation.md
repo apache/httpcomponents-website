@@ -37,8 +37,9 @@ How it fits:
   `enable(...)` helpers. The observation module is separate; core HttpClient has no hard dependency.
 - **Classic, Async, and Caching** are all supported. For caching builders, interceptors are inserted **after**
   the caching stage so metrics reflect the effective exchange.
-- **Low friction.** A single call wires timers/counters and, if you want them, pool gauges, DNS/TLS meters,
-  and observation spans. You keep full control via two small configs:
+- **Explicit instrumentation.** `enable(...)` installs request metrics and observations.
+  With `CONN_POOL` enabled, it also binds gauges to an attached pooling connection manager.
+  DNS and TLS metrics require separate wrappers. You keep full control via two small configs:
     - `ObservingOptions` – choose metric groups (BASIC, IO, CONN_POOL, TLS, DNS), tag level (`LOW` for minimal,
       `EXTENDED` for richer tags), per-URI sampling, and a tag customizer hook.
     - `MetricConfig` – set the metric name prefix (`http.client` by default), SLO bucket(s), percentiles, optional
@@ -53,12 +54,17 @@ How it fits:
 Typical flow:
 
 1. Add `httpclient5-observation` and whichever Micrometer bits you actually use (all Micrometer deps can stay `optional`).
-2. Build your client as usual; call `HttpClientObservationSupport.enable(...)` on the builder
-   (classic/async/caching variants provided).
-3. (Optional) Bind **pool gauges** after you’ve attached a pooling connection manager.
+2. If you need pool gauges, attach a pooling connection manager to the builder.
+3. Call `HttpClientObservationSupport.enable(...)` before you build the client
+   (classic/async/caching variants provided). Include `CONN_POOL` to bind pool gauges.
 4. (Optional) Wrap your DNS resolver with `MeteredDnsResolver` and your TLS strategy with `MeteredTlsStrategy`
    if you want those timing/outcome meters as well.
 5. (Optional) Bridge the `ObservationRegistry` to OpenTelemetry to get client spans alongside metrics.
+
+`enable(...)` does not wrap or replace the connection manager.
+Pool gauges report the current pool state, not lease wait times or lease counts.
+Since 5.7, explicit connection manager wrappers provide those lease metrics.
+See [connection pool metrics](../httpcomponents-client-5.7.x/observation.md) for classic and async usage, including a generic library builder callback.
 
 Practical notes:
 
