@@ -49,6 +49,7 @@ Documentation
 
 1. Guides
     * [Getting started](getting-started.md)
+    * [Connection pool metrics](observation.md) - Explicit lease instrumentation and library builder callbacks
     * [SSE](server-sent-events.md) - Server side events
     * [Jakarta REST client](rest-client.md) - Type-safe Jakarta REST client backed by HttpClient
     * [WebSocket](websocket.md) - Full-duplex messaging over HTTP/1.1 and HTTP/2
