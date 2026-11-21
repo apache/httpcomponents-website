@@ -138,6 +138,9 @@ goes through them.
   differently from the TCP connect.
 * The deprecated `RequestConfig` `connectTimeout`, if set, takes precedence over the
   `ConnectionConfig` connect timeout.
+* With the async client and the `STRICT` or `LAX` pool concurrency policy, the
+  connection request timeout relies on periodic eviction of expired connections, see
+  [Evicting expired connections](connection-management.html#Evicting_expired_connections).
 
 ### Socket Timeout
 
