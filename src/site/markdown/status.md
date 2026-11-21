@@ -34,17 +34,10 @@ HttpComponents HttpClient 5.7.x
 HttpClient 5.7.x branch is the current development branch. The 5.7.x release series introduces support for
 Server-Sent Events (SSE), WebSocket protocol, QUERY method and caching, as well Jakarta REST client bindings.
 
-HttpComponents HttpCore 5.4.x
--------------------------------
-
-HttpCore 5.4.x branch is the current stable and production ready. The 5.4.x release series improves HTTP/2 protocol 
-support by ensuring conformance to the latest HTTP specification (RFC 9113), adds support for Unix domain sockets, 
-and  also redesigns the classic over async API compatibity bridge.
-
 HttpComponents HttpCore 5.5.x
 -------------------------------
 
-HttpCore 5.5.x branch is the current development branch. The 5.5.x release series improves HTTP/2 protocol 
+HttpCore 5.5.x branch is the current stable and production ready. The 5.5.x release series improves HTTP/2 protocol 
 conformance, connection pooling and management, as well as support for JSON message content bindings based
 on [Jackson](https://github.com/fasterxml/jackson) version 3, QUERY method, and Structured Field Values for HTTP.
 

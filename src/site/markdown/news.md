@@ -20,6 +20,38 @@
 HttpComponents Project News
 ===========================
 
+###### 23 Nov 2026 - HttpComponents Core 5.5 GA released
+
+This is the first GA release in the 5.4 release series. This release improves HTTP/2 protocol
+conformance and prevention of commom HTTP/2 denial-of-service attacks, improves connection
+and session pool implementations, adds support for Structured Field Values and QUERY method.
+
+Notable changes and features included in the 5.5 series:
+
+* Improved connection pool implementation.
+
+* Added HTTP message stream APIs and support for HTTP/2 message stream timeouts.
+
+* Updated SSLContexts to respect system properties by default.
+
+* Limited pending HTTP/2 request commands per connection.
+
+* Improved conformance with RFC 7540, HPACK (RFC 7541), and HTTP/2 (RFC 9113).
+
+* Building HttpCore with Maven now requires Java 17 or newer. Published
+  artifacts remain compatible with Java 8.
+
+* Added support for the QUERY method (RFC 10008).
+
+* Added support for Structured Field Values for HTTP (RFC 9651).
+
+* Added support for Digest Fields (RFC 9530).
+
+* Improved async IOSession pool implementation.
+
+* HTTP/2 control frame excessive use and rapid stream reset protection.
+
+
 ###### 26 Oct 2026 - HttpComponents Client 5.7-beta1 released
 
 This is the first BETA release in the 5.7 release series. In this release, idle
@@ -54,30 +86,6 @@ Notable changes and features included in the 5.7 series:
 This BETA release features multiple HTTP/2 protocol conformance improvements
 and perfroance optimizations, introduces support for Digest Fields (RFC 9530),
 and improves async IOsession pool functionality.
-
-Notable changes and features included in the 5.5 series:
-
-* Improved connection pool implementation.
-
-* Added HTTP message stream APIs and support for HTTP/2 message stream timeouts.
-
-* Updated SSLContexts to respect system properties by default.
-
-* Limited pending HTTP/2 request commands per connection.
-
-* Improved conformance with RFC 7540, HPACK (RFC 7541), and HTTP/2 (RFC 9113).
-
-* Building HttpCore with Maven now requires Java 17 or newer. Published
-  artifacts remain compatible with Java 8.
-
-* Added support for the QUERY method (RFC 10008).
-
-* Added support for Structured Field Values for HTTP (RFC 9651).
-
-* Added support for Digest Fields (RFC 9530).
-
-* Improved async IOSession pool implementation.
-
 
 ###### 12 Oct 2026 - HttpComponents Client 5.6.5 GA released
 

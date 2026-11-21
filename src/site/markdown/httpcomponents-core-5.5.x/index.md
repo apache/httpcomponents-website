@@ -49,7 +49,7 @@ Documentation
    - [HttpCore Cclassic APIs](examples.md)
    - [HttpCore Async APIs](examples-async.md)
    - [HttpCore Reactive Streams APIs](examples-reactive.md)
-   - [HttpCore JSON bindings](examples-jackson2.md)
+   - [HttpCore JSON bindings](examples-jackson3.md)
 
 1. Javadocs
    - [HttpCore HTTP/1.1](./current/httpcore5/apidocs/)
@@ -73,5 +73,8 @@ Internet Engineering Task Force (IETF) and the internet at large:
 - [RFC 9113](https://datatracker.ietf.org/doc/html/rfc9113) - Hypertext Transfer Protocol Version 2 (HTTP/2)
 - [RFC 7541](https://datatracker.ietf.org/doc/html/rfc7541) - HPACK: Header Compression for HTTP/2
 - [RFC 1945](https://datatracker.ietf.org/doc/html/rfc1945) - Hypertext Transfer Protocol -- HTTP/1.0
-- [RFC 2396](https://datatracker.ietf.org/doc/html/rfc2396) - Uniform Resource Identifiers (URI): Generic Syntax
+- [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) - Uniform Resource Identifiers (URI): Generic Syntax
 - [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP
+- [RFC 10008](https://datatracker.ietf.org/doc/html/rfc10008) - The HTTP QUERY Method
+- [RFC 9651](https://datatracker.ietf.org/doc/html/rfc9651) - Structured Field Values for HTTP
+- [RFC 9530](https://datatracker.ietf.org/doc/html/rfc9530) - Digest Fields
