@@ -140,14 +140,15 @@ fully leased:
   not trigger the check. If all connections stay leased, a pending request can
   wait well past its timeout.
 * The timeout fires up to one eviction interval late. Choose the interval by
-  how late the timeout may fire, for example:
+  how late the timeout may fire. Each call locks the pool, so avoid very short
+  intervals, for example:
 
     ```java
-    scheduler.scheduleAtFixedRate(asyncManager::closeExpired, 1, 1, TimeUnit.SECONDS);
+    scheduler.scheduleAtFixedRate(asyncManager::closeExpired, 30, 30, TimeUnit.SECONDS);
     ```
 
 * `HttpAsyncClientBuilder#evictExpiredConnections()` runs `closeExpired()` once
-  a minute, which is usually too slow for this purpose.
+  a minute, so the timeout can fire up to a minute late.
 * With HttpCore 5.4.4, which HttpClient 5.6.x depends on, `closeExpired()` does
   not fail pending requests in the `STRICT` pool. Use the `LAX` or `OFFLOCK`
   policy, or HttpCore 5.5 or later.
