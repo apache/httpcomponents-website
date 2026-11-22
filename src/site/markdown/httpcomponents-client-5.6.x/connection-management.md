@@ -131,6 +131,30 @@ asyncManager.closeExpired();
 This keeps the pool clean in long-lived applications and proactively
 releases resources when the connection pool has no activity.
 
+With the async connection manager and the `STRICT` or `LAX` pool concurrency
+policy, this task also makes `connectionRequestTimeout` work when the pool is
+fully leased:
+
+* A pending lease request is checked against its timeout only when a connection
+  is returned to the pool or `closeExpired()` is called. New lease requests do
+  not trigger the check. If all connections stay leased, a pending request can
+  wait well past its timeout.
+* The timeout fires up to one eviction interval late. Choose the interval by
+  how late the timeout may fire. Each call locks the pool, so avoid very short
+  intervals, for example:
+
+    ```java
+    scheduler.scheduleAtFixedRate(asyncManager::closeExpired, 30, 30, TimeUnit.SECONDS);
+    ```
+
+* `HttpAsyncClientBuilder#evictExpiredConnections()` runs `closeExpired()` once
+  a minute, so the timeout can fire up to a minute late.
+* With HttpCore 5.4.4, which HttpClient 5.6.x depends on, `closeExpired()` does
+  not fail pending requests in the `STRICT` pool. Use the `LAX` or `OFFLOCK`
+  policy, or HttpCore 5.5 or later.
+
+The classic connection manager and the `OFFLOCK` policy are not affected.
+
 Validation after inactivity
 ---------------------------
 
