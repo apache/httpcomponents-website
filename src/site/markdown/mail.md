@@ -82,18 +82,17 @@ And if somebody else asks a question you can answer, please do so!
 ### Developer List
 
 If you want to discuss _development of HttpComponents_, post your question or suggestion to the `dev` list. The
-developer list is used to discuss architecture, API design, new features, and bugs. Bug reports and comments filed
-in [JIRA](./issue-tracking.html) will automatically be sent to this list, too.
+developer list is used to discuss architecture, API design, new features, and bugs. Bug reports and comments are
+tracked in [GitHub Issues](./issue-tracking.html).
 
 ### Issue Tracking
 
-We are using [JIRA](./issue-tracking.html) as our issue tracking system. Although this is not a mailing list, and should
-not be abused as a general discussion forum, it is another way to contact the HttpComponent developers. All issues and
-comments will be sent to the developer mailing list.
+We are using [GitHub Issues](./issue-tracking.html) as our issue tracking system. Although this is not a mailing list, and
+should not be abused as a general discussion forum, it is another way to contact the HttpComponent developers.
 
-If you are absolutely sure that you have found a bug, you can open a new issue for it. Choose "Bug" as the issue type.
+If you are absolutely sure that you have found a bug, you can open a new issue for it and label it `bug`.
 If you are absolutely sure that our components don't provide a feature that would be useful for you and others, you can
-open a new issue for it. Choose "New Feature" or "Wish" for it.
+open a new issue for it and label it `enhancement`.
 
 If you are not absolutely sure, please ask on the appropriate mailing list first. Most developers are monitoring both
 lists, and we will tell you if you should open a new issue.
@@ -161,7 +160,7 @@ subscribe, unsubscribe, and archive information. See below for information on di
   not be able to answer them.
 
 * [dev@hc.apache.org](https://apache.org/foundation/mailinglists.html) - The list for developers of HttpComponents and
-  HttpClient 3. We don't mind getting HttpCore user questions here. Our issues tracker JIRA also posts here.
+  HttpClient 3. We don't mind getting HttpCore user questions here.
 
 * [commits@hc.apache.org](https://apache.org/foundation/mailinglists.html) - The list for messages from our source code
   repository. Whenever the source code is modified, a mail with the changes is sent. This list is read-only.
