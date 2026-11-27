@@ -32,8 +32,8 @@ Community
   Contributing section below for details on our development process.
 - Reporting issues:
 
-    - [HttpComponents Core](https://issues.apache.org/jira/projects/HTTPCORE)
-    - [HttpComponents Client](https://issues.apache.org/jira/projects/HTTPCLIENT)
+    - [HttpComponents Core](https://github.com/apache/httpcomponents-core/issues)
+    - [HttpComponents Client](https://github.com/apache/httpcomponents-client/issues)
 
 - Slack: Some committers and users are present in the
   channel [#httpcomponents-client](https://the-asf.slack.com/archives/CGC9KPJKH) on the Apache Slack team.
@@ -69,11 +69,12 @@ requests (even if you are not a committer), feature suggestions, reporting bugs,
 all matter immensely.
 
 The best way to get involved with the project and potentially to make the first step toward becoming a project committer
-is to look at the open issues in JIRA and help resolve them. Open issues labelled `volunteers-wanted` are especially
+is to look at the open issues on GitHub and help resolve them. Open issues labelled `help wanted` are especially
 unlikely to get resolved without help from volunteers / external contributors.
 
-Here is the list of [HttpComponents Issues](https://issues.apache.org/jira/issues/?filter=12350197) that HttpComponents
-project members require a helping hand with.
+Here is the list of open [HttpComponents Core](https://github.com/apache/httpcomponents-core/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+and [HttpComponents Client](https://github.com/apache/httpcomponents-client/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+issues that project members require a helping hand with.
 
 More information
 ----------------
