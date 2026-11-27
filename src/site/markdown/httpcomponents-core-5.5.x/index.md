@@ -43,7 +43,7 @@ Documentation
 
 1. Guides
    - [Getting started](getting-started.md)
-   - [JSON processing](json-jackson2.md)
+   - [JSON processing](json-jackson3.md)
 
 1. Examples demonstrating some common as well as more complex use cases
    - [HttpCore Cclassic APIs](examples.md)
@@ -55,7 +55,7 @@ Documentation
    - [HttpCore HTTP/1.1](./current/httpcore5/apidocs/)
    - [HttpCore HTTP/2](./current/httpcore5-h2/apidocs/)
    - [HttpCore Reactive Streams](./current/httpcore5-reactive/apidocs/)
-   - [HttpCore JSON bindings](./current/httpcore5-jackson2/apidocs/)
+   - [HttpCore JSON bindings](./current/httpcore5-jackson3/apidocs/)
 
 1. API compatibility reports
    - [HttpCore HTTP/1.1](./current/httpcore5/japicmp.html)
